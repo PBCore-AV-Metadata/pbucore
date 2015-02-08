@@ -1,11 +1,8 @@
 require 'nokogiri'
 require 'byebug'
 
-docs = [
-  'cpb-aacip-500-6h4csj1p_pbcore.xml',
-  'cpb-aacip-500-6m335r61_pbcore.xml'  
-]
-xslt  = Nokogiri::XSLT(File.read('pbcore-2-ebucore.xsl'))
+docs = Dir.glob("source_xml/*.xml")
+xslt = Nokogiri::XSLT(File.read('pbcore-2-ebucore.xsl'))
 
 docs.each do |xml_doc|
   doc = Nokogiri::XML(File.read(xml_doc))
