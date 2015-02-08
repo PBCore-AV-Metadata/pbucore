@@ -135,7 +135,7 @@
                     </ebucore:hasRole>
                 </rdf:Description>                    
             </xsl:for-each>
-            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreInstantiation">
+            <xsl:for-each select="//pbcore:pbcoreInstantiation">
                 <rdf:Description rdf:about="{pbcore:instantiationIdentifier}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
