@@ -165,7 +165,7 @@
                     <ebucore:hasStorageType>
                         <xsl:value-of select="pbcore:instantiationPhysical"/>
                     </ebucore:hasStorageType>
-                    <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. -->
+                    <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
                     <ebucore:FileSize>
                     <xsl:choose>
                         <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'K')]">
@@ -177,7 +177,12 @@
                         <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'G')]">
                             <xsl:value-of select="pbcore:instantiationFileSize * 1073741824"/>
                         </xsl:when>
-                        <xsl:otherwise/>
+                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'T')]">
+                            <xsl:value-of select="pbcore:instantiationFileSize * 1099511627776"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:value-of select="pbcore:instantiationFileSize"/>
+                        </xsl:otherwise>
                     </xsl:choose>
                     </ebucore:FileSize>
                       
