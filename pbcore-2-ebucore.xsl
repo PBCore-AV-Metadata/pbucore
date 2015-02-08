@@ -114,14 +114,17 @@
                         <xsl:value-of select="pbcore:instantiationDate[@dateType='published']"/>
                     </ebucore:dateIssued>
                     <ebucore:hasFormat>
-                        <xsl:value-of select="pbcore:instantiationDigital"/>
+                        <xsl:value-of select="pbcore:instantiationPhysical"/>
                     </ebucore:hasFormat>
                     <ebucore:locator>
                         <xsl:value-of select="pbcore:instantiationLocation"/>
                     </ebucore:locator>
                     <ebucore:hasMimeType>
-                        <xsl:value-of select="instantiationMediaType"/>
+                        <xsl:value-of select="pbcore:instantiationDigital"/>
                     </ebucore:hasMimeType>
+                    <ebucore:hasStorageType>
+                        <xsl:value-of select="pbcore:instantiationPhysical"/>
+                    </ebucore:hasStorageType>
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
