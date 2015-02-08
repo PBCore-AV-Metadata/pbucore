@@ -110,9 +110,17 @@
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                         <xsl:value-of select="pbcore:instantiationIdentifier"/>
                     </rdfs:label>
+                    <xsl:for-each select="pbcore:instantiationDate">
                     <ebucore:dateIssued>
-                        <xsl:value-of select="pbcore:instantiationDate[@dateType='published']"/>
+                            <xsl:if test="@dateType='published'">
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                            <xsl:if test="@dateType='encoded'">
+                                <xsl:value-of select="."/>
+                            </xsl:if>
                     </ebucore:dateIssued>
+                    </xsl:for-each>
+                    
                     <ebucore:hasFormat>
                         <xsl:value-of select="pbcore:instantiationPhysical"/>
                     </ebucore:hasFormat>
