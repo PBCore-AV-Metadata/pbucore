@@ -1,69 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pbcoreDescriptionDocument xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://www.pbcore.org/xsd/pbcore-2.0.xsd">
-  <pbcoreIdentifier source="WAMU">1785</pbcoreIdentifier>
-  <pbcoreIdentifier source="http://americanarchiveinventory.org">cpb-aacip/500-6h4csj1p</pbcoreIdentifier>
-  <pbcoreTitle titleType="Series">The Real Jazz</pbcoreTitle>
-  <pbcoreDescription>No description available</pbcoreDescription>
-  <pbcoreInstantiation>
-    <instantiationIdentifier source="WAMU">1785</instantiationIdentifier>
-    <instantiationDimensions>10.5 inches</instantiationDimensions>
-    <instantiationPhysical>1/4 inch audio tape</instantiationPhysical>
-    <instantiationLocation>Hornbake Special Collections</instantiationLocation>
-    <instantiationMediaType>Sound</instantiationMediaType>
-    <instantiationDuration>00:59:00?</instantiationDuration>
-    <instantiationChannelConfiguration>Half Track Mono</instantiationChannelConfiguration>
-    <instantiationExtension>
-      <extensionWrap>
-        <extensionElement>AACIP Record Nomination Status</extensionElement>
-        <extensionValue>Nominated/2nd Priority</extensionValue>
-        <extensionAuthorityUsed>AACIP</extensionAuthorityUsed>
-      </extensionWrap>
-    </instantiationExtension>
-  </pbcoreInstantiation>
-  <pbcoreInstantiation>
-    <instantiationIdentifier source="mediainfo">cpb-aacip-500-6h4csj1p.wav</instantiationIdentifier>
-    <instantiationDate dateType="encoded">2014-08-18</instantiationDate>
-    <instantiationDigital>audio/vnd.wave</instantiationDigital>
-    <instantiationStandard>Wave</instantiationStandard>
-    <instantiationLocation>N/A</instantiationLocation>
-    <instantiationMediaType>Sound</instantiationMediaType>
-    <instantiationGenerations>Moving image/Preservation master</instantiationGenerations>
-    <instantiationFileSize unitsOfMeasure="GiB">2</instantiationFileSize>
-    <instantiationDataRate unitsOfMeasure="Kbps">4777</instantiationDataRate>
-    <instantiationTracks>1 audio</instantiationTracks>
-    <instantiationChannelConfiguration>2 channel</instantiationChannelConfiguration>
-    <instantiationEssenceTrack>
-      <essenceTrackType>audio</essenceTrackType>
-      <essenceTrackIdentifier source="mediainfo">0</essenceTrackIdentifier>
-      <essenceTrackEncoding source="mediainfo" ref="http://www.microsoft.com/windows/">PCM</essenceTrackEncoding>
-      <essenceTrackDataRate unitsOfMeasure="Kbps">4608</essenceTrackDataRate>
-      <essenceTrackSamplingRate>96.0 KHz</essenceTrackSamplingRate>
-      <essenceTrackBitDepth>24</essenceTrackBitDepth>
-      <essenceTrackDuration>00:59:45</essenceTrackDuration>
-    </instantiationEssenceTrack>
-  </pbcoreInstantiation>
-  <pbcoreInstantiation>
-    <instantiationIdentifier source="mediainfo">cpb-aacip-500-6h4csj1p.mp3</instantiationIdentifier>
-    <instantiationDate dateType="encoded">2014-08-18</instantiationDate>
-    <instantiationDigital>audio/mpeg</instantiationDigital>
-    <instantiationStandard>MPEG Audio</instantiationStandard>
-    <instantiationLocation>N/A</instantiationLocation>
-    <instantiationMediaType>Sound</instantiationMediaType>
-    <instantiationGenerations>Proxy</instantiationGenerations>
-    <instantiationFileSize unitsOfMeasure="MiB">82</instantiationFileSize>
-    <instantiationDataRate unitsOfMeasure="Kbps">192</instantiationDataRate>
-    <instantiationTracks>1 audio</instantiationTracks>
-    <instantiationChannelConfiguration>2 channel</instantiationChannelConfiguration>
-    <instantiationEssenceTrack>
-      <essenceTrackType>audio</essenceTrackType>
-      <essenceTrackIdentifier source="mediainfo">0</essenceTrackIdentifier>
-      <essenceTrackEncoding source="mediainfo">MPEG-1 Audio layer 3</essenceTrackEncoding>
-      <essenceTrackDataRate unitsOfMeasure="Kbps">192</essenceTrackDataRate>
-      <essenceTrackSamplingRate>48.0 KHz</essenceTrackSamplingRate>
-      <essenceTrackDuration>00:59:45</essenceTrackDuration>
-    </instantiationEssenceTrack>
-    <instantiationAnnotation annotationType="encoded by">Fraunhofer IIS MP3 v04.01.02 (fast)</instantiationAnnotation>
-  </pbcoreInstantiation>
-  <pbcoreAnnotation annotationType="last_modified">2013-08-02 16:05:37</pbcoreAnnotation>
-  <pbcoreAnnotation annotationType="organization">University of Maryland</pbcoreAnnotation>
-</pbcoreDescriptionDocument>
+<pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://www.pbcore.org/xsd/pbcore-2.0.xsd">
+  <pbcoreDescriptionDocument>
+    <pbcoreIdentifier source="WAMU">1785</pbcoreIdentifier>
+    <pbcoreIdentifier source="http://americanarchiveinventory.org"
+      >cpb-aacip/500-6h4csj1p</pbcoreIdentifier>
+    <pbcoreTitle titleType="Series">The Real Jazz</pbcoreTitle>
+    <pbcoreDescription>No description available</pbcoreDescription>
+    <pbcoreInstantiation>
+      <instantiationIdentifier source="WAMU">1785</instantiationIdentifier>
+      <instantiationDimensions>10.5 inches</instantiationDimensions>
+      <instantiationPhysical>1/4 inch audio tape</instantiationPhysical>
+      <instantiationLocation>Hornbake Special Collections</instantiationLocation>
+      <instantiationMediaType>Sound</instantiationMediaType>
+      <instantiationDuration>00:59:00?</instantiationDuration>
+      <instantiationChannelConfiguration>Half Track Mono</instantiationChannelConfiguration>
+      <instantiationExtension>
+        <extensionWrap>
+          <extensionElement>AACIP Record Nomination Status</extensionElement>
+          <extensionValue>Nominated/2nd Priority</extensionValue>
+          <extensionAuthorityUsed>AACIP</extensionAuthorityUsed>
+        </extensionWrap>
+      </instantiationExtension>
+    </pbcoreInstantiation>
+    <pbcoreInstantiation>
+      <instantiationIdentifier source="mediainfo">cpb-aacip-500-6h4csj1p.wav</instantiationIdentifier>
+      <instantiationDate dateType="encoded">2014-08-18</instantiationDate>
+      <instantiationDigital>audio/vnd.wave</instantiationDigital>
+      <instantiationStandard>Wave</instantiationStandard>
+      <instantiationLocation>N/A</instantiationLocation>
+      <instantiationMediaType>Sound</instantiationMediaType>
+      <instantiationGenerations>Moving image/Preservation master</instantiationGenerations>
+      <instantiationFileSize unitsOfMeasure="GiB">2</instantiationFileSize>
+      <instantiationDataRate unitsOfMeasure="Kbps">4777</instantiationDataRate>
+      <instantiationTracks>1 audio</instantiationTracks>
+      <instantiationChannelConfiguration>2 channel</instantiationChannelConfiguration>
+      <instantiationEssenceTrack>
+        <essenceTrackType>audio</essenceTrackType>
+        <essenceTrackIdentifier source="mediainfo">0</essenceTrackIdentifier>
+        <essenceTrackEncoding source="mediainfo" ref="http://www.microsoft.com/windows/">PCM</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="Kbps">4608</essenceTrackDataRate>
+        <essenceTrackSamplingRate>96.0 KHz</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>24</essenceTrackBitDepth>
+        <essenceTrackDuration>00:59:45</essenceTrackDuration>
+      </instantiationEssenceTrack>
+    </pbcoreInstantiation>
+    <pbcoreInstantiation>
+      <instantiationIdentifier source="mediainfo">cpb-aacip-500-6h4csj1p.mp3</instantiationIdentifier>
+      <instantiationDate dateType="encoded">2014-08-18</instantiationDate>
+      <instantiationDigital>audio/mpeg</instantiationDigital>
+      <instantiationStandard>MPEG Audio</instantiationStandard>
+      <instantiationLocation>N/A</instantiationLocation>
+      <instantiationMediaType>Sound</instantiationMediaType>
+      <instantiationGenerations>Proxy</instantiationGenerations>
+      <instantiationFileSize unitsOfMeasure="MiB">82</instantiationFileSize>
+      <instantiationDataRate unitsOfMeasure="Kbps">192</instantiationDataRate>
+      <instantiationTracks>1 audio</instantiationTracks>
+      <instantiationChannelConfiguration>2 channel</instantiationChannelConfiguration>
+      <instantiationEssenceTrack>
+        <essenceTrackType>audio</essenceTrackType>
+        <essenceTrackIdentifier source="mediainfo">0</essenceTrackIdentifier>
+        <essenceTrackEncoding source="mediainfo">MPEG-1 Audio layer 3</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="Kbps">192</essenceTrackDataRate>
+        <essenceTrackSamplingRate>48.0 KHz</essenceTrackSamplingRate>
+        <essenceTrackDuration>00:59:45</essenceTrackDuration>
+      </instantiationEssenceTrack>
+      <instantiationAnnotation annotationType="encoded by">Fraunhofer IIS MP3 v04.01.02 (fast)</instantiationAnnotation>
+    </pbcoreInstantiation>
+    <pbcoreAnnotation annotationType="last_modified">2013-08-02 16:05:37</pbcoreAnnotation>
+    <pbcoreAnnotation annotationType="organization">University of Maryland</pbcoreAnnotation>
+  </pbcoreDescriptionDocument>
+</pbcoreCollection>
