@@ -3,6 +3,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
+    xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html"
     >
         
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
@@ -13,7 +14,7 @@
             xmlns:dct="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
             xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
             >
-            <xsl:for-each select="pbcoreCollection">
+            <xsl:for-each select="pbcore:pbcoreCollection">
                 <rdf:Description rdf:about="collection_id1">
                 <rdf:type
                     rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Group"/>
@@ -29,100 +30,100 @@
                     <ebucore:date>
                         <xsl:value-of select="@collectionDate"/>
                     </ebucore:date>
-                    <xsl:for-each select="pbcoreDescriptionDocument">
-                        <ebucore:hasMember rdf:resource="{pbcoreIdentifier}"/>
+                    <xsl:for-each select="pbcore:pbcoreDescriptionDocument">
+                        <ebucore:hasMember rdf:resource="{pbcore:pbcoreIdentifier}"/>
                     </xsl:for-each>
                 </rdf:Description>
             </xsl:for-each>
-            <xsl:for-each select="pbcoreCollection/pbcoreDescriptionDocument">
-                <rdf:Description rdf:about="{pbcoreIdentifier}">
+            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument">
+                <rdf:Description rdf:about="{pbcore:pbcoreIdentifier}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
                     <!-- should be Item - extension PBCore -->
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                        <xsl:value-of select="pbcoreTitle[@titleType='Episode']"/>
+                        <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
                     </rdfs:label>
                     <ebucore:hasPublicationHistory>
                         <ebucore:hasPublicationEvent>
                             <ebucore:publishedStarDateTime>
-                                <xsl:value-of select="pbcoreAssetDate[@dateType='broadcast']"/>
+                                <xsl:value-of select="pbcore:pbcoreAssetDate[@dateType='broadcast']"/>
                             </ebucore:publishedStarDateTime>
                         </ebucore:hasPublicationEvent>
                     </ebucore:hasPublicationHistory>
                     <ebucore:title>
-                        <xsl:value-of select="pbcoreTitle[@titleType='Episode']"/>
+                        <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
                     </ebucore:title>
                     <ebucore:title>
-                        <xsl:value-of select="pbcoreTitle[@titleType='Program']"/>
+                        <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Program']"/>
                     </ebucore:title>
-                    <xsl:for-each select="pbcoreSubject[@subjectType='topic']">
+                    <xsl:for-each select="pbcore:pbcoreSubject[@subjectType='topic']">
                     <ebucore:hasTopic>
-                        <xsl:value-of select="self::pbcoreSubject"/>    
+                        <xsl:value-of select="self::pbcore:pbcoreSubject"/>    
                     </ebucore:hasTopic>                
                     </xsl:for-each>
-                    <xsl:for-each select="pbcoreGenre">
+                    <xsl:for-each select="pbcore:pbcoreGenre">
                         <ebucore:hasGenre>
-                            <xsl:value-of select="self::pbcoreGenre"/>    
+                            <xsl:value-of select="self::pbcore:pbcoreGenre"/>    
                         </ebucore:hasGenre>                
                     </xsl:for-each>
-                    <ebucore:hasCreator rdf:resource="{concat(substring-before(pbcoreCreator/creator,','), substring-after(pbcoreCreator/creator,' '))}"/>
-                    <ebucore:hasContributor rdf:resource="{concat(substring-before(pbcoreContributor/contributor,','), substring-after(pbcoreContributor/contributor,' '))}"/>
-                    <xsl:for-each select="pbcoreInstantiation">
-                        <ebucore:hasRelatedResource rdf:resource="{instantiationIdentifier}"/>
+                    <ebucore:hasCreator rdf:resource="{concat(substring-before(pbcore:pbcoreCreator/pbcore:creator,','), substring-after(pbcore:pbcoreCreator/pbcore:creator,' '))}"/>
+                    <ebucore:hasContributor rdf:resource="{concat(substring-before(pbcore:pbcoreContributor/pbcore:contributor,','), substring-after(pbcore:pbcoreContributor/pbcore:contributor,' '))}"/>
+                    <xsl:for-each select="pbcore:pbcoreInstantiation">
+                        <ebucore:hasRelatedResource rdf:resource="{pbcore:instantiationIdentifier}"/>
                     </xsl:for-each>
                 </rdf:Description>     
             </xsl:for-each>
-            <xsl:for-each select="pbcoreCollection/pbcoreDescriptionDocument/pbcoreCreator">
-                <rdf:Description rdf:about="{concat(substring-before(creator,','), substring-after(creator,' '))}">
+            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreCreator">
+                <rdf:Description rdf:about="{concat(substring-before(pbcore:creator,','), substring-after(pbcore:creator,' '))}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                        <xsl:value-of select="creator"/>
+                        <xsl:value-of select="pbcore:creator"/>
                     </rdfs:label>
                     <ebucore:agentName>
-                        <xsl:value-of select="creator"/>
+                        <xsl:value-of select="pbcore:creator"/>
                     </ebucore:agentName>
                     <ebucore:hasRole>
-                        <xsl:value-of select="creatorRole"/>                        
+                        <xsl:value-of select="pbcore:creatorRole"/>                        
                     </ebucore:hasRole>
                 </rdf:Description>                    
             </xsl:for-each>
-            <xsl:for-each select="pbcoreCollection/pbcoreDescriptionDocument/pbcoreContributor">
-                <rdf:Description rdf:about="{concat(substring-before(contributor,','), substring-after(contributor,' '))}">
+            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreContributor">
+                <rdf:Description rdf:about="{concat(substring-before(pbcore:contributor,','), substring-after(pbcore:contributor,' '))}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                        <xsl:value-of select="contributor"/>
+                        <xsl:value-of select="pbcore:contributor"/>
                     </rdfs:label>
                     <ebucore:agentName>
-                        <xsl:value-of select="contributor"/>
+                        <xsl:value-of select="pbcore:contributor"/>
                     </ebucore:agentName>
                     <ebucore:hasRole>
-                        <xsl:value-of select="contributorRole"/>                        
+                        <xsl:value-of select="pbcore:contributorRole"/>                        
                     </ebucore:hasRole>
                 </rdf:Description>                    
             </xsl:for-each>
-            <xsl:for-each select="pbcoreCollection/pbcoreDescriptionDocument/pbcoreInstantiation">
-                <rdf:Description rdf:about="{instantiationIdentifier}">
+            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreInstantiation">
+                <rdf:Description rdf:about="{pbcore:instantiationIdentifier}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                        <xsl:value-of select="instantiationIdentifier"/>
+                        <xsl:value-of select="pbcore:instantiationIdentifier"/>
                     </rdfs:label>
                     <ebucore:dateIssued>
-                        <xsl:value-of select="instantiationDate[@dateType='published']"/>
+                        <xsl:value-of select="pbcore:instantiationDate[@dateType='published']"/>
                     </ebucore:dateIssued>
                     <ebucore:hasFormat>
-                        <xsl:value-of select="instantiationDigital"/>
+                        <xsl:value-of select="pbcore:instantiationDigital"/>
                     </ebucore:hasFormat>
                     <ebucore:locator>
-                        <xsl:value-of select="instantiationLocation"/>
+                        <xsl:value-of select="pbcore:instantiationLocation"/>
                     </ebucore:locator>
                     <ebucore:hasMimeType>
                         <xsl:value-of select="instantiationMediaType"/>
                     </ebucore:hasMimeType>
                     <durationNormalPlayTime>
-                        <xsl:value-of select="instantiationDuration"/>
+                        <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
                 </rdf:Description>                    
             </xsl:for-each>
