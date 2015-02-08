@@ -135,6 +135,21 @@
                     </ebucore:hasRole>
                 </rdf:Description>                    
             </xsl:for-each>
+                       <xsl:for-each select="//pbcorePublisher">
+                <rdf:Description rdf:about="{concat(substring-before(pbcore:publisher,','), substring-after(pbcore:publisher,' '))}">
+                    <rdf:type
+                        rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+                    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                        <xsl:value-of select="pbcore:publisher"/>
+                    </rdfs:label>
+                    <ebucore:agentName>
+                        <xsl:value-of select="pbcore:publisher"/>
+                    </ebucore:agentName>
+                    <ebucore:hasRole>
+                        <xsl:value-of select="pbcore:publisherRole"/>                        
+                    </ebucore:hasRole>
+                </rdf:Description>                    
+            </xsl:for-each>
             <xsl:for-each select="//pbcore:pbcoreInstantiation">
                 <rdf:Description rdf:about="{pbcore:instantiationIdentifier}">
                     <rdf:type
