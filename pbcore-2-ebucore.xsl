@@ -35,7 +35,7 @@
                     </xsl:for-each>
                 </rdf:Description>
             </xsl:for-each>
-            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument">
+            <xsl:for-each select="//pbcore:pbcoreDescriptionDocument">
                 <rdf:Description rdf:about="{pbcore:pbcoreIdentifier}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
@@ -74,7 +74,7 @@
                 </rdf:Description>     
             </xsl:for-each>
 
-            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreCoverage">
+            <xsl:for-each select="//pbcore:pbcoreCoverage">
                     <xsl:if test="pbcore:coverageType='Spatial'">
                         <ebucore:hasCoverage rdf:resource="{pbcore:coverage}"/>
                         <rdf:Description rdf:about="{pbcore:coverage}">
@@ -105,7 +105,7 @@
                     </xsl:if>
             </xsl:for-each>
 
-            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreCreator">
+            <xsl:for-each select="//pbcore:pbcoreCreator">
                 <rdf:Description rdf:about="{concat(substring-before(pbcore:creator,','), substring-after(pbcore:creator,' '))}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
@@ -120,7 +120,7 @@
                     </ebucore:hasRole>
                 </rdf:Description>                    
             </xsl:for-each>
-            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreContributor">
+            <xsl:for-each select="//pbcore:pbcoreContributor">
                 <rdf:Description rdf:about="{concat(substring-before(pbcore:contributor,','), substring-after(pbcore:contributor,' '))}">
                     <rdf:type
                         rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
