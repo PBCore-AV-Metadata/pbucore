@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#" xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+  <rdf:Description rdf:about="collection_id1">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Group"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WILL World War II Oral History Project on WILL from Illinois Public Media</rdfs:label>
+    <ebucore:title>WILL World War II Oral History Project on WILL from Illinois Public Media</ebucore:title>
+    <ebucore:description>A collection of records from WILL World War II Oral History Project on WILL</ebucore:description>
+    <ebucore:date>2014-10-16T19:18:20-05:00</ebucore:date>
+    <ebucore:hasMember rdf:resource="james-stallmeyer-2008-07-01"/>
+    <ebucore:hasMember rdf:resource="georgemyers2008-03-20"/>
+    <ebucore:hasMember rdf:resource="jimfisher2008-03-20"/>
+    <ebucore:hasMember rdf:resource="davidfreeman2008-03-19"/>
+    <ebucore:hasMember rdf:resource="jessedowell2008-03-14"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="james-stallmeyer-2008-07-01">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral History Interview with James Stallmeyer</rdfs:label>
+    <ebucore:hasPublicationHistory>
+      <ebucore:hasPublicationEvent>
+        <ebucore:publishedStarDateTime>2008-07-01T12:02:00-05:00</ebucore:publishedStarDateTime>
+      </ebucore:hasPublicationEvent>
+    </ebucore:hasPublicationHistory>
+    <ebucore:title>Oral History Interview with James Stallmeyer</ebucore:title>
+    <ebucore:title>World War II Central Illinois Stories</ebucore:title>
+    <ebucore:hasTopic>History</ebucore:hasTopic>
+    <ebucore:hasTopic>Military</ebucore:hasTopic>
+    <ebucore:hasGenre>History</ebucore:hasGenre>
+    <ebucore:hasCreator rdf:resource="BrightonJack"/>
+    <ebucore:hasContributor rdf:resource="StallmeyerJames"/>
+    <ebucore:hasRelatedResource rdf:resource="james_stallmeyer_2008-07-01.mp3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="georgemyers2008-03-20">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral History Interview: George Myers of Springfield</rdfs:label>
+    <ebucore:hasPublicationHistory>
+      <ebucore:hasPublicationEvent>
+        <ebucore:publishedStarDateTime>2008-03-20T17:20:00-05:00</ebucore:publishedStarDateTime>
+      </ebucore:hasPublicationEvent>
+    </ebucore:hasPublicationHistory>
+    <ebucore:title>Oral History Interview: George Myers of Springfield</ebucore:title>
+    <ebucore:title>World War II Central Illinois Stories</ebucore:title>
+    <ebucore:hasTopic>History</ebucore:hasTopic>
+    <ebucore:hasTopic>Military</ebucore:hasTopic>
+    <ebucore:hasGenre>History</ebucore:hasGenre>
+    <ebucore:hasCreator rdf:resource="BrightonJack"/>
+    <ebucore:hasContributor rdf:resource="MyersGeorge"/>
+    <ebucore:hasRelatedResource rdf:resource="georgemyers2008-03-20.mp3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jimfisher2008-03-20">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral History Interview: Jim Fisher of Springfield</rdfs:label>
+    <ebucore:hasPublicationHistory>
+      <ebucore:hasPublicationEvent>
+        <ebucore:publishedStarDateTime>2008-03-20T12:06:00-05:00</ebucore:publishedStarDateTime>
+      </ebucore:hasPublicationEvent>
+    </ebucore:hasPublicationHistory>
+    <ebucore:title>Oral History Interview: Jim Fisher of Springfield</ebucore:title>
+    <ebucore:title>World War II Central Illinois Stories</ebucore:title>
+    <ebucore:hasTopic>History</ebucore:hasTopic>
+    <ebucore:hasTopic>Military</ebucore:hasTopic>
+    <ebucore:hasGenre>History</ebucore:hasGenre>
+    <ebucore:hasCreator rdf:resource="BrightonJack"/>
+    <ebucore:hasContributor rdf:resource="FisherJim"/>
+    <ebucore:hasRelatedResource rdf:resource="jimfisher2008-03-20.mp3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="davidfreeman2008-03-19">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral History Interview: David Freeman</rdfs:label>
+    <ebucore:hasPublicationHistory>
+      <ebucore:hasPublicationEvent>
+        <ebucore:publishedStarDateTime>2008-03-19T17:16:00-05:00</ebucore:publishedStarDateTime>
+      </ebucore:hasPublicationEvent>
+    </ebucore:hasPublicationHistory>
+    <ebucore:title>Oral History Interview: David Freeman</ebucore:title>
+    <ebucore:title>World War II Central Illinois Stories</ebucore:title>
+    <ebucore:hasTopic>History</ebucore:hasTopic>
+    <ebucore:hasTopic>Military</ebucore:hasTopic>
+    <ebucore:hasTopic>Race/Ethnicity</ebucore:hasTopic>
+    <ebucore:hasGenre>History</ebucore:hasGenre>
+    <ebucore:hasCreator rdf:resource="BrightonJack"/>
+    <ebucore:hasContributor rdf:resource="FreemanDavid"/>
+    <ebucore:hasRelatedResource rdf:resource="davidfreeman2008-03-19.mp3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="jessedowell2008-03-14">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oral History Interview: Jesse Dowell of Champaign</rdfs:label>
+    <ebucore:hasPublicationHistory>
+      <ebucore:hasPublicationEvent>
+        <ebucore:publishedStarDateTime>2008-03-14T12:03:00-05:00</ebucore:publishedStarDateTime>
+      </ebucore:hasPublicationEvent>
+    </ebucore:hasPublicationHistory>
+    <ebucore:title>Oral History Interview: Jesse Dowell of Champaign</ebucore:title>
+    <ebucore:title>World War II Central Illinois Stories</ebucore:title>
+    <ebucore:hasTopic>History</ebucore:hasTopic>
+    <ebucore:hasTopic>Military</ebucore:hasTopic>
+    <ebucore:hasGenre>History</ebucore:hasGenre>
+    <ebucore:hasCreator rdf:resource="BrightonJack"/>
+    <ebucore:hasContributor rdf:resource="DowellJesse"/>
+    <ebucore:hasRelatedResource rdf:resource="jessedowell2008-03-14.mp3"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="BrightonJack">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brighton, Jack</rdfs:label>
+    <ebucore:agentName>Brighton, Jack</ebucore:agentName>
+    <ebucore:hasRole>web producer</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="BrightonJack">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brighton, Jack</rdfs:label>
+    <ebucore:agentName>Brighton, Jack</ebucore:agentName>
+    <ebucore:hasRole>web producer</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="BrightonJack">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brighton, Jack</rdfs:label>
+    <ebucore:agentName>Brighton, Jack</ebucore:agentName>
+    <ebucore:hasRole>web producer</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="BrightonJack">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brighton, Jack</rdfs:label>
+    <ebucore:agentName>Brighton, Jack</ebucore:agentName>
+    <ebucore:hasRole>web producer</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="BrightonJack">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brighton, Jack</rdfs:label>
+    <ebucore:agentName>Brighton, Jack</ebucore:agentName>
+    <ebucore:hasRole>web producer</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="StallmeyerJames">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stallmeyer, James</rdfs:label>
+    <ebucore:agentName>Stallmeyer, James</ebucore:agentName>
+    <ebucore:hasRole>interviewee</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="MyersGeorge">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Myers, George</rdfs:label>
+    <ebucore:agentName>Myers, George</ebucore:agentName>
+    <ebucore:hasRole>interviewee</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="FisherJim">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fisher, Jim</rdfs:label>
+    <ebucore:agentName>Fisher, Jim</ebucore:agentName>
+    <ebucore:hasRole>interviewee</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="FreemanDavid">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Freeman, David</rdfs:label>
+    <ebucore:agentName>Freeman, David</ebucore:agentName>
+    <ebucore:hasRole>interviewee</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="DowellJesse">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dowell, Jesse</rdfs:label>
+    <ebucore:agentName>Dowell, Jesse</ebucore:agentName>
+    <ebucore:hasRole>interviewee</ebucore:hasRole>
+  </rdf:Description>
+  <rdf:Description rdf:about="james_stallmeyer_2008-07-01.mp3">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">james_stallmeyer_2008-07-01.mp3</rdfs:label>
+    <ebucore:dateIssued>2014-10-14T16:01:45-05:00</ebucore:dateIssued>
+    <ebucore:hasFormat>audio/mpeg3</ebucore:hasFormat>
+    <ebucore:locator>http://will.illinois.edu/nfs/james_stallmeyer_2008&amp;#45;07&amp;#45;01.mp3</ebucore:locator>
+    <ebucore:hasMimeType>Sound</ebucore:hasMimeType>
+    <durationNormalPlayTime>48:46</durationNormalPlayTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="georgemyers2008-03-20.mp3">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">georgemyers2008-03-20.mp3</rdfs:label>
+    <ebucore:dateIssued>2014-10-08T16:44:12-05:00</ebucore:dateIssued>
+    <ebucore:hasFormat>audio/mpeg3</ebucore:hasFormat>
+    <ebucore:locator>http://will.illinois.edu/nfs/georgemyers2008&amp;#45;03&amp;#45;20.mp3</ebucore:locator>
+    <ebucore:hasMimeType>Sound</ebucore:hasMimeType>
+    <durationNormalPlayTime>1:02:13</durationNormalPlayTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="jimfisher2008-03-20.mp3">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jimfisher2008-03-20.mp3</rdfs:label>
+    <ebucore:dateIssued>2014-10-14T16:18:38-05:00</ebucore:dateIssued>
+    <ebucore:hasFormat>audio/mpeg3</ebucore:hasFormat>
+    <ebucore:locator>http://will.illinois.edu/nfs/jimfisher2008&amp;#45;03&amp;#45;20.mp3</ebucore:locator>
+    <ebucore:hasMimeType>Sound</ebucore:hasMimeType>
+    <durationNormalPlayTime>49:48</durationNormalPlayTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="davidfreeman2008-03-19.mp3">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">davidfreeman2008-03-19.mp3</rdfs:label>
+    <ebucore:dateIssued>2014-10-08T16:10:33-05:00</ebucore:dateIssued>
+    <ebucore:hasFormat>audio/mpeg3</ebucore:hasFormat>
+    <ebucore:locator>http://will.illinois.edu/nfs/davidfreeman2008&amp;#45;03&amp;#45;19.mp3</ebucore:locator>
+    <ebucore:hasMimeType>Sound</ebucore:hasMimeType>
+    <durationNormalPlayTime>15:56</durationNormalPlayTime>
+  </rdf:Description>
+  <rdf:Description rdf:about="jessedowell2008-03-14.mp3">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jessedowell2008-03-14.mp3</rdfs:label>
+    <ebucore:dateIssued>2014-10-14T16:04:42-05:00</ebucore:dateIssued>
+    <ebucore:hasFormat>audio/mpeg3</ebucore:hasFormat>
+    <ebucore:locator>http://will.illinois.edu/nfs/jessedowell2008&amp;#45;03&amp;#45;14.mp3</ebucore:locator>
+    <ebucore:hasMimeType>Sound</ebucore:hasMimeType>
+    <durationNormalPlayTime>22:33</durationNormalPlayTime>
+  </rdf:Description>
+</rdf:RDF>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection 
+    collectionTitle="WILL World War II Oral History Project on WILL from Illinois Public Media"
+    collectionDescription="A collection of records from WILL World War II Oral History Project on WILL"
+    collectionSource="Illinois Public Media, University of Illinois at Urbana-Champaign"
+    collectionRef="http://will.illinois.edu/wwii/pbcorecollection"
+    collectionDate="2014-10-16T19:18:20-05:00"
+    xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+    <pbcoreDescriptionDocument>
+        <pbcoreAssetType>Item</pbcoreAssetType>
+        <pbcoreAssetDate dateType="broadcast">2008-07-01T12:02:00-05:00</pbcoreAssetDate>
+        <pbcoreIdentifier source="Illinois Public Media">james-stallmeyer-2008-07-01</pbcoreIdentifier>
+        <pbcoreTitle titleType="Program">World War II Central Illinois Stories</pbcoreTitle>
+        <pbcoreTitle titleType="Episode">Oral History Interview with James Stallmeyer</pbcoreTitle>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">History</pbcoreSubject>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">Military</pbcoreSubject>
+        <pbcoreDescription descriptionType="Abstract"/>
+        <pbcoreGenre source="PBCore Genre list">History</pbcoreGenre>
+        <pbcoreCreator>
+            <creator>Brighton, Jack</creator>
+            <creatorRole>web producer</creatorRole>
+        </pbcoreCreator>
+        <pbcoreContributor>
+            <contributor>Stallmeyer, James</contributor>
+            <contributorRole>interviewee</contributorRole>
+        </pbcoreContributor>
+        <pbcoreInstantiation>
+            <instantiationIdentifier source="Illinois Public Media">james_stallmeyer_2008&#45;07&#45;01.mp3</instantiationIdentifier>
+            <instantiationDate dateType="published">2014-10-14T16:01:45-05:00</instantiationDate>
+            <instantiationDigital>audio/mpeg3</instantiationDigital>
+            <instantiationLocation>http://will.illinois.edu/nfs/james_stallmeyer_2008&amp;#45;07&amp;#45;01.mp3</instantiationLocation>
+            <instantiationMediaType>Sound</instantiationMediaType>
+            <instantiationGenerations>Copy</instantiationGenerations>
+            <instantiationDuration>48:46</instantiationDuration>
+        </pbcoreInstantiation>
+    </pbcoreDescriptionDocument>
+    <pbcoreDescriptionDocument>
+        <pbcoreAssetType>Item</pbcoreAssetType>
+        <pbcoreAssetDate dateType="broadcast">2008-03-20T17:20:00-05:00</pbcoreAssetDate>
+        <pbcoreIdentifier source="Illinois Public Media">georgemyers2008-03-20</pbcoreIdentifier>
+        <pbcoreTitle titleType="Program">World War II Central Illinois Stories</pbcoreTitle>
+        <pbcoreTitle titleType="Episode">Oral History Interview: George Myers of Springfield</pbcoreTitle>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">History</pbcoreSubject>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">Military</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">lst</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">pacific theatre</pbcoreSubject>
+        <pbcoreDescription descriptionType="Abstract">George Myers grew up in Hoopeston on a family farm with his widowed mom. He enrolled in the U of I to major in agriculture, thinking he could learn something to make the farm more successful. Myers served on an LST in the Pacific from 1944 to 1946. He didn&amp;rsquo;t get shot at, but he recalls being scared. &amp;ldquo;I still remember the full moon on the water and how it seemed like we were visible to everybody, but we couldn&amp;rsquo;t see a thing,&amp;rdquo; he said. Myers has been president of the national LST Association. Of the some 100 men on his ship, only about 7 are left.</pbcoreDescription>
+        <pbcoreGenre source="PBCore Genre list">History</pbcoreGenre>
+        <pbcoreCreator>
+            <creator>Brighton, Jack</creator>
+            <creatorRole>web producer</creatorRole>
+        </pbcoreCreator>
+        <pbcoreContributor>
+            <contributor>Myers, George</contributor>
+            <contributorRole>interviewee</contributorRole>
+        </pbcoreContributor>
+        <pbcoreInstantiation>
+            <instantiationIdentifier source="Illinois Public Media">georgemyers2008&#45;03&#45;20.mp3</instantiationIdentifier>
+            <instantiationDate dateType="published">2014-10-08T16:44:12-05:00</instantiationDate>
+            <instantiationDigital>audio/mpeg3</instantiationDigital>
+            <instantiationLocation>http://will.illinois.edu/nfs/georgemyers2008&amp;#45;03&amp;#45;20.mp3</instantiationLocation>
+            <instantiationMediaType>Sound</instantiationMediaType>
+            <instantiationGenerations>Copy</instantiationGenerations>
+            <instantiationDuration>1:02:13</instantiationDuration>
+        </pbcoreInstantiation>
+    </pbcoreDescriptionDocument>
+    <pbcoreDescriptionDocument>
+        <pbcoreAssetType>Item</pbcoreAssetType>
+        <pbcoreAssetDate dateType="broadcast">2008-03-20T12:06:00-05:00</pbcoreAssetDate>
+        <pbcoreIdentifier source="Illinois Public Media">jimfisher2008-03-20</pbcoreIdentifier>
+        <pbcoreTitle titleType="Program">World War II Central Illinois Stories</pbcoreTitle>
+        <pbcoreTitle titleType="Episode">Oral History Interview: Jim Fisher of Springfield</pbcoreTitle>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">History</pbcoreSubject>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">Military</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">navy</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">lst</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">new britain</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">leyte</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">south pacific</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">philippines</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">borneo</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">new guinea</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">kamikaze</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">lct</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">pacific theatre</pbcoreSubject>
+        <pbcoreDescription descriptionType="Abstract">Jim Fisher served in the U.S. Navy on Landing Ship Tank 475. He fought in the battles of New Britain, Leyte Gulf, Lingayen Gulf and others in the South Pacific, Philippines, Borneo and New Guinea.</pbcoreDescription>
+        <pbcoreGenre source="PBCore Genre list">History</pbcoreGenre>
+        <pbcoreCreator>
+            <creator>Brighton, Jack</creator>
+            <creatorRole>web producer</creatorRole>
+        </pbcoreCreator>
+        <pbcoreContributor>
+            <contributor>Fisher, Jim</contributor>
+            <contributorRole>interviewee</contributorRole>
+        </pbcoreContributor>
+        <pbcoreInstantiation>
+            <instantiationIdentifier source="Illinois Public Media">jimfisher2008&#45;03&#45;20.mp3</instantiationIdentifier>
+            <instantiationDate dateType="published">2014-10-14T16:18:38-05:00</instantiationDate>
+            <instantiationDigital>audio/mpeg3</instantiationDigital>
+            <instantiationLocation>http://will.illinois.edu/nfs/jimfisher2008&amp;#45;03&amp;#45;20.mp3</instantiationLocation>
+            <instantiationMediaType>Sound</instantiationMediaType>
+            <instantiationGenerations>Copy</instantiationGenerations>
+            <instantiationDuration>49:48</instantiationDuration>
+        </pbcoreInstantiation>
+    </pbcoreDescriptionDocument>
+    <pbcoreDescriptionDocument>
+        <pbcoreAssetType>Item</pbcoreAssetType>
+        <pbcoreAssetDate dateType="broadcast">2008-03-19T17:16:00-05:00</pbcoreAssetDate>
+        <pbcoreIdentifier source="Illinois Public Media">davidfreeman2008-03-19</pbcoreIdentifier>
+        <pbcoreTitle titleType="Program">World War II Central Illinois Stories</pbcoreTitle>
+        <pbcoreTitle titleType="Episode">Oral History Interview: David Freeman</pbcoreTitle>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">History</pbcoreSubject>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">Military</pbcoreSubject>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">Race/Ethnicity</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">uss missouri</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">navy</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">tuskegee</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">african americans at war</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">pacific theatre</pbcoreSubject>
+        <pbcoreDescription descriptionType="Abstract">Oral history interview with WWII veteran David Freeman</pbcoreDescription>
+        <pbcoreGenre source="PBCore Genre list">History</pbcoreGenre>
+        <pbcoreCreator>
+            <creator>Brighton, Jack</creator>
+            <creatorRole>web producer</creatorRole>
+        </pbcoreCreator>
+        <pbcoreContributor>
+            <contributor>Freeman, David</contributor>
+            <contributorRole>interviewee</contributorRole>
+        </pbcoreContributor>
+        <pbcoreInstantiation>
+            <instantiationIdentifier source="Illinois Public Media">davidfreeman2008&#45;03&#45;19.mp3</instantiationIdentifier>
+            <instantiationDate dateType="published">2014-10-08T16:10:33-05:00</instantiationDate>
+            <instantiationDigital>audio/mpeg3</instantiationDigital>
+            <instantiationLocation>http://will.illinois.edu/nfs/davidfreeman2008&amp;#45;03&amp;#45;19.mp3</instantiationLocation>
+            <instantiationMediaType>Sound</instantiationMediaType>
+            <instantiationGenerations>Copy</instantiationGenerations>
+            <instantiationDuration>15:56</instantiationDuration>
+        </pbcoreInstantiation>
+    </pbcoreDescriptionDocument>
+    <pbcoreDescriptionDocument>
+        <pbcoreAssetType>Item</pbcoreAssetType>
+        <pbcoreAssetDate dateType="broadcast">2008-03-14T12:03:00-05:00</pbcoreAssetDate>
+        <pbcoreIdentifier source="Illinois Public Media">jessedowell2008-03-14</pbcoreIdentifier>
+        <pbcoreTitle titleType="Program">World War II Central Illinois Stories</pbcoreTitle>
+        <pbcoreTitle titleType="Episode">Oral History Interview: Jesse Dowell of Champaign</pbcoreTitle>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">History</pbcoreSubject>
+        <pbcoreSubject subjectType="topic" source="Illinois Public Media">Military</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">navy</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">radar</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">japan</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">submarines</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">land mines</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">anawetok</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">poison gas</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">atom bomb</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">bikini atoll</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">pacific theatre</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">the atomic age</pbcoreSubject>
+        <pbcoreSubject subjectType="folksonomy" source="Illinois Public Media">pvy catalina</pbcoreSubject>
+        <pbcoreDescription descriptionType="Abstract">Jesse Dowell volunteered to join the U.S. Navy Air Corps, serving from August 1944 to August 1947. He trained for the invasion of Japan, going to school double time to be prepared as soon as possible. He completed bombing practice with a new secret radar bombsite, which could bomb for the first time at night in total darkness. The surrender of Japan made the invasion unnecessary.</pbcoreDescription>
+        <pbcoreGenre source="PBCore Genre list">History</pbcoreGenre>
+        <pbcoreCreator>
+            <creator>Brighton, Jack</creator>
+            <creatorRole>web producer</creatorRole>
+        </pbcoreCreator>
+        <pbcoreContributor>
+            <contributor>Dowell, Jesse</contributor>
+            <contributorRole>interviewee</contributorRole>
+        </pbcoreContributor>
+        <pbcoreInstantiation>
+            <instantiationIdentifier source="Illinois Public Media">jessedowell2008&#45;03&#45;14.mp3</instantiationIdentifier>
+            <instantiationDate dateType="published">2014-10-14T16:04:42-05:00</instantiationDate>
+            <instantiationDigital>audio/mpeg3</instantiationDigital>
+            <instantiationLocation>http://will.illinois.edu/nfs/jessedowell2008&amp;#45;03&amp;#45;14.mp3</instantiationLocation>
+            <instantiationMediaType>Sound</instantiationMediaType>
+            <instantiationGenerations>Copy</instantiationGenerations>
+            <instantiationDuration>22:33</instantiationDuration>
+        </pbcoreInstantiation>
+    </pbcoreDescriptionDocument>
+</pbcoreCollection>
