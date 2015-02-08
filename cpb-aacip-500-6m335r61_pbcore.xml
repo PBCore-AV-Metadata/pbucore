@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection>
 <pbcoreDescriptionDocument xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://www.pbcore.org/xsd/pbcore-2.0.xsd">
   <pbcoreAssetDate dateType="issued">1956-01-01</pbcoreAssetDate>
   <pbcoreIdentifier source="National Association of Educational Broadcasters">56-12-3</pbcoreIdentifier>
@@ -79,3 +80,4 @@
   <pbcoreAnnotation annotationType="last_modified">2013-07-26 13:48:52</pbcoreAnnotation>
   <pbcoreAnnotation annotationType="organization">University of Maryland</pbcoreAnnotation>
 </pbcoreDescriptionDocument>
+</pbcoreCollection>
