@@ -73,6 +73,38 @@
                     </xsl:for-each>
                 </rdf:Description>     
             </xsl:for-each>
+
+            <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreCoverage">
+                    <xsl:if test="pbcore:coverageType='Spatial'">
+                        <ebucore:hasCoverage rdf:resource="{pbcore:coverage}"/>
+                        <rdf:Description rdf:about="{pbcore:coverage}">
+                            <rdf:type
+                                rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Location"/>
+                            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                <xsl:value-of select="pbcore:coverage"/>
+                            </rdfs:label>
+                            <ebucore:locationName>
+                                <xsl:value-of select="pbcore:coverage"/>
+                            </ebucore:locationName>
+                        </rdf:Description>
+                       
+                    </xsl:if>
+    
+                    <xsl:if test="pbcore:coverageType='Temporal'">
+                            <ebucore:hasCoverage rdf:resource="{pbcore:coverage}"/>
+                            <rdf:Description rdf:about="{pbcore:coverage}">
+                                <rdf:type
+                                    rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Event"/>
+                                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                    <xsl:value-of select="pbcore:coverage"/>
+                                </rdfs:label>
+                                <ebucore:eventName>
+                                    <xsl:value-of select="pbcore:coverage"/>
+                                </ebucore:eventName>
+                            </rdf:Description>
+                    </xsl:if>
+            </xsl:for-each>
+
             <xsl:for-each select="pbcore:pbcoreCollection/pbcore:pbcoreDescriptionDocument/pbcore:pbcoreCreator">
                 <rdf:Description rdf:about="{concat(substring-before(pbcore:creator,','), substring-after(pbcore:creator,' '))}">
                     <rdf:type
