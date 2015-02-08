@@ -165,6 +165,22 @@
                     <ebucore:hasStorageType>
                         <xsl:value-of select="pbcore:instantiationPhysical"/>
                     </ebucore:hasStorageType>
+                    <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. -->
+                    <ebucore:FileSize>
+                    <xsl:choose>
+                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'K')]">
+                            <xsl:value-of select="pbcore:instantiationFileSize * 1024"/>
+                        </xsl:when>
+                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'M')]">
+                            <xsl:value-of select="pbcore:instantiationFileSize * 1048576"/>
+                        </xsl:when>
+                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'G')]">
+                            <xsl:value-of select="pbcore:instantiationFileSize * 1073741824"/>
+                        </xsl:when>
+                        <xsl:otherwise/>
+                    </xsl:choose>
+                    </ebucore:FileSize>
+                      
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
