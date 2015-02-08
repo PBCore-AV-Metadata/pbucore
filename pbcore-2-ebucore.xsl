@@ -13,7 +13,7 @@
             xmlns:dct="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
             xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
             >
-            
+            <xsl:for-each select="pbcoreCollection">
                 <rdf:Description rdf:about="collection_id1">
                 <rdf:type
                     rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Group"/>
@@ -33,7 +33,7 @@
                         <ebucore:hasMember rdf:resource="{pbcoreIdentifier}"/>
                     </xsl:for-each>
                 </rdf:Description>
-            
+            </xsl:for-each>
             <xsl:for-each select="pbcoreCollection/pbcoreDescriptionDocument">
                 <rdf:Description rdf:about="{pbcoreIdentifier}">
                     <rdf:type
@@ -127,8 +127,5 @@
                 </rdf:Description>                    
             </xsl:for-each>
         </rdf:RDF>
-        <xsl:apply-templates/>
     </xsl:template>
-    
-    
 </xsl:stylesheet>
