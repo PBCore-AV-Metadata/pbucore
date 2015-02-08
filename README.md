@@ -16,3 +16,12 @@ directory. To do this, you'll need ruby as well as the bunder gem. With the `rub
     gem install bundler
     bundle install
     ruby convert.rb
+
+##Workflow for this project
+- Identify node that needs to be worked on
+- Create a GitHub issue
+- Create a branch for the issue
+- Discuss it in the comments section
+- Make your proposed changes 
+- Publish your change 
+- Submit a pull request to the master branch
