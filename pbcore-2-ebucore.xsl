@@ -4,6 +4,7 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
     xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html"
+    xmlns:prov="http://www.w3.org/ns/prov#"
     >
         
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
@@ -50,8 +51,22 @@
                             </ebucore:publishedStarDateTime>
                         </ebucore:hasPublicationEvent>
                     </ebucore:hasPublicationHistory>
+                    <xsl:for-each select="//pbcore:pbcoreTitle">
+                        <rdf:Description rdf:about="Title">
+                        <ebucore:title>
+                            <xsl:value-of select="."/>
+                        </ebucore:title>
+                        <xsl:choose>
+                        <xsl:when test="@source">
+                        <prov:used>
+                            <xsl:value-of select="@source"/>
+                        </prov:used>
+                        </xsl:when>
+                        </xsl:choose>
+                        </rdf:Description>
+                    </xsl:for-each>
                     <ebucore:title>
-                        <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
+                        <xsl:value-of select="pbcore:pbcoreTitle[@titleType='series']"/>
                     </ebucore:title>
                     <ebucore:title>
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Program']"/>
@@ -59,7 +74,7 @@
                     <xsl:for-each select="pbcore:pbcoreSubject[@subjectType='topic']">
                     <ebucore:hasTopic>
                         <xsl:value-of select="self::pbcore:pbcoreSubject"/>    
-                    </ebucore:hasTopic>                
+                    </ebucore:hasTopic>
                     </xsl:for-each>
                     <xsl:for-each select="pbcore:pbcoreGenre">
                         <ebucore:hasGenre>
