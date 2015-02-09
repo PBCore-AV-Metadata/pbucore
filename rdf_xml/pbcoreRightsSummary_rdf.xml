@@ -17,3 +17,15 @@
       </ebucore:hasPublicationEvent>
     </ebucore:hasPublicationHistory>
     <ebucore:title/>
+    <ebucore:title/>
+    <ebucore:hasCreator rdf:resource=""/>
+    <ebucore:hasContributor rdf:resource=""/>
+  </rdf:Description>
+  <rdf:Description rdf:about="">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Rights"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This asset is copyrighted by WGBH.</rdfs:label>
+    <ebucore:rightsExpression>This asset is copyrighted by WGBH.</ebucore:rightsExpression>
+    <ebucore:rightsLink>http://copyright.org</ebucore:rightsLink>
+  </rdf:Description>
+</rdf:RDF>
+
