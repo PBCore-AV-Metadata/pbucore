@@ -18,7 +18,10 @@ directory. To do this, you'll need ruby as well as the bunder gem. With the `rub
     ruby convert.rb
 
 ### Workflow for mapping PBCore elements to EBUCore RDF-XML.
-_This is for members of WGBH/MLA team on Github. If you are not a member of that group, then you can still submit issues and make comments, but you won't be able to push branches._
+_This is for members of WGBH/MLA Github team. If you are not a member of that group, then you can still submit issues and make comments, but you won't be able to push branches. You do not have to be an employee of WGBH to be a member of the WGBH/MLA Github team. If you would like to become a member, contact an existing member._
+
+UPDATE: There is now [a detailed document in the wiki for contributing to this project through the Github web interface](https://github.com/WGBH/pbucore/wiki/Contributing-to-the-project-through-Github-web-interface).
+Please refer to that if you do not plan to use `git` from the command line. Otherwise, the steps below are still applicable.
 
 1. Identify a pbcore node you intend to work on. E.g. `<pbcoreAudienceLevel>`.
 1. Create a GitHub issue, name it appropriately. E.g. "Figure out mapping of pbcoreAudienceLevel".
