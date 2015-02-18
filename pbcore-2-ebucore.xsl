@@ -192,7 +192,19 @@
                         </xsl:otherwise>
                     </xsl:choose>
                     </ebucore:FileSize>
-                      
+                    <ebucore:bitrate>
+                        <xsl:choose>
+                            <xsl:when test="pbcore:instantiationDataRate[contains(@unitsOfMeasure, 'K')]">
+                                <xsl:value-of select="pbcore:instantiationDataRate * 1000"/>
+                            </xsl:when>
+                            <xsl:when test="pbcore:instantiationDataRate[contains(@unitsOfMeasure, 'M')]">
+                                <xsl:value-of select="pbcore:instantiationDataRate * 1000000"/>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <xsl:value-of select="pbcore:instantiationDataRate"/>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                    </ebucore:bitrate>  
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
