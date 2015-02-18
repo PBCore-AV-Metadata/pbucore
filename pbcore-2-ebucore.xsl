@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
@@ -142,6 +142,21 @@
                         <xsl:value-of select="pbcore:publisherRole"/>
                     </ebucore:hasRole>
                 </rdf:Description>
+            </xsl:for-each>
+            <xsl:for-each select="//pbcore:pbcoreRightsSummary">
+            <rdf:Description rdf:about="{concat(substring-before(pbcore:rights,','), substring-after(pbcore:rights,' '))}">
+                <rdf:type
+                    rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Rights"/>
+                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                    <xsl:value-of select="pbcore:rightsSummary"/>
+                </rdfs:label>
+                <ebucore:rightsExpression>
+                    <xsl:value-of select="pbcore:rightsSummary"/>
+                </ebucore:rightsExpression>
+                <ebucore:rightsLink>
+                    <xsl:value-of select="pbcore:rightsLink"/>
+                </ebucore:rightsLink>
+            </rdf:Description>
             </xsl:for-each>
             <xsl:for-each select="//pbcore:pbcoreInstantiation">
                 <rdf:Description rdf:about="{pbcore:instantiationIdentifier}">
