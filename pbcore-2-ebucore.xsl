@@ -407,6 +407,10 @@
                             select="self::pbcore:instantiationAnnotation[annotationType='alternate generation']"
                         />
                     </pbcorerdf:alternateGeneration>
+                    <ebucore:hasCodec>
+                        <xsl:value-of
+                            select="pbcore:instantiationAnnotation[@annotationType='encoded by']"/>
+                    </ebucore:hasCodec>
                     
                     
                     
