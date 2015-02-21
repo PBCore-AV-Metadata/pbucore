@@ -361,6 +361,18 @@
                     <ebucore:hasStorageType>
                         <xsl:value-of select="pbcore:instantiationPhysical"/>
                     </ebucore:hasStorageType>
+                    <!-- ALTERNATIVE TO STORAGE TYPE: option 1 -->
+                    <ebucore:hasMedium>
+                        <xsl:value-of select="pbcore:instantiationPhysical"/>
+                    </ebucore:hasMedium>
+                    <!-- option 2 using class medium if skos vocabulary-->
+                    <!--ebucore:hasMedium>
+                        <ebucore:Medium>
+                            <skos:preferredLabel>
+                                <xsl:value-of select="pbcore:instantiationPhysical"/>
+                            </skos:preferredLabel>
+                        </ebucore:Medium>
+                    </ebucore:hasMedium-->
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
                     <ebucore:fileSize>
                         <xsl:choose>
