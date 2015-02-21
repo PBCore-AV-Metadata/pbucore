@@ -44,14 +44,6 @@
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
                     </rdfs:label>
-                    <ebucore:hasPublicationHistory>
-                        <ebucore:hasPublicationEvent>
-                            <ebucore:publishedStarDateTime>
-                                <xsl:value-of select="pbcore:pbcoreAssetDate[@dateType='broadcast']"
-                                />
-                            </ebucore:publishedStarDateTime>
-                        </ebucore:hasPublicationEvent>
-                    </ebucore:hasPublicationHistory>
                     <pbcore:episodeTitle>
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
                     </pbcore:episodeTitle>
@@ -214,6 +206,16 @@
                             <!-- different implementation if vocabulary of events and periods -->
                         </xsl:if>
                     </xsl:for-each>
+                    <prov:generatedAtTime>
+                        <xsl:value-of
+                            select="pbcore:pbcoreAnnotation[@annotationType='last_modified']"/>
+                    </prov:generatedAtTime>
+                    <prov:Organization>
+                        <foaf:name>
+                            <xsl:value-of
+                                select="pbcore:pbcoreAnnotation[@annotationType='organization']"/>
+                        </foaf:name>
+                    </prov:Organization>
                     <xsl:for-each select="pbcore:pbcoreInstantiation">
                         <!-- same question on the instantiation ID to be used across instantiations - must be URI friendly -->
                         <ebucore:hasRelatedResource rdf:resource="{pbcore:instantiationIdentifier}"
