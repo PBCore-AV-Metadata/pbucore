@@ -373,6 +373,11 @@
                             </skos:preferredLabel>
                         </ebucore:Medium>
                     </ebucore:hasMedium-->
+                    <!-- option 1 -->
+                    <ebucore:hasMimeType>
+                        <xsl:value-of select="pbcore:instantiationDigital"/>
+                    </ebucore:hasMimeType>
+                    <!-- option 2 using class mimetype if skos vocabulary-->
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
                     <ebucore:fileSize>
                         <xsl:choose>
