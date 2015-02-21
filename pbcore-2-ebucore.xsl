@@ -5,8 +5,7 @@
     xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
     xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html"
     xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#"
-    xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
-    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:prov="http://www.w3.org/ns/prov#"
     xmlns:foaf="xmlns.com/foaf/0.1/">
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
@@ -132,47 +131,87 @@
                         </ebucore:identifier>
                     </xsl:for-each>
                     <xsl:for-each select="pbcore:pbcoreGenre">
+                        <!-- Option 1 -->
                         <ebucore:hasGenre>
                             <xsl:value-of select="self::pbcore:pbcoreGenre"/>
+                        </ebucore:hasGenre>
+                        <!-- Option 2 -->
+                        <ebucore:hasGenre>
+                            <rdf:Description rdf:about="{pbcore:pbcoreGenre}">
+                                <rdf:type rdf:resource="http://www.pbcore.org/pbcore/ebucore:Genre"/>
+                                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                    <xsl:value-of select="pbcore:pbcoreGenre"/>
+                                </rdfs:label>
+                                <skos:preferredLabel>
+                                    <xsl:value-of select="self::pbcore:pbcoreGenre"/>
+                                </skos:preferredLabel>
+                            </rdf:Description>
                         </ebucore:hasGenre>
                     </xsl:for-each>
                     <ebucore:hasCreator
                         rdf:resource="{concat(substring-before(pbcore:pbcoreCreator/pbcore:creator,','), substring-after(pbcore:pbcoreCreator/pbcore:creator,' '))}"/>
                     <ebucore:hasContributor
                         rdf:resource="{concat(substring-before(pbcore:pbcoreContributor/pbcore:contributor,','), substring-after(pbcore:pbcoreContributor/pbcore:contributor,' '))}"/>
+                    <!-- ALTERNATIVE OPTIONS FOR CREATOR-CONTRIBUTOR-PUBLISHER to avoid blank nodes in absence of vocabularies or other resources -->
+                    <xsl:for-each select="pbcore:pbcoreCreator">
+                        <!-- option 1 -->
+                        <!-- if persons/Contacts or organizations are not defined as classes -->
+                        <xsl:if test="contains(pbcore:creatorRole,'Production Unit')">
+                            <pbcorerdf:hasProductionUnit>
+                                <xsl:value-of select="pbcore:creator"/>
+                            </pbcorerdf:hasProductionUnit>
+                        </xsl:if>
+                        <xsl:if test="contains(pbcore:creatorRole,'Producer')">
+                            <pbcorerdf:hasProducer>
+                                <xsl:value-of select="pbcore:creator"/>
+                            </pbcorerdf:hasProducer>
+                        </xsl:if>
+                        <xsl:if test=" string(pbcore:creatorRole)=''">
+                            <pbcorerdf:hasCreator>
+                                <xsl:value-of select="pbcore:creator"/>
+                            </pbcorerdf:hasCreator>
+                        </xsl:if>
+                        <!-- option 2 use hasCreator + agent or cast or staff -->
+                    </xsl:for-each>
+                    <xsl:for-each select="pbcore:pbcoreContributor">
+                        <!-- option1 -->
+                        <!-- if persons/Contacts or organizations are not defined as classes -->
+                        <!--xsl:if test="contains(pbcore:pbcoreContributorRole,'productionUnit')">
+                            <ebucore:hasProductionUnit>
+                                <xsl:value-of select="pbcore:pbcoreContributor/pbcore:contributor"/>
+                            </ebucore:hasProductionUnit>
+                        </xsl:if-->
+                        <!-- option 2 use hasContributor + agent or cast or staff -->
+                    </xsl:for-each>
+                    <xsl:for-each select="pbcore:pbcorePublisher">
+                        <ebucore:hasPublisher>
+                            <!-- same as option 1 and 2 above -->
+                            <!-- how long is the list of types of publishers -->
+                            <xsl:value-of select="pbcore:publisher"/>
+                        </ebucore:hasPublisher>
+                    </xsl:for-each>
+                    <ebucore:hasRightsSummary>
+                        <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsSummary"/>
+                    </ebucore:hasRightsSummary>
+                    <ebucore:hasRightsLink>
+                        <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsLink"/>
+                    </ebucore:hasRightsLink>
+                    <xsl:for-each select="//pbcore:pbcoreCoverage">
+                        <xsl:if test="pbcore:coverageType='Spatial'">
+                            <ebucore:hasLocation rdf:resource="{pbcore:coverage}"/>
+                            <!-- different implementation if vocabulary of places and location or using geonames -->
+                        </xsl:if>
+                        <xsl:if test="pbcore:coverageType='Temporal'">
+                            <ebucore:hasEvent rdf:resource="{pbcore:coverage}"/>
+                            <!-- different implementation if vocabulary of events and periods -->
+                        </xsl:if>
+                    </xsl:for-each>
                     <xsl:for-each select="pbcore:pbcoreInstantiation">
+                        <!-- same question on the instantiation ID to be used across instantiations - must be URI friendly -->
                         <ebucore:hasRelatedResource rdf:resource="{pbcore:instantiationIdentifier}"
                         />
                     </xsl:for-each>
                 </rdf:Description>
-            </xsl:for-each>
-            <xsl:for-each select="//pbcore:pbcoreCoverage">
-                <xsl:if test="pbcore:coverageType='Spatial'">
-                    <ebucore:hasCoverage rdf:resource="{pbcore:coverage}"/>
-                    <rdf:Description rdf:about="{pbcore:coverage}">
-                        <rdf:type
-                            rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Location"/>
-                        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                            <xsl:value-of select="pbcore:coverage"/>
-                        </rdfs:label>
-                        <ebucore:locationName>
-                            <xsl:value-of select="pbcore:coverage"/>
-                        </ebucore:locationName>
-                    </rdf:Description>
-                </xsl:if>
-                <xsl:if test="pbcore:coverageType='Temporal'">
-                    <ebucore:hasCoverage rdf:resource="{pbcore:coverage}"/>
-                    <rdf:Description rdf:about="{pbcore:coverage}">
-                        <rdf:type
-                            rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Event"/>
-                        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
-                            <xsl:value-of select="pbcore:coverage"/>
-                        </rdfs:label>
-                        <ebucore:eventName>
-                            <xsl:value-of select="pbcore:coverage"/>
-                        </ebucore:eventName>
-                    </rdf:Description>
-                </xsl:if>
             </xsl:for-each>
             <xsl:for-each select="//pbcore:pbcoreCreator">
                 <rdf:Description
@@ -252,38 +291,31 @@
                         <xsl:value-of select="pbcore:instantiationPhysical"/>
                     </ebucore:hasStorageType>
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
-                    <ebucore:fileSize>
-                    <xsl:choose>
-                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'K')]">
-                            <xsl:value-of select="pbcore:instantiationFileSize * 1024"/>
-                        </xsl:when>
-                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'M')]">
-                            <xsl:value-of select="pbcore:instantiationFileSize * 1048576"/>
-                        </xsl:when>
-                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'G')]">
-                            <xsl:value-of select="pbcore:instantiationFileSize * 1073741824"/>
-                        </xsl:when>
-                        <xsl:when test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'T')]">
-                            <xsl:value-of select="pbcore:instantiationFileSize * 1099511627776"/>
-                        </xsl:when>
-                        <xsl:otherwise>
-                            <xsl:value-of select="pbcore:instantiationFileSize"/>
-                        </xsl:otherwise>
-                    </xsl:choose>
-                    </ebucore:fileSize>
-                    <ebucore:bitrate>
+                    <ebucore:FileSize>
                         <xsl:choose>
-                            <xsl:when test="pbcore:instantiationDataRate[contains(@unitsOfMeasure, 'K')]">
-                                <xsl:value-of select="pbcore:instantiationDataRate * 1000"/>
+                            <xsl:when
+                                test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'K')]">
+                                <xsl:value-of select="pbcore:instantiationFileSize * 1024"/>
                             </xsl:when>
-                            <xsl:when test="pbcore:instantiationDataRate[contains(@unitsOfMeasure, 'M')]">
-                                <xsl:value-of select="pbcore:instantiationDataRate * 1000000"/>
+                            <xsl:when
+                                test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'M')]">
+                                <xsl:value-of select="pbcore:instantiationFileSize * 1048576"/>
+                            </xsl:when>
+                            <xsl:when
+                                test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'G')]">
+                                <xsl:value-of select="pbcore:instantiationFileSize * 1073741824"/>
+                            </xsl:when>
+                            <xsl:when
+                                test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'T')]">
+                                <xsl:value-of select="pbcore:instantiationFileSize * 1099511627776"
+                                />
                             </xsl:when>
                             <xsl:otherwise>
-                                <xsl:value-of select="pbcore:instantiationDataRate"/>
+                                <xsl:value-of select="pbcore:instantiationFileSize"/>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </ebucore:bitrate>  
+                    </ebucore:FileSize>
+
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
