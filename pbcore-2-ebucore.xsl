@@ -56,6 +56,11 @@
                     <ebucore:title>
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Program']"/>
                     </ebucore:title>
+                    <xsl:for-each select="pbcore:pbcoreDescription">
+                        <ebucore:description>
+                            <xsl:value-of select="."/>
+                        </ebucore:description>
+                    </xsl:for-each>
                     <xsl:for-each select="pbcore:pbcoreSubject[@subjectType='topic']">
                         <ebucore:hasTopic>
                             <xsl:value-of select="self::pbcore:pbcoreSubject"/>
