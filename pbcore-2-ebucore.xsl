@@ -411,9 +411,6 @@
                         <xsl:value-of
                             select="pbcore:instantiationAnnotation[@annotationType='encoded by']"/>
                     </ebucore:hasCodec>
-                    
-                    
-                    
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
                     <ebucore:fileSize>
                         <xsl:choose>
@@ -439,6 +436,11 @@
                             </xsl:otherwise>
                         </xsl:choose>
                     </ebucore:fileSize>
+                    <!-- conversion en bps -->
+                    <ebucore:bitRate>
+                        <xsl:value-of select="pbcore:instantiationDataRate"/>
+                    </ebucore:bitRate>
+                    
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
