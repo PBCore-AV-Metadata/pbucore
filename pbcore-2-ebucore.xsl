@@ -445,6 +445,14 @@
                             select="pbcore:instantiationAnnotation[@annotationType='Alternate Format']"
                         />
                     </pbcorerdf:hasAlternateFormat>
+                    <pbcorerdf:AACIP_RecordNominationStatus>
+                        <xsl:if
+                            test="contains(pbcore:instantiationExtension/pbcore:extensionWrap/pbcore:extensionElement,'AACIP Record Nomination Status')">
+                            <xsl:value-of
+                                select="pbcore:instantiationExtension/pbcore:extensionWrap/pbcore:extensionValue"
+                            />
+                        </xsl:if>
+                    </pbcorerdf:AACIP_RecordNominationStatus>
                     
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
