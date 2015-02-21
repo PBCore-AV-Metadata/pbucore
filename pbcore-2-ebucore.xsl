@@ -278,6 +278,60 @@
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                         <xsl:value-of select="pbcore:instantiationIdentifier"/>
                     </rdfs:label>
+                    <xsl:for-each select="pbcore:instantiationIdentifier">
+                        <!-- after further evaluation: (better than blank nodes)-->
+                        <!--create pbcore identifiers defining subproperties per source -->
+                        <xsl:if test="contains(@source,'MARS Barcode')">
+                            <pbcorerdf:marsBarcode>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:marsBarcode>
+                        </xsl:if>
+                        <xsl:if test="contains(@source,'MARS File Number')">
+                            <pbcorerdf:marsFileNumber>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:marsFileNumber>
+                        </xsl:if>
+                        <xsl:if test="contains(@source,'Tape Label')">
+                            <pbcorerdf:tapeLabelId>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:tapeLabelId>
+                        </xsl:if>
+                        <xsl:if test="contains(@source,'mediainfo')">
+                            <pbcorerdf:mediainfo>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:mediainfo>
+                        </xsl:if>
+                        <xsl:if test="contains(@source,'WAMU')">
+                            <pbcorerdf:wamuId>
+                                <xsl:value-of select="self::pbcore:pbcoreIdentifier"/>
+                            </pbcorerdf:wamuId>
+                        </xsl:if>
+                        <xsl:if
+                            test="contains(@source,'National Association of Educational Broadcasters')">
+                            <pbcorerdf:naeb_Id>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:naeb_Id>
+                        </xsl:if>
+                        <xsl:if test="contains(@source,'University of Maryland')">
+                            <pbcorerdf:universityOfMaryland_Id>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:universityOfMaryland_Id>
+                        </xsl:if>
+                        <xsl:if test="contains(@source,'WGBH Barcode')">
+                            <pbcorerdf:wgbhBarcode>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:wgbhBarcode>
+                        </xsl:if>
+                        <xsl:if test="contains(@source,'WGBH File Number')">
+                            <pbcorerdf:wgbhFileNumber>
+                                <xsl:value-of select="self::pbcore:instantiationIdentifier"/>
+                            </pbcorerdf:wgbhFileNumber>
+                        </xsl:if>
+                        <!-- option 2: concat pbcore:identifier with source -->
+                        <ebucore:identifier>
+                            <xsl:value-of select="concat(@source,' - ',.)"/>
+                        </ebucore:identifier>
+                    </xsl:for-each>
                     <xsl:for-each select="pbcore:instantiationDate">
                         <ebucore:dateIssued>
                             <xsl:if test="@dateType='published'">
@@ -301,7 +355,7 @@
                         <xsl:value-of select="pbcore:instantiationPhysical"/>
                     </ebucore:hasStorageType>
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
-                    <ebucore:FileSize>
+                    <ebucore:fileSize>
                         <xsl:choose>
                             <xsl:when
                                 test="pbcore:instantiationFileSize[contains(@unitsOfMeasure,'K')]">
@@ -324,8 +378,7 @@
                                 <xsl:value-of select="pbcore:instantiationFileSize"/>
                             </xsl:otherwise>
                         </xsl:choose>
-                    </ebucore:FileSize>
-
+                    </ebucore:fileSize>
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
