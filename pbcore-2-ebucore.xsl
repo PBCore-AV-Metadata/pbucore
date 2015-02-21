@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- A new namespace pbcorerdf has been added with a structure more appropriate for RDF  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
     xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html"
+    xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#"
     >
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
@@ -27,6 +29,8 @@
                     <ebucore:date>
                         <xsl:value-of select="@collectionDate"/>
                     </ebucore:date>
+                    <!-- COMMENT: DO ALL DESCRIPTIONDOCUMENT SHARE ONE TYPE OF ID IN COMMON THAT SHOULD BE USED E.G. "MARS ASSET RECORD ID" -->
+                    <!-- OTHERWISE THE CURRENT TRANSFORMATION TAKES THE FIRST IDENTIFIER AS IT APPEARS (RANDOM?) -->
                     <xsl:for-each select="pbcore:pbcoreDescriptionDocument">
                         <ebucore:hasMember rdf:resource="{pbcore:pbcoreIdentifier}"/>
                     </xsl:for-each>
@@ -58,6 +62,9 @@
                             <xsl:value-of select="self::pbcore:pbcoreSubject"/>
                         </ebucore:hasTopic>
                     </xsl:for-each>
+                    <ebucore:hasObjectType>
+                        <xsl:value-of select="self::pbcore:pbcoreAssetType"/>
+                    </ebucore:hasObjectType>
                     <xsl:for-each select="pbcore:pbcoreGenre">
                         <ebucore:hasGenre>
                             <xsl:value-of select="self::pbcore:pbcoreGenre"/>
