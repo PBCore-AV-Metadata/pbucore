@@ -440,6 +440,11 @@
                     <ebucore:bitRate>
                         <xsl:value-of select="pbcore:instantiationDataRate"/>
                     </ebucore:bitRate>
+                    <pbcorerdf:hasAlternateFormat>
+                        <xsl:value-of
+                            select="pbcore:instantiationAnnotation[@annotationType='Alternate Format']"
+                        />
+                    </pbcorerdf:hasAlternateFormat>
                     
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
