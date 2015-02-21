@@ -205,6 +205,12 @@
                     </xsl:for-each>
                 </rdf:Description>
             </xsl:for-each>
+                    <ebucore:hasRightsSummary>
+                        <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsSummary"/>
+                    </ebucore:hasRightsSummary>
+                    <ebucore:hasRightsLink>
+                        <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsLink"/>
+                    </ebucore:hasRightsLink>
             <xsl:for-each select="//pbcore:pbcoreCoverage">
                 <xsl:if test="pbcore:coverageType='Spatial'">
                     <ebucore:hasLocation rdf:resource="{pbcore:coverage}"/>
