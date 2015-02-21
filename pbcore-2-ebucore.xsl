@@ -53,12 +53,15 @@
                             </ebucore:publishedStarDateTime>
                         </ebucore:hasPublicationEvent>
                     </ebucore:hasPublicationHistory>
-                    <ebucore:title>
+                    <pbcore:episodeTitle>
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
-                    </ebucore:title>
-                    <ebucore:title>
+                    </pbcore:episodeTitle>
+                    <pbcore:seriesTitle>
+                        <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Series']"/>
+                    </pbcore:seriesTitle>
+                    <pbcore:programTitle>
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Program']"/>
-                    </ebucore:title>
+                    </pbcore:programTitle>
                     <xsl:for-each select="pbcore:pbcoreDescription">
                         <ebucore:description>
                             <xsl:value-of select="."/>
