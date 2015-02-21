@@ -333,14 +333,21 @@
                         </ebucore:identifier>
                     </xsl:for-each>
                     <xsl:for-each select="pbcore:instantiationDate">
-                        <ebucore:dateIssued>
-                            <xsl:if test="@dateType='published'">
+                        <ebucore:dateCreated>
+                            <xsl:if test="@dateType='created'">
                                 <xsl:value-of select="."/>
                             </xsl:if>
-                            <xsl:if test="@dateType='encoded'">
+                        </ebucore:dateCreated>
+                        <ebucore:dateIssued>
+                            <xsl:if test="@dateType='published' or @dateType='issued'">
                                 <xsl:value-of select="."/>
                             </xsl:if>
                         </ebucore:dateIssued>
+                        <ebucore:dateDigitised>
+                            <xsl:if test="@dateType='encoded'">
+                                <xsl:value-of select="."/>
+                            </xsl:if>
+                        </ebucore:dateDigitised>
                     </xsl:for-each>
                     <ebucore:hasFormat>
                         <xsl:value-of select="pbcore:instantiationPhysical"/>
