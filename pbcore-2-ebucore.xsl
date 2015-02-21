@@ -154,6 +154,44 @@
                         rdf:resource="{concat(substring-before(pbcore:pbcoreCreator/pbcore:creator,','), substring-after(pbcore:pbcoreCreator/pbcore:creator,' '))}"/>
                     <ebucore:hasContributor
                         rdf:resource="{concat(substring-before(pbcore:pbcoreContributor/pbcore:contributor,','), substring-after(pbcore:pbcoreContributor/pbcore:contributor,' '))}"/>
+                    <!-- ALTERNATIVE OPTIONS FOR CREATOR-CONTRIBUTOR-PUBLISHER -->
+                    <xsl:for-each select="pbcore:pbcoreCreator">
+                        <!-- option 1 -->
+                        <!-- if persons/Contacts or organizations are not defined as classes -->
+                        <xsl:if test="contains(pbcore:creatorRole,'Production Unit')">
+                            <pbcorerdf:hasProductionUnit>
+                                <xsl:value-of select="pbcore:creator"/>
+                            </pbcorerdf:hasProductionUnit>
+                        </xsl:if>
+                        <xsl:if test="contains(pbcore:creatorRole,'Producer')">
+                            <pbcorerdf:hasProducer>
+                                <xsl:value-of select="pbcore:creator"/>
+                            </pbcorerdf:hasProducer>
+                        </xsl:if>
+                        <xsl:if test=" string(pbcore:creatorRole)=''">
+                            <pbcorerdf:hasCreator>
+                                <xsl:value-of select="pbcore:creator"/>
+                            </pbcorerdf:hasCreator>
+                        </xsl:if>
+                        <!-- option 2 use hasCreator + agent or cast or staff -->
+                    </xsl:for-each>
+                    <xsl:for-each select="pbcore:pbcoreContributor">
+                        <!-- option1 -->
+                        <!-- if persons/Contacts or organizations are not defined as classes -->
+                        <!--xsl:if test="contains(pbcore:pbcoreContributorRole,'productionUnit')">
+                            <ebucore:hasProductionUnit>
+                                <xsl:value-of select="pbcore:pbcoreContributor/pbcore:contributor"/>
+                            </ebucore:hasProductionUnit>
+                        </xsl:if-->
+                        <!-- option 2 use hasContributor + agent or cast or staff -->
+                    </xsl:for-each>
+                    <xsl:for-each select="pbcore:pbcorePublisher">
+                        <ebucore:hasPublisher>
+                            <!-- same as option 1 and 2 above -->
+                            <!-- how long is the list of types of publishers -->
+                            <xsl:value-of select="pbcore:publisher"/>
+                        </ebucore:hasPublisher>
+                    </xsl:for-each>
                     <xsl:for-each select="pbcore:pbcoreInstantiation">
                         <ebucore:hasRelatedResource rdf:resource="{pbcore:instantiationIdentifier}"
                         />
