@@ -42,14 +42,6 @@
                     <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
                     </rdfs:label>
-                    <ebucore:hasPublicationHistory>
-                        <ebucore:hasPublicationEvent>
-                            <ebucore:publishedStarDateTime>
-                                <xsl:value-of select="pbcore:pbcoreAssetDate[@dateType='broadcast']"
-                                />
-                            </ebucore:publishedStarDateTime>
-                        </ebucore:hasPublicationEvent>
-                    </ebucore:hasPublicationHistory>
                     <ebucore:title>
                         <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
                     </ebucore:title>
