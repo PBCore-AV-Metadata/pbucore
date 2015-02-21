@@ -398,6 +398,15 @@
                     <ebucore:audioTrackConfiguration>
                         <xsl:value-of select="pbcore:instantiationChannelConfiguration"/>
                     </ebucore:audioTrackConfiguration>
+                    <pbcorerdf:instantiationAlternativeModes>
+                        <!-- string or boolean? -->
+                        <xsl:value-of select="pbcore:instantiationAlternativeModes"/>
+                    </pbcorerdf:instantiationAlternativeModes>
+                    <pbcorerdf:alternateGeneration>
+                        <xsl:value-of
+                            select="self::pbcore:instantiationAnnotation[annotationType='alternate generation']"
+                        />
+                    </pbcorerdf:alternateGeneration>
                     
                     
                     
