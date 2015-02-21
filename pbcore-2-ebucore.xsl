@@ -386,6 +386,9 @@
                     <ebucore:locator>
                         <xsl:value-of select="pbcore:instantiationLocation"/>
                     </ebucore:locator>
+                    <pbcorerdf:hasMediaType>
+                        <xsl:value-of select="pbcore:instantiationMediaType"/>
+                    </pbcorerdf:hasMediaType>
                     
                     
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
