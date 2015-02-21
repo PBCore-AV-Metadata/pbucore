@@ -395,6 +395,10 @@
                     <pbcorerdf:instantiationTracks>
                         <xsl:value-of select="pbcore:instantiationTracks"/>
                     </pbcorerdf:instantiationTracks>
+                    <ebucore:audioTrackConfiguration>
+                        <xsl:value-of select="pbcore:instantiationChannelConfiguration"/>
+                    </ebucore:audioTrackConfiguration>
+                    
                     
                     
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
