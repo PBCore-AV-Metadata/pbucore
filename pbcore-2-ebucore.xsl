@@ -389,6 +389,12 @@
                     <pbcorerdf:hasMediaType>
                         <xsl:value-of select="pbcore:instantiationMediaType"/>
                     </pbcorerdf:hasMediaType>
+                    <pbcorerdf:generations>
+                        <xsl:value-of select="pbcore:instantiationGenerations"/>
+                    </pbcorerdf:generations>
+                    <pbcorerdf:instantiationTracks>
+                        <xsl:value-of select="pbcore:instantiationTracks"/>
+                    </pbcorerdf:instantiationTracks>
                     
                     
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
