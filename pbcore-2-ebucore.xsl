@@ -453,10 +453,144 @@
                             />
                         </xsl:if>
                     </pbcorerdf:AACIP_RecordNominationStatus>
-                    
                     <durationNormalPlayTime>
                         <xsl:value-of select="pbcore:instantiationDuration"/>
                     </durationNormalPlayTime>
+                    <xsl:for-each select="pbcore:instantiationEssenceTrack">
+                        <!-- inconsistent naming convention like General starting with a capital letter and not the others -->
+                        <xsl:if test="pbcore:essenceTrackType='video'">
+                            <ebucore:hasTrack>
+                                <rdf:Description
+                                    rdf:about="{concat(../pbcore:instantiationIdentifier,'.',pbcore:essenceTrackType,pbcore:essenceTrackIdentifier)}">
+                                    <rdf:type
+                                        rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#VideoTrack"/>
+                                    <rdfs:label
+                                        rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                        <xsl:value-of
+                                            select="concat(pbcore:essenceTrackType,pbcore:essenceTrackIdentifier)"
+                                        />
+                                    </rdfs:label>
+                                    <ebucore:trackName>
+                                        <xsl:value-of
+                                            select="concat(pbcore:essenceTrackType,pbcore:essenceTrackIdentifier)"
+                                        />
+                                    </ebucore:trackName>
+                                    <pbcorerdf:mediaInfo>
+                                        <xsl:value-of
+                                            select="pbcore:essenceTrackIdentifier[@source='mediainfo']"
+                                        />
+                                    </pbcorerdf:mediaInfo>
+                                    <ebucore:hasVideoEncodingFormat>
+                                        <!-- missing ref -->
+                                        <xsl:value-of select="pbcore:essenceTrackEncoding"/>
+                                    </ebucore:hasVideoEncodingFormat>
+                                    <ebucore:bitRate>
+                                        <xsl:value-of select="pbcore:essenceTrackDataRate"/>
+                                    </ebucore:bitRate>
+                                    <ebucore:frameRate>
+                                        <xsl:value-of select="pbcore:essenceTrackFrameRate"/>
+                                    </ebucore:frameRate>
+                                    <pbcorerdf:frameSize>
+                                        <xsl:value-of select="pbcore:essenceTrackFrameSize"/>
+                                    </pbcorerdf:frameSize>
+                                    <ebucore:aspectRatio>
+                                        <xsl:value-of select="pbcore:essenceTrackAspectRatio"/>
+                                    </ebucore:aspectRatio>
+                                    <ebucore:bitDepth>
+                                        <xsl:value-of select="pbcore:essenceTrackBitDepth"/>
+                                    </ebucore:bitDepth>
+                                    <pbcorerdf:colorSpace>
+                                        <xsl:value-of
+                                            select="pbcore:essenceTrackAnnotation[@annotationType='colorspace']"
+                                        />
+                                    </pbcorerdf:colorSpace>
+                                    <pbcorerdf:subSampling>
+                                        <xsl:value-of
+                                            select="pbcore:essenceTrackAnnotation[@annotationType='subsampling']"
+                                        />
+                                    </pbcorerdf:subSampling>
+                                    <ebucore:durationNormalPlayTime>
+                                        <xsl:value-of select="pbcore:essenceTrackDuration"/>
+                                    </ebucore:durationNormalPlayTime>
+                                </rdf:Description>
+                            </ebucore:hasTrack>
+                        </xsl:if>
+                        <xsl:if test="pbcore:essenceTrackType='audio'">
+                            <ebucore:hasTrack>
+                                <rdf:Description
+                                    rdf:about="{concat(../pbcore:instantiationIdentifier,'.',pbcore:essenceTrackType,pbcore:essenceTrackIdentifier)}">
+                                    <rdf:type
+                                        rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+                                    <rdfs:label
+                                        rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                        <xsl:value-of
+                                            select="concat(pbcore:essenceTrackType,pbcore:essenceTrackIdentifier)"
+                                        />
+                                    </rdfs:label>
+                                    <ebucore:trackName>
+                                        <xsl:value-of
+                                            select="concat(pbcore:essenceTrackType,pbcore:essenceTrackIdentifier)"
+                                        />
+                                    </ebucore:trackName>
+                                    <ebucore:identifier>
+                                        <xsl:value-of select="pbcore:essenceTrackIdentifier"/>
+                                    </ebucore:identifier>
+                                    <ebucore:hasAudioEncodingFormat>
+                                        <xsl:value-of
+                                            select="concat(pbcore:essenceTrackEncoding/@ref,' ',pbcore:essenceTrackEncoding)"
+                                        />
+                                    </ebucore:hasAudioEncodingFormat>
+                                    <ebucore:bitRate>
+                                        <xsl:value-of select="pbcore:essenceTrackDataRate"/>
+                                    </ebucore:bitRate>
+                                    <ebucore:frameRate>
+                                        <xsl:value-of select="pbcore:essenceTrackSamplingRate"/>
+                                    </ebucore:frameRate>
+                                    <ebucore:sampleSize>
+                                        <xsl:value-of select="pbcore:essenceTrackBitDepth"/>
+                                    </ebucore:sampleSize>
+                                    <ebucore:durationNormalPlayTime>
+                                        <xsl:value-of select="pbcore:essenceTrackDuration"/>
+                                    </ebucore:durationNormalPlayTime>
+                                </rdf:Description>
+                            </ebucore:hasTrack>
+                        </xsl:if>
+                        <xsl:if test="pbcore:essenceTrackType='other'">
+                            <xsl:if test="contains(pbcore:essenceTrackEncoding,'TC')">
+                                <ebucore:hasTrack>
+                                    <rdf:Description
+                                        rdf:about="{concat(../pbcore:instantiationIdentifier,'.',pbcore:essencetrackEncoding,pbcore:essenceTrackIdentifier)}">
+                                        <rdf:type
+                                            rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#TimecodeTrack"/>
+                                        <rdfs:label
+                                            rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                            <xsl:value-of
+                                                select="concat(pbcore:essenceTrackEncoding,' ',pbcore:essenceTrackIdentifier)"
+                                            />
+                                        </rdfs:label>
+                                        <ebucore:trackName>
+                                            <xsl:value-of select="pbcore:essenceTrackEncoding"/>
+                                        </ebucore:trackName>
+                                        <pbcorerdf:mediaInfo>
+                                            <xsl:value-of
+                                                select="pbcore:essenceTrackIdentifier[@source='mediainfo']"
+                                            />
+                                        </pbcorerdf:mediaInfo>
+                                        <ebucore:durationNormalPlayTime>
+                                            <xsl:value-of select="pbcore:essenceTrackDuration"/>
+                                        </ebucore:durationNormalPlayTime>
+                                    </rdf:Description>
+                                </ebucore:hasTrack>
+                            </xsl:if>
+                        </xsl:if>
+                        <!-- more tests on the different formats to detect audio or video unless only audio files are of trackType 'General' -->
+                        <xsl:if
+                            test="(pbcore:essenceTrackType='General') and (pbcore:essenceTrackEncoding/@source='MP3')">
+                            <ebucore:hasAudioEncoding>
+                                <xsl:value-of select="pbcore:essenceTrackEncoding"/>
+                            </ebucore:hasAudioEncoding>
+                        </xsl:if>
+                    </xsl:for-each>
                 </rdf:Description>
             </xsl:for-each>
         </rdf:RDF>
