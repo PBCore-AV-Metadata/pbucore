@@ -61,6 +61,9 @@
                             <xsl:value-of select="."/>
                         </ebucore:description>
                     </xsl:for-each>
+                    <pbcore:dateBroadcast>
+                        <xsl:value-of select="pbcore:pbcoreAssetDate[@dateType='broadcast']"/>
+                    </pbcore:dateBroadcast>
                     <xsl:for-each select="pbcore:pbcoreSubject[@subjectType='topic']">
                         <ebucore:hasTopic>
                             <xsl:value-of select="self::pbcore:pbcoreSubject"/>
