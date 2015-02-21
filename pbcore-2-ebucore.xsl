@@ -383,6 +383,11 @@
                         <xsl:value-of select="pbcore:instantiationStandard"/>
                     </ebucore:hasContainerFormat>
                     <!-- option 2 using class containerformat if skos vocabulary-->
+                    <ebucore:locator>
+                        <xsl:value-of select="pbcore:instantiationLocation"/>
+                    </ebucore:locator>
+                    
+                    
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
                     <ebucore:fileSize>
                         <xsl:choose>
