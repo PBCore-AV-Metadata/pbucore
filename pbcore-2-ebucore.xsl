@@ -378,6 +378,11 @@
                         <xsl:value-of select="pbcore:instantiationDigital"/>
                     </ebucore:hasMimeType>
                     <!-- option 2 using class mimetype if skos vocabulary-->
+                    <!-- option 1 -->
+                    <ebucore:hasContainerFormat>
+                        <xsl:value-of select="pbcore:instantiationStandard"/>
+                    </ebucore:hasContainerFormat>
+                    <!-- option 2 using class containerformat if skos vocabulary-->
                     <!-- Need to convert from all possible file sizes to bytes for ebucore requirements. Parsing engine is making GB and TB into scientific notation. -->
                     <ebucore:fileSize>
                         <xsl:choose>
