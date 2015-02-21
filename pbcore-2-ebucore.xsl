@@ -4,7 +4,10 @@
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#"
     xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html"
-    xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#">
+    xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#" 
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:foaf="xmlns.com/foaf/0.1/">
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
         <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -65,8 +68,20 @@
                         <xsl:value-of select="pbcore:pbcoreAssetDate[@dateType='broadcast']"/>
                     </pbcore:dateBroadcast>
                     <xsl:for-each select="pbcore:pbcoreSubject[@subjectType='topic']">
+                        <!-- option 1 -->
                         <ebucore:hasTopic>
-                            <xsl:value-of select="self::pbcore:pbcoreSubject"/>
+                            <rdf:Description rdf:about="{pbcore:pbcoreSubject}">
+                                <rdf:type rdf:resource="http://www.pbcore.org/pbcore/ebucore:Topic"/>
+                                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                    option 1: <xsl:value-of select="pbcore:pbcoreSubject"/>
+                                </rdfs:label>
+                                <skos:preferredLabel>
+                                    <xsl:value-of select="self::pbcore:pbcoreSubject"/>
+                                </skos:preferredLabel>
+                            </rdf:Description>
+                        </ebucore:hasTopic>
+                        <!-- option 2 -->
+                        <ebucore:hasTopic> option 2: <xsl:value-of select="pbcore:pbcoreSubject"/>
                         </ebucore:hasTopic>
                     </xsl:for-each>
                     <ebucore:hasObjectType>
