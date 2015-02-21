@@ -160,7 +160,7 @@
                         rdf:resource="{concat(substring-before(pbcore:pbcoreCreator/pbcore:creator,','), substring-after(pbcore:pbcoreCreator/pbcore:creator,' '))}"/>
                     <ebucore:hasContributor
                         rdf:resource="{concat(substring-before(pbcore:pbcoreContributor/pbcore:contributor,','), substring-after(pbcore:pbcoreContributor/pbcore:contributor,' '))}"/>
-                    <!-- ALTERNATIVE OPTIONS FOR CREATOR-CONTRIBUTOR-PUBLISHER -->
+                    <!-- ALTERNATIVE OPTIONS FOR CREATOR-CONTRIBUTOR-PUBLISHER to avoid blank nodes in absence of vocabularies or other resources -->
                     <xsl:for-each select="pbcore:pbcoreCreator">
                         <!-- option 1 -->
                         <!-- if persons/Contacts or organizations are not defined as classes -->
@@ -198,28 +198,28 @@
                             <xsl:value-of select="pbcore:publisher"/>
                         </ebucore:hasPublisher>
                     </xsl:for-each>
-                    <xsl:for-each select="pbcore:pbcoreInstantiation">
-                        <!-- same question on the instantiation ID to be used across instantiations - must be URI friendly -->
-                        <ebucore:hasRelatedResource rdf:resource="{pbcore:instantiationIdentifier}"
-                        />
-                    </xsl:for-each>
-                </rdf:Description>
-            </xsl:for-each>
                     <ebucore:hasRightsSummary>
                         <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsSummary"/>
                     </ebucore:hasRightsSummary>
                     <ebucore:hasRightsLink>
                         <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsLink"/>
                     </ebucore:hasRightsLink>
-            <xsl:for-each select="//pbcore:pbcoreCoverage">
-                <xsl:if test="pbcore:coverageType='Spatial'">
-                    <ebucore:hasLocation rdf:resource="{pbcore:coverage}"/>
-                    <!-- different implementation if vocabulary of places and location or using geonames -->
-                </xsl:if>
-                <xsl:if test="pbcore:coverageType='Temporal'">
-                    <ebucore:hasEvent rdf:resource="{pbcore:coverage}"/>
-                    <!-- different implementation if vocabulary of events and periods -->
-                </xsl:if>
+                    <xsl:for-each select="//pbcore:pbcoreCoverage">
+                        <xsl:if test="pbcore:coverageType='Spatial'">
+                            <ebucore:hasLocation rdf:resource="{pbcore:coverage}"/>
+                            <!-- different implementation if vocabulary of places and location or using geonames -->
+                        </xsl:if>
+                        <xsl:if test="pbcore:coverageType='Temporal'">
+                            <ebucore:hasEvent rdf:resource="{pbcore:coverage}"/>
+                            <!-- different implementation if vocabulary of events and periods -->
+                        </xsl:if>
+                    </xsl:for-each>
+                    <xsl:for-each select="pbcore:pbcoreInstantiation">
+                        <!-- same question on the instantiation ID to be used across instantiations - must be URI friendly -->
+                        <ebucore:hasRelatedResource rdf:resource="{pbcore:instantiationIdentifier}"
+                        />
+                    </xsl:for-each>
+                </rdf:Description>
             </xsl:for-each>
             <xsl:for-each select="//pbcore:pbcoreCreator">
                 <rdf:Description
