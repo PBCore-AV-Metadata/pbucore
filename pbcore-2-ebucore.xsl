@@ -132,8 +132,22 @@
                         </ebucore:identifier>
                     </xsl:for-each>
                     <xsl:for-each select="pbcore:pbcoreGenre">
+                                                <!-- Option 1 -->
                         <ebucore:hasGenre>
                             <xsl:value-of select="self::pbcore:pbcoreGenre"/>
+                        </ebucore:hasGenre>
+                                                <!-- Option 2 -->
+                        <ebucore:hasGenre>
+                            <rdf:Description rdf:about="{pbcore:pbcoreGenre}">
+                                <rdf:type rdf:resource="http://www.pbcore.org/pbcore/ebucore:Genre"/>
+                                <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
+                                    <xsl:value-of select="pbcore:pbcoreGenre"/>
+                                </rdfs:label>
+                                <skos:preferredLabel>
+                                    <xsl:value-of
+                                    select="self::pbcore:pbcoreGenre"/>
+                                </skos:preferredLabel>
+                            </rdf:Description>
                         </ebucore:hasGenre>
                     </xsl:for-each>
                     <ebucore:hasCreator
