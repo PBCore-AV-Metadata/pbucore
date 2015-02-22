@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#" xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:foaf="xmlns.com/foaf/0.1/">
+   <rdf:Description rdf:about="collection_id1">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Group"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+      <ebucore:title/>
+      <ebucore:description/>
+      <ebucore:date/>
+      <ebucore:hasMember rdf:resource="1785"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="1785">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+      <pbcore:episodeTitle/>
+      <pbcore:seriesTitle>The Real Jazz</pbcore:seriesTitle>
+      <pbcore:programTitle/>
+      <ebucore:description>No description available</ebucore:description>
+      <pbcore:dateBroadcast/>
+      <ebucore:hasObjectType/>
+      <pbcorerdf:wamuId>1785</pbcorerdf:wamuId>
+      <ebucore:identifier>WAMU - 1785</ebucore:identifier>
+      <pbcorerdf:americanArchiveInventoryId>cpb-aacip/500-6h4csj1p</pbcorerdf:americanArchiveInventoryId>
+      <ebucore:identifier>http://americanarchiveinventory.org - cpb-aacip/500-6h4csj1p</ebucore:identifier>
+      <ebucore:hasCreator rdf:resource=""/>
+      <ebucore:hasContributor rdf:resource=""/>
+      <ebucore:hasRightsSummary/>
+      <ebucore:hasRightsLink/>
+      <prov:generatedAtTime>2013-08-02 16:05:37</prov:generatedAtTime>
+      <prov:Organization>
+         <foaf:name>University of Maryland</foaf:name>
+      </prov:Organization>
+      <ebucore:hasRelatedResource rdf:resource="1785"/>
+      <ebucore:hasRelatedResource rdf:resource="cpb-aacip-500-6h4csj1p.wav"/>
+      <ebucore:hasRelatedResource rdf:resource="cpb-aacip-500-6h4csj1p.mp3"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="1785">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1785</rdfs:label>
+      <pbcorerdf:wamuId/>
+      <ebucore:identifier>WAMU - 1785</ebucore:identifier>
+      <ebucore:hasFormat>1/4 inch audio tape</ebucore:hasFormat>
+      <ebucore:locator>Hornbake Special Collections</ebucore:locator>
+      <ebucore:hasMimeType/>
+      <ebucore:hasStorageType>1/4 inch audio tape</ebucore:hasStorageType>
+      <ebucore:hasMedium>1/4 inch audio tape</ebucore:hasMedium>
+      <ebucore:hasMimeType/>
+      <ebucore:hasContainerFormat/>
+      <ebucore:locator>Hornbake Special Collections</ebucore:locator>
+      <pbcorerdf:hasMediaType>Sound</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations/>
+      <pbcorerdf:instantiationTracks/>
+      <ebucore:audioTrackConfiguration>Half Track Mono</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec/>
+      <ebucore:fileSize/>
+      <ebucore:bitRate/>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus>Nominated/2nd Priority</pbcorerdf:AACIP_RecordNominationStatus>
+      <durationNormalPlayTime>00:59:00?</durationNormalPlayTime>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpb-aacip-500-6h4csj1p.wav">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpb-aacip-500-6h4csj1p.wav</rdfs:label>
+      <pbcorerdf:mediainfo>cpb-aacip-500-6h4csj1p.wav</pbcorerdf:mediainfo>
+      <ebucore:identifier>mediainfo - cpb-aacip-500-6h4csj1p.wav</ebucore:identifier>
+      <ebucore:dateCreated/>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised>2014-08-18</ebucore:dateDigitised>
+      <ebucore:hasFormat/>
+      <ebucore:locator>N/A</ebucore:locator>
+      <ebucore:hasMimeType>audio/vnd.wave</ebucore:hasMimeType>
+      <ebucore:hasStorageType/>
+      <ebucore:hasMedium/>
+      <ebucore:hasMimeType>audio/vnd.wave</ebucore:hasMimeType>
+      <ebucore:hasContainerFormat>Wave</ebucore:hasContainerFormat>
+      <ebucore:locator>N/A</ebucore:locator>
+      <pbcorerdf:hasMediaType>Sound</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Moving image/Preservation master</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>1 audio</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>2 channel</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec/>
+      <ebucore:fileSize>2147483648</ebucore:fileSize>
+      <ebucore:bitRate>4777</ebucore:bitRate>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus/>
+      <durationNormalPlayTime/>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-500-6h4csj1p.wav.audio0">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio0</rdfs:label>
+            <ebucore:trackName>audio0</ebucore:trackName>
+            <ebucore:identifier>0</ebucore:identifier>
+            <ebucore:hasAudioEncodingFormat>http://www.microsoft.com/windows/ PCM</ebucore:hasAudioEncodingFormat>
+            <ebucore:bitRate>4608</ebucore:bitRate>
+            <ebucore:frameRate>96.0 KHz</ebucore:frameRate>
+            <ebucore:sampleSize>24</ebucore:sampleSize>
+            <ebucore:durationNormalPlayTime>00:59:45</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpb-aacip-500-6h4csj1p.mp3">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpb-aacip-500-6h4csj1p.mp3</rdfs:label>
+      <pbcorerdf:mediainfo>cpb-aacip-500-6h4csj1p.mp3</pbcorerdf:mediainfo>
+      <ebucore:identifier>mediainfo - cpb-aacip-500-6h4csj1p.mp3</ebucore:identifier>
+      <ebucore:dateCreated/>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised>2014-08-18</ebucore:dateDigitised>
+      <ebucore:hasFormat/>
+      <ebucore:locator>N/A</ebucore:locator>
+      <ebucore:hasMimeType>audio/mpeg</ebucore:hasMimeType>
+      <ebucore:hasStorageType/>
+      <ebucore:hasMedium/>
+      <ebucore:hasMimeType>audio/mpeg</ebucore:hasMimeType>
+      <ebucore:hasContainerFormat>MPEG Audio</ebucore:hasContainerFormat>
+      <ebucore:locator>N/A</ebucore:locator>
+      <pbcorerdf:hasMediaType>Sound</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Proxy</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>1 audio</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>2 channel</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec>Fraunhofer IIS MP3 v04.01.02 (fast)</ebucore:hasCodec>
+      <ebucore:fileSize>85983232</ebucore:fileSize>
+      <ebucore:bitRate>192</ebucore:bitRate>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus/>
+      <durationNormalPlayTime/>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-500-6h4csj1p.mp3.audio0">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio0</rdfs:label>
+            <ebucore:trackName>audio0</ebucore:trackName>
+            <ebucore:identifier>0</ebucore:identifier>
+            <ebucore:hasAudioEncodingFormat> MPEG-1 Audio layer 3</ebucore:hasAudioEncodingFormat>
+            <ebucore:bitRate>192</ebucore:bitRate>
+            <ebucore:frameRate>48.0 KHz</ebucore:frameRate>
+            <ebucore:sampleSize/>
+            <ebucore:durationNormalPlayTime>00:59:45</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+   </rdf:Description>
+</rdf:RDF>
