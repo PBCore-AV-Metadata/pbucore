@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#" xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:foaf="xmlns.com/foaf/0.1/">
+   <rdf:Description rdf:about="A_DHOUG4BZA81CCLF">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">417</rdfs:label>
+      <pbcore:episodeTitle>417</pbcore:episodeTitle>
+      <pbcore:seriesTitle>ZOOM, Series I</pbcore:seriesTitle>
+      <pbcore:programTitle/>
+      <ebucore:description>Zoom, #417</ebucore:description>
+      <pbcore:dateBroadcast/>
+      <ebucore:hasObjectType/>
+      <pbcorerdf:marsAssetRecordId>A_DHOUG4BZA81CCLF</pbcorerdf:marsAssetRecordId>
+      <ebucore:identifier>MARS Asset Record ID - A_DHOUG4BZA81CCLF</ebucore:identifier>
+      <pbcorerdf:marsSourceCreationOrderId>74664</pbcorerdf:marsSourceCreationOrderId>
+      <ebucore:identifier>MARS Source Creation Order - 74664</ebucore:identifier>
+      <pbcorerdf:wgbhOldFileNumber>03673, 03673A, P10705</pbcorerdf:wgbhOldFileNumber>
+      <ebucore:identifier>WGBH Old File Number - 03673, 03673A, P10705</ebucore:identifier>
+      <pbcorerdf:americanArchiveInventoryId>cpb-aacip/15-79v15vkq</pbcorerdf:americanArchiveInventoryId>
+      <ebucore:identifier>http://americanarchiveinventory.org - cpb-aacip/15-79v15vkq</ebucore:identifier>
+      <ebucore:hasCreator rdf:resource="Programming (STS)"/>
+      <ebucore:hasContributor rdf:resource=""/>
+      <pbcorerdf:hasProductionUnit>Children's Programming (STS)</pbcorerdf:hasProductionUnit>
+      <ebucore:hasRightsSummary/>
+      <ebucore:hasRightsLink/>
+      <prov:generatedAtTime>2013-06-23 04:33:15</prov:generatedAtTime>
+      <prov:Organization>
+         <foaf:name>WGBH</foaf:name>
+      </prov:Organization>
+      <ebucore:hasRelatedResource rdf:resource="0000284689"/>
+      <ebucore:hasRelatedResource rdf:resource="cpb-aacip-15-79v15vkq.h264.mov"/>
+      <ebucore:hasRelatedResource rdf:resource="cpb-aacip-15-79v15vkq.j2k.mxf"/>
+      <ebucore:hasRelatedResource rdf:resource="cpb-aacip-15-79v15vkq.mpeg2.mxf"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="Programming (STS)">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Children's Programming (STS)</rdfs:label>
+      <ebucore:agentName>Children's Programming (STS)</ebucore:agentName>
+      <ebucore:hasRole>Production Unit</ebucore:hasRole>
+   </rdf:Description>
+   <rdf:Description rdf:about="0000284689">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0000284689</rdfs:label>
+      <pbcorerdf:wgbhBarcode>0000284689</pbcorerdf:wgbhBarcode>
+      <ebucore:identifier>WGBH Barcode - 0000284689</ebucore:identifier>
+      <pbcorerdf:wgbhFileNumber>P02976</pbcorerdf:wgbhFileNumber>
+      <ebucore:identifier>WGBH File Number - P02976</ebucore:identifier>
+      <ebucore:dateCreated>1975-02-13</ebucore:dateCreated>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised/>
+      <ebucore:hasFormat>3/4 inch videotape</ebucore:hasFormat>
+      <ebucore:locator>HOLDINGS_LOCATION = 145.  145-----</ebucore:locator>
+      <ebucore:hasMimeType/>
+      <ebucore:hasStorageType>3/4 inch videotape</ebucore:hasStorageType>
+      <ebucore:hasMedium>3/4 inch videotape</ebucore:hasMedium>
+      <ebucore:hasMimeType/>
+      <ebucore:hasContainerFormat/>
+      <ebucore:locator>HOLDINGS_LOCATION = 145.  145-----</ebucore:locator>
+      <pbcorerdf:hasMediaType>Moving Image</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Copy: viewing</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>Audio:  tracks</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>Ch 1 MOS; Ch 2 Full Mix</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes>N</pbcorerdf:instantiationAlternativeModes>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec/>
+      <ebucore:fileSize/>
+      <ebucore:bitRate/>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus>Nominated/2nd Priority</pbcorerdf:AACIP_RecordNominationStatus>
+      <durationNormalPlayTime/>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.h264.mov">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpb-aacip-15-79v15vkq.h264.mov</rdfs:label>
+      <pbcorerdf:mediainfo>cpb-aacip-15-79v15vkq.h264.mov</pbcorerdf:mediainfo>
+      <ebucore:identifier>mediainfo - cpb-aacip-15-79v15vkq.h264.mov</ebucore:identifier>
+      <ebucore:dateCreated/>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised>2014-02-06</ebucore:dateDigitised>
+      <ebucore:hasFormat/>
+      <ebucore:locator>N/A</ebucore:locator>
+      <ebucore:hasMimeType>video/mp4</ebucore:hasMimeType>
+      <ebucore:hasStorageType/>
+      <ebucore:hasMedium/>
+      <ebucore:hasMimeType>video/mp4</ebucore:hasMimeType>
+      <ebucore:hasContainerFormat>QuickTime</ebucore:hasContainerFormat>
+      <ebucore:locator>N/A</ebucore:locator>
+      <pbcorerdf:hasMediaType>Moving Image</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Proxy</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>1 video, 1 audio</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>2 channel</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec>Apple QuickTime</ebucore:hasCodec>
+      <ebucore:fileSize>186646528</ebucore:fileSize>
+      <ebucore:bitRate>863</ebucore:bitRate>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus/>
+      <durationNormalPlayTime/>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.h264.mov.video1">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#VideoTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video1</rdfs:label>
+            <ebucore:trackName>video1</ebucore:trackName>
+            <pbcorerdf:mediaInfo>1</pbcorerdf:mediaInfo>
+            <ebucore:hasVideoEncodingFormat>AVC</ebucore:hasVideoEncodingFormat>
+            <ebucore:bitRate>728</ebucore:bitRate>
+            <ebucore:frameRate>29.970</ebucore:frameRate>
+            <pbcorerdf:frameSize>480 x 360</pbcorerdf:frameSize>
+            <ebucore:aspectRatio>4:3</ebucore:aspectRatio>
+            <ebucore:bitDepth>8</ebucore:bitDepth>
+            <pbcorerdf:colorSpace>YUV</pbcorerdf:colorSpace>
+            <pbcorerdf:subSampling>4:2:0</pbcorerdf:subSampling>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.h264.mov.audio2">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio2</rdfs:label>
+            <ebucore:trackName>audio2</ebucore:trackName>
+            <ebucore:identifier>2</ebucore:identifier>
+            <ebucore:hasAudioEncodingFormat> AAC LC</ebucore:hasAudioEncodingFormat>
+            <ebucore:bitRate>128</ebucore:bitRate>
+            <ebucore:frameRate>48.0 KHz</ebucore:frameRate>
+            <ebucore:sampleSize/>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.h264.mov.3">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#TimecodeTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QuickTime TC 3</rdfs:label>
+            <ebucore:trackName>QuickTime TC</ebucore:trackName>
+            <pbcorerdf:mediaInfo>3</pbcorerdf:mediaInfo>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.j2k.mxf">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpb-aacip-15-79v15vkq.j2k.mxf</rdfs:label>
+      <pbcorerdf:mediainfo>cpb-aacip-15-79v15vkq.j2k.mxf</pbcorerdf:mediainfo>
+      <ebucore:identifier>mediainfo - cpb-aacip-15-79v15vkq.j2k.mxf</ebucore:identifier>
+      <ebucore:dateCreated/>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised>2014-02-06</ebucore:dateDigitised>
+      <ebucore:hasFormat/>
+      <ebucore:locator>N/A</ebucore:locator>
+      <ebucore:hasMimeType>application/mxf</ebucore:hasMimeType>
+      <ebucore:hasStorageType/>
+      <ebucore:hasMedium/>
+      <ebucore:hasMimeType>application/mxf</ebucore:hasMimeType>
+      <ebucore:hasContainerFormat>OP-1a</ebucore:hasContainerFormat>
+      <ebucore:locator>N/A</ebucore:locator>
+      <pbcorerdf:hasMediaType>Moving Image</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Preservation Master</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>1 video, 1 audio</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>4 channel</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec>Front Porch Digital J2K MXF Wrapper Based on MXFLib 1.0.1(13)-Beta</ebucore:hasCodec>
+      <ebucore:fileSize>13958643712</ebucore:fileSize>
+      <ebucore:bitRate>66</ebucore:bitRate>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus/>
+      <durationNormalPlayTime/>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.j2k.mxf.video1">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#VideoTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video1</rdfs:label>
+            <ebucore:trackName>video1</ebucore:trackName>
+            <pbcorerdf:mediaInfo>1</pbcorerdf:mediaInfo>
+            <ebucore:hasVideoEncodingFormat>JPEG 2000</ebucore:hasVideoEncodingFormat>
+            <ebucore:bitRate>63</ebucore:bitRate>
+            <ebucore:frameRate>59.940</ebucore:frameRate>
+            <pbcorerdf:frameSize>720 x 486</pbcorerdf:frameSize>
+            <ebucore:aspectRatio>4:3</ebucore:aspectRatio>
+            <ebucore:bitDepth>8</ebucore:bitDepth>
+            <pbcorerdf:colorSpace>YUV</pbcorerdf:colorSpace>
+            <pbcorerdf:subSampling>4:2:2</pbcorerdf:subSampling>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.j2k.mxf.audio2">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio2</rdfs:label>
+            <ebucore:trackName>audio2</ebucore:trackName>
+            <ebucore:identifier>2</ebucore:identifier>
+            <ebucore:hasAudioEncodingFormat> PCM</ebucore:hasAudioEncodingFormat>
+            <ebucore:bitRate>3072</ebucore:bitRate>
+            <ebucore:frameRate>48.0 KHz</ebucore:frameRate>
+            <ebucore:sampleSize>16</ebucore:sampleSize>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.j2k.mxf.0">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#TimecodeTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMPTE TC 0</rdfs:label>
+            <ebucore:trackName>SMPTE TC</ebucore:trackName>
+            <pbcorerdf:mediaInfo>0</pbcorerdf:mediaInfo>
+            <ebucore:durationNormalPlayTime/>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.j2k.mxf.1">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#TimecodeTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMPTE TC 1</rdfs:label>
+            <ebucore:trackName>SMPTE TC</ebucore:trackName>
+            <pbcorerdf:mediaInfo>1</pbcorerdf:mediaInfo>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.mpeg2.mxf">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpb-aacip-15-79v15vkq.mpeg2.mxf</rdfs:label>
+      <pbcorerdf:mediainfo>cpb-aacip-15-79v15vkq.mpeg2.mxf</pbcorerdf:mediainfo>
+      <ebucore:identifier>mediainfo - cpb-aacip-15-79v15vkq.mpeg2.mxf</ebucore:identifier>
+      <ebucore:dateCreated/>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised>2014-02-06</ebucore:dateDigitised>
+      <ebucore:hasFormat/>
+      <ebucore:locator>N/A</ebucore:locator>
+      <ebucore:hasMimeType>application/mxf</ebucore:hasMimeType>
+      <ebucore:hasStorageType/>
+      <ebucore:hasMedium/>
+      <ebucore:hasMimeType>application/mxf</ebucore:hasMimeType>
+      <ebucore:hasContainerFormat>OP-1a</ebucore:hasContainerFormat>
+      <ebucore:locator>N/A</ebucore:locator>
+      <pbcorerdf:hasMediaType>Moving Image</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Mezzanine</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>1 video, 1 audio</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>4 channel</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec>OC   OCTk 2.1</ebucore:hasCodec>
+      <ebucore:fileSize>13958643712</ebucore:fileSize>
+      <ebucore:bitRate>63</ebucore:bitRate>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus/>
+      <durationNormalPlayTime/>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.mpeg2.mxf.video2">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#VideoTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">video2</rdfs:label>
+            <ebucore:trackName>video2</ebucore:trackName>
+            <pbcorerdf:mediaInfo>2</pbcorerdf:mediaInfo>
+            <ebucore:hasVideoEncodingFormat>MPEG-2 Video</ebucore:hasVideoEncodingFormat>
+            <ebucore:bitRate>50</ebucore:bitRate>
+            <ebucore:frameRate>29.970</ebucore:frameRate>
+            <pbcorerdf:frameSize>720 x 486</pbcorerdf:frameSize>
+            <ebucore:aspectRatio>4:3</ebucore:aspectRatio>
+            <ebucore:bitDepth>8</ebucore:bitDepth>
+            <pbcorerdf:colorSpace>YUV</pbcorerdf:colorSpace>
+            <pbcorerdf:subSampling>4:2:2</pbcorerdf:subSampling>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.mpeg2.mxf.audio3">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio3</rdfs:label>
+            <ebucore:trackName>audio3</ebucore:trackName>
+            <ebucore:identifier>3</ebucore:identifier>
+            <ebucore:hasAudioEncodingFormat> PCM</ebucore:hasAudioEncodingFormat>
+            <ebucore:bitRate>12</ebucore:bitRate>
+            <ebucore:frameRate>48.0 KHz</ebucore:frameRate>
+            <ebucore:sampleSize>16</ebucore:sampleSize>
+            <ebucore:durationNormalPlayTime>00:28:50</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.mpeg2.mxf.1">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#TimecodeTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MXF TC 1</rdfs:label>
+            <ebucore:trackName>MXF TC</ebucore:trackName>
+            <pbcorerdf:mediaInfo>1</pbcorerdf:mediaInfo>
+            <ebucore:durationNormalPlayTime/>
+         </rdf:Description>
+      </ebucore:hasTrack>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-15-79v15vkq.mpeg2.mxf.1">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#TimecodeTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SMPTE TC 1</rdfs:label>
+            <ebucore:trackName>SMPTE TC</ebucore:trackName>
+            <pbcorerdf:mediaInfo>1</pbcorerdf:mediaInfo>
+            <ebucore:durationNormalPlayTime/>
+         </rdf:Description>
+      </ebucore:hasTrack>
+   </rdf:Description>
+</rdf:RDF>
