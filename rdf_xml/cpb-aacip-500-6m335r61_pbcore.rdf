@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:owl="http://www.w3.org/2002/07/owl#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#" xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:foaf="xmlns.com/foaf/0.1/">
+   <rdf:Description rdf:about="collection_id1">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Group"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+      <ebucore:title/>
+      <ebucore:description/>
+      <ebucore:date/>
+      <ebucore:hasMember rdf:resource="56-12-3"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="56-12-3">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+      <pbcore:episodeTitle/>
+      <pbcore:seriesTitle/>
+      <pbcore:programTitle>Poor Little Boy</pbcore:programTitle>
+      <ebucore:description>Documentary-drama with discussions by child-care experts about exceptional child, both handicapped and gifted.</ebucore:description>
+      <ebucore:description>Impact of family attitudes upon the exceptional child.</ebucore:description>
+      <pbcore:dateBroadcast/>
+      <ebucore:hasObjectType/>
+      <pbcorerdf:naeb_Id>56-12-3</pbcorerdf:naeb_Id>
+      <ebucore:identifier>National Association of Educational Broadcasters - 56-12-3</ebucore:identifier>
+      <pbcorerdf:universityOfMaryland_Id>0466</pbcorerdf:universityOfMaryland_Id>
+      <ebucore:identifier>University of Maryland - 0466</ebucore:identifier>
+      <pbcorerdf:americanArchiveInventoryId>cpb-aacip/500-6m335r61</pbcorerdf:americanArchiveInventoryId>
+      <ebucore:identifier>http://americanarchiveinventory.org - cpb-aacip/500-6m335r61</ebucore:identifier>
+      <ebucore:hasCreator rdf:resource=""/>
+      <ebucore:hasContributor rdf:resource=""/>
+      <pbcorerdf:hasCreator>KUT</pbcorerdf:hasCreator>
+      <pbcorerdf:hasProducer>University of Texas</pbcorerdf:hasProducer>
+      <ebucore:hasRightsSummary/>
+      <ebucore:hasRightsLink/>
+      <prov:generatedAtTime>2013-07-26 13:48:52</prov:generatedAtTime>
+      <prov:Organization>
+         <foaf:name>University of Maryland</foaf:name>
+      </prov:Organization>
+      <ebucore:hasRelatedResource rdf:resource="56-12-3"/>
+      <ebucore:hasRelatedResource rdf:resource="cpb-aacip-500-6m335r61.mp3"/>
+      <ebucore:hasRelatedResource rdf:resource="cpb-aacip-500-6m335r61.wav"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">KUT</rdfs:label>
+      <ebucore:agentName>KUT</ebucore:agentName>
+      <ebucore:hasRole/>
+   </rdf:Description>
+   <rdf:Description rdf:about="of Texas">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">University of Texas</rdfs:label>
+      <ebucore:agentName>University of Texas</ebucore:agentName>
+      <ebucore:hasRole>Producer</ebucore:hasRole>
+   </rdf:Description>
+   <rdf:Description rdf:about="56-12-3">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">56-12-3</rdfs:label>
+      <pbcorerdf:naeb_Id>56-12-3</pbcorerdf:naeb_Id>
+      <ebucore:identifier>National Association of Educational Broadcasters - 56-12-3</ebucore:identifier>
+      <pbcorerdf:universityOfMaryland_Id>1 of 1</pbcorerdf:universityOfMaryland_Id>
+      <ebucore:identifier>University of Maryland - 1 of 1</ebucore:identifier>
+      <pbcorerdf:universityOfMaryland_Id>0466</pbcorerdf:universityOfMaryland_Id>
+      <ebucore:identifier>University of Maryland - 0466</ebucore:identifier>
+      <ebucore:hasFormat>1/4 inch audio tape</ebucore:hasFormat>
+      <ebucore:locator>Hornbake Special Collections</ebucore:locator>
+      <ebucore:hasMimeType/>
+      <ebucore:hasStorageType>1/4 inch audio tape</ebucore:hasStorageType>
+      <ebucore:hasMedium>1/4 inch audio tape</ebucore:hasMedium>
+      <ebucore:hasMimeType/>
+      <ebucore:hasContainerFormat/>
+      <ebucore:locator>Hornbake Special Collections</ebucore:locator>
+      <pbcorerdf:hasMediaType>Sound</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations/>
+      <pbcorerdf:instantiationTracks/>
+      <ebucore:audioTrackConfiguration/>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec/>
+      <ebucore:fileSize/>
+      <ebucore:bitRate/>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus>Nominated/1st Priority</pbcorerdf:AACIP_RecordNominationStatus>
+      <durationNormalPlayTime>00:29:11</durationNormalPlayTime>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpb-aacip-500-6m335r61.mp3">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpb-aacip-500-6m335r61.mp3</rdfs:label>
+      <pbcorerdf:mediainfo>cpb-aacip-500-6m335r61.mp3</pbcorerdf:mediainfo>
+      <ebucore:identifier>mediainfo - cpb-aacip-500-6m335r61.mp3</ebucore:identifier>
+      <ebucore:dateCreated/>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised>2014-05-07</ebucore:dateDigitised>
+      <ebucore:hasFormat/>
+      <ebucore:locator>N/A</ebucore:locator>
+      <ebucore:hasMimeType>audio/mpeg</ebucore:hasMimeType>
+      <ebucore:hasStorageType/>
+      <ebucore:hasMedium/>
+      <ebucore:hasMimeType>audio/mpeg</ebucore:hasMimeType>
+      <ebucore:hasContainerFormat>MPEG Audio</ebucore:hasContainerFormat>
+      <ebucore:locator>N/A</ebucore:locator>
+      <pbcorerdf:hasMediaType>Sound</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Proxy</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>1 audio</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>2 channel</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec>Fraunhofer IIS MP3 v04.01.02 (high quality)</ebucore:hasCodec>
+      <ebucore:fileSize>41943040</ebucore:fileSize>
+      <ebucore:bitRate>192</ebucore:bitRate>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus/>
+      <durationNormalPlayTime/>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-500-6m335r61.mp3.audio0">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio0</rdfs:label>
+            <ebucore:trackName>audio0</ebucore:trackName>
+            <ebucore:identifier>0</ebucore:identifier>
+            <ebucore:hasAudioEncodingFormat> MPEG-1 Audio layer 3</ebucore:hasAudioEncodingFormat>
+            <ebucore:bitRate>192</ebucore:bitRate>
+            <ebucore:frameRate>44.1 KHz</ebucore:frameRate>
+            <ebucore:sampleSize/>
+            <ebucore:durationNormalPlayTime>00:29:29</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+   </rdf:Description>
+   <rdf:Description rdf:about="cpb-aacip-500-6m335r61.wav">
+      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+      <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpb-aacip-500-6m335r61.wav</rdfs:label>
+      <pbcorerdf:mediainfo>cpb-aacip-500-6m335r61.wav</pbcorerdf:mediainfo>
+      <ebucore:identifier>mediainfo - cpb-aacip-500-6m335r61.wav</ebucore:identifier>
+      <ebucore:dateCreated/>
+      <ebucore:dateIssued/>
+      <ebucore:dateDigitised>2014-05-07</ebucore:dateDigitised>
+      <ebucore:hasFormat/>
+      <ebucore:locator>N/A</ebucore:locator>
+      <ebucore:hasMimeType>audio/vnd.wave</ebucore:hasMimeType>
+      <ebucore:hasStorageType/>
+      <ebucore:hasMedium/>
+      <ebucore:hasMimeType>audio/vnd.wave</ebucore:hasMimeType>
+      <ebucore:hasContainerFormat>Wave</ebucore:hasContainerFormat>
+      <ebucore:locator>N/A</ebucore:locator>
+      <pbcorerdf:hasMediaType>Sound</pbcorerdf:hasMediaType>
+      <pbcorerdf:generations>Preservation Master</pbcorerdf:generations>
+      <pbcorerdf:instantiationTracks>1 audio</pbcorerdf:instantiationTracks>
+      <ebucore:audioTrackConfiguration>2 channel</ebucore:audioTrackConfiguration>
+      <pbcorerdf:instantiationAlternativeModes/>
+      <pbcorerdf:alternateGeneration/>
+      <ebucore:hasCodec/>
+      <ebucore:fileSize>1056964608</ebucore:fileSize>
+      <ebucore:bitRate>4777</ebucore:bitRate>
+      <pbcorerdf:hasAlternateFormat/>
+      <pbcorerdf:AACIP_RecordNominationStatus/>
+      <durationNormalPlayTime/>
+      <ebucore:hasTrack>
+         <rdf:Description rdf:about="cpb-aacip-500-6m335r61.wav.audio0">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#AudioTrack"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audio0</rdfs:label>
+            <ebucore:trackName>audio0</ebucore:trackName>
+            <ebucore:identifier>0</ebucore:identifier>
+            <ebucore:hasAudioEncodingFormat>http://www.microsoft.com/windows/ PCM</ebucore:hasAudioEncodingFormat>
+            <ebucore:bitRate>4608</ebucore:bitRate>
+            <ebucore:frameRate>96.0 KHz</ebucore:frameRate>
+            <ebucore:sampleSize>24</ebucore:sampleSize>
+            <ebucore:durationNormalPlayTime>00:29:29</ebucore:durationNormalPlayTime>
+         </rdf:Description>
+      </ebucore:hasTrack>
+   </rdf:Description>
+</rdf:RDF>
