@@ -2,7 +2,9 @@ require 'nokogiri'
 require_relative '../lib/converter'
 
 describe 'converter' do
-  inputs = Dir[File.dirname(__FILE__) + '/fixtures/*.pbcore.xml']
+  PENDING_RE = /\/pending/
+  inputs = Dir[File.dirname(__FILE__) + '/fixtures/*.pbcore.xml'].reject{|path| path=~PENDING_RE}
+  
   inputs.each do |pbcore_path|
     rdf_path = pbcore_path.sub('.pbcore.xml', '.rdf.xml')
     it "converts #{File.basename(pbcore_path)} to #{File.basename(rdf_path)}" do
@@ -13,7 +15,7 @@ describe 'converter' do
   end
   
   it 'has no stray fixtures' do
-    all = Dir[File.dirname(__FILE__) + '/fixtures/*']
+    all = Dir[File.dirname(__FILE__) + '/fixtures/*'].reject{|path| path=~PENDING_RE}
     expect(all.count).to eq inputs.count * 2
   end
 end
