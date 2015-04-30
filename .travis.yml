@@ -1,0 +1,4 @@
+language: ruby
+sudo: false
+cache: bundler
+script: 'bundle exec rspec --tag ~not_on_travis'
