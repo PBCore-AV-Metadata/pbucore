@@ -9,9 +9,8 @@
 element, so make sure your xml file has that going on.
 
 ### Converting
-There is a provided ruby script to batch-convert all the xml files under 
-`source_xml` to RDF xml in the `rdf_xml` directory. To do this, you'll 
-need ruby as well as the bunder gem. With the `ruby`, `gem` and `git` 
+There is a provided ruby script to convert individual XML files. To do this, 
+you'll need ruby as well as the bunder gem. With the `ruby`, `gem` and `git` 
 executables installed:
 
 ```
@@ -19,7 +18,7 @@ git clone https://github.com/WGBH/pbucore
 cd pbucore
 gem install bundler
 bundle install
-ruby convert.rb
+ruby lib/converter.rb ~/my-pbcore.xml > ~/my-rdf.xml
 ```
 
 ### Workflow for mapping PBCore elements to EBUCore RDF-XML.
