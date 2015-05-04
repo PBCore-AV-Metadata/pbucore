@@ -14,7 +14,7 @@ class Converter
   end
   
   def convert(path)
-    doc = Nokogiri::XML(File.read(path))
+    doc = Nokogiri::XML(File.read(path), &:noblanks)
     validation_errors = @xsd.validate(doc)
     fail(validation_errors.join("\n")) unless validation_errors.empty?
     @xslt.transform(doc)
