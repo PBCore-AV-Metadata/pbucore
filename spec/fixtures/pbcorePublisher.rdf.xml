@@ -6,27 +6,28 @@
     <ebucore:title/>
     <ebucore:description/>
     <ebucore:date/>
-    <ebucore:hasMember rdf:resource="cpb-aacip-600-300"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="cpb-aacip-600-300">
-    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
-    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-    <pbcore:episodeTitle/>
-    <pbcore:seriesTitle/>
-    <pbcore:programTitle/>
-    <ebucore:description>This is so exciting!</ebucore:description>
-    <pbcore:dateBroadcast/>
-    <ebucore:hasObjectType/>
-    <ebucore:identifier>Casey - cpb-aacip-600-300</ebucore:identifier>
-    <ebucore:hasCreator rdf:resource=""/>
-    <ebucore:hasContributor rdf:resource=""/>
-    <ebucore:hasPublisher>Vanna White</ebucore:hasPublisher>
-    <ebucore:hasRightsSummary/>
-    <ebucore:hasRightsLink/>
-    <prov:generatedAtTime/>
-    <prov:Organization>
-      <foaf:name/>
-    </prov:Organization>
+    <ebucore:hasMember>
+      <rdf:Description rdf:about="cpb-aacip-600-300">
+        <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+        <pbcore:episodeTitle/>
+        <pbcore:seriesTitle/>
+        <pbcore:programTitle/>
+        <ebucore:description>This is so exciting!</ebucore:description>
+        <pbcore:dateBroadcast/>
+        <ebucore:hasObjectType/>
+        <ebucore:identifier>Casey - cpb-aacip-600-300</ebucore:identifier>
+        <ebucore:hasCreator rdf:resource=""/>
+        <ebucore:hasContributor rdf:resource=""/>
+        <ebucore:hasPublisher>Vanna White</ebucore:hasPublisher>
+        <ebucore:hasRightsSummary/>
+        <ebucore:hasRightsLink/>
+        <prov:generatedAtTime/>
+        <prov:Organization>
+          <foaf:name/>
+        </prov:Organization>
+      </rdf:Description>
+    </ebucore:hasMember>
   </rdf:Description>
   <rdf:Description rdf:about="White">
     <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
