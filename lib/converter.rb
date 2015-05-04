@@ -16,8 +16,10 @@ class Converter
   
   def convert(path)
     doc = Nokogiri::XML(File.read(path), &:noblanks)
-    validation_errors = @xsd.validate(doc)
-    fail(validation_errors.join("\n")) unless validation_errors.empty?
+    unless path =~ /fragment/
+      validation_errors = @xsd.validate(doc)
+      fail(validation_errors.join("\n")) unless validation_errors.empty?
+    end
     rdf_xml_doc = @xslt.transform(doc)
 
     RDF::RDFXML::Reader.new(rdf_xml_doc, validate: true)

@@ -1,0 +1,25 @@
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix pbcorerdf: <http://www.pbcore.org/pbcore/pbcore#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<> a ebucore:MediaResource;
+   rdfs:label "";
+   ebucore:audioTrackConfiguration "";
+   ebucore:bitRate "192";
+   ebucore:fileSize "";
+   ebucore:hasCodec "";
+   ebucore:hasContainerFormat "";
+   ebucore:hasFormat "";
+   ebucore:hasMedium "";
+   ebucore:hasMimeType "";
+   ebucore:hasStorageType "";
+   ebucore:locator "";
+   pbcorerdf:AACIP_RecordNominationStatus "";
+   pbcorerdf:alternateGeneration "";
+   pbcorerdf:generations "";
+   pbcorerdf:hasAlternateFormat "";
+   pbcorerdf:hasMediaType "";
+   pbcorerdf:instantiationAlternativeModes "";
+   pbcorerdf:instantiationTracks "";
+   <http://www.w3.org/XML/1998/namespacedurationNormalPlayTime> "" .
