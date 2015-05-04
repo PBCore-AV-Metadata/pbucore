@@ -13,7 +13,7 @@ describe 'converter' do
         rdf_xml_actual = Converter.instance.convert(pbcore_path)
         rdf_xml_expected = Nokogiri::XML(File.read(rdf_path), &:noblanks).to_xml
         # Remove indentation for the sake of the diff.
-        expect(rdf_xml_actual.gsub(/^\s+/, '')).to eq rdf_xml_expected.gsub(/^\s+/, '')
+        expect(rdf_xml_actual.gsub('><', ">\n<").gsub(/^\s+/, '')).to eq rdf_xml_expected.gsub('><', ">\n<").gsub(/^\s+/, '')
       end
     end
   end
