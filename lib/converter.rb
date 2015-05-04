@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'singleton'
+require 'rdf/rdfxml'
 
 class Converter
   include Singleton
@@ -17,7 +18,16 @@ class Converter
     doc = Nokogiri::XML(File.read(path), &:noblanks)
     validation_errors = @xsd.validate(doc)
     fail(validation_errors.join("\n")) unless validation_errors.empty?
-    @xslt.transform(doc)
+    rdf_xml_doc = @xslt.transform(doc)
+
+    RDF::RDFXML::Reader.new(rdf_xml_doc, validate: true)
+    # Create the object just for the sake of validation.
+    # We could output it, but as xml it is very different from the xslt output:
+    # nesting / order / prefixes / etc.
+    # graph = RDF::RDFXML::Reader.new(rdf_xml_doc, validate: true)
+    # RDF::RDFXML::Writer.buffer { |writer| writer << graph }
+
+    rdf_xml_doc.to_xml
   end
 end
 

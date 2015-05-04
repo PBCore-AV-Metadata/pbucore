@@ -1,0 +1,54 @@
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix foaf: <xmlns.com/foaf/0.1/> .
+@prefix pbcore: <http://www.pbcore.org/PBCore/PBCoreNamespace.html> .
+@prefix pbcorerdf: <http://www.pbcore.org/pbcore/pbcore#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<collection_id1> a ebucore:Group;
+   <http://www.w3.org/2000/01/rdf-schema#label> "";
+   ebucore:date "";
+   ebucore:description "";
+   ebucore:hasMember <1785>;
+   ebucore:title "" .
+
+<1785> a ebucore:EditorialObject;
+   <http://www.w3.org/2000/01/rdf-schema#label> "";
+   ebucore:description "No description available";
+   ebucore:hasContributor <>;
+   ebucore:hasCreator <>;
+   ebucore:hasObjectType "";
+   ebucore:hasRelatedResource <cpb-aacip-500-6h4csj1p.mp3>;
+   ebucore:hasRightsLink "";
+   ebucore:hasRightsSummary "";
+   ebucore:identifier "WAMU - 1785";
+   pbcore:dateBroadcast "";
+   pbcore:episodeTitle "";
+   pbcore:programTitle "";
+   pbcore:seriesTitle "The Real Jazz";
+   pbcorerdf:wamuId "1785";
+   prov:Organization [ a foaf:name];
+   prov:generatedAtTime "" .
+
+<cpb-aacip-500-6h4csj1p.mp3> a ebucore:MediaResource;
+   <http://www.w3.org/2000/01/rdf-schema#label> "cpb-aacip-500-6h4csj1p.mp3";
+   ebucore:audioTrackConfiguration "";
+   ebucore:bitRate "";
+   ebucore:fileSize "85983232";
+   ebucore:hasCodec "";
+   ebucore:hasContainerFormat "";
+   ebucore:hasFormat "";
+   ebucore:hasMedium "";
+   ebucore:hasMimeType "";
+   ebucore:hasStorageType "";
+   ebucore:identifier "mediainfo - cpb-aacip-500-6h4csj1p.mp3";
+   ebucore:locator "N/A";
+   pbcorerdf:AACIP_RecordNominationStatus "";
+   pbcorerdf:alternateGeneration "";
+   pbcorerdf:generations "";
+   pbcorerdf:hasAlternateFormat "";
+   pbcorerdf:hasMediaType "";
+   pbcorerdf:instantiationAlternativeModes "";
+   pbcorerdf:instantiationTracks "";
+   pbcorerdf:mediainfo "cpb-aacip-500-6h4csj1p.mp3";
+   <http://www.w3.org/XML/1998/namespacedurationNormalPlayTime> "" .
