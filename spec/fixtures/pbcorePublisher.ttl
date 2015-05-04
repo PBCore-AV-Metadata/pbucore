@@ -1,7 +1,4 @@
 @prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
-@prefix foaf: <xmlns.com/foaf/0.1/> .
-@prefix pbcore: <http://www.pbcore.org/PBCore/PBCoreNamespace.html> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -20,15 +17,6 @@
 <cpb-aacip-600-300> a ebucore:EditorialObject;
    rdfs:label "";
    ebucore:description "This is so exciting!";
-   ebucore:hasObjectType "";
    ebucore:hasPublisher <White>,
        "Vanna White";
-   ebucore:hasRightsLink "";
-   ebucore:hasRightsSummary "";
-   ebucore:identifier "Casey - cpb-aacip-600-300";
-   pbcore:dateBroadcast "";
-   pbcore:episodeTitle "";
-   pbcore:programTitle "";
-   pbcore:seriesTitle "";
-   prov:Organization [ a foaf:name];
-   prov:generatedAtTime "" .
+   ebucore:identifier "Casey - cpb-aacip-600-300" .

@@ -10,20 +10,10 @@
             <rdf:Description rdf:about="1785">
                 <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
                 <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
-                <pbcore:episodeTitle/>
                 <pbcore:seriesTitle>The Real Jazz</pbcore:seriesTitle>
-                <pbcore:programTitle/>
                 <ebucore:description>No description available</ebucore:description>
-                <pbcore:dateBroadcast/>
-                <ebucore:hasObjectType/>
                 <pbcorerdf:wamuId>1785</pbcorerdf:wamuId>
                 <ebucore:identifier>WAMU - 1785</ebucore:identifier>
-                <ebucore:hasRightsSummary/>
-                <ebucore:hasRightsLink/>
-                <prov:generatedAtTime/>
-                <prov:Organization>
-                    <foaf:name/>
-                </prov:Organization>
                 <ebucore:hasRelatedResource>
                     <rdf:Description rdf:about="cpb-aacip-500-6h4csj1p.mp3">
                         <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>

@@ -18,23 +18,37 @@
             <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">
                 <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
             </rdfs:label>
-            <pbcore:episodeTitle>
-                <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Episode']"/>
-            </pbcore:episodeTitle>
-            <pbcore:seriesTitle>
-                <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Series']"/>
-            </pbcore:seriesTitle>
-            <pbcore:programTitle>
-                <xsl:value-of select="pbcore:pbcoreTitle[@titleType='Program']"/>
-            </pbcore:programTitle>
+            
+            <xsl:for-each select="pbcore:pbcoreTitle[@titleType='Episode']">
+                <pbcore:episodeTitle>
+                    <xsl:value-of select="."/>
+                </pbcore:episodeTitle>
+            </xsl:for-each>
+            
+            <xsl:for-each select="pbcore:pbcoreTitle[@titleType='Series']">
+                <pbcore:seriesTitle>
+                    <xsl:value-of select="."/>
+                </pbcore:seriesTitle>
+            </xsl:for-each>
+            
+            <xsl:for-each select="pbcore:pbcoreTitle[@titleType='Program']">
+                <pbcore:programTitle>
+                    <xsl:value-of select="."/>
+                </pbcore:programTitle>
+            </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcoreDescription">
                 <ebucore:description>
                     <xsl:value-of select="."/>
                 </ebucore:description>
             </xsl:for-each>
-            <pbcore:dateBroadcast>
-                <xsl:value-of select="pbcore:pbcoreAssetDate[@dateType='broadcast']"/>
-            </pbcore:dateBroadcast>
+            
+            <xsl:for-each select="pbcore:pbcoreAssetDate[@dateType='broadcast']">
+                <pbcore:dateBroadcast>
+                    <xsl:value-of select="."/>
+                </pbcore:dateBroadcast>
+            </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcoreSubject[@subjectType='topic']">
                 <!-- option 1 -->
                 <ebucore:hasTopic>
@@ -52,9 +66,13 @@
                 <ebucore:hasTopic> option 2: <xsl:value-of select="pbcore:pbcoreSubject"/>
                 </ebucore:hasTopic>
             </xsl:for-each>
-            <ebucore:hasObjectType>
-                <xsl:value-of select="self::pbcore:pbcoreAssetType"/>
-            </ebucore:hasObjectType>
+            
+            <xsl:for-each select="self::pbcore:pbcoreAssetType">
+                <ebucore:hasObjectType>
+                    <xsl:value-of select="."/>
+                </ebucore:hasObjectType>
+            </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcoreIdentifier">
                 <!-- after further evaluation: (better than blank nodes)-->
                 <!-- option 1: create pbcore identifiers defining subproperties per source -->
@@ -104,6 +122,7 @@
                     <xsl:value-of select="concat(@source,' - ',.)"/>
                 </ebucore:identifier>
             </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcoreGenre">
                 <!-- Option 1 -->
                 <ebucore:hasGenre>
@@ -122,16 +141,19 @@
                     </rdf:Description>
                 </ebucore:hasGenre>
             </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcoreCreator">
                 <ebucore:hasCreator>
                     <xsl:apply-templates select="."/>
                 </ebucore:hasCreator>
             </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcoreContributor">
                 <ebucore:hasContributor>
                     <xsl:apply-templates select="."/>
                 </ebucore:hasContributor>
             </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcorePublisher">
                 <ebucore:hasPublisher>
                     <xsl:apply-templates select="."/>
@@ -159,6 +181,7 @@
                 </xsl:if>
                 <!-- option 2 use hasCreator + agent or cast or staff -->
             </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcoreContributor">
                 <!-- option1 -->
                 <!-- if persons/Contacts or organizations are not defined as classes -->
@@ -169,6 +192,7 @@
                 </xsl:if-->
                 <!-- option 2 use hasContributor + agent or cast or staff -->
             </xsl:for-each>
+            
             <xsl:for-each select="pbcore:pbcorePublisher">
                 <ebucore:hasPublisher>
                     <!-- same as option 1 and 2 above -->
@@ -177,12 +201,18 @@
                 </ebucore:hasPublisher>
             </xsl:for-each>
 
-            <ebucore:hasRightsSummary>
-                <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsSummary"/>
-            </ebucore:hasRightsSummary>
-            <ebucore:hasRightsLink>
-                <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsLink"/>
-            </ebucore:hasRightsLink>
+            <xsl:for-each select="pbcore:pbcoreRightsSummary/pbcore:rightsSummary">
+                <ebucore:hasRightsSummary>
+                    <xsl:value-of select="."/>
+                </ebucore:hasRightsSummary>
+            </xsl:for-each>
+            
+            <xsl:for-each select="pbcore:pbcoreRightsSummary/pbcore:rightsLink">
+                <ebucore:hasRightsLink>
+                    <xsl:value-of select="."/>
+                </ebucore:hasRightsLink>
+            </xsl:for-each>
+            
             <xsl:for-each select="//pbcore:pbcoreCoverage">
                 <xsl:if test="pbcore:coverageType='Spatial'">
                     <ebucore:hasLocation rdf:resource="{pbcore:coverage}"/>
@@ -193,21 +223,29 @@
                     <!-- different implementation if vocabulary of events and periods -->
                 </xsl:if>
             </xsl:for-each>
-            <prov:generatedAtTime>
-                <xsl:value-of
-                    select="pbcore:pbcoreAnnotation[@annotationType='last_modified']"/>
-            </prov:generatedAtTime>
-            <prov:Organization>
-                <foaf:name>
+            
+            <xsl:for-each select="pbcore:pbcoreAnnotation[@annotationType='last_modified']">
+                <prov:generatedAtTime>
                     <xsl:value-of
-                        select="pbcore:pbcoreAnnotation[@annotationType='organization']"/>
-                </foaf:name>
-            </prov:Organization>
-            <xsl:if test="pbcore:pbcoreInstantiation">
+                        select="."/>
+                </prov:generatedAtTime>
+            </xsl:for-each>
+            
+            <xsl:for-each select="pbcore:pbcoreAnnotation[@annotationType='organization']">
+                <prov:Organization>
+                    <foaf:name>
+                        <xsl:value-of
+                            select="."/>
+                    </foaf:name>
+                </prov:Organization>
+            </xsl:for-each>
+            
+            <xsl:for-each select="pbcore:pbcoreInstantiation">
                 <ebucore:hasRelatedResource>
-                    <xsl:apply-templates select="pbcore:pbcoreInstantiation"/>
+                    <xsl:apply-templates select="."/>
                 </ebucore:hasRelatedResource>
-            </xsl:if>
+            </xsl:for-each>
+            
         </rdf:Description>
     </xsl:template>
     
