@@ -4,19 +4,18 @@
 @prefix pbcorerdf: <http://www.pbcore.org/pbcore/pbcore#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <collection_id1> a ebucore:Group;
-   <http://www.w3.org/2000/01/rdf-schema#label> "";
+   rdfs:label "";
    ebucore:date "";
    ebucore:description "";
    ebucore:hasMember <1785>;
    ebucore:title "" .
 
 <1785> a ebucore:EditorialObject;
-   <http://www.w3.org/2000/01/rdf-schema#label> "";
+   rdfs:label "";
    ebucore:description "No description available";
-   ebucore:hasContributor <>;
-   ebucore:hasCreator <>;
    ebucore:hasObjectType "";
    ebucore:hasRelatedResource <cpb-aacip-500-6h4csj1p.mp3>;
    ebucore:hasRightsLink "";
@@ -31,7 +30,7 @@
    prov:generatedAtTime "" .
 
 <cpb-aacip-500-6h4csj1p.mp3> a ebucore:MediaResource;
-   <http://www.w3.org/2000/01/rdf-schema#label> "cpb-aacip-500-6h4csj1p.mp3";
+   rdfs:label "cpb-aacip-500-6h4csj1p.mp3";
    ebucore:audioTrackConfiguration "";
    ebucore:bitRate "192";
    ebucore:fileSize "";

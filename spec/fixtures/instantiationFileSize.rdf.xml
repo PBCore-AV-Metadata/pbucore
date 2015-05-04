@@ -18,8 +18,6 @@
                 <ebucore:hasObjectType/>
                 <pbcorerdf:wamuId>1785</pbcorerdf:wamuId>
                 <ebucore:identifier>WAMU - 1785</ebucore:identifier>
-                <ebucore:hasCreator rdf:resource=""/>
-                <ebucore:hasContributor rdf:resource=""/>
                 <ebucore:hasRightsSummary/>
                 <ebucore:hasRightsLink/>
                 <prov:generatedAtTime/>

@@ -122,10 +122,22 @@
                     </rdf:Description>
                 </ebucore:hasGenre>
             </xsl:for-each>
-            <ebucore:hasCreator
-                rdf:resource="{concat(substring-before(pbcore:pbcoreCreator/pbcore:creator,','), substring-after(pbcore:pbcoreCreator/pbcore:creator,' '))}"/>
-            <ebucore:hasContributor
-                rdf:resource="{concat(substring-before(pbcore:pbcoreContributor/pbcore:contributor,','), substring-after(pbcore:pbcoreContributor/pbcore:contributor,' '))}"/>
+            <xsl:for-each select="pbcore:pbcoreCreator">
+                <ebucore:hasCreator>
+                    <xsl:apply-templates select="."/>
+                </ebucore:hasCreator>
+            </xsl:for-each>
+            <xsl:for-each select="pbcore:pbcoreContributor">
+                <ebucore:hasContributor>
+                    <xsl:apply-templates select="."/>
+                </ebucore:hasContributor>
+            </xsl:for-each>
+            <xsl:for-each select="pbcore:pbcorePublisher">
+                <ebucore:hasPublisher>
+                    <xsl:apply-templates select="."/>
+                </ebucore:hasPublisher>
+            </xsl:for-each>
+
             <!-- ALTERNATIVE OPTIONS FOR CREATOR-CONTRIBUTOR-PUBLISHER to avoid blank nodes in absence of vocabularies or other resources -->
             <xsl:for-each select="pbcore:pbcoreCreator">
                 <!-- option 1 -->
@@ -164,6 +176,7 @@
                     <xsl:value-of select="pbcore:publisher"/>
                 </ebucore:hasPublisher>
             </xsl:for-each>
+
             <ebucore:hasRightsSummary>
                 <xsl:value-of select="pbcore:pbcoreRightsSummary/pbcore:rightsSummary"/>
             </ebucore:hasRightsSummary>

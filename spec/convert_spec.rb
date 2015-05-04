@@ -25,7 +25,7 @@ describe 'converter' do
       it "converts #{File.basename(rdf_xml_path)} to #{File.basename(turtle_path)}" do
         turtle_actual = Turtler.instance.turtle(rdf_xml_path)
         turtle_expected = File.read(turtle_path)
-        expect(turtle_actual).to eq turtle_expected
+        expect(turtle_actual.gsub(/^\s+/, '')).to eq turtle_expected.gsub(/^\s+/, '')
       end
     end
   end
