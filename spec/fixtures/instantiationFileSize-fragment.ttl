@@ -4,6 +4,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
 <> a ebucore:MediaResource;
-   rdfs:label "";
-   ebucore:bitRate "192";
-   pbcorerdf:AACIP_RecordNominationStatus "" .
+    rdfs:label "";
+    ebucore:fileSize "85983232";
+    pbcorerdf:AACIP_RecordNominationStatus "" .
