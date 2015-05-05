@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- A new namespace pbcorerdf has been added with a structure more appropriate for RDF  -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -11,12 +10,12 @@
     xmlns:foaf="xmlns.com/foaf/0.1/">
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
-    <xsl:include href="lib/pbcoreCollection.xsl"/>
-    <xsl:include href="lib/pbcoreDescriptionDocument.xsl"/>
-    <xsl:include href="lib/pbcoreInstantiation.xsl"/>
-    <xsl:include href="lib/pbcoreCreator.xsl"/>
-    <xsl:include href="lib/pbcoreContributor.xsl"/>
-    <xsl:include href="lib/pbcorePublisher.xsl"/>
+    <xsl:include href="lib/includes/pbcoreCollection.xsl"/>
+    <xsl:include href="lib/includes/pbcoreDescriptionDocument.xsl"/>
+    <xsl:include href="lib/includes/pbcoreInstantiation.xsl"/>
+    <xsl:include href="lib/includes/pbcoreCreator.xsl"/>
+    <xsl:include href="lib/includes/pbcoreContributor.xsl"/>
+    <xsl:include href="lib/includes/pbcorePublisher.xsl"/>
     
     <xsl:template match="*">
         <xsl:message terminate="no">WARNING: Unmatched element: <xsl:value-of select="name(..)"/>/<xsl:value-of select="name()"/></xsl:message>
