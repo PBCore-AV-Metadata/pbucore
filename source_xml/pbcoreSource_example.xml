@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xalan="http://xml.apache.org/xalan" xmlns:fmp="http://www.filemaker.com/xml/fmresultset">
+    <pbcoreDescriptionDocument>
+        <pbcoreIdentifier source="Casey">cpb-aacip-600-300</pbcoreIdentifier>
+        <pbcoreTitle>Casey is so excited</pbcoreTitle>
+        <pbcoreTitle titleType="Episode" source="Casey">About PBUCore</pbcoreTitle>
+        <pbcoreDescription>This is so exciting!</pbcoreDescription>
+        <pbcoreRightsSummary>
+            <rightsSummary>This asset is copyrighted by WGBH.</rightsSummary>
+            <rightsLink>http://copyright.org</rightsLink>
+        </pbcoreRightsSummary>
+    </pbcoreDescriptionDocument>
+</pbcoreCollection>
