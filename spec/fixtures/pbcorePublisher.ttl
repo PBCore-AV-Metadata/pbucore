@@ -1,0 +1,22 @@
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<collection_id1> a ebucore:Group;
+   rdfs:label "";
+   ebucore:date "";
+   ebucore:description "";
+   ebucore:hasMember <cpb-aacip-600-300>;
+   ebucore:title "" .
+
+<White> a ebucore:Cast;
+   rdfs:label "Vanna White";
+   ebucore:agentName "Vanna White";
+   ebucore:hasRole "Letter Turner" .
+
+<cpb-aacip-600-300> a ebucore:EditorialObject;
+   rdfs:label "";
+   ebucore:description "This is so exciting!";
+   ebucore:hasPublisher <White>,
+       "Vanna White";
+   ebucore:identifier "Casey - cpb-aacip-600-300" .
