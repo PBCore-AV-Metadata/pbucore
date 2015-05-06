@@ -5,15 +5,14 @@
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
 
+    <xsl:template match="xsd:attribute[@name]">
+      <xsl:attribute name="{@name}"/>
+    </xsl:template>
     
-    <!--<xsl:template match="*[@maxOccurs='unbounded']">
+    <xsl:template match="*[@maxOccurs='unbounded']">
         <xsl:element name="{@name}"><xsl:value-of select="concat(@name,'_first')"/></xsl:element>
         <xsl:element name="{@name}"><xsl:value-of select="concat(@name,'_repeat')"/></xsl:element>
-    </xsl:template>-->
-    
-    <!--<xsl:template match="xsd:attribute[@name]">
-      <xsl:attribute name="{@name}"/>
-    </xsl:template>-->
+    </xsl:template>
     
     <xsl:template match="*">
         <xsl:element name="{@name}">
@@ -29,15 +28,10 @@
         </pbcoreCollection>
     </xsl:template>
     
-    <xsl:template match="*[@name='pbcoreInstantiation']">
+    <xsl:template match="*[@name='pbcoreDescriptionDocument' or @name='pbcoreInstantiation' or @name='instantiationEssenceTrack']">
+        <xsl:variable name="type" select="@type"/>
         <xsl:element name="{@name}">
-            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name='instantiationType']/xsd:sequence/*
-        </xsl:element>
-    </xsl:template>
-    
-    <xsl:template match="*[@name='instantiationEssenceTrack']">
-        <xsl:element name="{@name}">
-            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name='essenceTrackType']/xsd:sequence/*
+            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:sequence/*"/>
         </xsl:element>
     </xsl:template>
     
