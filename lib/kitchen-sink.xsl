@@ -24,7 +24,10 @@
     <xsl:template priority="1" match="xsd:element[
                                         @name='pbcoreInstantiation' or 
                                         @name='instantiationEssenceTrack' or
-                                        @name='extensionWrap']">
+                                        @name='extensionWrap' or
+                                        @name='pbcorePublisher' or
+                                        @name='pbcoreContributor' or
+                                        @name='pbcoreCreator']">
         <xsl:variable name="type" select="@type"/>
         <xsl:element name="{@name}">
             <xsl:apply-templates select="(/xsd:schema/xsd:complexType[@name=$type] | ./xsd:complexType)/xsd:sequence/*"/>
@@ -44,6 +47,14 @@
                 <xsl:apply-templates select="."/>
             </xsl:element>
         </xsl:for-each>
+    </xsl:template>
+    
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='pbcorePart']">
+        <pbcorePart>
+            <xsl:comment>pbcorePart can recursively include all the elements of a descriptionDocument</xsl:comment>
+            <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+        </pbcorePart>
     </xsl:template>
     
     <xsl:template priority="1" match="xsd:element[

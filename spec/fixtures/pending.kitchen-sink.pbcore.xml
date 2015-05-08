@@ -23,12 +23,21 @@
     <pbcoreAudienceLevel>pbcoreAudienceLevel_repeat</pbcoreAudienceLevel>
     <pbcoreAudienceRating>pbcoreAudienceRating_first</pbcoreAudienceRating>
     <pbcoreAudienceRating>pbcoreAudienceRating_repeat</pbcoreAudienceRating>
-    <pbcoreCreator>pbcoreCreator_first</pbcoreCreator>
-    <pbcoreCreator>pbcoreCreator_repeat</pbcoreCreator>
-    <pbcoreContributor>pbcoreContributor_first</pbcoreContributor>
-    <pbcoreContributor>pbcoreContributor_repeat</pbcoreContributor>
-    <pbcorePublisher>pbcorePublisher_first</pbcorePublisher>
-    <pbcorePublisher>pbcorePublisher_repeat</pbcorePublisher>
+    <pbcoreCreator>
+      <creator affiliation="creator_only_@affiliation" ref="creator_only_@ref" annotation="creator_only_@annotation">creator_only</creator>
+      <creatorRole>creatorRole_first</creatorRole>
+      <creatorRole>creatorRole_repeat</creatorRole>
+    </pbcoreCreator>
+    <pbcoreContributor>
+      <contributor affiliation="contributor_only_@affiliation" ref="contributor_only_@ref" annotation="contributor_only_@annotation">contributor_only</contributor>
+      <contributorRole portrayal="contributorRole_first_@portrayal">contributorRole_first</contributorRole>
+      <contributorRole portrayal="contributorRole_repeat_@portrayal">contributorRole_repeat</contributorRole>
+    </pbcoreContributor>
+    <pbcorePublisher>
+      <publisher affiliation="publisher_only_@affiliation" ref="publisher_only_@ref" annotation="publisher_only_@annotation">publisher_only</publisher>
+      <publisherRole>publisherRole_first</publisherRole>
+      <publisherRole>publisherRole_repeat</publisherRole>
+    </pbcorePublisher>
     <pbcoreRightsSummary>pbcoreRightsSummary_first</pbcoreRightsSummary>
     <pbcoreRightsSummary>pbcoreRightsSummary_repeat</pbcoreRightsSummary>
     <pbcoreInstantiation>
