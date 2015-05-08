@@ -31,7 +31,20 @@
                                         @name='instantiationRelation' or
                                         @name='pbcoreRelation' or
                                         @name='pbcoreCoverage']">
-        <xsl:variable name="type" select="@type"/>
+        <xsl:call-template name="sequence">
+            <xsl:with-param name="type" select="@type"/>
+        </xsl:call-template>
+        <xsl:if test="@maxOccurs='unbounded'">
+            <xsl:comment>TODO: Get the contents of repeated elements to be distinct.</xsl:comment>
+            <!-- XSLT 2 tunnel parameters would be helpful here... -->
+            <xsl:call-template name="sequence">
+                <xsl:with-param name="type" select="@type"/>
+            </xsl:call-template>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="sequence">
+        <xsl:param name="type"/>
         <xsl:element name="{@name}">
             <xsl:apply-templates select="(/xsd:schema/xsd:complexType[@name=$type] | ./xsd:complexType)/xsd:sequence/*"/>
         </xsl:element>
@@ -104,7 +117,7 @@
     </xsl:template>
     
     <xsl:template match="xsd:attributeGroup[@ref]">
-        <!--MATCH-->
+        <!--<attribute ref <xsl:value-of select="@ref">-->
     </xsl:template>
     
 </xsl:stylesheet>

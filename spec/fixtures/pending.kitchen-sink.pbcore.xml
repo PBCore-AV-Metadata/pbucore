@@ -19,6 +19,16 @@
       <pbcoreRelationType>pbcoreRelationType_only</pbcoreRelationType>
       <pbcoreRelationIdentifier>pbcoreRelationIdentifier_only</pbcoreRelationIdentifier>
     </pbcoreRelation>
+    <!--TODO: Get the contents of repeated elements to be distinct.-->
+    <pbcoreRelation>
+      <pbcoreRelationType>pbcoreRelationType_only</pbcoreRelationType>
+      <pbcoreRelationIdentifier>pbcoreRelationIdentifier_only</pbcoreRelationIdentifier>
+    </pbcoreRelation>
+    <pbcoreCoverage>
+      <coverage>coverage_only</coverage>
+      <coverageType>coverageType_only</coverageType>
+    </pbcoreCoverage>
+    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreCoverage>
       <coverage>coverage_only</coverage>
       <coverageType>coverageType_only</coverageType>
@@ -32,11 +42,29 @@
       <creatorRole>creatorRole_first</creatorRole>
       <creatorRole>creatorRole_repeat</creatorRole>
     </pbcoreCreator>
+    <!--TODO: Get the contents of repeated elements to be distinct.-->
+    <pbcoreCreator>
+      <creator affiliation="creator_only_@affiliation" ref="creator_only_@ref" annotation="creator_only_@annotation">creator_only</creator>
+      <creatorRole>creatorRole_first</creatorRole>
+      <creatorRole>creatorRole_repeat</creatorRole>
+    </pbcoreCreator>
     <pbcoreContributor>
       <contributor affiliation="contributor_only_@affiliation" ref="contributor_only_@ref" annotation="contributor_only_@annotation">contributor_only</contributor>
       <contributorRole portrayal="contributorRole_first_@portrayal">contributorRole_first</contributorRole>
       <contributorRole portrayal="contributorRole_repeat_@portrayal">contributorRole_repeat</contributorRole>
     </pbcoreContributor>
+    <!--TODO: Get the contents of repeated elements to be distinct.-->
+    <pbcoreContributor>
+      <contributor affiliation="contributor_only_@affiliation" ref="contributor_only_@ref" annotation="contributor_only_@annotation">contributor_only</contributor>
+      <contributorRole portrayal="contributorRole_first_@portrayal">contributorRole_first</contributorRole>
+      <contributorRole portrayal="contributorRole_repeat_@portrayal">contributorRole_repeat</contributorRole>
+    </pbcoreContributor>
+    <pbcorePublisher>
+      <publisher affiliation="publisher_only_@affiliation" ref="publisher_only_@ref" annotation="publisher_only_@annotation">publisher_only</publisher>
+      <publisherRole>publisherRole_first</publisherRole>
+      <publisherRole>publisherRole_repeat</publisherRole>
+    </pbcorePublisher>
+    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcorePublisher>
       <publisher affiliation="publisher_only_@affiliation" ref="publisher_only_@ref" annotation="publisher_only_@annotation">publisher_only</publisher>
       <publisherRole>publisherRole_first</publisherRole>
@@ -91,12 +119,175 @@
             <extensionValue>extensionValue_only</extensionValue>
             <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
           </extensionWrap>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
           <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
           <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
+      <!--TODO: Get the contents of repeated elements to be distinct.-->
+      <instantiationEssenceTrack>
+        <essenceTrackType>essenceTrackType_only</essenceTrackType>
+        <essenceTrackIdentifier>essenceTrackIdentifier_first</essenceTrackIdentifier>
+        <essenceTrackIdentifier>essenceTrackIdentifier_repeat</essenceTrackIdentifier>
+        <essenceTrackStandard>essenceTrackStandard_only</essenceTrackStandard>
+        <essenceTrackEncoding>essenceTrackEncoding_only</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
+        <essenceTrackFrameSize>essenceTrackFrameSize_only</essenceTrackFrameSize>
+        <essenceTrackAspectRatio>essenceTrackAspectRatio_only</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
+        <essenceTrackLanguage>essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackExtension>
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
+        </essenceTrackExtension>
+        <essenceTrackExtension>
+          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
+          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+        </essenceTrackExtension>
+      </instantiationEssenceTrack>
+      <instantiationRelation>
+        <instantiationRelationType>instantiationRelationType_only</instantiationRelationType>
+        <instantiationRelationIdentifier>instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+      </instantiationRelation>
+      <!--TODO: Get the contents of repeated elements to be distinct.-->
+      <instantiationRelation>
+        <instantiationRelationType>instantiationRelationType_only</instantiationRelationType>
+        <instantiationRelationIdentifier>instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+      </instantiationRelation>
+      <instantiationRights>instantiationRights_first</instantiationRights>
+      <instantiationRights>instantiationRights_repeat</instantiationRights>
+      <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
+      <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
+      <instantiationPart>instantiationPart_first</instantiationPart>
+      <instantiationPart>instantiationPart_repeat</instantiationPart>
+      <instantiationExtension>instantiationExtension_first</instantiationExtension>
+      <instantiationExtension>instantiationExtension_repeat</instantiationExtension>
+    </pbcoreInstantiation>
+    <!--TODO: Get the contents of repeated elements to be distinct.-->
+    <pbcoreInstantiation>
+      <instantiationIdentifier source="instantiationIdentifier_first_@source" ref="instantiationIdentifier_first_@ref" version="instantiationIdentifier_first_@version" annotation="instantiationIdentifier_first_@annotation">instantiationIdentifier_first</instantiationIdentifier>
+      <instantiationIdentifier source="instantiationIdentifier_repeat_@source" ref="instantiationIdentifier_repeat_@ref" version="instantiationIdentifier_repeat_@version" annotation="instantiationIdentifier_repeat_@annotation">instantiationIdentifier_repeat</instantiationIdentifier>
+      <instantiationDate dateType="instantiationDate_first_@dateType">instantiationDate_first</instantiationDate>
+      <instantiationDate dateType="instantiationDate_repeat_@dateType">instantiationDate_repeat</instantiationDate>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_first_@unitsOfMeasure" annotation="instantiationDimensions_first_@annotation">instantiationDimensions_first</instantiationDimensions>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_repeat_@unitsOfMeasure" annotation="instantiationDimensions_repeat_@annotation">instantiationDimensions_repeat</instantiationDimensions>
+      <instantiationPhysical>instantiationPhysical_only</instantiationPhysical>
+      <instantiationDigital>instantiationDigital_only</instantiationDigital>
+      <instantiationStandard profile="instantiationStandard_only_@profile">instantiationStandard_only</instantiationStandard>
+      <instantiationLocation>instantiationLocation_only</instantiationLocation>
+      <instantiationMediaType>instantiationMediaType_only</instantiationMediaType>
+      <instantiationGenerations>instantiationGenerations_first</instantiationGenerations>
+      <instantiationGenerations>instantiationGenerations_repeat</instantiationGenerations>
+      <instantiationFileSize unitsOfMeasure="instantiationFileSize_only_@unitsOfMeasure" annotation="instantiationFileSize_only_@annotation">instantiationFileSize_only</instantiationFileSize>
+      <instantiationTimeStart>instantiationTimeStart_only</instantiationTimeStart>
+      <instantiationDuration>instantiationDuration_only</instantiationDuration>
+      <instantiationDataRate unitsOfMeasure="instantiationDataRate_only_@unitsOfMeasure" annotation="instantiationDataRate_only_@annotation">instantiationDataRate_only</instantiationDataRate>
+      <instantiationColors>instantiationColors_only</instantiationColors>
+      <instantiationTracks>instantiationTracks_only</instantiationTracks>
+      <instantiationChannelConfiguration>instantiationChannelConfiguration_only</instantiationChannelConfiguration>
+      <instantiationLanguage>instantiationLanguage_only</instantiationLanguage>
+      <instantiationAlternativeModes>instantiationAlternativeModes_only</instantiationAlternativeModes>
+      <instantiationEssenceTrack>
+        <essenceTrackType>essenceTrackType_only</essenceTrackType>
+        <essenceTrackIdentifier>essenceTrackIdentifier_first</essenceTrackIdentifier>
+        <essenceTrackIdentifier>essenceTrackIdentifier_repeat</essenceTrackIdentifier>
+        <essenceTrackStandard>essenceTrackStandard_only</essenceTrackStandard>
+        <essenceTrackEncoding>essenceTrackEncoding_only</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
+        <essenceTrackFrameSize>essenceTrackFrameSize_only</essenceTrackFrameSize>
+        <essenceTrackAspectRatio>essenceTrackAspectRatio_only</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
+        <essenceTrackLanguage>essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackExtension>
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
+        </essenceTrackExtension>
+        <essenceTrackExtension>
+          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
+          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+        </essenceTrackExtension>
+      </instantiationEssenceTrack>
+      <!--TODO: Get the contents of repeated elements to be distinct.-->
+      <instantiationEssenceTrack>
+        <essenceTrackType>essenceTrackType_only</essenceTrackType>
+        <essenceTrackIdentifier>essenceTrackIdentifier_first</essenceTrackIdentifier>
+        <essenceTrackIdentifier>essenceTrackIdentifier_repeat</essenceTrackIdentifier>
+        <essenceTrackStandard>essenceTrackStandard_only</essenceTrackStandard>
+        <essenceTrackEncoding>essenceTrackEncoding_only</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
+        <essenceTrackFrameSize>essenceTrackFrameSize_only</essenceTrackFrameSize>
+        <essenceTrackAspectRatio>essenceTrackAspectRatio_only</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
+        <essenceTrackLanguage>essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackExtension>
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
+        </essenceTrackExtension>
+        <essenceTrackExtension>
+          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
+          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+        </essenceTrackExtension>
+      </instantiationEssenceTrack>
+      <instantiationRelation>
+        <instantiationRelationType>instantiationRelationType_only</instantiationRelationType>
+        <instantiationRelationIdentifier>instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+      </instantiationRelation>
+      <!--TODO: Get the contents of repeated elements to be distinct.-->
       <instantiationRelation>
         <instantiationRelationType>instantiationRelationType_only</instantiationRelationType>
         <instantiationRelationIdentifier>instantiationRelationIdentifier_only</instantiationRelationIdentifier>
