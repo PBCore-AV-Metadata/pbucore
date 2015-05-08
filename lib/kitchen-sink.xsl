@@ -27,7 +27,10 @@
                                         @name='extensionWrap' or
                                         @name='pbcorePublisher' or
                                         @name='pbcoreContributor' or
-                                        @name='pbcoreCreator']">
+                                        @name='pbcoreCreator' or
+                                        @name='instantiationRelation' or
+                                        @name='pbcoreRelation' or
+                                        @name='pbcoreCoverage']">
         <xsl:variable name="type" select="@type"/>
         <xsl:element name="{@name}">
             <xsl:apply-templates select="(/xsd:schema/xsd:complexType[@name=$type] | ./xsd:complexType)/xsd:sequence/*"/>
@@ -41,7 +44,7 @@
         <xsl:for-each select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*">
             <!-- 
               Generate parent element for each choice;
-              Not necessarily valid if the parent can only occur once.
+              Not necessarily valid if the parent is constrained to occur once.
             -->
             <xsl:element name="{$name}">
                 <xsl:apply-templates select="."/>
@@ -57,13 +60,10 @@
         </pbcorePart>
     </xsl:template>
     
-    <xsl:template priority="1" match="xsd:element[
-                                        @name='pbcorePart']">
-        <pbcorePart>
-            <xsl:comment>pbcorePart can recursively include all the elements of a descriptionDocument</xsl:comment>
-            <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
-        </pbcorePart>
+    <xsl:template priority="0.9" match="xsd:element[xsd:complexType]">
+        ERROR: complexType element '<xsl:value-of select="@name"/>' without match.
     </xsl:template>
+        
     
     <xsl:template match="xsd:element[@maxOccurs='unbounded']">
         <xsl:call-template name="element">

@@ -15,10 +15,14 @@
     <pbcoreDescription annotation="pbcoreDescription_repeat_@annotation">pbcoreDescription_repeat</pbcoreDescription>
     <pbcoreGenre>pbcoreGenre_first</pbcoreGenre>
     <pbcoreGenre>pbcoreGenre_repeat</pbcoreGenre>
-    <pbcoreRelation>pbcoreRelation_first</pbcoreRelation>
-    <pbcoreRelation>pbcoreRelation_repeat</pbcoreRelation>
-    <pbcoreCoverage>pbcoreCoverage_first</pbcoreCoverage>
-    <pbcoreCoverage>pbcoreCoverage_repeat</pbcoreCoverage>
+    <pbcoreRelation>
+      <pbcoreRelationType>pbcoreRelationType_only</pbcoreRelationType>
+      <pbcoreRelationIdentifier>pbcoreRelationIdentifier_only</pbcoreRelationIdentifier>
+    </pbcoreRelation>
+    <pbcoreCoverage>
+      <coverage>coverage_only</coverage>
+      <coverageType>coverageType_only</coverageType>
+    </pbcoreCoverage>
     <pbcoreAudienceLevel>pbcoreAudienceLevel_first</pbcoreAudienceLevel>
     <pbcoreAudienceLevel>pbcoreAudienceLevel_repeat</pbcoreAudienceLevel>
     <pbcoreAudienceRating>pbcoreAudienceRating_first</pbcoreAudienceRating>
@@ -93,8 +97,10 @@
           <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
-      <instantiationRelation>instantiationRelation_first</instantiationRelation>
-      <instantiationRelation>instantiationRelation_repeat</instantiationRelation>
+      <instantiationRelation>
+        <instantiationRelationType>instantiationRelationType_only</instantiationRelationType>
+        <instantiationRelationIdentifier>instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+      </instantiationRelation>
       <instantiationRights>instantiationRights_first</instantiationRights>
       <instantiationRights>instantiationRights_repeat</instantiationRights>
       <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
