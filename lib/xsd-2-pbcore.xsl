@@ -12,23 +12,30 @@
         </xsl:attribute>
     </xsl:template>
     
-    <xsl:template match="xsd:element[@maxOccurs='unbounded']">
+    <xsl:template name="element">
+        <xsl:param name="suffix"/>
         <xsl:variable name="type" select="@type"/>
         <xsl:element name="{@name}">
             <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:simpleContent/xsd:extension/xsd:attribute">
-                <xsl:with-param name="element_name" select="concat(@name,'_first')"/>  
+                <xsl:with-param name="element_name" select="concat(@name,'_',$suffix)"/>  
             </xsl:apply-templates>  
-            <xsl:value-of select="concat(@name,'_first')"/>
-        </xsl:element>
-        <xsl:element name="{@name}">
-            <xsl:value-of select="concat(@name,'_repeat')"/>
+            <xsl:value-of select="concat(@name,'_',$suffix)"/>
         </xsl:element>
     </xsl:template>
     
+    <xsl:template match="xsd:element[@maxOccurs='unbounded']">
+        <xsl:call-template name="element">
+            <xsl:with-param name="suffix">first</xsl:with-param>
+        </xsl:call-template>
+        <xsl:call-template name="element">
+            <xsl:with-param name="suffix">repeat</xsl:with-param>
+        </xsl:call-template>
+    </xsl:template>
+    
     <xsl:template match="xsd:element[@maxOccurs='1']">
-        <xsl:element name="{@name}">
-            <xsl:value-of select="concat(@name,'_only')"/>
-        </xsl:element>
+        <xsl:call-template name="element">
+            <xsl:with-param name="suffix">only</xsl:with-param>
+        </xsl:call-template>
     </xsl:template>
     
     <xsl:template match="/">
