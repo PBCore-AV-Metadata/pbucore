@@ -97,8 +97,10 @@
     </pbcoreInstantiation>
     <pbcoreAnnotation annotationType="pbcoreAnnotation_first_@annotationType" ref="pbcoreAnnotation_first_@ref">pbcoreAnnotation_first</pbcoreAnnotation>
     <pbcoreAnnotation annotationType="pbcoreAnnotation_repeat_@annotationType" ref="pbcoreAnnotation_repeat_@ref">pbcoreAnnotation_repeat</pbcoreAnnotation>
-    <pbcorePart>pbcorePart_first</pbcorePart>
-    <pbcorePart>pbcorePart_repeat</pbcorePart>
+    <pbcorePart>
+      <!--pbcorePart can recursively include all the elements of a descriptionDocument-->
+      <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+    </pbcorePart>
     <pbcoreExtension>pbcoreExtension_first</pbcoreExtension>
     <pbcoreExtension>pbcoreExtension_repeat</pbcoreExtension>
   </pbcoreDescriptionDocument>

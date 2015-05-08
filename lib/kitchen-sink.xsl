@@ -2,10 +2,19 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
     xmlns:xsd="http://www.w3.org/2001/XMLSchema"
     xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+    
+    <!--
+      Generates a "kitchen-sink" document given the PBCore schema.
+    -->
+    
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
     <xsl:template match="/">
         <pbcoreCollection>
+            <!-- 
+              pbcoreDescriptionDocument could repeat, 
+              but that would make the output too unwieldy.
+            -->
             <pbcoreDescriptionDocument>
                 <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name='pbcoreDescriptionDocumentType']/xsd:sequence/*"/>
             </pbcoreDescriptionDocument>
@@ -13,7 +22,6 @@
     </xsl:template>
 
     <xsl:template priority="1" match="xsd:element[
-                                        @name='pbcoreDescriptionDocument' or 
                                         @name='pbcoreInstantiation' or 
                                         @name='instantiationEssenceTrack' or
                                         @name='extensionWrap']">
@@ -28,12 +36,24 @@
         <xsl:variable name="type" select="@type"/>
         <xsl:variable name="name" select="@name"/>
         <xsl:for-each select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*">
+            <!-- 
+              Generate parent element for each choice;
+              Not necessarily valid if the parent can only occur once.
+            -->
             <xsl:element name="{$name}">
                 <xsl:apply-templates select="."/>
             </xsl:element>
         </xsl:for-each>
     </xsl:template>
-
+    
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='pbcorePart']">
+        <pbcorePart>
+            <xsl:comment>pbcorePart can recursively include all the elements of a descriptionDocument</xsl:comment>
+            <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+        </pbcorePart>
+    </xsl:template>
+    
     <xsl:template match="xsd:element[@maxOccurs='unbounded']">
         <xsl:call-template name="element">
             <xsl:with-param name="suffix">first</xsl:with-param>
