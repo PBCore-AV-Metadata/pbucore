@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <pbcoreDescriptionDocument>
+    <pbcoreAssetType>pbcoreAssetType_first</pbcoreAssetType>
+    <pbcoreAssetType>pbcoreAssetType_repeat</pbcoreAssetType>
+    <pbcoreAssetDate dateType="pbcoreAssetDate_first_@dateType">pbcoreAssetDate_first</pbcoreAssetDate>
+    <pbcoreAssetDate dateType="pbcoreAssetDate_repeat_@dateType">pbcoreAssetDate_repeat</pbcoreAssetDate>
+    <pbcoreIdentifier source="pbcoreIdentifier_first_@source" ref="pbcoreIdentifier_first_@ref" version="pbcoreIdentifier_first_@version" annotation="pbcoreIdentifier_first_@annotation">pbcoreIdentifier_first</pbcoreIdentifier>
+    <pbcoreIdentifier source="pbcoreIdentifier_repeat_@source" ref="pbcoreIdentifier_repeat_@ref" version="pbcoreIdentifier_repeat_@version" annotation="pbcoreIdentifier_repeat_@annotation">pbcoreIdentifier_repeat</pbcoreIdentifier>
+    <pbcoreTitle titleType="pbcoreTitle_first_@titleType">pbcoreTitle_first</pbcoreTitle>
+    <pbcoreTitle titleType="pbcoreTitle_repeat_@titleType">pbcoreTitle_repeat</pbcoreTitle>
+    <pbcoreSubject subjectType="pbcoreSubject_first_@subjectType">pbcoreSubject_first</pbcoreSubject>
+    <pbcoreSubject subjectType="pbcoreSubject_repeat_@subjectType">pbcoreSubject_repeat</pbcoreSubject>
+    <pbcoreDescription annotation="pbcoreDescription_first_@annotation">pbcoreDescription_first</pbcoreDescription>
+    <pbcoreDescription annotation="pbcoreDescription_repeat_@annotation">pbcoreDescription_repeat</pbcoreDescription>
+    <pbcoreGenre>pbcoreGenre_first</pbcoreGenre>
+    <pbcoreGenre>pbcoreGenre_repeat</pbcoreGenre>
+    <pbcoreRelation>pbcoreRelation_first</pbcoreRelation>
+    <pbcoreRelation>pbcoreRelation_repeat</pbcoreRelation>
+    <pbcoreCoverage>pbcoreCoverage_first</pbcoreCoverage>
+    <pbcoreCoverage>pbcoreCoverage_repeat</pbcoreCoverage>
+    <pbcoreAudienceLevel>pbcoreAudienceLevel_first</pbcoreAudienceLevel>
+    <pbcoreAudienceLevel>pbcoreAudienceLevel_repeat</pbcoreAudienceLevel>
+    <pbcoreAudienceRating>pbcoreAudienceRating_first</pbcoreAudienceRating>
+    <pbcoreAudienceRating>pbcoreAudienceRating_repeat</pbcoreAudienceRating>
+    <pbcoreCreator>pbcoreCreator_first</pbcoreCreator>
+    <pbcoreCreator>pbcoreCreator_repeat</pbcoreCreator>
+    <pbcoreContributor>pbcoreContributor_first</pbcoreContributor>
+    <pbcoreContributor>pbcoreContributor_repeat</pbcoreContributor>
+    <pbcorePublisher>pbcorePublisher_first</pbcorePublisher>
+    <pbcorePublisher>pbcorePublisher_repeat</pbcorePublisher>
+    <pbcoreRightsSummary>pbcoreRightsSummary_first</pbcoreRightsSummary>
+    <pbcoreRightsSummary>pbcoreRightsSummary_repeat</pbcoreRightsSummary>
+    <pbcoreInstantiation>
+      <instantiationIdentifier source="instantiationIdentifier_first_@source" ref="instantiationIdentifier_first_@ref" version="instantiationIdentifier_first_@version" annotation="instantiationIdentifier_first_@annotation">instantiationIdentifier_first</instantiationIdentifier>
+      <instantiationIdentifier source="instantiationIdentifier_repeat_@source" ref="instantiationIdentifier_repeat_@ref" version="instantiationIdentifier_repeat_@version" annotation="instantiationIdentifier_repeat_@annotation">instantiationIdentifier_repeat</instantiationIdentifier>
+      <instantiationDate dateType="instantiationDate_first_@dateType">instantiationDate_first</instantiationDate>
+      <instantiationDate dateType="instantiationDate_repeat_@dateType">instantiationDate_repeat</instantiationDate>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_first_@unitsOfMeasure" annotation="instantiationDimensions_first_@annotation">instantiationDimensions_first</instantiationDimensions>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_repeat_@unitsOfMeasure" annotation="instantiationDimensions_repeat_@annotation">instantiationDimensions_repeat</instantiationDimensions>
+      <instantiationPhysical>instantiationPhysical_only</instantiationPhysical>
+      <instantiationDigital>instantiationDigital_only</instantiationDigital>
+      <instantiationStandard profile="instantiationStandard_only_@profile">instantiationStandard_only</instantiationStandard>
+      <instantiationLocation>instantiationLocation_only</instantiationLocation>
+      <instantiationMediaType>instantiationMediaType_only</instantiationMediaType>
+      <instantiationGenerations>instantiationGenerations_first</instantiationGenerations>
+      <instantiationGenerations>instantiationGenerations_repeat</instantiationGenerations>
+      <instantiationFileSize unitsOfMeasure="instantiationFileSize_only_@unitsOfMeasure" annotation="instantiationFileSize_only_@annotation">instantiationFileSize_only</instantiationFileSize>
+      <instantiationTimeStart>instantiationTimeStart_only</instantiationTimeStart>
+      <instantiationDuration>instantiationDuration_only</instantiationDuration>
+      <instantiationDataRate unitsOfMeasure="instantiationDataRate_only_@unitsOfMeasure" annotation="instantiationDataRate_only_@annotation">instantiationDataRate_only</instantiationDataRate>
+      <instantiationColors>instantiationColors_only</instantiationColors>
+      <instantiationTracks>instantiationTracks_only</instantiationTracks>
+      <instantiationChannelConfiguration>instantiationChannelConfiguration_only</instantiationChannelConfiguration>
+      <instantiationLanguage>instantiationLanguage_only</instantiationLanguage>
+      <instantiationAlternativeModes>instantiationAlternativeModes_only</instantiationAlternativeModes>
+      <instantiationEssenceTrack>
+        <essenceTrackType>essenceTrackType_only</essenceTrackType>
+        <essenceTrackIdentifier>essenceTrackIdentifier_first</essenceTrackIdentifier>
+        <essenceTrackIdentifier>essenceTrackIdentifier_repeat</essenceTrackIdentifier>
+        <essenceTrackStandard>essenceTrackStandard_only</essenceTrackStandard>
+        <essenceTrackEncoding>essenceTrackEncoding_only</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
+        <essenceTrackFrameSize>essenceTrackFrameSize_only</essenceTrackFrameSize>
+        <essenceTrackAspectRatio>essenceTrackAspectRatio_only</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
+        <essenceTrackLanguage>essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackExtension>
+          <extensionWrap/>
+        </essenceTrackExtension>
+        <essenceTrackExtension>
+          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
+          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+        </essenceTrackExtension>
+      </instantiationEssenceTrack>
+      <instantiationRelation>instantiationRelation_first</instantiationRelation>
+      <instantiationRelation>instantiationRelation_repeat</instantiationRelation>
+      <instantiationRights>instantiationRights_first</instantiationRights>
+      <instantiationRights>instantiationRights_repeat</instantiationRights>
+      <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
+      <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
+      <instantiationPart>instantiationPart_first</instantiationPart>
+      <instantiationPart>instantiationPart_repeat</instantiationPart>
+      <instantiationExtension>instantiationExtension_first</instantiationExtension>
+      <instantiationExtension>instantiationExtension_repeat</instantiationExtension>
+    </pbcoreInstantiation>
+    <pbcoreAnnotation annotationType="pbcoreAnnotation_first_@annotationType" ref="pbcoreAnnotation_first_@ref">pbcoreAnnotation_first</pbcoreAnnotation>
+    <pbcoreAnnotation annotationType="pbcoreAnnotation_repeat_@annotationType" ref="pbcoreAnnotation_repeat_@ref">pbcoreAnnotation_repeat</pbcoreAnnotation>
+    <pbcorePart>pbcorePart_first</pbcorePart>
+    <pbcorePart>pbcorePart_repeat</pbcorePart>
+    <pbcoreExtension>pbcoreExtension_first</pbcoreExtension>
+    <pbcoreExtension>pbcoreExtension_repeat</pbcoreExtension>
+  </pbcoreDescriptionDocument>
+</pbcoreCollection>

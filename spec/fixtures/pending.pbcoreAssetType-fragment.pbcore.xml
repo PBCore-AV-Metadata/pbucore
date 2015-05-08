@@ -1,0 +1,9 @@
+<pbcoreDescriptionDocument>
+  <pbcoreAssetType 
+      source="SOURCE"
+      ref="REF" 
+      version="VERSION" 
+      annotation="ANNOTATION">
+    PBCORE_ASSET_TYPE
+  </pbcoreAssetType>
+<pbcoreDescriptionDocument>
