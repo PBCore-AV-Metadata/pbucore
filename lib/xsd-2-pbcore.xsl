@@ -6,15 +6,26 @@
     
 
     <xsl:template match="xsd:attribute[@name]">
-      <xsl:attribute name="{@name}"/>
+        <xsl:param name="element_name"/>
+        <xsl:attribute name="{@name}">
+            <xsl:value-of select="concat($element_name, '_@', @name)"/>
+        </xsl:attribute>
     </xsl:template>
     
-    <xsl:template match="*[@maxOccurs='unbounded']">
-        <xsl:element name="{@name}"><xsl:value-of select="concat(@name,'_first')"/></xsl:element>
-        <xsl:element name="{@name}"><xsl:value-of select="concat(@name,'_repeat')"/></xsl:element>
+    <xsl:template match="xsd:element[@maxOccurs='unbounded']">
+        <xsl:variable name="type" select="@type"/>
+        <xsl:element name="{@name}">
+            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:simpleContent/xsd:extension/xsd:attribute">
+                <xsl:with-param name="element_name" select="concat(@name,'_first')"/>  
+            </xsl:apply-templates>  
+            <xsl:value-of select="concat(@name,'_first')"/>
+        </xsl:element>
+        <xsl:element name="{@name}">
+            <xsl:value-of select="concat(@name,'_repeat')"/>
+        </xsl:element>
     </xsl:template>
     
-    <xsl:template match="*">
+    <xsl:template match="xsd:element[@maxOccurs='1']">
         <xsl:element name="{@name}">
             <xsl:value-of select="concat(@name,'_only')"/>
         </xsl:element>
