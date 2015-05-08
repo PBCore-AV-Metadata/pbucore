@@ -117,7 +117,11 @@
     </xsl:template>
     
     <xsl:template match="xsd:attributeGroup[@ref]">
-        <!--<attribute ref <xsl:value-of select="@ref">-->
+        <xsl:param name="label"/>
+        <xsl:variable name="ref" select="@ref"/>
+        <xsl:apply-templates select="/xsd:schema/xsd:attributeGroup[@name=$ref]/xsd:attribute">
+            <xsl:with-param name="label" select="$label"/>
+        </xsl:apply-templates>
     </xsl:template>
     
 </xsl:stylesheet>
