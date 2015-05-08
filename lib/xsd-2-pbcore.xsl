@@ -19,19 +19,19 @@
                                         @name='extensionWrap']">
         <xsl:variable name="type" select="@type"/>
         <xsl:element name="{@name}">
-            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:sequence/*"/>
+            <xsl:apply-templates select="(/xsd:schema/xsd:complexType[@name=$type] | ./xsd:complexType)/xsd:sequence/*"/>
         </xsl:element>
     </xsl:template>
     
     <xsl:template priority="1" match="xsd:element[
                                         @name='essenceTrackExtension']">
         <xsl:variable name="type" select="@type"/>
-        <xsl:element name="{@name}">
-            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*[1]"/>
-        </xsl:element>
-        <xsl:element name="{@name}">
-            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*[2]"/>
-        </xsl:element>
+        <xsl:variable name="name" select="@name"/>
+        <xsl:for-each select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*">
+            <xsl:element name="{$name}">
+                <xsl:apply-templates select="."/>
+            </xsl:element>
+        </xsl:for-each>
     </xsl:template>
 
     <xsl:template match="xsd:element[@maxOccurs='unbounded']">

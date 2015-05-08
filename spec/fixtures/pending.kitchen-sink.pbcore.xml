@@ -73,7 +73,11 @@
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
         <essenceTrackExtension>
-          <extensionWrap/>
+          <extensionWrap>
+            <extensionElement>extensionElement_only</extensionElement>
+            <extensionValue>extensionValue_only</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
           <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
