@@ -10,7 +10,7 @@ if __FILE__ == $0
   
   rdf_xml_path = pbcore_xml_path.gsub(RE, '.rdf.xml')
   fail("#{rdf_xml_path} already exists") if File.exists?(rdf_xml_path)
-  File.write(rdf_xml_path, Converter.instance.convert(pbcore_xml_path))
+  File.write(rdf_xml_path, Converter.instance.convert(pbcore_xml_path, false))
   
   ttl_path = pbcore_xml_path.gsub(RE, '.ttl')
   fail("#{ttl_path} already exists") if File.exists?(ttl_path)
