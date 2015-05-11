@@ -422,7 +422,13 @@
     <pbcoreAnnotation annotationType="pbcoreAnnotation_repeat_@annotationType" ref="pbcoreAnnotation_repeat_@ref">pbcoreAnnotation_repeat</pbcoreAnnotation>
     <pbcorePart>
       <!--pbcorePart can recurse-->
-      <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+      <pbcoreIdentifier source="pbcorePart_pbcoreIdentifier_@source">pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+      <pbcoreTitle>pbcorePart_pbcoreTitle</pbcoreTitle>
+      <pbcoreDescription>pbcorePart_pbcoreDescription</pbcoreDescription>
+      <pbcoreCoverage>
+        <coverage>pbcorePart_pbcoreCoverage_coverage</coverage>
+        <coverageType>Spatial</coverageType>
+      </pbcoreCoverage>
     </pbcorePart>
     <pbcoreExtension>pbcoreExtension_first</pbcoreExtension>
     <pbcoreExtension>pbcoreExtension_repeat</pbcoreExtension>

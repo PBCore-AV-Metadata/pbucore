@@ -90,7 +90,13 @@
                                         @name='pbcorePart']">
         <pbcorePart>
             <xsl:comment>pbcorePart can recurse</xsl:comment>
-            <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+            <pbcoreIdentifier source="pbcorePart_pbcoreIdentifier_@source">pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+            <pbcoreTitle>pbcorePart_pbcoreTitle</pbcoreTitle>
+            <pbcoreDescription>pbcorePart_pbcoreDescription</pbcoreDescription>
+            <pbcoreCoverage>
+                <coverage>pbcorePart_pbcoreCoverage_coverage</coverage>
+                <coverageType>Spatial</coverageType>
+            </pbcoreCoverage>
         </pbcorePart>
     </xsl:template>
     
