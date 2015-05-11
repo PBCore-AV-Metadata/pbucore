@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'set'
 require_relative '../lib/converter'
 
 KITCHEN_SINK_PATH = 'spec/fixtures/kitchen-sink.pbcore.xml'
@@ -32,5 +33,33 @@ describe KITCHEN_SINK_PATH do
   it 'matches current output' do
     output = kitchen_sink()
     expect(output).to eq File.read(KITCHEN_SINK_PATH)
+  end
+  
+  describe 'conversion to RDF' do
+    def all_text(path)
+      doc = Nokogiri::XML(File.read(path), &:noblanks)
+      Set.new(doc.search('//@*|//text()').map(&:text))
+    end
+    
+    before(:all) do
+      @pbcore = all_text(KITCHEN_SINK_PATH)
+      @rdf_xml = all_text(KITCHEN_SINK_PATH.sub('.pbcore.xml', '.rdf.xml'))
+    end
+  
+    it 'has some data' do
+      expect(@pbcore.count).to be > 1
+      expect(@rdf_xml.count).to be > 1
+    end
+      
+    it 'at least is not getting worse' do
+      expect(@pbcore.count).to eq 787
+      expect(@rdf_xml.count).to eq 63
+      expect(@pbcore.intersection(@rdf_xml).count).to eq 48
+      # TODO: Eventually, the RDF should have all the data from the PBCore.
+      # If there are exceptions, we should understand them.
+    end
+    
+    # Thought about having another test for particular elements,
+    # but that would be a pain to maintain.
   end
 end

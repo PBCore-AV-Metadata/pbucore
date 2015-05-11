@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#" xmlns:pbcore="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:pbcorerdf="http://www.pbcore.org/pbcore/pbcore#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:prov="http://www.w3.org/ns/prov#" xmlns:foaf="xmlns.com/foaf/0.1/">
+  <rdf:Description rdf:about="collection_id1">
+    <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Group"/>
+    <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+    <ebucore:title/>
+    <ebucore:description/>
+    <ebucore:date/>
+    <ebucore:hasMember>
+      <rdf:Description rdf:about="pbcoreIdentifier_first_///5">
+        <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+        <ebucore:description>pbcoreDescription_first_///11</ebucore:description>
+        <ebucore:description>pbcoreDescription_repeat_///12</ebucore:description>
+        <ebucore:identifier>pbcoreIdentifier_first_///5/@source - pbcoreIdentifier_first_///5</ebucore:identifier>
+        <ebucore:identifier>pbcoreIdentifier_repeat_///6/@source - pbcoreIdentifier_repeat_///6</ebucore:identifier>
+        <ebucore:hasGenre>pbcoreGenre_first_///13</ebucore:hasGenre>
+        <ebucore:hasGenre>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.pbcore.org/pbcore/ebucore:Genre"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+            <skos:preferredLabel>pbcoreGenre_first_///13</skos:preferredLabel>
+          </rdf:Description>
+        </ebucore:hasGenre>
+        <ebucore:hasGenre>pbcoreGenre_repeat_///14</ebucore:hasGenre>
+        <ebucore:hasGenre>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.pbcore.org/pbcore/ebucore:Genre"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string"/>
+            <skos:preferredLabel>pbcoreGenre_repeat_///14</skos:preferredLabel>
+          </rdf:Description>
+        </ebucore:hasGenre>
+        <ebucore:hasCreator>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creator_only_///23/1</rdfs:label>
+            <ebucore:agentName>creator_only_///23/1</ebucore:agentName>
+            <ebucore:hasRole>creatorRole_first_///23/2</ebucore:hasRole>
+          </rdf:Description>
+        </ebucore:hasCreator>
+        <ebucore:hasCreator>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">creator_only_///24/1</rdfs:label>
+            <ebucore:agentName>creator_only_///24/1</ebucore:agentName>
+            <ebucore:hasRole>creatorRole_first_///24/2</ebucore:hasRole>
+          </rdf:Description>
+        </ebucore:hasCreator>
+        <ebucore:hasContributor>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contributor_only_///25/1</rdfs:label>
+            <ebucore:agentName>contributor_only_///25/1</ebucore:agentName>
+            <ebucore:hasRole>contributorRole_first_///25/2</ebucore:hasRole>
+          </rdf:Description>
+        </ebucore:hasContributor>
+        <ebucore:hasContributor>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contributor_only_///26/1</rdfs:label>
+            <ebucore:agentName>contributor_only_///26/1</ebucore:agentName>
+            <ebucore:hasRole>contributorRole_first_///26/2</ebucore:hasRole>
+          </rdf:Description>
+        </ebucore:hasContributor>
+        <ebucore:hasPublisher>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publisher_only_///27/1</rdfs:label>
+            <ebucore:agentName>publisher_only_///27/1</ebucore:agentName>
+            <ebucore:hasRole>publisherRole_first_///27/2</ebucore:hasRole>
+          </rdf:Description>
+        </ebucore:hasPublisher>
+        <ebucore:hasPublisher>
+          <rdf:Description rdf:about="">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">publisher_only_///28/1</rdfs:label>
+            <ebucore:agentName>publisher_only_///28/1</ebucore:agentName>
+            <ebucore:hasRole>publisherRole_first_///28/2</ebucore:hasRole>
+          </rdf:Description>
+        </ebucore:hasPublisher>
+        <ebucore:hasPublisher>publisher_only_///27/1</ebucore:hasPublisher>
+        <ebucore:hasPublisher>publisher_only_///28/1</ebucore:hasPublisher>
+        <ebucore:hasRightsSummary>rightsSummary_only_///29/</ebucore:hasRightsSummary>
+        <ebucore:hasRightsLink>rightsLink_only_///30/</ebucore:hasRightsLink>
+        <ebucore:hasLocation rdf:resource="coverage_only_///17/1"/>
+        <ebucore:hasLocation rdf:resource="coverage_only_///18/1"/>
+        <ebucore:hasLocation rdf:resource="pbcorePart_pbcoreCoverage_coverage_///36/4/1"/>
+        <ebucore:hasRelatedResource>
+          <rdf:Description rdf:about="instantiationIdentifier_first_///32/1">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instantiationIdentifier_first_///32/1</rdfs:label>
+            <ebucore:identifier>instantiationIdentifier_first_///32/1/@source - instantiationIdentifier_first_///32/1</ebucore:identifier>
+            <ebucore:identifier>instantiationIdentifier_repeat_///32/2/@source - instantiationIdentifier_repeat_///32/2</ebucore:identifier>
+            <ebucore:dateCreated/>
+            <ebucore:dateIssued/>
+            <ebucore:dateDigitised/>
+            <ebucore:dateCreated/>
+            <ebucore:dateIssued/>
+            <ebucore:dateDigitised/>
+            <ebucore:hasFormat>instantiationPhysical_only_///32/7</ebucore:hasFormat>
+            <ebucore:locator>instantiationLocation_only_///32/10</ebucore:locator>
+            <ebucore:hasMimeType>instantiationDigital_only_///32/8</ebucore:hasMimeType>
+            <ebucore:hasStorageType>instantiationPhysical_only_///32/7</ebucore:hasStorageType>
+            <ebucore:hasMedium>instantiationPhysical_only_///32/7</ebucore:hasMedium>
+            <ebucore:hasMimeType>instantiationDigital_only_///32/8</ebucore:hasMimeType>
+            <ebucore:hasContainerFormat>instantiationStandard_only_///32/9</ebucore:hasContainerFormat>
+            <ebucore:locator>instantiationLocation_only_///32/10</ebucore:locator>
+            <pbcorerdf:hasMediaType>instantiationMediaType_only_///32/11</pbcorerdf:hasMediaType>
+            <pbcorerdf:generations>instantiationGenerations_first_///32/12</pbcorerdf:generations>
+            <pbcorerdf:generations>instantiationGenerations_repeat_///32/13</pbcorerdf:generations>
+            <pbcorerdf:instantiationTracks>instantiationTracks_only_///32/19</pbcorerdf:instantiationTracks>
+            <ebucore:audioTrackConfiguration>instantiationChannelConfiguration_only_///32/20</ebucore:audioTrackConfiguration>
+            <pbcorerdf:instantiationAlternativeModes>instantiationAlternativeModes_only_///32/22</pbcorerdf:instantiationAlternativeModes>
+            <ebucore:fileSize>NaN</ebucore:fileSize>
+            <ebucore:bitRate>instantiationDataRate_only_///32/17</ebucore:bitRate>
+            <pbcorerdf:AACIP_RecordNominationStatus/>
+            <durationNormalPlayTime>instantiationDuration_only_///32/16</durationNormalPlayTime>
+          </rdf:Description>
+        </ebucore:hasRelatedResource>
+        <ebucore:hasRelatedResource>
+          <rdf:Description rdf:about="instantiationIdentifier_first_///33/1">
+            <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#MediaResource"/>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">instantiationIdentifier_first_///33/1</rdfs:label>
+            <ebucore:identifier>instantiationIdentifier_first_///33/1/@source - instantiationIdentifier_first_///33/1</ebucore:identifier>
+            <ebucore:identifier>instantiationIdentifier_repeat_///33/2/@source - instantiationIdentifier_repeat_///33/2</ebucore:identifier>
+            <ebucore:dateCreated/>
+            <ebucore:dateIssued/>
+            <ebucore:dateDigitised/>
+            <ebucore:dateCreated/>
+            <ebucore:dateIssued/>
+            <ebucore:dateDigitised/>
+            <ebucore:hasFormat>instantiationPhysical_only_///33/7</ebucore:hasFormat>
+            <ebucore:locator>instantiationLocation_only_///33/10</ebucore:locator>
+            <ebucore:hasMimeType>instantiationDigital_only_///33/8</ebucore:hasMimeType>
+            <ebucore:hasStorageType>instantiationPhysical_only_///33/7</ebucore:hasStorageType>
+            <ebucore:hasMedium>instantiationPhysical_only_///33/7</ebucore:hasMedium>
+            <ebucore:hasMimeType>instantiationDigital_only_///33/8</ebucore:hasMimeType>
+            <ebucore:hasContainerFormat>instantiationStandard_only_///33/9</ebucore:hasContainerFormat>
+            <ebucore:locator>instantiationLocation_only_///33/10</ebucore:locator>
+            <pbcorerdf:hasMediaType>instantiationMediaType_only_///33/11</pbcorerdf:hasMediaType>
+            <pbcorerdf:generations>instantiationGenerations_first_///33/12</pbcorerdf:generations>
+            <pbcorerdf:generations>instantiationGenerations_repeat_///33/13</pbcorerdf:generations>
+            <pbcorerdf:instantiationTracks>instantiationTracks_only_///33/19</pbcorerdf:instantiationTracks>
+            <ebucore:audioTrackConfiguration>instantiationChannelConfiguration_only_///33/20</ebucore:audioTrackConfiguration>
+            <pbcorerdf:instantiationAlternativeModes>instantiationAlternativeModes_only_///33/22</pbcorerdf:instantiationAlternativeModes>
+            <ebucore:fileSize>NaN</ebucore:fileSize>
+            <ebucore:bitRate>instantiationDataRate_only_///33/17</ebucore:bitRate>
+            <pbcorerdf:AACIP_RecordNominationStatus/>
+            <durationNormalPlayTime>instantiationDuration_only_///33/16</durationNormalPlayTime>
+          </rdf:Description>
+        </ebucore:hasRelatedResource>
+      </rdf:Description>
+    </ebucore:hasMember>
+  </rdf:Description>
+</rdf:RDF>
