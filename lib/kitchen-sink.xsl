@@ -63,7 +63,9 @@
         =============================-->
     
     <xsl:template priority="1" match="xsd:element[
-                                        @name='essenceTrackExtension']">
+                                        @name='essenceTrackExtension' or
+                                        @name='pbcoreRightsSummary' or
+                                        @name='instantiationRights']">
         <xsl:variable name="type" select="@type"/>
         <xsl:variable name="name" select="@name"/>
         <xsl:for-each select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*">

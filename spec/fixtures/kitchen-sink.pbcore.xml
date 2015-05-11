@@ -70,8 +70,15 @@
       <publisherRole source="publisherRole_first_@source" ref="publisherRole_first_@ref" version="publisherRole_first_@version" annotation="publisherRole_first_@annotation">publisherRole_first</publisherRole>
       <publisherRole source="publisherRole_repeat_@source" ref="publisherRole_repeat_@ref" version="publisherRole_repeat_@version" annotation="publisherRole_repeat_@annotation">publisherRole_repeat</publisherRole>
     </pbcorePublisher>
-    <pbcoreRightsSummary>pbcoreRightsSummary_first</pbcoreRightsSummary>
-    <pbcoreRightsSummary>pbcoreRightsSummary_repeat</pbcoreRightsSummary>
+    <pbcoreRightsSummary>
+      <rightsSummary source="rightsSummary_only_@source" ref="rightsSummary_only_@ref" version="rightsSummary_only_@version" annotation="rightsSummary_only_@annotation">rightsSummary_only</rightsSummary>
+    </pbcoreRightsSummary>
+    <pbcoreRightsSummary>
+      <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
+    </pbcoreRightsSummary>
+    <pbcoreRightsSummary>
+      <rightsEmbedded>rightsEmbedded_only</rightsEmbedded>
+    </pbcoreRightsSummary>
     <pbcoreInstantiation>
       <instantiationIdentifier source="instantiationIdentifier_first_@source" ref="instantiationIdentifier_first_@ref" version="instantiationIdentifier_first_@version" annotation="instantiationIdentifier_first_@annotation">instantiationIdentifier_first</instantiationIdentifier>
       <instantiationIdentifier source="instantiationIdentifier_repeat_@source" ref="instantiationIdentifier_repeat_@ref" version="instantiationIdentifier_repeat_@version" annotation="instantiationIdentifier_repeat_@annotation">instantiationIdentifier_repeat</instantiationIdentifier>
@@ -177,8 +184,15 @@
         <instantiationRelationType source="instantiationRelationType_only_@source" ref="instantiationRelationType_only_@ref" version="instantiationRelationType_only_@version" annotation="instantiationRelationType_only_@annotation">instantiationRelationType_only</instantiationRelationType>
         <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_@source" ref="instantiationRelationIdentifier_only_@ref" version="instantiationRelationIdentifier_only_@version" annotation="instantiationRelationIdentifier_only_@annotation">instantiationRelationIdentifier_only</instantiationRelationIdentifier>
       </instantiationRelation>
-      <instantiationRights>instantiationRights_first</instantiationRights>
-      <instantiationRights>instantiationRights_repeat</instantiationRights>
+      <instantiationRights>
+        <rightsSummary source="rightsSummary_only_@source" ref="rightsSummary_only_@ref" version="rightsSummary_only_@version" annotation="rightsSummary_only_@annotation">rightsSummary_only</rightsSummary>
+      </instantiationRights>
+      <instantiationRights>
+        <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
+      </instantiationRights>
+      <instantiationRights>
+        <rightsEmbedded>rightsEmbedded_only</rightsEmbedded>
+      </instantiationRights>
       <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
       <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
       <instantiationPart>instantiationPart_first</instantiationPart>
@@ -292,8 +306,15 @@
         <instantiationRelationType source="instantiationRelationType_only_@source" ref="instantiationRelationType_only_@ref" version="instantiationRelationType_only_@version" annotation="instantiationRelationType_only_@annotation">instantiationRelationType_only</instantiationRelationType>
         <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_@source" ref="instantiationRelationIdentifier_only_@ref" version="instantiationRelationIdentifier_only_@version" annotation="instantiationRelationIdentifier_only_@annotation">instantiationRelationIdentifier_only</instantiationRelationIdentifier>
       </instantiationRelation>
-      <instantiationRights>instantiationRights_first</instantiationRights>
-      <instantiationRights>instantiationRights_repeat</instantiationRights>
+      <instantiationRights>
+        <rightsSummary source="rightsSummary_only_@source" ref="rightsSummary_only_@ref" version="rightsSummary_only_@version" annotation="rightsSummary_only_@annotation">rightsSummary_only</rightsSummary>
+      </instantiationRights>
+      <instantiationRights>
+        <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
+      </instantiationRights>
+      <instantiationRights>
+        <rightsEmbedded>rightsEmbedded_only</rightsEmbedded>
+      </instantiationRights>
       <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
       <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
       <instantiationPart>instantiationPart_first</instantiationPart>
