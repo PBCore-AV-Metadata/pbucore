@@ -38,7 +38,8 @@
                                         @name='pbcoreCreator' or
                                         @name='instantiationRelation' or
                                         @name='pbcoreRelation' or
-                                        @name='pbcoreCoverage']">
+                                        @name='pbcoreCoverage' or
+                                        @name='rightsEmbedded']">
         <xsl:call-template name="sequence">
             <xsl:with-param name="type" select="@type"/>
         </xsl:call-template>
@@ -94,6 +95,10 @@
     <xsl:template priority="1" match="xsd:element[
                                         @name='coverageType']">
         <coverageType>Spatial</coverageType>
+    </xsl:template>
+    
+    <xsl:template priority="1" match="xsd:any">
+        <random><xml>here!</xml></random>
     </xsl:template>
     
     <xsl:template priority="0.9" match="xsd:element[xsd:complexType]">

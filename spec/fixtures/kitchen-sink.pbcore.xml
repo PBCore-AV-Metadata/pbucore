@@ -77,7 +77,11 @@
       <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
     </pbcoreRightsSummary>
     <pbcoreRightsSummary>
-      <rightsEmbedded>rightsEmbedded_only</rightsEmbedded>
+      <rightsEmbedded>
+        <random>
+          <xml>here!</xml>
+        </random>
+      </rightsEmbedded>
     </pbcoreRightsSummary>
     <pbcoreInstantiation>
       <instantiationIdentifier source="instantiationIdentifier_first_@source" ref="instantiationIdentifier_first_@ref" version="instantiationIdentifier_first_@version" annotation="instantiationIdentifier_first_@annotation">instantiationIdentifier_first</instantiationIdentifier>
@@ -191,7 +195,11 @@
         <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
       </instantiationRights>
       <instantiationRights>
-        <rightsEmbedded>rightsEmbedded_only</rightsEmbedded>
+        <rightsEmbedded>
+          <random>
+            <xml>here!</xml>
+          </random>
+        </rightsEmbedded>
       </instantiationRights>
       <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
       <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
@@ -313,7 +321,11 @@
         <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
       </instantiationRights>
       <instantiationRights>
-        <rightsEmbedded>rightsEmbedded_only</rightsEmbedded>
+        <rightsEmbedded>
+          <random>
+            <xml>here!</xml>
+          </random>
+        </rightsEmbedded>
       </instantiationRights>
       <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
       <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
