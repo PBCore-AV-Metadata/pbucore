@@ -17,7 +17,9 @@ class Converter
   def validate(path)
     doc = Nokogiri::XML(File.read(path), &:noblanks)
     validation_errors = @xsd.validate(doc)
-    fail(validation_errors.join("\n")) unless validation_errors.empty?
+    fail(
+      "#{validation_errors.count} errors: \n#{validation_errors.join("\n").gsub('{http://www.pbcore.org/PBCore/PBCoreNamespace.html}', 'pbcore:')}"
+    ) unless validation_errors.empty?
     doc
   end
   

@@ -9,6 +9,10 @@
     
     <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
     
+    <!--===============
+         Root template 
+        ===============-->
+    
     <xsl:template match="/">
         <pbcoreCollection>
             <!-- 
@@ -20,6 +24,10 @@
             </pbcoreDescriptionDocument>
         </pbcoreCollection>
     </xsl:template>
+
+    <!--===============================
+         Elements containing sequences
+        ===============================-->
 
     <xsl:template priority="1" match="xsd:element[
                                         @name='pbcoreInstantiation' or 
@@ -50,6 +58,10 @@
         </xsl:element>
     </xsl:template>
     
+    <!--=============================
+         Elements containing choices
+        =============================-->
+    
     <xsl:template priority="1" match="xsd:element[
                                         @name='essenceTrackExtension']">
         <xsl:variable name="type" select="@type"/>
@@ -65,6 +77,10 @@
         </xsl:for-each>
     </xsl:template>
     
+    <!--=======================
+         Element special cases
+        =======================-->
+    
     <xsl:template priority="1" match="xsd:element[
                                         @name='pbcorePart']">
         <pbcorePart>
@@ -73,9 +89,18 @@
         </pbcorePart>
     </xsl:template>
     
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='coverageType']">
+        <coverageType>Spatial</coverageType>
+    </xsl:template>
+    
     <xsl:template priority="0.9" match="xsd:element[xsd:complexType]">
         ERROR: complexType element '<xsl:value-of select="@name"/>' without match.
     </xsl:template>
+
+    <!--======================================
+         Elements with text content fall-back
+        ======================================-->
     
     <xsl:template match="xsd:element[@maxOccurs='unbounded']">
         <xsl:call-template name="element">
@@ -92,6 +117,10 @@
             <xsl:with-param name="suffix">only</xsl:with-param>
         </xsl:call-template>
     </xsl:template>
+    
+    <!--=======================================
+         Named template to generate attributes
+        =======================================-->    
     
     <xsl:template name="element">
         <xsl:param name="suffix"/>

@@ -6,7 +6,7 @@ describe 'converter' do
   PENDING_RE = /\/pending/
   FRAGMENT_RE = /fragment/
   
-  describe 'pbcore validates' do
+  describe 'pbcore validation' do
     inputs = Dir[File.dirname(__FILE__) + '/fixtures/*.pbcore.xml'].reject{|path| path=~PENDING_RE || path=~FRAGMENT_RE}
     inputs.each do |pbcore_path|
       it "validates #{File.basename(pbcore_path)}" do

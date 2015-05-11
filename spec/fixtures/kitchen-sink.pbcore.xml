@@ -26,12 +26,12 @@
     </pbcoreRelation>
     <pbcoreCoverage>
       <coverage source="coverage_only_@source" ref="coverage_only_@ref" version="coverage_only_@version" annotation="coverage_only_@annotation" startTime="coverage_only_@startTime" endTime="coverage_only_@endTime" timeAnnotation="coverage_only_@timeAnnotation">coverage_only</coverage>
-      <coverageType>coverageType_only</coverageType>
+      <coverageType>Spatial</coverageType>
     </pbcoreCoverage>
     <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreCoverage>
       <coverage source="coverage_only_@source" ref="coverage_only_@ref" version="coverage_only_@version" annotation="coverage_only_@annotation" startTime="coverage_only_@startTime" endTime="coverage_only_@endTime" timeAnnotation="coverage_only_@timeAnnotation">coverage_only</coverage>
-      <coverageType>coverageType_only</coverageType>
+      <coverageType>Spatial</coverageType>
     </pbcoreCoverage>
     <pbcoreAudienceLevel source="pbcoreAudienceLevel_first_@source" ref="pbcoreAudienceLevel_first_@ref" version="pbcoreAudienceLevel_first_@version" annotation="pbcoreAudienceLevel_first_@annotation">pbcoreAudienceLevel_first</pbcoreAudienceLevel>
     <pbcoreAudienceLevel source="pbcoreAudienceLevel_repeat_@source" ref="pbcoreAudienceLevel_repeat_@ref" version="pbcoreAudienceLevel_repeat_@version" annotation="pbcoreAudienceLevel_repeat_@annotation">pbcoreAudienceLevel_repeat</pbcoreAudienceLevel>
