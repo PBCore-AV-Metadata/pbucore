@@ -35,10 +35,8 @@ Notify specific users by "mentioning" them with `@` symbol.
   (Including `fragment` in the name bypasses schema validation during tests;
   Prefixing with `pending` will skip tests entirely for that file.)
   - Tweak the XSLT under `lib/includes`.
-  - Generate an RDF-XML fixture: 
-  `ruby lib/converter.rb spec/fixtures/pbcoreAudienceLevel.pbcore.xml > spec/fixtures/pbcoreAudienceLevel.rdf.xml`
-  - And to make sure the XML is actually valid RDF, generate a Turtle fixture:
-  `ruby lib/turtler.rb spec/fixtures/pbcoreAudienceLevel.rdf.xml > spec/fixtures/pbcoreAudienceLevel.ttl`
+  - Generate an RDF-XML and Turtle fixtures: 
+  `ruby lib/fixtures.rb spec/fixtures/pbcoreAudienceLevel.pbcore.xml`
   - If everything looks good, update the `kitchen-sink` fixtures in the same way.
   - Run tests, and update `kitchen_sink_spec.rb` to reflect improved coverage.
 1. Push your branch to Github.
