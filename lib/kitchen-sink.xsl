@@ -39,7 +39,8 @@
                                         @name='pbcoreCreator' or
                                         @name='instantiationRelation' or
                                         @name='pbcoreRelation' or
-                                        @name='pbcoreCoverage']">
+                                        @name='pbcoreCoverage' or
+                                        @name='instantiationExtension']">
         <!-- TODO: Shouldn't need explicit list of possibilities? -->
         <xsl:call-template name="sequence">
             <xsl:with-param name="type" select="@type"/>
@@ -88,7 +89,7 @@
     <xsl:template priority="1" match="xsd:element[
                                         @name='pbcorePart']">
         <pbcorePart>
-            <xsl:comment>pbcorePart can recursive</xsl:comment>
+            <xsl:comment>pbcorePart can recurse</xsl:comment>
             <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
         </pbcorePart>
     </xsl:template>
@@ -96,8 +97,9 @@
     <xsl:template priority="1" match="xsd:element[
                                         @name='instantiationPart']">
         <instantiationPart>
-            <xsl:comment>instantiationPart can recursive</xsl:comment>
-            <instantiationIdentifier>instantiationPart_instantiationIdentifier</pbcoreIdentifier>
+            <xsl:comment>instantiationPart can recurse</xsl:comment>
+            <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source">instantiationPart_instantiationIdentifier</instantiationIdentifier>
+            <instantiationLocation>instantiationPart_instantiationLocation</instantiationLocation>
         </instantiationPart>
     </xsl:template>
     
