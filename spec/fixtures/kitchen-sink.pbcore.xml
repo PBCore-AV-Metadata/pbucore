@@ -104,7 +104,7 @@
       <instantiationColors source="instantiationColors_only_@source" ref="instantiationColors_only_@ref" version="instantiationColors_only_@version" annotation="instantiationColors_only_@annotation">instantiationColors_only</instantiationColors>
       <instantiationTracks>instantiationTracks_only</instantiationTracks>
       <instantiationChannelConfiguration>instantiationChannelConfiguration_only</instantiationChannelConfiguration>
-      <instantiationLanguage source="instantiationLanguage_only_@source" ref="instantiationLanguage_only_@ref" version="instantiationLanguage_only_@version" annotation="instantiationLanguage_only_@annotation">instantiationLanguage_only</instantiationLanguage>
+      <instantiationLanguage source="instantiationLanguage_only_@source" ref="instantiationLanguage_only_@ref" version="instantiationLanguage_only_@version" annotation="instantiationLanguage_only_@annotation">tri;ple;let;ter</instantiationLanguage>
       <instantiationAlternativeModes>instantiationAlternativeModes_only</instantiationAlternativeModes>
       <instantiationEssenceTrack>
         <essenceTrackType>essenceTrackType_only</essenceTrackType>
@@ -121,7 +121,7 @@
         <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
         <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
         <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
         <essenceTrackExtension>
@@ -158,7 +158,7 @@
         <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
         <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
         <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
         <essenceTrackExtension>
@@ -230,7 +230,7 @@
       <instantiationColors source="instantiationColors_only_@source" ref="instantiationColors_only_@ref" version="instantiationColors_only_@version" annotation="instantiationColors_only_@annotation">instantiationColors_only</instantiationColors>
       <instantiationTracks>instantiationTracks_only</instantiationTracks>
       <instantiationChannelConfiguration>instantiationChannelConfiguration_only</instantiationChannelConfiguration>
-      <instantiationLanguage source="instantiationLanguage_only_@source" ref="instantiationLanguage_only_@ref" version="instantiationLanguage_only_@version" annotation="instantiationLanguage_only_@annotation">instantiationLanguage_only</instantiationLanguage>
+      <instantiationLanguage source="instantiationLanguage_only_@source" ref="instantiationLanguage_only_@ref" version="instantiationLanguage_only_@version" annotation="instantiationLanguage_only_@annotation">tri;ple;let;ter</instantiationLanguage>
       <instantiationAlternativeModes>instantiationAlternativeModes_only</instantiationAlternativeModes>
       <instantiationEssenceTrack>
         <essenceTrackType>essenceTrackType_only</essenceTrackType>
@@ -247,7 +247,7 @@
         <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
         <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
         <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
         <essenceTrackExtension>
@@ -284,7 +284,7 @@
         <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
         <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
         <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">essenceTrackLanguage_only</essenceTrackLanguage>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
         <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
         <essenceTrackExtension>

@@ -40,6 +40,7 @@
                                         @name='pbcoreRelation' or
                                         @name='pbcoreCoverage' or
                                         @name='rightsEmbedded']">
+        <!-- TODO: Shouldn't need explicit list of possibilities? -->
         <xsl:call-template name="sequence">
             <xsl:with-param name="type" select="@type"/>
         </xsl:call-template>
@@ -139,8 +140,14 @@
             </xsl:apply-templates>
             <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:simpleContent/xsd:extension/xsd:attributeGroup">
                 <xsl:with-param name="label" select="$label"/>  
-            </xsl:apply-templates> 
-            <xsl:value-of select="$label"/>
+            </xsl:apply-templates>
+            <xsl:choose>
+                <!-- TODO: put more info in the string. -->
+                <xsl:when test="@type='threeLetterStringType'">tri;ple;let;ter</xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$label"/>
+                </xsl:otherwise>
+            </xsl:choose>
         </xsl:element>
     </xsl:template>
     
