@@ -138,8 +138,17 @@
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
-          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
-          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
       <!--TODO: Get the contents of repeated elements to be distinct.-->
@@ -175,8 +184,17 @@
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
-          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
-          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
       <instantiationRelation>
@@ -264,8 +282,17 @@
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
-          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
-          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
       <!--TODO: Get the contents of repeated elements to be distinct.-->
@@ -301,8 +328,17 @@
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
-          <extensionEmbedded>extensionEmbedded_first</extensionEmbedded>
-          <extensionEmbedded>extensionEmbedded_repeat</extensionEmbedded>
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
+          <!--TODO: Get the contents of repeated elements to be distinct.-->
+          <extensionEmbedded>
+            <random>
+              <xml>here!</xml>
+            </random>
+          </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
       <instantiationRelation>

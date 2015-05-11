@@ -39,7 +39,8 @@
                                         @name='instantiationRelation' or
                                         @name='pbcoreRelation' or
                                         @name='pbcoreCoverage' or
-                                        @name='rightsEmbedded']">
+                                        @name='rightsEmbedded' or
+                                        @name='extensionEmbedded']">
         <!-- TODO: Shouldn't need explicit list of possibilities? -->
         <xsl:call-template name="sequence">
             <xsl:with-param name="type" select="@type"/>
@@ -142,7 +143,6 @@
                 <xsl:with-param name="label" select="$label"/>  
             </xsl:apply-templates>
             <xsl:choose>
-                <!-- TODO: put more info in the string. -->
                 <xsl:when test="@type='threeLetterStringType'">tri;ple;let;ter</xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="$label"/>
