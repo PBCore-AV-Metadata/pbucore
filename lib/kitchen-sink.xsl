@@ -45,8 +45,6 @@
             <xsl:with-param name="type" select="@type"/>
         </xsl:call-template>
         <xsl:if test="@maxOccurs='unbounded'">
-            <xsl:comment>TODO: Get the contents of repeated elements to be distinct.</xsl:comment>
-            <!-- XSLT 2 tunnel parameters would be helpful here... -->
             <xsl:call-template name="sequence">
                 <xsl:with-param name="type" select="@type"/>
             </xsl:call-template>
@@ -179,7 +177,7 @@
     <xsl:template match="xsd:attribute[@name]">
         <xsl:param name="label"/>
         <xsl:attribute name="{@name}">
-            <xsl:value-of select="concat($label, '_@', @name)"/>
+            <xsl:value-of select="$label"/>
         </xsl:attribute>
     </xsl:template>
     

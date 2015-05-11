@@ -3,10 +3,23 @@ require_relative '../lib/converter'
 
 KITCHEN_SINK_PATH = 'spec/fixtures/kitchen-sink.pbcore.xml'
 
+def uniquify(node)
+  "#{node.respond_to?(:value) ? node.value : node.content}_#{node.path.gsub(/\/text\(\)|\*|\[|\]/,'')}"
+end
+
 def kitchen_sink
   xslt = Nokogiri::XSLT(File.read('lib/kitchen-sink.xsl'))
   doc = Nokogiri::XML(File.read('lib/pbcore-2.0.xsd'), &:noblanks)
-  xslt.transform(doc).to_xml
+  transformed = xslt.transform(doc)
+  transformed.traverse do |node|
+    if node.text? && node.text != 'tri;ple;let;ter' && node.text != 'Spatial'
+      node.content = uniquify(node)
+    end
+    node.attribute_nodes.each do |attribute|
+      attribute.value = uniquify(attribute)
+    end
+  end
+  transformed.to_xml
 end
 
 if __FILE__ == $0

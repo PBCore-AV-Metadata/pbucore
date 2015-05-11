@@ -1,457 +1,440 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pbcoreCollection xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <pbcoreDescriptionDocument>
-    <pbcoreAssetType source="pbcoreAssetType_first_@source" ref="pbcoreAssetType_first_@ref" version="pbcoreAssetType_first_@version" annotation="pbcoreAssetType_first_@annotation">pbcoreAssetType_first</pbcoreAssetType>
-    <pbcoreAssetType source="pbcoreAssetType_repeat_@source" ref="pbcoreAssetType_repeat_@ref" version="pbcoreAssetType_repeat_@version" annotation="pbcoreAssetType_repeat_@annotation">pbcoreAssetType_repeat</pbcoreAssetType>
-    <pbcoreAssetDate dateType="pbcoreAssetDate_first_@dateType">pbcoreAssetDate_first</pbcoreAssetDate>
-    <pbcoreAssetDate dateType="pbcoreAssetDate_repeat_@dateType">pbcoreAssetDate_repeat</pbcoreAssetDate>
-    <pbcoreIdentifier source="pbcoreIdentifier_first_@source" ref="pbcoreIdentifier_first_@ref" version="pbcoreIdentifier_first_@version" annotation="pbcoreIdentifier_first_@annotation">pbcoreIdentifier_first</pbcoreIdentifier>
-    <pbcoreIdentifier source="pbcoreIdentifier_repeat_@source" ref="pbcoreIdentifier_repeat_@ref" version="pbcoreIdentifier_repeat_@version" annotation="pbcoreIdentifier_repeat_@annotation">pbcoreIdentifier_repeat</pbcoreIdentifier>
-    <pbcoreTitle titleType="pbcoreTitle_first_@titleType" source="pbcoreTitle_first_@source" ref="pbcoreTitle_first_@ref" version="pbcoreTitle_first_@version" annotation="pbcoreTitle_first_@annotation" startTime="pbcoreTitle_first_@startTime" endTime="pbcoreTitle_first_@endTime" timeAnnotation="pbcoreTitle_first_@timeAnnotation">pbcoreTitle_first</pbcoreTitle>
-    <pbcoreTitle titleType="pbcoreTitle_repeat_@titleType" source="pbcoreTitle_repeat_@source" ref="pbcoreTitle_repeat_@ref" version="pbcoreTitle_repeat_@version" annotation="pbcoreTitle_repeat_@annotation" startTime="pbcoreTitle_repeat_@startTime" endTime="pbcoreTitle_repeat_@endTime" timeAnnotation="pbcoreTitle_repeat_@timeAnnotation">pbcoreTitle_repeat</pbcoreTitle>
-    <pbcoreSubject subjectType="pbcoreSubject_first_@subjectType" source="pbcoreSubject_first_@source" ref="pbcoreSubject_first_@ref" version="pbcoreSubject_first_@version" annotation="pbcoreSubject_first_@annotation" startTime="pbcoreSubject_first_@startTime" endTime="pbcoreSubject_first_@endTime" timeAnnotation="pbcoreSubject_first_@timeAnnotation">pbcoreSubject_first</pbcoreSubject>
-    <pbcoreSubject subjectType="pbcoreSubject_repeat_@subjectType" source="pbcoreSubject_repeat_@source" ref="pbcoreSubject_repeat_@ref" version="pbcoreSubject_repeat_@version" annotation="pbcoreSubject_repeat_@annotation" startTime="pbcoreSubject_repeat_@startTime" endTime="pbcoreSubject_repeat_@endTime" timeAnnotation="pbcoreSubject_repeat_@timeAnnotation">pbcoreSubject_repeat</pbcoreSubject>
-    <pbcoreDescription annotation="pbcoreDescription_first_@annotation" descriptionType="pbcoreDescription_first_@descriptionType" descriptionTypeSource="pbcoreDescription_first_@descriptionTypeSource" descriptionTypeRef="pbcoreDescription_first_@descriptionTypeRef" descriptionTypeVersion="pbcoreDescription_first_@descriptionTypeVersion" descriptionTypeAnnotation="pbcoreDescription_first_@descriptionTypeAnnotation" segmentType="pbcoreDescription_first_@segmentType" segmentTypeSource="pbcoreDescription_first_@segmentTypeSource" segmentTypeRef="pbcoreDescription_first_@segmentTypeRef" segmentTypeVersion="pbcoreDescription_first_@segmentTypeVersion" segmentTypeAnnotation="pbcoreDescription_first_@segmentTypeAnnotation" startTime="pbcoreDescription_first_@startTime" endTime="pbcoreDescription_first_@endTime" timeAnnotation="pbcoreDescription_first_@timeAnnotation">pbcoreDescription_first</pbcoreDescription>
-    <pbcoreDescription annotation="pbcoreDescription_repeat_@annotation" descriptionType="pbcoreDescription_repeat_@descriptionType" descriptionTypeSource="pbcoreDescription_repeat_@descriptionTypeSource" descriptionTypeRef="pbcoreDescription_repeat_@descriptionTypeRef" descriptionTypeVersion="pbcoreDescription_repeat_@descriptionTypeVersion" descriptionTypeAnnotation="pbcoreDescription_repeat_@descriptionTypeAnnotation" segmentType="pbcoreDescription_repeat_@segmentType" segmentTypeSource="pbcoreDescription_repeat_@segmentTypeSource" segmentTypeRef="pbcoreDescription_repeat_@segmentTypeRef" segmentTypeVersion="pbcoreDescription_repeat_@segmentTypeVersion" segmentTypeAnnotation="pbcoreDescription_repeat_@segmentTypeAnnotation" startTime="pbcoreDescription_repeat_@startTime" endTime="pbcoreDescription_repeat_@endTime" timeAnnotation="pbcoreDescription_repeat_@timeAnnotation">pbcoreDescription_repeat</pbcoreDescription>
-    <pbcoreGenre source="pbcoreGenre_first_@source" ref="pbcoreGenre_first_@ref" version="pbcoreGenre_first_@version" annotation="pbcoreGenre_first_@annotation" startTime="pbcoreGenre_first_@startTime" endTime="pbcoreGenre_first_@endTime" timeAnnotation="pbcoreGenre_first_@timeAnnotation">pbcoreGenre_first</pbcoreGenre>
-    <pbcoreGenre source="pbcoreGenre_repeat_@source" ref="pbcoreGenre_repeat_@ref" version="pbcoreGenre_repeat_@version" annotation="pbcoreGenre_repeat_@annotation" startTime="pbcoreGenre_repeat_@startTime" endTime="pbcoreGenre_repeat_@endTime" timeAnnotation="pbcoreGenre_repeat_@timeAnnotation">pbcoreGenre_repeat</pbcoreGenre>
+    <pbcoreAssetType source="pbcoreAssetType_first_///1/@source" ref="pbcoreAssetType_first_///1/@ref" version="pbcoreAssetType_first_///1/@version" annotation="pbcoreAssetType_first_///1/@annotation">pbcoreAssetType_first_///1</pbcoreAssetType>
+    <pbcoreAssetType source="pbcoreAssetType_repeat_///2/@source" ref="pbcoreAssetType_repeat_///2/@ref" version="pbcoreAssetType_repeat_///2/@version" annotation="pbcoreAssetType_repeat_///2/@annotation">pbcoreAssetType_repeat_///2</pbcoreAssetType>
+    <pbcoreAssetDate dateType="pbcoreAssetDate_first_///3/@dateType">pbcoreAssetDate_first_///3</pbcoreAssetDate>
+    <pbcoreAssetDate dateType="pbcoreAssetDate_repeat_///4/@dateType">pbcoreAssetDate_repeat_///4</pbcoreAssetDate>
+    <pbcoreIdentifier source="pbcoreIdentifier_first_///5/@source" ref="pbcoreIdentifier_first_///5/@ref" version="pbcoreIdentifier_first_///5/@version" annotation="pbcoreIdentifier_first_///5/@annotation">pbcoreIdentifier_first_///5</pbcoreIdentifier>
+    <pbcoreIdentifier source="pbcoreIdentifier_repeat_///6/@source" ref="pbcoreIdentifier_repeat_///6/@ref" version="pbcoreIdentifier_repeat_///6/@version" annotation="pbcoreIdentifier_repeat_///6/@annotation">pbcoreIdentifier_repeat_///6</pbcoreIdentifier>
+    <pbcoreTitle titleType="pbcoreTitle_first_///7/@titleType" source="pbcoreTitle_first_///7/@source" ref="pbcoreTitle_first_///7/@ref" version="pbcoreTitle_first_///7/@version" annotation="pbcoreTitle_first_///7/@annotation" startTime="pbcoreTitle_first_///7/@startTime" endTime="pbcoreTitle_first_///7/@endTime" timeAnnotation="pbcoreTitle_first_///7/@timeAnnotation">pbcoreTitle_first_///7</pbcoreTitle>
+    <pbcoreTitle titleType="pbcoreTitle_repeat_///8/@titleType" source="pbcoreTitle_repeat_///8/@source" ref="pbcoreTitle_repeat_///8/@ref" version="pbcoreTitle_repeat_///8/@version" annotation="pbcoreTitle_repeat_///8/@annotation" startTime="pbcoreTitle_repeat_///8/@startTime" endTime="pbcoreTitle_repeat_///8/@endTime" timeAnnotation="pbcoreTitle_repeat_///8/@timeAnnotation">pbcoreTitle_repeat_///8</pbcoreTitle>
+    <pbcoreSubject subjectType="pbcoreSubject_first_///9/@subjectType" source="pbcoreSubject_first_///9/@source" ref="pbcoreSubject_first_///9/@ref" version="pbcoreSubject_first_///9/@version" annotation="pbcoreSubject_first_///9/@annotation" startTime="pbcoreSubject_first_///9/@startTime" endTime="pbcoreSubject_first_///9/@endTime" timeAnnotation="pbcoreSubject_first_///9/@timeAnnotation">pbcoreSubject_first_///9</pbcoreSubject>
+    <pbcoreSubject subjectType="pbcoreSubject_repeat_///10/@subjectType" source="pbcoreSubject_repeat_///10/@source" ref="pbcoreSubject_repeat_///10/@ref" version="pbcoreSubject_repeat_///10/@version" annotation="pbcoreSubject_repeat_///10/@annotation" startTime="pbcoreSubject_repeat_///10/@startTime" endTime="pbcoreSubject_repeat_///10/@endTime" timeAnnotation="pbcoreSubject_repeat_///10/@timeAnnotation">pbcoreSubject_repeat_///10</pbcoreSubject>
+    <pbcoreDescription annotation="pbcoreDescription_first_///11/@annotation" descriptionType="pbcoreDescription_first_///11/@descriptionType" descriptionTypeSource="pbcoreDescription_first_///11/@descriptionTypeSource" descriptionTypeRef="pbcoreDescription_first_///11/@descriptionTypeRef" descriptionTypeVersion="pbcoreDescription_first_///11/@descriptionTypeVersion" descriptionTypeAnnotation="pbcoreDescription_first_///11/@descriptionTypeAnnotation" segmentType="pbcoreDescription_first_///11/@segmentType" segmentTypeSource="pbcoreDescription_first_///11/@segmentTypeSource" segmentTypeRef="pbcoreDescription_first_///11/@segmentTypeRef" segmentTypeVersion="pbcoreDescription_first_///11/@segmentTypeVersion" segmentTypeAnnotation="pbcoreDescription_first_///11/@segmentTypeAnnotation" startTime="pbcoreDescription_first_///11/@startTime" endTime="pbcoreDescription_first_///11/@endTime" timeAnnotation="pbcoreDescription_first_///11/@timeAnnotation">pbcoreDescription_first_///11</pbcoreDescription>
+    <pbcoreDescription annotation="pbcoreDescription_repeat_///12/@annotation" descriptionType="pbcoreDescription_repeat_///12/@descriptionType" descriptionTypeSource="pbcoreDescription_repeat_///12/@descriptionTypeSource" descriptionTypeRef="pbcoreDescription_repeat_///12/@descriptionTypeRef" descriptionTypeVersion="pbcoreDescription_repeat_///12/@descriptionTypeVersion" descriptionTypeAnnotation="pbcoreDescription_repeat_///12/@descriptionTypeAnnotation" segmentType="pbcoreDescription_repeat_///12/@segmentType" segmentTypeSource="pbcoreDescription_repeat_///12/@segmentTypeSource" segmentTypeRef="pbcoreDescription_repeat_///12/@segmentTypeRef" segmentTypeVersion="pbcoreDescription_repeat_///12/@segmentTypeVersion" segmentTypeAnnotation="pbcoreDescription_repeat_///12/@segmentTypeAnnotation" startTime="pbcoreDescription_repeat_///12/@startTime" endTime="pbcoreDescription_repeat_///12/@endTime" timeAnnotation="pbcoreDescription_repeat_///12/@timeAnnotation">pbcoreDescription_repeat_///12</pbcoreDescription>
+    <pbcoreGenre source="pbcoreGenre_first_///13/@source" ref="pbcoreGenre_first_///13/@ref" version="pbcoreGenre_first_///13/@version" annotation="pbcoreGenre_first_///13/@annotation" startTime="pbcoreGenre_first_///13/@startTime" endTime="pbcoreGenre_first_///13/@endTime" timeAnnotation="pbcoreGenre_first_///13/@timeAnnotation">pbcoreGenre_first_///13</pbcoreGenre>
+    <pbcoreGenre source="pbcoreGenre_repeat_///14/@source" ref="pbcoreGenre_repeat_///14/@ref" version="pbcoreGenre_repeat_///14/@version" annotation="pbcoreGenre_repeat_///14/@annotation" startTime="pbcoreGenre_repeat_///14/@startTime" endTime="pbcoreGenre_repeat_///14/@endTime" timeAnnotation="pbcoreGenre_repeat_///14/@timeAnnotation">pbcoreGenre_repeat_///14</pbcoreGenre>
     <pbcoreRelation>
-      <pbcoreRelationType source="pbcoreRelationType_only_@source" ref="pbcoreRelationType_only_@ref" version="pbcoreRelationType_only_@version" annotation="pbcoreRelationType_only_@annotation">pbcoreRelationType_only</pbcoreRelationType>
-      <pbcoreRelationIdentifier source="pbcoreRelationIdentifier_only_@source" ref="pbcoreRelationIdentifier_only_@ref" version="pbcoreRelationIdentifier_only_@version" annotation="pbcoreRelationIdentifier_only_@annotation">pbcoreRelationIdentifier_only</pbcoreRelationIdentifier>
+      <pbcoreRelationType source="pbcoreRelationType_only_///15/1/@source" ref="pbcoreRelationType_only_///15/1/@ref" version="pbcoreRelationType_only_///15/1/@version" annotation="pbcoreRelationType_only_///15/1/@annotation">pbcoreRelationType_only_///15/1</pbcoreRelationType>
+      <pbcoreRelationIdentifier source="pbcoreRelationIdentifier_only_///15/2/@source" ref="pbcoreRelationIdentifier_only_///15/2/@ref" version="pbcoreRelationIdentifier_only_///15/2/@version" annotation="pbcoreRelationIdentifier_only_///15/2/@annotation">pbcoreRelationIdentifier_only_///15/2</pbcoreRelationIdentifier>
     </pbcoreRelation>
-    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreRelation>
-      <pbcoreRelationType source="pbcoreRelationType_only_@source" ref="pbcoreRelationType_only_@ref" version="pbcoreRelationType_only_@version" annotation="pbcoreRelationType_only_@annotation">pbcoreRelationType_only</pbcoreRelationType>
-      <pbcoreRelationIdentifier source="pbcoreRelationIdentifier_only_@source" ref="pbcoreRelationIdentifier_only_@ref" version="pbcoreRelationIdentifier_only_@version" annotation="pbcoreRelationIdentifier_only_@annotation">pbcoreRelationIdentifier_only</pbcoreRelationIdentifier>
+      <pbcoreRelationType source="pbcoreRelationType_only_///16/1/@source" ref="pbcoreRelationType_only_///16/1/@ref" version="pbcoreRelationType_only_///16/1/@version" annotation="pbcoreRelationType_only_///16/1/@annotation">pbcoreRelationType_only_///16/1</pbcoreRelationType>
+      <pbcoreRelationIdentifier source="pbcoreRelationIdentifier_only_///16/2/@source" ref="pbcoreRelationIdentifier_only_///16/2/@ref" version="pbcoreRelationIdentifier_only_///16/2/@version" annotation="pbcoreRelationIdentifier_only_///16/2/@annotation">pbcoreRelationIdentifier_only_///16/2</pbcoreRelationIdentifier>
     </pbcoreRelation>
     <pbcoreCoverage>
-      <coverage source="coverage_only_@source" ref="coverage_only_@ref" version="coverage_only_@version" annotation="coverage_only_@annotation" startTime="coverage_only_@startTime" endTime="coverage_only_@endTime" timeAnnotation="coverage_only_@timeAnnotation">coverage_only</coverage>
+      <coverage source="coverage_only_///17/1/@source" ref="coverage_only_///17/1/@ref" version="coverage_only_///17/1/@version" annotation="coverage_only_///17/1/@annotation" startTime="coverage_only_///17/1/@startTime" endTime="coverage_only_///17/1/@endTime" timeAnnotation="coverage_only_///17/1/@timeAnnotation">coverage_only_///17/1</coverage>
       <coverageType>Spatial</coverageType>
     </pbcoreCoverage>
-    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreCoverage>
-      <coverage source="coverage_only_@source" ref="coverage_only_@ref" version="coverage_only_@version" annotation="coverage_only_@annotation" startTime="coverage_only_@startTime" endTime="coverage_only_@endTime" timeAnnotation="coverage_only_@timeAnnotation">coverage_only</coverage>
+      <coverage source="coverage_only_///18/1/@source" ref="coverage_only_///18/1/@ref" version="coverage_only_///18/1/@version" annotation="coverage_only_///18/1/@annotation" startTime="coverage_only_///18/1/@startTime" endTime="coverage_only_///18/1/@endTime" timeAnnotation="coverage_only_///18/1/@timeAnnotation">coverage_only_///18/1</coverage>
       <coverageType>Spatial</coverageType>
     </pbcoreCoverage>
-    <pbcoreAudienceLevel source="pbcoreAudienceLevel_first_@source" ref="pbcoreAudienceLevel_first_@ref" version="pbcoreAudienceLevel_first_@version" annotation="pbcoreAudienceLevel_first_@annotation">pbcoreAudienceLevel_first</pbcoreAudienceLevel>
-    <pbcoreAudienceLevel source="pbcoreAudienceLevel_repeat_@source" ref="pbcoreAudienceLevel_repeat_@ref" version="pbcoreAudienceLevel_repeat_@version" annotation="pbcoreAudienceLevel_repeat_@annotation">pbcoreAudienceLevel_repeat</pbcoreAudienceLevel>
-    <pbcoreAudienceRating source="pbcoreAudienceRating_first_@source" ref="pbcoreAudienceRating_first_@ref" version="pbcoreAudienceRating_first_@version" annotation="pbcoreAudienceRating_first_@annotation">pbcoreAudienceRating_first</pbcoreAudienceRating>
-    <pbcoreAudienceRating source="pbcoreAudienceRating_repeat_@source" ref="pbcoreAudienceRating_repeat_@ref" version="pbcoreAudienceRating_repeat_@version" annotation="pbcoreAudienceRating_repeat_@annotation">pbcoreAudienceRating_repeat</pbcoreAudienceRating>
+    <pbcoreAudienceLevel source="pbcoreAudienceLevel_first_///19/@source" ref="pbcoreAudienceLevel_first_///19/@ref" version="pbcoreAudienceLevel_first_///19/@version" annotation="pbcoreAudienceLevel_first_///19/@annotation">pbcoreAudienceLevel_first_///19</pbcoreAudienceLevel>
+    <pbcoreAudienceLevel source="pbcoreAudienceLevel_repeat_///20/@source" ref="pbcoreAudienceLevel_repeat_///20/@ref" version="pbcoreAudienceLevel_repeat_///20/@version" annotation="pbcoreAudienceLevel_repeat_///20/@annotation">pbcoreAudienceLevel_repeat_///20</pbcoreAudienceLevel>
+    <pbcoreAudienceRating source="pbcoreAudienceRating_first_///21/@source" ref="pbcoreAudienceRating_first_///21/@ref" version="pbcoreAudienceRating_first_///21/@version" annotation="pbcoreAudienceRating_first_///21/@annotation">pbcoreAudienceRating_first_///21</pbcoreAudienceRating>
+    <pbcoreAudienceRating source="pbcoreAudienceRating_repeat_///22/@source" ref="pbcoreAudienceRating_repeat_///22/@ref" version="pbcoreAudienceRating_repeat_///22/@version" annotation="pbcoreAudienceRating_repeat_///22/@annotation">pbcoreAudienceRating_repeat_///22</pbcoreAudienceRating>
     <pbcoreCreator>
-      <creator affiliation="creator_only_@affiliation" ref="creator_only_@ref" annotation="creator_only_@annotation" startTime="creator_only_@startTime" endTime="creator_only_@endTime" timeAnnotation="creator_only_@timeAnnotation">creator_only</creator>
-      <creatorRole source="creatorRole_first_@source" ref="creatorRole_first_@ref" version="creatorRole_first_@version" annotation="creatorRole_first_@annotation">creatorRole_first</creatorRole>
-      <creatorRole source="creatorRole_repeat_@source" ref="creatorRole_repeat_@ref" version="creatorRole_repeat_@version" annotation="creatorRole_repeat_@annotation">creatorRole_repeat</creatorRole>
+      <creator affiliation="creator_only_///23/1/@affiliation" ref="creator_only_///23/1/@ref" annotation="creator_only_///23/1/@annotation" startTime="creator_only_///23/1/@startTime" endTime="creator_only_///23/1/@endTime" timeAnnotation="creator_only_///23/1/@timeAnnotation">creator_only_///23/1</creator>
+      <creatorRole source="creatorRole_first_///23/2/@source" ref="creatorRole_first_///23/2/@ref" version="creatorRole_first_///23/2/@version" annotation="creatorRole_first_///23/2/@annotation">creatorRole_first_///23/2</creatorRole>
+      <creatorRole source="creatorRole_repeat_///23/3/@source" ref="creatorRole_repeat_///23/3/@ref" version="creatorRole_repeat_///23/3/@version" annotation="creatorRole_repeat_///23/3/@annotation">creatorRole_repeat_///23/3</creatorRole>
     </pbcoreCreator>
-    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreCreator>
-      <creator affiliation="creator_only_@affiliation" ref="creator_only_@ref" annotation="creator_only_@annotation" startTime="creator_only_@startTime" endTime="creator_only_@endTime" timeAnnotation="creator_only_@timeAnnotation">creator_only</creator>
-      <creatorRole source="creatorRole_first_@source" ref="creatorRole_first_@ref" version="creatorRole_first_@version" annotation="creatorRole_first_@annotation">creatorRole_first</creatorRole>
-      <creatorRole source="creatorRole_repeat_@source" ref="creatorRole_repeat_@ref" version="creatorRole_repeat_@version" annotation="creatorRole_repeat_@annotation">creatorRole_repeat</creatorRole>
+      <creator affiliation="creator_only_///24/1/@affiliation" ref="creator_only_///24/1/@ref" annotation="creator_only_///24/1/@annotation" startTime="creator_only_///24/1/@startTime" endTime="creator_only_///24/1/@endTime" timeAnnotation="creator_only_///24/1/@timeAnnotation">creator_only_///24/1</creator>
+      <creatorRole source="creatorRole_first_///24/2/@source" ref="creatorRole_first_///24/2/@ref" version="creatorRole_first_///24/2/@version" annotation="creatorRole_first_///24/2/@annotation">creatorRole_first_///24/2</creatorRole>
+      <creatorRole source="creatorRole_repeat_///24/3/@source" ref="creatorRole_repeat_///24/3/@ref" version="creatorRole_repeat_///24/3/@version" annotation="creatorRole_repeat_///24/3/@annotation">creatorRole_repeat_///24/3</creatorRole>
     </pbcoreCreator>
     <pbcoreContributor>
-      <contributor affiliation="contributor_only_@affiliation" ref="contributor_only_@ref" annotation="contributor_only_@annotation" startTime="contributor_only_@startTime" endTime="contributor_only_@endTime" timeAnnotation="contributor_only_@timeAnnotation">contributor_only</contributor>
-      <contributorRole portrayal="contributorRole_first_@portrayal" source="contributorRole_first_@source" ref="contributorRole_first_@ref" version="contributorRole_first_@version" annotation="contributorRole_first_@annotation">contributorRole_first</contributorRole>
-      <contributorRole portrayal="contributorRole_repeat_@portrayal" source="contributorRole_repeat_@source" ref="contributorRole_repeat_@ref" version="contributorRole_repeat_@version" annotation="contributorRole_repeat_@annotation">contributorRole_repeat</contributorRole>
+      <contributor affiliation="contributor_only_///25/1/@affiliation" ref="contributor_only_///25/1/@ref" annotation="contributor_only_///25/1/@annotation" startTime="contributor_only_///25/1/@startTime" endTime="contributor_only_///25/1/@endTime" timeAnnotation="contributor_only_///25/1/@timeAnnotation">contributor_only_///25/1</contributor>
+      <contributorRole portrayal="contributorRole_first_///25/2/@portrayal" source="contributorRole_first_///25/2/@source" ref="contributorRole_first_///25/2/@ref" version="contributorRole_first_///25/2/@version" annotation="contributorRole_first_///25/2/@annotation">contributorRole_first_///25/2</contributorRole>
+      <contributorRole portrayal="contributorRole_repeat_///25/3/@portrayal" source="contributorRole_repeat_///25/3/@source" ref="contributorRole_repeat_///25/3/@ref" version="contributorRole_repeat_///25/3/@version" annotation="contributorRole_repeat_///25/3/@annotation">contributorRole_repeat_///25/3</contributorRole>
     </pbcoreContributor>
-    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreContributor>
-      <contributor affiliation="contributor_only_@affiliation" ref="contributor_only_@ref" annotation="contributor_only_@annotation" startTime="contributor_only_@startTime" endTime="contributor_only_@endTime" timeAnnotation="contributor_only_@timeAnnotation">contributor_only</contributor>
-      <contributorRole portrayal="contributorRole_first_@portrayal" source="contributorRole_first_@source" ref="contributorRole_first_@ref" version="contributorRole_first_@version" annotation="contributorRole_first_@annotation">contributorRole_first</contributorRole>
-      <contributorRole portrayal="contributorRole_repeat_@portrayal" source="contributorRole_repeat_@source" ref="contributorRole_repeat_@ref" version="contributorRole_repeat_@version" annotation="contributorRole_repeat_@annotation">contributorRole_repeat</contributorRole>
+      <contributor affiliation="contributor_only_///26/1/@affiliation" ref="contributor_only_///26/1/@ref" annotation="contributor_only_///26/1/@annotation" startTime="contributor_only_///26/1/@startTime" endTime="contributor_only_///26/1/@endTime" timeAnnotation="contributor_only_///26/1/@timeAnnotation">contributor_only_///26/1</contributor>
+      <contributorRole portrayal="contributorRole_first_///26/2/@portrayal" source="contributorRole_first_///26/2/@source" ref="contributorRole_first_///26/2/@ref" version="contributorRole_first_///26/2/@version" annotation="contributorRole_first_///26/2/@annotation">contributorRole_first_///26/2</contributorRole>
+      <contributorRole portrayal="contributorRole_repeat_///26/3/@portrayal" source="contributorRole_repeat_///26/3/@source" ref="contributorRole_repeat_///26/3/@ref" version="contributorRole_repeat_///26/3/@version" annotation="contributorRole_repeat_///26/3/@annotation">contributorRole_repeat_///26/3</contributorRole>
     </pbcoreContributor>
     <pbcorePublisher>
-      <publisher affiliation="publisher_only_@affiliation" ref="publisher_only_@ref" annotation="publisher_only_@annotation" startTime="publisher_only_@startTime" endTime="publisher_only_@endTime" timeAnnotation="publisher_only_@timeAnnotation">publisher_only</publisher>
-      <publisherRole source="publisherRole_first_@source" ref="publisherRole_first_@ref" version="publisherRole_first_@version" annotation="publisherRole_first_@annotation">publisherRole_first</publisherRole>
-      <publisherRole source="publisherRole_repeat_@source" ref="publisherRole_repeat_@ref" version="publisherRole_repeat_@version" annotation="publisherRole_repeat_@annotation">publisherRole_repeat</publisherRole>
+      <publisher affiliation="publisher_only_///27/1/@affiliation" ref="publisher_only_///27/1/@ref" annotation="publisher_only_///27/1/@annotation" startTime="publisher_only_///27/1/@startTime" endTime="publisher_only_///27/1/@endTime" timeAnnotation="publisher_only_///27/1/@timeAnnotation">publisher_only_///27/1</publisher>
+      <publisherRole source="publisherRole_first_///27/2/@source" ref="publisherRole_first_///27/2/@ref" version="publisherRole_first_///27/2/@version" annotation="publisherRole_first_///27/2/@annotation">publisherRole_first_///27/2</publisherRole>
+      <publisherRole source="publisherRole_repeat_///27/3/@source" ref="publisherRole_repeat_///27/3/@ref" version="publisherRole_repeat_///27/3/@version" annotation="publisherRole_repeat_///27/3/@annotation">publisherRole_repeat_///27/3</publisherRole>
     </pbcorePublisher>
-    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcorePublisher>
-      <publisher affiliation="publisher_only_@affiliation" ref="publisher_only_@ref" annotation="publisher_only_@annotation" startTime="publisher_only_@startTime" endTime="publisher_only_@endTime" timeAnnotation="publisher_only_@timeAnnotation">publisher_only</publisher>
-      <publisherRole source="publisherRole_first_@source" ref="publisherRole_first_@ref" version="publisherRole_first_@version" annotation="publisherRole_first_@annotation">publisherRole_first</publisherRole>
-      <publisherRole source="publisherRole_repeat_@source" ref="publisherRole_repeat_@ref" version="publisherRole_repeat_@version" annotation="publisherRole_repeat_@annotation">publisherRole_repeat</publisherRole>
+      <publisher affiliation="publisher_only_///28/1/@affiliation" ref="publisher_only_///28/1/@ref" annotation="publisher_only_///28/1/@annotation" startTime="publisher_only_///28/1/@startTime" endTime="publisher_only_///28/1/@endTime" timeAnnotation="publisher_only_///28/1/@timeAnnotation">publisher_only_///28/1</publisher>
+      <publisherRole source="publisherRole_first_///28/2/@source" ref="publisherRole_first_///28/2/@ref" version="publisherRole_first_///28/2/@version" annotation="publisherRole_first_///28/2/@annotation">publisherRole_first_///28/2</publisherRole>
+      <publisherRole source="publisherRole_repeat_///28/3/@source" ref="publisherRole_repeat_///28/3/@ref" version="publisherRole_repeat_///28/3/@version" annotation="publisherRole_repeat_///28/3/@annotation">publisherRole_repeat_///28/3</publisherRole>
     </pbcorePublisher>
     <pbcoreRightsSummary>
-      <rightsSummary source="rightsSummary_only_@source" ref="rightsSummary_only_@ref" version="rightsSummary_only_@version" annotation="rightsSummary_only_@annotation">rightsSummary_only</rightsSummary>
+      <rightsSummary source="rightsSummary_only_///29//@source" ref="rightsSummary_only_///29//@ref" version="rightsSummary_only_///29//@version" annotation="rightsSummary_only_///29//@annotation">rightsSummary_only_///29/</rightsSummary>
     </pbcoreRightsSummary>
     <pbcoreRightsSummary>
-      <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
+      <rightsLink annotation="rightsLink_only_///30//@annotation">rightsLink_only_///30/</rightsLink>
     </pbcoreRightsSummary>
     <pbcoreRightsSummary>
       <rightsEmbedded>
         <random>
-          <xml>rightsEmbedded_only</xml>
+          <xml>rightsEmbedded_only_///31///</xml>
         </random>
       </rightsEmbedded>
     </pbcoreRightsSummary>
     <pbcoreInstantiation>
-      <instantiationIdentifier source="instantiationIdentifier_first_@source" ref="instantiationIdentifier_first_@ref" version="instantiationIdentifier_first_@version" annotation="instantiationIdentifier_first_@annotation">instantiationIdentifier_first</instantiationIdentifier>
-      <instantiationIdentifier source="instantiationIdentifier_repeat_@source" ref="instantiationIdentifier_repeat_@ref" version="instantiationIdentifier_repeat_@version" annotation="instantiationIdentifier_repeat_@annotation">instantiationIdentifier_repeat</instantiationIdentifier>
-      <instantiationDate dateType="instantiationDate_first_@dateType">instantiationDate_first</instantiationDate>
-      <instantiationDate dateType="instantiationDate_repeat_@dateType">instantiationDate_repeat</instantiationDate>
-      <instantiationDimensions unitsOfMeasure="instantiationDimensions_first_@unitsOfMeasure" annotation="instantiationDimensions_first_@annotation">instantiationDimensions_first</instantiationDimensions>
-      <instantiationDimensions unitsOfMeasure="instantiationDimensions_repeat_@unitsOfMeasure" annotation="instantiationDimensions_repeat_@annotation">instantiationDimensions_repeat</instantiationDimensions>
-      <instantiationPhysical source="instantiationPhysical_only_@source" ref="instantiationPhysical_only_@ref" version="instantiationPhysical_only_@version" annotation="instantiationPhysical_only_@annotation">instantiationPhysical_only</instantiationPhysical>
-      <instantiationDigital source="instantiationDigital_only_@source" ref="instantiationDigital_only_@ref" version="instantiationDigital_only_@version" annotation="instantiationDigital_only_@annotation">instantiationDigital_only</instantiationDigital>
-      <instantiationStandard profile="instantiationStandard_only_@profile" source="instantiationStandard_only_@source" ref="instantiationStandard_only_@ref" version="instantiationStandard_only_@version" annotation="instantiationStandard_only_@annotation">instantiationStandard_only</instantiationStandard>
-      <instantiationLocation>instantiationLocation_only</instantiationLocation>
-      <instantiationMediaType source="instantiationMediaType_only_@source" ref="instantiationMediaType_only_@ref" version="instantiationMediaType_only_@version" annotation="instantiationMediaType_only_@annotation">instantiationMediaType_only</instantiationMediaType>
-      <instantiationGenerations source="instantiationGenerations_first_@source" ref="instantiationGenerations_first_@ref" version="instantiationGenerations_first_@version" annotation="instantiationGenerations_first_@annotation">instantiationGenerations_first</instantiationGenerations>
-      <instantiationGenerations source="instantiationGenerations_repeat_@source" ref="instantiationGenerations_repeat_@ref" version="instantiationGenerations_repeat_@version" annotation="instantiationGenerations_repeat_@annotation">instantiationGenerations_repeat</instantiationGenerations>
-      <instantiationFileSize unitsOfMeasure="instantiationFileSize_only_@unitsOfMeasure" annotation="instantiationFileSize_only_@annotation">instantiationFileSize_only</instantiationFileSize>
-      <instantiationTimeStart>instantiationTimeStart_only</instantiationTimeStart>
-      <instantiationDuration>instantiationDuration_only</instantiationDuration>
-      <instantiationDataRate unitsOfMeasure="instantiationDataRate_only_@unitsOfMeasure" annotation="instantiationDataRate_only_@annotation">instantiationDataRate_only</instantiationDataRate>
-      <instantiationColors source="instantiationColors_only_@source" ref="instantiationColors_only_@ref" version="instantiationColors_only_@version" annotation="instantiationColors_only_@annotation">instantiationColors_only</instantiationColors>
-      <instantiationTracks>instantiationTracks_only</instantiationTracks>
-      <instantiationChannelConfiguration>instantiationChannelConfiguration_only</instantiationChannelConfiguration>
-      <instantiationLanguage source="instantiationLanguage_only_@source" ref="instantiationLanguage_only_@ref" version="instantiationLanguage_only_@version" annotation="instantiationLanguage_only_@annotation">tri;ple;let;ter</instantiationLanguage>
-      <instantiationAlternativeModes>instantiationAlternativeModes_only</instantiationAlternativeModes>
+      <instantiationIdentifier source="instantiationIdentifier_first_///32/1/@source" ref="instantiationIdentifier_first_///32/1/@ref" version="instantiationIdentifier_first_///32/1/@version" annotation="instantiationIdentifier_first_///32/1/@annotation">instantiationIdentifier_first_///32/1</instantiationIdentifier>
+      <instantiationIdentifier source="instantiationIdentifier_repeat_///32/2/@source" ref="instantiationIdentifier_repeat_///32/2/@ref" version="instantiationIdentifier_repeat_///32/2/@version" annotation="instantiationIdentifier_repeat_///32/2/@annotation">instantiationIdentifier_repeat_///32/2</instantiationIdentifier>
+      <instantiationDate dateType="instantiationDate_first_///32/3/@dateType">instantiationDate_first_///32/3</instantiationDate>
+      <instantiationDate dateType="instantiationDate_repeat_///32/4/@dateType">instantiationDate_repeat_///32/4</instantiationDate>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_first_///32/5/@unitsOfMeasure" annotation="instantiationDimensions_first_///32/5/@annotation">instantiationDimensions_first_///32/5</instantiationDimensions>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_repeat_///32/6/@unitsOfMeasure" annotation="instantiationDimensions_repeat_///32/6/@annotation">instantiationDimensions_repeat_///32/6</instantiationDimensions>
+      <instantiationPhysical source="instantiationPhysical_only_///32/7/@source" ref="instantiationPhysical_only_///32/7/@ref" version="instantiationPhysical_only_///32/7/@version" annotation="instantiationPhysical_only_///32/7/@annotation">instantiationPhysical_only_///32/7</instantiationPhysical>
+      <instantiationDigital source="instantiationDigital_only_///32/8/@source" ref="instantiationDigital_only_///32/8/@ref" version="instantiationDigital_only_///32/8/@version" annotation="instantiationDigital_only_///32/8/@annotation">instantiationDigital_only_///32/8</instantiationDigital>
+      <instantiationStandard profile="instantiationStandard_only_///32/9/@profile" source="instantiationStandard_only_///32/9/@source" ref="instantiationStandard_only_///32/9/@ref" version="instantiationStandard_only_///32/9/@version" annotation="instantiationStandard_only_///32/9/@annotation">instantiationStandard_only_///32/9</instantiationStandard>
+      <instantiationLocation>instantiationLocation_only_///32/10</instantiationLocation>
+      <instantiationMediaType source="instantiationMediaType_only_///32/11/@source" ref="instantiationMediaType_only_///32/11/@ref" version="instantiationMediaType_only_///32/11/@version" annotation="instantiationMediaType_only_///32/11/@annotation">instantiationMediaType_only_///32/11</instantiationMediaType>
+      <instantiationGenerations source="instantiationGenerations_first_///32/12/@source" ref="instantiationGenerations_first_///32/12/@ref" version="instantiationGenerations_first_///32/12/@version" annotation="instantiationGenerations_first_///32/12/@annotation">instantiationGenerations_first_///32/12</instantiationGenerations>
+      <instantiationGenerations source="instantiationGenerations_repeat_///32/13/@source" ref="instantiationGenerations_repeat_///32/13/@ref" version="instantiationGenerations_repeat_///32/13/@version" annotation="instantiationGenerations_repeat_///32/13/@annotation">instantiationGenerations_repeat_///32/13</instantiationGenerations>
+      <instantiationFileSize unitsOfMeasure="instantiationFileSize_only_///32/14/@unitsOfMeasure" annotation="instantiationFileSize_only_///32/14/@annotation">instantiationFileSize_only_///32/14</instantiationFileSize>
+      <instantiationTimeStart>instantiationTimeStart_only_///32/15</instantiationTimeStart>
+      <instantiationDuration>instantiationDuration_only_///32/16</instantiationDuration>
+      <instantiationDataRate unitsOfMeasure="instantiationDataRate_only_///32/17/@unitsOfMeasure" annotation="instantiationDataRate_only_///32/17/@annotation">instantiationDataRate_only_///32/17</instantiationDataRate>
+      <instantiationColors source="instantiationColors_only_///32/18/@source" ref="instantiationColors_only_///32/18/@ref" version="instantiationColors_only_///32/18/@version" annotation="instantiationColors_only_///32/18/@annotation">instantiationColors_only_///32/18</instantiationColors>
+      <instantiationTracks>instantiationTracks_only_///32/19</instantiationTracks>
+      <instantiationChannelConfiguration>instantiationChannelConfiguration_only_///32/20</instantiationChannelConfiguration>
+      <instantiationLanguage source="instantiationLanguage_only_///32/21/@source" ref="instantiationLanguage_only_///32/21/@ref" version="instantiationLanguage_only_///32/21/@version" annotation="instantiationLanguage_only_///32/21/@annotation">tri;ple;let;ter</instantiationLanguage>
+      <instantiationAlternativeModes>instantiationAlternativeModes_only_///32/22</instantiationAlternativeModes>
       <instantiationEssenceTrack>
-        <essenceTrackType>essenceTrackType_only</essenceTrackType>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_first_@source" ref="essenceTrackIdentifier_first_@ref" version="essenceTrackIdentifier_first_@version" annotation="essenceTrackIdentifier_first_@annotation">essenceTrackIdentifier_first</essenceTrackIdentifier>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_@source" ref="essenceTrackIdentifier_repeat_@ref" version="essenceTrackIdentifier_repeat_@version" annotation="essenceTrackIdentifier_repeat_@annotation">essenceTrackIdentifier_repeat</essenceTrackIdentifier>
-        <essenceTrackStandard source="essenceTrackStandard_only_@source" ref="essenceTrackStandard_only_@ref" version="essenceTrackStandard_only_@version" annotation="essenceTrackStandard_only_@annotation">essenceTrackStandard_only</essenceTrackStandard>
-        <essenceTrackEncoding source="essenceTrackEncoding_only_@source" ref="essenceTrackEncoding_only_@ref" version="essenceTrackEncoding_only_@version" annotation="essenceTrackEncoding_only_@annotation">essenceTrackEncoding_only</essenceTrackEncoding>
-        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
-        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
-        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
-        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
-        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
-        <essenceTrackFrameSize source="essenceTrackFrameSize_only_@source" ref="essenceTrackFrameSize_only_@ref" version="essenceTrackFrameSize_only_@version" annotation="essenceTrackFrameSize_only_@annotation">essenceTrackFrameSize_only</essenceTrackFrameSize>
-        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
-        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
-        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackType>essenceTrackType_only_///32/23/1</essenceTrackType>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_first_///32/23/2/@source" ref="essenceTrackIdentifier_first_///32/23/2/@ref" version="essenceTrackIdentifier_first_///32/23/2/@version" annotation="essenceTrackIdentifier_first_///32/23/2/@annotation">essenceTrackIdentifier_first_///32/23/2</essenceTrackIdentifier>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_///32/23/3/@source" ref="essenceTrackIdentifier_repeat_///32/23/3/@ref" version="essenceTrackIdentifier_repeat_///32/23/3/@version" annotation="essenceTrackIdentifier_repeat_///32/23/3/@annotation">essenceTrackIdentifier_repeat_///32/23/3</essenceTrackIdentifier>
+        <essenceTrackStandard source="essenceTrackStandard_only_///32/23/4/@source" ref="essenceTrackStandard_only_///32/23/4/@ref" version="essenceTrackStandard_only_///32/23/4/@version" annotation="essenceTrackStandard_only_///32/23/4/@annotation">essenceTrackStandard_only_///32/23/4</essenceTrackStandard>
+        <essenceTrackEncoding source="essenceTrackEncoding_only_///32/23/5/@source" ref="essenceTrackEncoding_only_///32/23/5/@ref" version="essenceTrackEncoding_only_///32/23/5/@version" annotation="essenceTrackEncoding_only_///32/23/5/@annotation">essenceTrackEncoding_only_///32/23/5</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_///32/23/6/@unitsOfMeasure" annotation="essenceTrackDataRate_only_///32/23/6/@annotation">essenceTrackDataRate_only_///32/23/6</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_///32/23/7/@unitsOfMeasure" annotation="essenceTrackFrameRate_only_///32/23/7/@annotation">essenceTrackFrameRate_only_///32/23/7</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_///32/23/8/@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_///32/23/8/@annotation">essenceTrackPlaybackSpeed_only_///32/23/8</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_///32/23/9/@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_///32/23/9/@annotation">essenceTrackSamplingRate_only_///32/23/9</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only_///32/23/10</essenceTrackBitDepth>
+        <essenceTrackFrameSize source="essenceTrackFrameSize_only_///32/23/11/@source" ref="essenceTrackFrameSize_only_///32/23/11/@ref" version="essenceTrackFrameSize_only_///32/23/11/@version" annotation="essenceTrackFrameSize_only_///32/23/11/@annotation">essenceTrackFrameSize_only_///32/23/11</essenceTrackFrameSize>
+        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_///32/23/12/@source" ref="essenceTrackAspectRatio_only_///32/23/12/@ref" version="essenceTrackAspectRatio_only_///32/23/12/@version" annotation="essenceTrackAspectRatio_only_///32/23/12/@annotation">essenceTrackAspectRatio_only_///32/23/12</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only_///32/23/13</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only_///32/23/14</essenceTrackDuration>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_///32/23/15/@source" ref="essenceTrackLanguage_only_///32/23/15/@ref" version="essenceTrackLanguage_only_///32/23/15/@version" annotation="essenceTrackLanguage_only_///32/23/15/@annotation">tri;ple;let;ter</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_///32/23/16/@annotationType" ref="essenceTrackAnnotation_first_///32/23/16/@ref">essenceTrackAnnotation_first_///32/23/16</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_///32/23/17/@annotationType" ref="essenceTrackAnnotation_repeat_///32/23/17/@ref">essenceTrackAnnotation_repeat_///32/23/17</essenceTrackAnnotation>
         <essenceTrackExtension>
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///32/23/18/1/1</extensionElement>
+            <extensionValue>extensionValue_only_///32/23/18/1/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///32/23/18/1/3</extensionAuthorityUsed>
           </extensionWrap>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///32/23/18/2/1</extensionElement>
+            <extensionValue>extensionValue_only_///32/23/18/2/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///32/23/18/2/3</extensionAuthorityUsed>
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_first</xml>
+              <xml>extensionEmbedded_first_///32/23/19/1//</xml>
             </random>
           </extensionEmbedded>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_repeat</xml>
+              <xml>extensionEmbedded_repeat_///32/23/19/2//</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
-      <!--TODO: Get the contents of repeated elements to be distinct.-->
       <instantiationEssenceTrack>
-        <essenceTrackType>essenceTrackType_only</essenceTrackType>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_first_@source" ref="essenceTrackIdentifier_first_@ref" version="essenceTrackIdentifier_first_@version" annotation="essenceTrackIdentifier_first_@annotation">essenceTrackIdentifier_first</essenceTrackIdentifier>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_@source" ref="essenceTrackIdentifier_repeat_@ref" version="essenceTrackIdentifier_repeat_@version" annotation="essenceTrackIdentifier_repeat_@annotation">essenceTrackIdentifier_repeat</essenceTrackIdentifier>
-        <essenceTrackStandard source="essenceTrackStandard_only_@source" ref="essenceTrackStandard_only_@ref" version="essenceTrackStandard_only_@version" annotation="essenceTrackStandard_only_@annotation">essenceTrackStandard_only</essenceTrackStandard>
-        <essenceTrackEncoding source="essenceTrackEncoding_only_@source" ref="essenceTrackEncoding_only_@ref" version="essenceTrackEncoding_only_@version" annotation="essenceTrackEncoding_only_@annotation">essenceTrackEncoding_only</essenceTrackEncoding>
-        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
-        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
-        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
-        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
-        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
-        <essenceTrackFrameSize source="essenceTrackFrameSize_only_@source" ref="essenceTrackFrameSize_only_@ref" version="essenceTrackFrameSize_only_@version" annotation="essenceTrackFrameSize_only_@annotation">essenceTrackFrameSize_only</essenceTrackFrameSize>
-        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
-        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
-        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackType>essenceTrackType_only_///32/24/1</essenceTrackType>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_first_///32/24/2/@source" ref="essenceTrackIdentifier_first_///32/24/2/@ref" version="essenceTrackIdentifier_first_///32/24/2/@version" annotation="essenceTrackIdentifier_first_///32/24/2/@annotation">essenceTrackIdentifier_first_///32/24/2</essenceTrackIdentifier>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_///32/24/3/@source" ref="essenceTrackIdentifier_repeat_///32/24/3/@ref" version="essenceTrackIdentifier_repeat_///32/24/3/@version" annotation="essenceTrackIdentifier_repeat_///32/24/3/@annotation">essenceTrackIdentifier_repeat_///32/24/3</essenceTrackIdentifier>
+        <essenceTrackStandard source="essenceTrackStandard_only_///32/24/4/@source" ref="essenceTrackStandard_only_///32/24/4/@ref" version="essenceTrackStandard_only_///32/24/4/@version" annotation="essenceTrackStandard_only_///32/24/4/@annotation">essenceTrackStandard_only_///32/24/4</essenceTrackStandard>
+        <essenceTrackEncoding source="essenceTrackEncoding_only_///32/24/5/@source" ref="essenceTrackEncoding_only_///32/24/5/@ref" version="essenceTrackEncoding_only_///32/24/5/@version" annotation="essenceTrackEncoding_only_///32/24/5/@annotation">essenceTrackEncoding_only_///32/24/5</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_///32/24/6/@unitsOfMeasure" annotation="essenceTrackDataRate_only_///32/24/6/@annotation">essenceTrackDataRate_only_///32/24/6</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_///32/24/7/@unitsOfMeasure" annotation="essenceTrackFrameRate_only_///32/24/7/@annotation">essenceTrackFrameRate_only_///32/24/7</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_///32/24/8/@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_///32/24/8/@annotation">essenceTrackPlaybackSpeed_only_///32/24/8</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_///32/24/9/@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_///32/24/9/@annotation">essenceTrackSamplingRate_only_///32/24/9</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only_///32/24/10</essenceTrackBitDepth>
+        <essenceTrackFrameSize source="essenceTrackFrameSize_only_///32/24/11/@source" ref="essenceTrackFrameSize_only_///32/24/11/@ref" version="essenceTrackFrameSize_only_///32/24/11/@version" annotation="essenceTrackFrameSize_only_///32/24/11/@annotation">essenceTrackFrameSize_only_///32/24/11</essenceTrackFrameSize>
+        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_///32/24/12/@source" ref="essenceTrackAspectRatio_only_///32/24/12/@ref" version="essenceTrackAspectRatio_only_///32/24/12/@version" annotation="essenceTrackAspectRatio_only_///32/24/12/@annotation">essenceTrackAspectRatio_only_///32/24/12</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only_///32/24/13</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only_///32/24/14</essenceTrackDuration>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_///32/24/15/@source" ref="essenceTrackLanguage_only_///32/24/15/@ref" version="essenceTrackLanguage_only_///32/24/15/@version" annotation="essenceTrackLanguage_only_///32/24/15/@annotation">tri;ple;let;ter</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_///32/24/16/@annotationType" ref="essenceTrackAnnotation_first_///32/24/16/@ref">essenceTrackAnnotation_first_///32/24/16</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_///32/24/17/@annotationType" ref="essenceTrackAnnotation_repeat_///32/24/17/@ref">essenceTrackAnnotation_repeat_///32/24/17</essenceTrackAnnotation>
         <essenceTrackExtension>
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///32/24/18/1/1</extensionElement>
+            <extensionValue>extensionValue_only_///32/24/18/1/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///32/24/18/1/3</extensionAuthorityUsed>
           </extensionWrap>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///32/24/18/2/1</extensionElement>
+            <extensionValue>extensionValue_only_///32/24/18/2/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///32/24/18/2/3</extensionAuthorityUsed>
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_first</xml>
+              <xml>extensionEmbedded_first_///32/24/19/1//</xml>
             </random>
           </extensionEmbedded>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_repeat</xml>
+              <xml>extensionEmbedded_repeat_///32/24/19/2//</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
       <instantiationRelation>
-        <instantiationRelationType source="instantiationRelationType_only_@source" ref="instantiationRelationType_only_@ref" version="instantiationRelationType_only_@version" annotation="instantiationRelationType_only_@annotation">instantiationRelationType_only</instantiationRelationType>
-        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_@source" ref="instantiationRelationIdentifier_only_@ref" version="instantiationRelationIdentifier_only_@version" annotation="instantiationRelationIdentifier_only_@annotation">instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+        <instantiationRelationType source="instantiationRelationType_only_///32/25/1/@source" ref="instantiationRelationType_only_///32/25/1/@ref" version="instantiationRelationType_only_///32/25/1/@version" annotation="instantiationRelationType_only_///32/25/1/@annotation">instantiationRelationType_only_///32/25/1</instantiationRelationType>
+        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_///32/25/2/@source" ref="instantiationRelationIdentifier_only_///32/25/2/@ref" version="instantiationRelationIdentifier_only_///32/25/2/@version" annotation="instantiationRelationIdentifier_only_///32/25/2/@annotation">instantiationRelationIdentifier_only_///32/25/2</instantiationRelationIdentifier>
       </instantiationRelation>
-      <!--TODO: Get the contents of repeated elements to be distinct.-->
       <instantiationRelation>
-        <instantiationRelationType source="instantiationRelationType_only_@source" ref="instantiationRelationType_only_@ref" version="instantiationRelationType_only_@version" annotation="instantiationRelationType_only_@annotation">instantiationRelationType_only</instantiationRelationType>
-        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_@source" ref="instantiationRelationIdentifier_only_@ref" version="instantiationRelationIdentifier_only_@version" annotation="instantiationRelationIdentifier_only_@annotation">instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+        <instantiationRelationType source="instantiationRelationType_only_///32/26/1/@source" ref="instantiationRelationType_only_///32/26/1/@ref" version="instantiationRelationType_only_///32/26/1/@version" annotation="instantiationRelationType_only_///32/26/1/@annotation">instantiationRelationType_only_///32/26/1</instantiationRelationType>
+        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_///32/26/2/@source" ref="instantiationRelationIdentifier_only_///32/26/2/@ref" version="instantiationRelationIdentifier_only_///32/26/2/@version" annotation="instantiationRelationIdentifier_only_///32/26/2/@annotation">instantiationRelationIdentifier_only_///32/26/2</instantiationRelationIdentifier>
       </instantiationRelation>
       <instantiationRights>
-        <rightsSummary source="rightsSummary_only_@source" ref="rightsSummary_only_@ref" version="rightsSummary_only_@version" annotation="rightsSummary_only_@annotation">rightsSummary_only</rightsSummary>
+        <rightsSummary source="rightsSummary_only_///32/27//@source" ref="rightsSummary_only_///32/27//@ref" version="rightsSummary_only_///32/27//@version" annotation="rightsSummary_only_///32/27//@annotation">rightsSummary_only_///32/27/</rightsSummary>
       </instantiationRights>
       <instantiationRights>
-        <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
+        <rightsLink annotation="rightsLink_only_///32/28//@annotation">rightsLink_only_///32/28/</rightsLink>
       </instantiationRights>
       <instantiationRights>
         <rightsEmbedded>
           <random>
-            <xml>rightsEmbedded_only</xml>
+            <xml>rightsEmbedded_only_///32/29///</xml>
           </random>
         </rightsEmbedded>
       </instantiationRights>
-      <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
-      <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
+      <instantiationAnnotation annotationType="instantiationAnnotation_first_///32/30/@annotationType" ref="instantiationAnnotation_first_///32/30/@ref">instantiationAnnotation_first_///32/30</instantiationAnnotation>
+      <instantiationAnnotation annotationType="instantiationAnnotation_repeat_///32/31/@annotationType" ref="instantiationAnnotation_repeat_///32/31/@ref">instantiationAnnotation_repeat_///32/31</instantiationAnnotation>
       <instantiationPart>
         <!--instantiationPart can recurse-->
-        <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source">instantiationPart_instantiationIdentifier</instantiationIdentifier>
-        <instantiationLocation>instantiationPart_instantiationLocation</instantiationLocation>
+        <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source_///32/32/1/@source">instantiationPart_instantiationIdentifier_///32/32/1</instantiationIdentifier>
+        <instantiationLocation>instantiationPart_instantiationLocation_///32/32/2</instantiationLocation>
       </instantiationPart>
       <instantiationExtension>
         <extensionWrap>
-          <extensionElement>extensionElement_only</extensionElement>
-          <extensionValue>extensionValue_only</extensionValue>
-          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          <extensionElement>extensionElement_only_///32/33/1/1</extensionElement>
+          <extensionValue>extensionValue_only_///32/33/1/2</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only_///32/33/1/3</extensionAuthorityUsed>
         </extensionWrap>
-        <!--TODO: Get the contents of repeated elements to be distinct.-->
         <extensionWrap>
-          <extensionElement>extensionElement_only</extensionElement>
-          <extensionValue>extensionValue_only</extensionValue>
-          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          <extensionElement>extensionElement_only_///32/33/2/1</extensionElement>
+          <extensionValue>extensionValue_only_///32/33/2/2</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only_///32/33/2/3</extensionAuthorityUsed>
         </extensionWrap>
       </instantiationExtension>
       <instantiationExtension>
         <extensionEmbedded>
           <random>
-            <xml>extensionEmbedded_first</xml>
+            <xml>extensionEmbedded_first_///32/34/1//</xml>
           </random>
         </extensionEmbedded>
         <extensionEmbedded>
           <random>
-            <xml>extensionEmbedded_repeat</xml>
+            <xml>extensionEmbedded_repeat_///32/34/2//</xml>
           </random>
         </extensionEmbedded>
       </instantiationExtension>
     </pbcoreInstantiation>
-    <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreInstantiation>
-      <instantiationIdentifier source="instantiationIdentifier_first_@source" ref="instantiationIdentifier_first_@ref" version="instantiationIdentifier_first_@version" annotation="instantiationIdentifier_first_@annotation">instantiationIdentifier_first</instantiationIdentifier>
-      <instantiationIdentifier source="instantiationIdentifier_repeat_@source" ref="instantiationIdentifier_repeat_@ref" version="instantiationIdentifier_repeat_@version" annotation="instantiationIdentifier_repeat_@annotation">instantiationIdentifier_repeat</instantiationIdentifier>
-      <instantiationDate dateType="instantiationDate_first_@dateType">instantiationDate_first</instantiationDate>
-      <instantiationDate dateType="instantiationDate_repeat_@dateType">instantiationDate_repeat</instantiationDate>
-      <instantiationDimensions unitsOfMeasure="instantiationDimensions_first_@unitsOfMeasure" annotation="instantiationDimensions_first_@annotation">instantiationDimensions_first</instantiationDimensions>
-      <instantiationDimensions unitsOfMeasure="instantiationDimensions_repeat_@unitsOfMeasure" annotation="instantiationDimensions_repeat_@annotation">instantiationDimensions_repeat</instantiationDimensions>
-      <instantiationPhysical source="instantiationPhysical_only_@source" ref="instantiationPhysical_only_@ref" version="instantiationPhysical_only_@version" annotation="instantiationPhysical_only_@annotation">instantiationPhysical_only</instantiationPhysical>
-      <instantiationDigital source="instantiationDigital_only_@source" ref="instantiationDigital_only_@ref" version="instantiationDigital_only_@version" annotation="instantiationDigital_only_@annotation">instantiationDigital_only</instantiationDigital>
-      <instantiationStandard profile="instantiationStandard_only_@profile" source="instantiationStandard_only_@source" ref="instantiationStandard_only_@ref" version="instantiationStandard_only_@version" annotation="instantiationStandard_only_@annotation">instantiationStandard_only</instantiationStandard>
-      <instantiationLocation>instantiationLocation_only</instantiationLocation>
-      <instantiationMediaType source="instantiationMediaType_only_@source" ref="instantiationMediaType_only_@ref" version="instantiationMediaType_only_@version" annotation="instantiationMediaType_only_@annotation">instantiationMediaType_only</instantiationMediaType>
-      <instantiationGenerations source="instantiationGenerations_first_@source" ref="instantiationGenerations_first_@ref" version="instantiationGenerations_first_@version" annotation="instantiationGenerations_first_@annotation">instantiationGenerations_first</instantiationGenerations>
-      <instantiationGenerations source="instantiationGenerations_repeat_@source" ref="instantiationGenerations_repeat_@ref" version="instantiationGenerations_repeat_@version" annotation="instantiationGenerations_repeat_@annotation">instantiationGenerations_repeat</instantiationGenerations>
-      <instantiationFileSize unitsOfMeasure="instantiationFileSize_only_@unitsOfMeasure" annotation="instantiationFileSize_only_@annotation">instantiationFileSize_only</instantiationFileSize>
-      <instantiationTimeStart>instantiationTimeStart_only</instantiationTimeStart>
-      <instantiationDuration>instantiationDuration_only</instantiationDuration>
-      <instantiationDataRate unitsOfMeasure="instantiationDataRate_only_@unitsOfMeasure" annotation="instantiationDataRate_only_@annotation">instantiationDataRate_only</instantiationDataRate>
-      <instantiationColors source="instantiationColors_only_@source" ref="instantiationColors_only_@ref" version="instantiationColors_only_@version" annotation="instantiationColors_only_@annotation">instantiationColors_only</instantiationColors>
-      <instantiationTracks>instantiationTracks_only</instantiationTracks>
-      <instantiationChannelConfiguration>instantiationChannelConfiguration_only</instantiationChannelConfiguration>
-      <instantiationLanguage source="instantiationLanguage_only_@source" ref="instantiationLanguage_only_@ref" version="instantiationLanguage_only_@version" annotation="instantiationLanguage_only_@annotation">tri;ple;let;ter</instantiationLanguage>
-      <instantiationAlternativeModes>instantiationAlternativeModes_only</instantiationAlternativeModes>
+      <instantiationIdentifier source="instantiationIdentifier_first_///33/1/@source" ref="instantiationIdentifier_first_///33/1/@ref" version="instantiationIdentifier_first_///33/1/@version" annotation="instantiationIdentifier_first_///33/1/@annotation">instantiationIdentifier_first_///33/1</instantiationIdentifier>
+      <instantiationIdentifier source="instantiationIdentifier_repeat_///33/2/@source" ref="instantiationIdentifier_repeat_///33/2/@ref" version="instantiationIdentifier_repeat_///33/2/@version" annotation="instantiationIdentifier_repeat_///33/2/@annotation">instantiationIdentifier_repeat_///33/2</instantiationIdentifier>
+      <instantiationDate dateType="instantiationDate_first_///33/3/@dateType">instantiationDate_first_///33/3</instantiationDate>
+      <instantiationDate dateType="instantiationDate_repeat_///33/4/@dateType">instantiationDate_repeat_///33/4</instantiationDate>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_first_///33/5/@unitsOfMeasure" annotation="instantiationDimensions_first_///33/5/@annotation">instantiationDimensions_first_///33/5</instantiationDimensions>
+      <instantiationDimensions unitsOfMeasure="instantiationDimensions_repeat_///33/6/@unitsOfMeasure" annotation="instantiationDimensions_repeat_///33/6/@annotation">instantiationDimensions_repeat_///33/6</instantiationDimensions>
+      <instantiationPhysical source="instantiationPhysical_only_///33/7/@source" ref="instantiationPhysical_only_///33/7/@ref" version="instantiationPhysical_only_///33/7/@version" annotation="instantiationPhysical_only_///33/7/@annotation">instantiationPhysical_only_///33/7</instantiationPhysical>
+      <instantiationDigital source="instantiationDigital_only_///33/8/@source" ref="instantiationDigital_only_///33/8/@ref" version="instantiationDigital_only_///33/8/@version" annotation="instantiationDigital_only_///33/8/@annotation">instantiationDigital_only_///33/8</instantiationDigital>
+      <instantiationStandard profile="instantiationStandard_only_///33/9/@profile" source="instantiationStandard_only_///33/9/@source" ref="instantiationStandard_only_///33/9/@ref" version="instantiationStandard_only_///33/9/@version" annotation="instantiationStandard_only_///33/9/@annotation">instantiationStandard_only_///33/9</instantiationStandard>
+      <instantiationLocation>instantiationLocation_only_///33/10</instantiationLocation>
+      <instantiationMediaType source="instantiationMediaType_only_///33/11/@source" ref="instantiationMediaType_only_///33/11/@ref" version="instantiationMediaType_only_///33/11/@version" annotation="instantiationMediaType_only_///33/11/@annotation">instantiationMediaType_only_///33/11</instantiationMediaType>
+      <instantiationGenerations source="instantiationGenerations_first_///33/12/@source" ref="instantiationGenerations_first_///33/12/@ref" version="instantiationGenerations_first_///33/12/@version" annotation="instantiationGenerations_first_///33/12/@annotation">instantiationGenerations_first_///33/12</instantiationGenerations>
+      <instantiationGenerations source="instantiationGenerations_repeat_///33/13/@source" ref="instantiationGenerations_repeat_///33/13/@ref" version="instantiationGenerations_repeat_///33/13/@version" annotation="instantiationGenerations_repeat_///33/13/@annotation">instantiationGenerations_repeat_///33/13</instantiationGenerations>
+      <instantiationFileSize unitsOfMeasure="instantiationFileSize_only_///33/14/@unitsOfMeasure" annotation="instantiationFileSize_only_///33/14/@annotation">instantiationFileSize_only_///33/14</instantiationFileSize>
+      <instantiationTimeStart>instantiationTimeStart_only_///33/15</instantiationTimeStart>
+      <instantiationDuration>instantiationDuration_only_///33/16</instantiationDuration>
+      <instantiationDataRate unitsOfMeasure="instantiationDataRate_only_///33/17/@unitsOfMeasure" annotation="instantiationDataRate_only_///33/17/@annotation">instantiationDataRate_only_///33/17</instantiationDataRate>
+      <instantiationColors source="instantiationColors_only_///33/18/@source" ref="instantiationColors_only_///33/18/@ref" version="instantiationColors_only_///33/18/@version" annotation="instantiationColors_only_///33/18/@annotation">instantiationColors_only_///33/18</instantiationColors>
+      <instantiationTracks>instantiationTracks_only_///33/19</instantiationTracks>
+      <instantiationChannelConfiguration>instantiationChannelConfiguration_only_///33/20</instantiationChannelConfiguration>
+      <instantiationLanguage source="instantiationLanguage_only_///33/21/@source" ref="instantiationLanguage_only_///33/21/@ref" version="instantiationLanguage_only_///33/21/@version" annotation="instantiationLanguage_only_///33/21/@annotation">tri;ple;let;ter</instantiationLanguage>
+      <instantiationAlternativeModes>instantiationAlternativeModes_only_///33/22</instantiationAlternativeModes>
       <instantiationEssenceTrack>
-        <essenceTrackType>essenceTrackType_only</essenceTrackType>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_first_@source" ref="essenceTrackIdentifier_first_@ref" version="essenceTrackIdentifier_first_@version" annotation="essenceTrackIdentifier_first_@annotation">essenceTrackIdentifier_first</essenceTrackIdentifier>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_@source" ref="essenceTrackIdentifier_repeat_@ref" version="essenceTrackIdentifier_repeat_@version" annotation="essenceTrackIdentifier_repeat_@annotation">essenceTrackIdentifier_repeat</essenceTrackIdentifier>
-        <essenceTrackStandard source="essenceTrackStandard_only_@source" ref="essenceTrackStandard_only_@ref" version="essenceTrackStandard_only_@version" annotation="essenceTrackStandard_only_@annotation">essenceTrackStandard_only</essenceTrackStandard>
-        <essenceTrackEncoding source="essenceTrackEncoding_only_@source" ref="essenceTrackEncoding_only_@ref" version="essenceTrackEncoding_only_@version" annotation="essenceTrackEncoding_only_@annotation">essenceTrackEncoding_only</essenceTrackEncoding>
-        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
-        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
-        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
-        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
-        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
-        <essenceTrackFrameSize source="essenceTrackFrameSize_only_@source" ref="essenceTrackFrameSize_only_@ref" version="essenceTrackFrameSize_only_@version" annotation="essenceTrackFrameSize_only_@annotation">essenceTrackFrameSize_only</essenceTrackFrameSize>
-        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
-        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
-        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackType>essenceTrackType_only_///33/23/1</essenceTrackType>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_first_///33/23/2/@source" ref="essenceTrackIdentifier_first_///33/23/2/@ref" version="essenceTrackIdentifier_first_///33/23/2/@version" annotation="essenceTrackIdentifier_first_///33/23/2/@annotation">essenceTrackIdentifier_first_///33/23/2</essenceTrackIdentifier>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_///33/23/3/@source" ref="essenceTrackIdentifier_repeat_///33/23/3/@ref" version="essenceTrackIdentifier_repeat_///33/23/3/@version" annotation="essenceTrackIdentifier_repeat_///33/23/3/@annotation">essenceTrackIdentifier_repeat_///33/23/3</essenceTrackIdentifier>
+        <essenceTrackStandard source="essenceTrackStandard_only_///33/23/4/@source" ref="essenceTrackStandard_only_///33/23/4/@ref" version="essenceTrackStandard_only_///33/23/4/@version" annotation="essenceTrackStandard_only_///33/23/4/@annotation">essenceTrackStandard_only_///33/23/4</essenceTrackStandard>
+        <essenceTrackEncoding source="essenceTrackEncoding_only_///33/23/5/@source" ref="essenceTrackEncoding_only_///33/23/5/@ref" version="essenceTrackEncoding_only_///33/23/5/@version" annotation="essenceTrackEncoding_only_///33/23/5/@annotation">essenceTrackEncoding_only_///33/23/5</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_///33/23/6/@unitsOfMeasure" annotation="essenceTrackDataRate_only_///33/23/6/@annotation">essenceTrackDataRate_only_///33/23/6</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_///33/23/7/@unitsOfMeasure" annotation="essenceTrackFrameRate_only_///33/23/7/@annotation">essenceTrackFrameRate_only_///33/23/7</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_///33/23/8/@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_///33/23/8/@annotation">essenceTrackPlaybackSpeed_only_///33/23/8</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_///33/23/9/@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_///33/23/9/@annotation">essenceTrackSamplingRate_only_///33/23/9</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only_///33/23/10</essenceTrackBitDepth>
+        <essenceTrackFrameSize source="essenceTrackFrameSize_only_///33/23/11/@source" ref="essenceTrackFrameSize_only_///33/23/11/@ref" version="essenceTrackFrameSize_only_///33/23/11/@version" annotation="essenceTrackFrameSize_only_///33/23/11/@annotation">essenceTrackFrameSize_only_///33/23/11</essenceTrackFrameSize>
+        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_///33/23/12/@source" ref="essenceTrackAspectRatio_only_///33/23/12/@ref" version="essenceTrackAspectRatio_only_///33/23/12/@version" annotation="essenceTrackAspectRatio_only_///33/23/12/@annotation">essenceTrackAspectRatio_only_///33/23/12</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only_///33/23/13</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only_///33/23/14</essenceTrackDuration>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_///33/23/15/@source" ref="essenceTrackLanguage_only_///33/23/15/@ref" version="essenceTrackLanguage_only_///33/23/15/@version" annotation="essenceTrackLanguage_only_///33/23/15/@annotation">tri;ple;let;ter</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_///33/23/16/@annotationType" ref="essenceTrackAnnotation_first_///33/23/16/@ref">essenceTrackAnnotation_first_///33/23/16</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_///33/23/17/@annotationType" ref="essenceTrackAnnotation_repeat_///33/23/17/@ref">essenceTrackAnnotation_repeat_///33/23/17</essenceTrackAnnotation>
         <essenceTrackExtension>
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///33/23/18/1/1</extensionElement>
+            <extensionValue>extensionValue_only_///33/23/18/1/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///33/23/18/1/3</extensionAuthorityUsed>
           </extensionWrap>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///33/23/18/2/1</extensionElement>
+            <extensionValue>extensionValue_only_///33/23/18/2/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///33/23/18/2/3</extensionAuthorityUsed>
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_first</xml>
+              <xml>extensionEmbedded_first_///33/23/19/1//</xml>
             </random>
           </extensionEmbedded>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_repeat</xml>
+              <xml>extensionEmbedded_repeat_///33/23/19/2//</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
-      <!--TODO: Get the contents of repeated elements to be distinct.-->
       <instantiationEssenceTrack>
-        <essenceTrackType>essenceTrackType_only</essenceTrackType>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_first_@source" ref="essenceTrackIdentifier_first_@ref" version="essenceTrackIdentifier_first_@version" annotation="essenceTrackIdentifier_first_@annotation">essenceTrackIdentifier_first</essenceTrackIdentifier>
-        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_@source" ref="essenceTrackIdentifier_repeat_@ref" version="essenceTrackIdentifier_repeat_@version" annotation="essenceTrackIdentifier_repeat_@annotation">essenceTrackIdentifier_repeat</essenceTrackIdentifier>
-        <essenceTrackStandard source="essenceTrackStandard_only_@source" ref="essenceTrackStandard_only_@ref" version="essenceTrackStandard_only_@version" annotation="essenceTrackStandard_only_@annotation">essenceTrackStandard_only</essenceTrackStandard>
-        <essenceTrackEncoding source="essenceTrackEncoding_only_@source" ref="essenceTrackEncoding_only_@ref" version="essenceTrackEncoding_only_@version" annotation="essenceTrackEncoding_only_@annotation">essenceTrackEncoding_only</essenceTrackEncoding>
-        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_@unitsOfMeasure" annotation="essenceTrackDataRate_only_@annotation">essenceTrackDataRate_only</essenceTrackDataRate>
-        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_@unitsOfMeasure" annotation="essenceTrackFrameRate_only_@annotation">essenceTrackFrameRate_only</essenceTrackFrameRate>
-        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_@annotation">essenceTrackPlaybackSpeed_only</essenceTrackPlaybackSpeed>
-        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_@annotation">essenceTrackSamplingRate_only</essenceTrackSamplingRate>
-        <essenceTrackBitDepth>essenceTrackBitDepth_only</essenceTrackBitDepth>
-        <essenceTrackFrameSize source="essenceTrackFrameSize_only_@source" ref="essenceTrackFrameSize_only_@ref" version="essenceTrackFrameSize_only_@version" annotation="essenceTrackFrameSize_only_@annotation">essenceTrackFrameSize_only</essenceTrackFrameSize>
-        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_@source" ref="essenceTrackAspectRatio_only_@ref" version="essenceTrackAspectRatio_only_@version" annotation="essenceTrackAspectRatio_only_@annotation">essenceTrackAspectRatio_only</essenceTrackAspectRatio>
-        <essenceTrackTimeStart>essenceTrackTimeStart_only</essenceTrackTimeStart>
-        <essenceTrackDuration>essenceTrackDuration_only</essenceTrackDuration>
-        <essenceTrackLanguage source="essenceTrackLanguage_only_@source" ref="essenceTrackLanguage_only_@ref" version="essenceTrackLanguage_only_@version" annotation="essenceTrackLanguage_only_@annotation">tri;ple;let;ter</essenceTrackLanguage>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_@annotationType" ref="essenceTrackAnnotation_first_@ref">essenceTrackAnnotation_first</essenceTrackAnnotation>
-        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_@annotationType" ref="essenceTrackAnnotation_repeat_@ref">essenceTrackAnnotation_repeat</essenceTrackAnnotation>
+        <essenceTrackType>essenceTrackType_only_///33/24/1</essenceTrackType>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_first_///33/24/2/@source" ref="essenceTrackIdentifier_first_///33/24/2/@ref" version="essenceTrackIdentifier_first_///33/24/2/@version" annotation="essenceTrackIdentifier_first_///33/24/2/@annotation">essenceTrackIdentifier_first_///33/24/2</essenceTrackIdentifier>
+        <essenceTrackIdentifier source="essenceTrackIdentifier_repeat_///33/24/3/@source" ref="essenceTrackIdentifier_repeat_///33/24/3/@ref" version="essenceTrackIdentifier_repeat_///33/24/3/@version" annotation="essenceTrackIdentifier_repeat_///33/24/3/@annotation">essenceTrackIdentifier_repeat_///33/24/3</essenceTrackIdentifier>
+        <essenceTrackStandard source="essenceTrackStandard_only_///33/24/4/@source" ref="essenceTrackStandard_only_///33/24/4/@ref" version="essenceTrackStandard_only_///33/24/4/@version" annotation="essenceTrackStandard_only_///33/24/4/@annotation">essenceTrackStandard_only_///33/24/4</essenceTrackStandard>
+        <essenceTrackEncoding source="essenceTrackEncoding_only_///33/24/5/@source" ref="essenceTrackEncoding_only_///33/24/5/@ref" version="essenceTrackEncoding_only_///33/24/5/@version" annotation="essenceTrackEncoding_only_///33/24/5/@annotation">essenceTrackEncoding_only_///33/24/5</essenceTrackEncoding>
+        <essenceTrackDataRate unitsOfMeasure="essenceTrackDataRate_only_///33/24/6/@unitsOfMeasure" annotation="essenceTrackDataRate_only_///33/24/6/@annotation">essenceTrackDataRate_only_///33/24/6</essenceTrackDataRate>
+        <essenceTrackFrameRate unitsOfMeasure="essenceTrackFrameRate_only_///33/24/7/@unitsOfMeasure" annotation="essenceTrackFrameRate_only_///33/24/7/@annotation">essenceTrackFrameRate_only_///33/24/7</essenceTrackFrameRate>
+        <essenceTrackPlaybackSpeed unitsOfMeasure="essenceTrackPlaybackSpeed_only_///33/24/8/@unitsOfMeasure" annotation="essenceTrackPlaybackSpeed_only_///33/24/8/@annotation">essenceTrackPlaybackSpeed_only_///33/24/8</essenceTrackPlaybackSpeed>
+        <essenceTrackSamplingRate unitsOfMeasure="essenceTrackSamplingRate_only_///33/24/9/@unitsOfMeasure" annotation="essenceTrackSamplingRate_only_///33/24/9/@annotation">essenceTrackSamplingRate_only_///33/24/9</essenceTrackSamplingRate>
+        <essenceTrackBitDepth>essenceTrackBitDepth_only_///33/24/10</essenceTrackBitDepth>
+        <essenceTrackFrameSize source="essenceTrackFrameSize_only_///33/24/11/@source" ref="essenceTrackFrameSize_only_///33/24/11/@ref" version="essenceTrackFrameSize_only_///33/24/11/@version" annotation="essenceTrackFrameSize_only_///33/24/11/@annotation">essenceTrackFrameSize_only_///33/24/11</essenceTrackFrameSize>
+        <essenceTrackAspectRatio source="essenceTrackAspectRatio_only_///33/24/12/@source" ref="essenceTrackAspectRatio_only_///33/24/12/@ref" version="essenceTrackAspectRatio_only_///33/24/12/@version" annotation="essenceTrackAspectRatio_only_///33/24/12/@annotation">essenceTrackAspectRatio_only_///33/24/12</essenceTrackAspectRatio>
+        <essenceTrackTimeStart>essenceTrackTimeStart_only_///33/24/13</essenceTrackTimeStart>
+        <essenceTrackDuration>essenceTrackDuration_only_///33/24/14</essenceTrackDuration>
+        <essenceTrackLanguage source="essenceTrackLanguage_only_///33/24/15/@source" ref="essenceTrackLanguage_only_///33/24/15/@ref" version="essenceTrackLanguage_only_///33/24/15/@version" annotation="essenceTrackLanguage_only_///33/24/15/@annotation">tri;ple;let;ter</essenceTrackLanguage>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_first_///33/24/16/@annotationType" ref="essenceTrackAnnotation_first_///33/24/16/@ref">essenceTrackAnnotation_first_///33/24/16</essenceTrackAnnotation>
+        <essenceTrackAnnotation annotationType="essenceTrackAnnotation_repeat_///33/24/17/@annotationType" ref="essenceTrackAnnotation_repeat_///33/24/17/@ref">essenceTrackAnnotation_repeat_///33/24/17</essenceTrackAnnotation>
         <essenceTrackExtension>
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///33/24/18/1/1</extensionElement>
+            <extensionValue>extensionValue_only_///33/24/18/1/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///33/24/18/1/3</extensionAuthorityUsed>
           </extensionWrap>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionWrap>
-            <extensionElement>extensionElement_only</extensionElement>
-            <extensionValue>extensionValue_only</extensionValue>
-            <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+            <extensionElement>extensionElement_only_///33/24/18/2/1</extensionElement>
+            <extensionValue>extensionValue_only_///33/24/18/2/2</extensionValue>
+            <extensionAuthorityUsed>extensionAuthorityUsed_only_///33/24/18/2/3</extensionAuthorityUsed>
           </extensionWrap>
         </essenceTrackExtension>
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_first</xml>
+              <xml>extensionEmbedded_first_///33/24/19/1//</xml>
             </random>
           </extensionEmbedded>
           <extensionEmbedded>
             <random>
-              <xml>extensionEmbedded_repeat</xml>
+              <xml>extensionEmbedded_repeat_///33/24/19/2//</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
       </instantiationEssenceTrack>
       <instantiationRelation>
-        <instantiationRelationType source="instantiationRelationType_only_@source" ref="instantiationRelationType_only_@ref" version="instantiationRelationType_only_@version" annotation="instantiationRelationType_only_@annotation">instantiationRelationType_only</instantiationRelationType>
-        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_@source" ref="instantiationRelationIdentifier_only_@ref" version="instantiationRelationIdentifier_only_@version" annotation="instantiationRelationIdentifier_only_@annotation">instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+        <instantiationRelationType source="instantiationRelationType_only_///33/25/1/@source" ref="instantiationRelationType_only_///33/25/1/@ref" version="instantiationRelationType_only_///33/25/1/@version" annotation="instantiationRelationType_only_///33/25/1/@annotation">instantiationRelationType_only_///33/25/1</instantiationRelationType>
+        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_///33/25/2/@source" ref="instantiationRelationIdentifier_only_///33/25/2/@ref" version="instantiationRelationIdentifier_only_///33/25/2/@version" annotation="instantiationRelationIdentifier_only_///33/25/2/@annotation">instantiationRelationIdentifier_only_///33/25/2</instantiationRelationIdentifier>
       </instantiationRelation>
-      <!--TODO: Get the contents of repeated elements to be distinct.-->
       <instantiationRelation>
-        <instantiationRelationType source="instantiationRelationType_only_@source" ref="instantiationRelationType_only_@ref" version="instantiationRelationType_only_@version" annotation="instantiationRelationType_only_@annotation">instantiationRelationType_only</instantiationRelationType>
-        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_@source" ref="instantiationRelationIdentifier_only_@ref" version="instantiationRelationIdentifier_only_@version" annotation="instantiationRelationIdentifier_only_@annotation">instantiationRelationIdentifier_only</instantiationRelationIdentifier>
+        <instantiationRelationType source="instantiationRelationType_only_///33/26/1/@source" ref="instantiationRelationType_only_///33/26/1/@ref" version="instantiationRelationType_only_///33/26/1/@version" annotation="instantiationRelationType_only_///33/26/1/@annotation">instantiationRelationType_only_///33/26/1</instantiationRelationType>
+        <instantiationRelationIdentifier source="instantiationRelationIdentifier_only_///33/26/2/@source" ref="instantiationRelationIdentifier_only_///33/26/2/@ref" version="instantiationRelationIdentifier_only_///33/26/2/@version" annotation="instantiationRelationIdentifier_only_///33/26/2/@annotation">instantiationRelationIdentifier_only_///33/26/2</instantiationRelationIdentifier>
       </instantiationRelation>
       <instantiationRights>
-        <rightsSummary source="rightsSummary_only_@source" ref="rightsSummary_only_@ref" version="rightsSummary_only_@version" annotation="rightsSummary_only_@annotation">rightsSummary_only</rightsSummary>
+        <rightsSummary source="rightsSummary_only_///33/27//@source" ref="rightsSummary_only_///33/27//@ref" version="rightsSummary_only_///33/27//@version" annotation="rightsSummary_only_///33/27//@annotation">rightsSummary_only_///33/27/</rightsSummary>
       </instantiationRights>
       <instantiationRights>
-        <rightsLink annotation="rightsLink_only_@annotation">rightsLink_only</rightsLink>
+        <rightsLink annotation="rightsLink_only_///33/28//@annotation">rightsLink_only_///33/28/</rightsLink>
       </instantiationRights>
       <instantiationRights>
         <rightsEmbedded>
           <random>
-            <xml>rightsEmbedded_only</xml>
+            <xml>rightsEmbedded_only_///33/29///</xml>
           </random>
         </rightsEmbedded>
       </instantiationRights>
-      <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
-      <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
+      <instantiationAnnotation annotationType="instantiationAnnotation_first_///33/30/@annotationType" ref="instantiationAnnotation_first_///33/30/@ref">instantiationAnnotation_first_///33/30</instantiationAnnotation>
+      <instantiationAnnotation annotationType="instantiationAnnotation_repeat_///33/31/@annotationType" ref="instantiationAnnotation_repeat_///33/31/@ref">instantiationAnnotation_repeat_///33/31</instantiationAnnotation>
       <instantiationPart>
         <!--instantiationPart can recurse-->
-        <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source">instantiationPart_instantiationIdentifier</instantiationIdentifier>
-        <instantiationLocation>instantiationPart_instantiationLocation</instantiationLocation>
+        <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source_///33/32/1/@source">instantiationPart_instantiationIdentifier_///33/32/1</instantiationIdentifier>
+        <instantiationLocation>instantiationPart_instantiationLocation_///33/32/2</instantiationLocation>
       </instantiationPart>
       <instantiationExtension>
         <extensionWrap>
-          <extensionElement>extensionElement_only</extensionElement>
-          <extensionValue>extensionValue_only</extensionValue>
-          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          <extensionElement>extensionElement_only_///33/33/1/1</extensionElement>
+          <extensionValue>extensionValue_only_///33/33/1/2</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only_///33/33/1/3</extensionAuthorityUsed>
         </extensionWrap>
-        <!--TODO: Get the contents of repeated elements to be distinct.-->
         <extensionWrap>
-          <extensionElement>extensionElement_only</extensionElement>
-          <extensionValue>extensionValue_only</extensionValue>
-          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+          <extensionElement>extensionElement_only_///33/33/2/1</extensionElement>
+          <extensionValue>extensionValue_only_///33/33/2/2</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only_///33/33/2/3</extensionAuthorityUsed>
         </extensionWrap>
       </instantiationExtension>
       <instantiationExtension>
         <extensionEmbedded>
           <random>
-            <xml>extensionEmbedded_first</xml>
+            <xml>extensionEmbedded_first_///33/34/1//</xml>
           </random>
         </extensionEmbedded>
         <extensionEmbedded>
           <random>
-            <xml>extensionEmbedded_repeat</xml>
+            <xml>extensionEmbedded_repeat_///33/34/2//</xml>
           </random>
         </extensionEmbedded>
       </instantiationExtension>
     </pbcoreInstantiation>
-    <pbcoreAnnotation annotationType="pbcoreAnnotation_first_@annotationType" ref="pbcoreAnnotation_first_@ref">pbcoreAnnotation_first</pbcoreAnnotation>
-    <pbcoreAnnotation annotationType="pbcoreAnnotation_repeat_@annotationType" ref="pbcoreAnnotation_repeat_@ref">pbcoreAnnotation_repeat</pbcoreAnnotation>
+    <pbcoreAnnotation annotationType="pbcoreAnnotation_first_///34/@annotationType" ref="pbcoreAnnotation_first_///34/@ref">pbcoreAnnotation_first_///34</pbcoreAnnotation>
+    <pbcoreAnnotation annotationType="pbcoreAnnotation_repeat_///35/@annotationType" ref="pbcoreAnnotation_repeat_///35/@ref">pbcoreAnnotation_repeat_///35</pbcoreAnnotation>
     <pbcorePart>
       <!--pbcorePart can recurse-->
-      <pbcoreIdentifier source="pbcorePart_pbcoreIdentifier_@source">pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
-      <pbcoreTitle>pbcorePart_pbcoreTitle</pbcoreTitle>
-      <pbcoreDescription>pbcorePart_pbcoreDescription</pbcoreDescription>
+      <pbcoreIdentifier source="pbcorePart_pbcoreIdentifier_@source_///36/1/@source">pbcorePart_pbcoreIdentifier_///36/1</pbcoreIdentifier>
+      <pbcoreTitle>pbcorePart_pbcoreTitle_///36/2</pbcoreTitle>
+      <pbcoreDescription>pbcorePart_pbcoreDescription_///36/3</pbcoreDescription>
       <pbcoreCoverage>
-        <coverage>pbcorePart_pbcoreCoverage_coverage</coverage>
+        <coverage>pbcorePart_pbcoreCoverage_coverage_///36/4/1</coverage>
         <coverageType>Spatial</coverageType>
       </pbcoreCoverage>
     </pbcorePart>
     <pbcoreExtension>
       <extensionWrap>
-        <extensionElement>extensionElement_only</extensionElement>
-        <extensionValue>extensionValue_only</extensionValue>
-        <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+        <extensionElement>extensionElement_only_///37/1/1</extensionElement>
+        <extensionValue>extensionValue_only_///37/1/2</extensionValue>
+        <extensionAuthorityUsed>extensionAuthorityUsed_only_///37/1/3</extensionAuthorityUsed>
       </extensionWrap>
-      <!--TODO: Get the contents of repeated elements to be distinct.-->
       <extensionWrap>
-        <extensionElement>extensionElement_only</extensionElement>
-        <extensionValue>extensionValue_only</extensionValue>
-        <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+        <extensionElement>extensionElement_only_///37/2/1</extensionElement>
+        <extensionValue>extensionValue_only_///37/2/2</extensionValue>
+        <extensionAuthorityUsed>extensionAuthorityUsed_only_///37/2/3</extensionAuthorityUsed>
       </extensionWrap>
     </pbcoreExtension>
     <pbcoreExtension>
       <extensionEmbedded>
         <random>
-          <xml>extensionEmbedded_first</xml>
+          <xml>extensionEmbedded_first_///38/1//</xml>
         </random>
       </extensionEmbedded>
       <extensionEmbedded>
         <random>
-          <xml>extensionEmbedded_repeat</xml>
+          <xml>extensionEmbedded_repeat_///38/2//</xml>
         </random>
       </extensionEmbedded>
     </pbcoreExtension>
