@@ -224,9 +224,31 @@
         <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source">instantiationPart_instantiationIdentifier</instantiationIdentifier>
         <instantiationLocation>instantiationPart_instantiationLocation</instantiationLocation>
       </instantiationPart>
-      <instantiationExtension/>
-      <!--TODO: Get the contents of repeated elements to be distinct.-->
-      <instantiationExtension/>
+      <instantiationExtension>
+        <extensionWrap>
+          <extensionElement>extensionElement_only</extensionElement>
+          <extensionValue>extensionValue_only</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+        </extensionWrap>
+        <!--TODO: Get the contents of repeated elements to be distinct.-->
+        <extensionWrap>
+          <extensionElement>extensionElement_only</extensionElement>
+          <extensionValue>extensionValue_only</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+        </extensionWrap>
+      </instantiationExtension>
+      <instantiationExtension>
+        <extensionEmbedded>
+          <random>
+            <xml>extensionEmbedded_first</xml>
+          </random>
+        </extensionEmbedded>
+        <extensionEmbedded>
+          <random>
+            <xml>extensionEmbedded_repeat</xml>
+          </random>
+        </extensionEmbedded>
+      </instantiationExtension>
     </pbcoreInstantiation>
     <!--TODO: Get the contents of repeated elements to be distinct.-->
     <pbcoreInstantiation>
@@ -370,9 +392,31 @@
         <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source">instantiationPart_instantiationIdentifier</instantiationIdentifier>
         <instantiationLocation>instantiationPart_instantiationLocation</instantiationLocation>
       </instantiationPart>
-      <instantiationExtension/>
-      <!--TODO: Get the contents of repeated elements to be distinct.-->
-      <instantiationExtension/>
+      <instantiationExtension>
+        <extensionWrap>
+          <extensionElement>extensionElement_only</extensionElement>
+          <extensionValue>extensionValue_only</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+        </extensionWrap>
+        <!--TODO: Get the contents of repeated elements to be distinct.-->
+        <extensionWrap>
+          <extensionElement>extensionElement_only</extensionElement>
+          <extensionValue>extensionValue_only</extensionValue>
+          <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+        </extensionWrap>
+      </instantiationExtension>
+      <instantiationExtension>
+        <extensionEmbedded>
+          <random>
+            <xml>extensionEmbedded_first</xml>
+          </random>
+        </extensionEmbedded>
+        <extensionEmbedded>
+          <random>
+            <xml>extensionEmbedded_repeat</xml>
+          </random>
+        </extensionEmbedded>
+      </instantiationExtension>
     </pbcoreInstantiation>
     <pbcoreAnnotation annotationType="pbcoreAnnotation_first_@annotationType" ref="pbcoreAnnotation_first_@ref">pbcoreAnnotation_first</pbcoreAnnotation>
     <pbcoreAnnotation annotationType="pbcoreAnnotation_repeat_@annotationType" ref="pbcoreAnnotation_repeat_@ref">pbcoreAnnotation_repeat</pbcoreAnnotation>

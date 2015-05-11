@@ -39,8 +39,7 @@
                                         @name='pbcoreCreator' or
                                         @name='instantiationRelation' or
                                         @name='pbcoreRelation' or
-                                        @name='pbcoreCoverage' or
-                                        @name='instantiationExtension']">
+                                        @name='pbcoreCoverage']">
         <!-- TODO: Shouldn't need explicit list of possibilities? -->
         <xsl:call-template name="sequence">
             <xsl:with-param name="type" select="@type"/>
@@ -68,7 +67,8 @@
     <xsl:template priority="1" match="xsd:element[
                                         @name='essenceTrackExtension' or
                                         @name='pbcoreRightsSummary' or
-                                        @name='instantiationRights']">
+                                        @name='instantiationRights' or
+                                        @name='instantiationExtension']">
         <xsl:variable name="type" select="@type"/>
         <xsl:variable name="name" select="@name"/>
         <xsl:for-each select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*">
