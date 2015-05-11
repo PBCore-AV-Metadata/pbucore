@@ -29,6 +29,7 @@
          Elements containing sequences
         ===============================-->
 
+    <!-- WARNING: adding instantiationPart to this list will cause infinite loop. -->
     <xsl:template priority="1" match="xsd:element[
                                         @name='pbcoreInstantiation' or 
                                         @name='instantiationEssenceTrack' or
@@ -87,9 +88,17 @@
     <xsl:template priority="1" match="xsd:element[
                                         @name='pbcorePart']">
         <pbcorePart>
-            <xsl:comment>pbcorePart can recursively include all the elements of a descriptionDocument</xsl:comment>
+            <xsl:comment>pbcorePart can recursive</xsl:comment>
             <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
         </pbcorePart>
+    </xsl:template>
+    
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='instantiationPart']">
+        <instantiationPart>
+            <xsl:comment>instantiationPart can recursive</xsl:comment>
+            <instantiationIdentifier>instantiationPart_instantiationIdentifier</pbcoreIdentifier>
+        </instantiationPart>
     </xsl:template>
     
     <xsl:template priority="1" match="xsd:element[

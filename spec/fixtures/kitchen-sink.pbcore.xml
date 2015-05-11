@@ -219,8 +219,10 @@
       </instantiationRights>
       <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
       <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
-      <instantiationPart>instantiationPart_first</instantiationPart>
-      <instantiationPart>instantiationPart_repeat</instantiationPart>
+      <instantiationPart>
+        <!--instantiationPart can recursive-->
+        <instantiationIdentifier>instantiationPart_instantiationIdentifier</instantiationIdentifier>
+      </instantiationPart>
       <instantiationExtension>instantiationExtension_first</instantiationExtension>
       <instantiationExtension>instantiationExtension_repeat</instantiationExtension>
     </pbcoreInstantiation>
@@ -361,15 +363,17 @@
       </instantiationRights>
       <instantiationAnnotation annotationType="instantiationAnnotation_first_@annotationType" ref="instantiationAnnotation_first_@ref">instantiationAnnotation_first</instantiationAnnotation>
       <instantiationAnnotation annotationType="instantiationAnnotation_repeat_@annotationType" ref="instantiationAnnotation_repeat_@ref">instantiationAnnotation_repeat</instantiationAnnotation>
-      <instantiationPart>instantiationPart_first</instantiationPart>
-      <instantiationPart>instantiationPart_repeat</instantiationPart>
+      <instantiationPart>
+        <!--instantiationPart can recursive-->
+        <instantiationIdentifier>instantiationPart_instantiationIdentifier</instantiationIdentifier>
+      </instantiationPart>
       <instantiationExtension>instantiationExtension_first</instantiationExtension>
       <instantiationExtension>instantiationExtension_repeat</instantiationExtension>
     </pbcoreInstantiation>
     <pbcoreAnnotation annotationType="pbcoreAnnotation_first_@annotationType" ref="pbcoreAnnotation_first_@ref">pbcoreAnnotation_first</pbcoreAnnotation>
     <pbcoreAnnotation annotationType="pbcoreAnnotation_repeat_@annotationType" ref="pbcoreAnnotation_repeat_@ref">pbcoreAnnotation_repeat</pbcoreAnnotation>
     <pbcorePart>
-      <!--pbcorePart can recursively include all the elements of a descriptionDocument-->
+      <!--pbcorePart can recursive-->
       <pbcoreIdentifier>pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
     </pbcorePart>
     <pbcoreExtension>pbcoreExtension_first</pbcoreExtension>
