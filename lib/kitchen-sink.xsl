@@ -76,7 +76,6 @@
     <xsl:template priority="0.9" match="xsd:element[xsd:complexType]">
         ERROR: complexType element '<xsl:value-of select="@name"/>' without match.
     </xsl:template>
-        
     
     <xsl:template match="xsd:element[@maxOccurs='unbounded']">
         <xsl:call-template name="element">
@@ -109,19 +108,19 @@
         </xsl:element>
     </xsl:template>
     
-    <xsl:template match="xsd:attribute[@name]">
-        <xsl:param name="label"/>
-        <xsl:attribute name="{@name}">
-            <xsl:value-of select="concat($label, '_@', @name)"/>
-        </xsl:attribute>
-    </xsl:template>
-    
     <xsl:template match="xsd:attributeGroup[@ref]">
         <xsl:param name="label"/>
         <xsl:variable name="ref" select="@ref"/>
         <xsl:apply-templates select="/xsd:schema/xsd:attributeGroup[@name=$ref]/xsd:attribute">
             <xsl:with-param name="label" select="$label"/>
         </xsl:apply-templates>
+    </xsl:template>
+    
+    <xsl:template match="xsd:attribute[@name]">
+        <xsl:param name="label"/>
+        <xsl:attribute name="{@name}">
+            <xsl:value-of select="concat($label, '_@', @name)"/>
+        </xsl:attribute>
     </xsl:template>
     
 </xsl:stylesheet>
