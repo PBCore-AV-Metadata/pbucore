@@ -430,7 +430,30 @@
         <coverageType>Spatial</coverageType>
       </pbcoreCoverage>
     </pbcorePart>
-    <pbcoreExtension>pbcoreExtension_first</pbcoreExtension>
-    <pbcoreExtension>pbcoreExtension_repeat</pbcoreExtension>
+    <pbcoreExtension>
+      <extensionWrap>
+        <extensionElement>extensionElement_only</extensionElement>
+        <extensionValue>extensionValue_only</extensionValue>
+        <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+      </extensionWrap>
+      <!--TODO: Get the contents of repeated elements to be distinct.-->
+      <extensionWrap>
+        <extensionElement>extensionElement_only</extensionElement>
+        <extensionValue>extensionValue_only</extensionValue>
+        <extensionAuthorityUsed>extensionAuthorityUsed_only</extensionAuthorityUsed>
+      </extensionWrap>
+    </pbcoreExtension>
+    <pbcoreExtension>
+      <extensionEmbedded>
+        <random>
+          <xml>extensionEmbedded_first</xml>
+        </random>
+      </extensionEmbedded>
+      <extensionEmbedded>
+        <random>
+          <xml>extensionEmbedded_repeat</xml>
+        </random>
+      </extensionEmbedded>
+    </pbcoreExtension>
   </pbcoreDescriptionDocument>
 </pbcoreCollection>

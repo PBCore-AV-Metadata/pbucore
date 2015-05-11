@@ -68,7 +68,8 @@
                                         @name='essenceTrackExtension' or
                                         @name='pbcoreRightsSummary' or
                                         @name='instantiationRights' or
-                                        @name='instantiationExtension']">
+                                        @name='instantiationExtension' or
+                                        @name='pbcoreExtension']">
         <xsl:variable name="type" select="@type"/>
         <xsl:variable name="name" select="@name"/>
         <xsl:for-each select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*">
