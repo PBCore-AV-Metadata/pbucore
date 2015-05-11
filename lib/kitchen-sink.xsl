@@ -38,9 +38,7 @@
                                         @name='pbcoreCreator' or
                                         @name='instantiationRelation' or
                                         @name='pbcoreRelation' or
-                                        @name='pbcoreCoverage' or
-                                        @name='rightsEmbedded' or
-                                        @name='extensionEmbedded']">
+                                        @name='pbcoreCoverage']">
         <!-- TODO: Shouldn't need explicit list of possibilities? -->
         <xsl:call-template name="sequence">
             <xsl:with-param name="type" select="@type"/>
@@ -99,10 +97,6 @@
         <coverageType>Spatial</coverageType>
     </xsl:template>
     
-    <xsl:template priority="1" match="xsd:any">
-        <random><xml>here!</xml></random>
-    </xsl:template>
-    
     <xsl:template priority="0.9" match="xsd:element[xsd:complexType]">
         ERROR: complexType element '<xsl:value-of select="@name"/>' without match.
     </xsl:template>
@@ -136,14 +130,19 @@
         <xsl:variable name="type" select="@type"/>
         <xsl:variable name="label" select="concat(@name,'_',$suffix)"/>
         <xsl:element name="{@name}">
+            <!-- Attributes: -->
             <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:simpleContent/xsd:extension/xsd:attribute">
                 <xsl:with-param name="label" select="$label"/>  
             </xsl:apply-templates>
             <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:simpleContent/xsd:extension/xsd:attributeGroup">
                 <xsl:with-param name="label" select="$label"/>  
             </xsl:apply-templates>
+            <!-- Content: -->
             <xsl:choose>
                 <xsl:when test="@type='threeLetterStringType'">tri;ple;let;ter</xsl:when>
+                <xsl:when test="@type='embeddedType'">
+                    <random><xml><xsl:value-of select="$label"/></xml></random>
+                </xsl:when>
                 <xsl:otherwise>
                     <xsl:value-of select="$label"/>
                 </xsl:otherwise>

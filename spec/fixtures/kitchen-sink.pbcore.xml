@@ -79,7 +79,7 @@
     <pbcoreRightsSummary>
       <rightsEmbedded>
         <random>
-          <xml>here!</xml>
+          <xml>rightsEmbedded_only</xml>
         </random>
       </rightsEmbedded>
     </pbcoreRightsSummary>
@@ -140,13 +140,12 @@
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_first</xml>
             </random>
           </extensionEmbedded>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_repeat</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
@@ -186,13 +185,12 @@
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_first</xml>
             </random>
           </extensionEmbedded>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_repeat</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
@@ -215,7 +213,7 @@
       <instantiationRights>
         <rightsEmbedded>
           <random>
-            <xml>here!</xml>
+            <xml>rightsEmbedded_only</xml>
           </random>
         </rightsEmbedded>
       </instantiationRights>
@@ -284,13 +282,12 @@
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_first</xml>
             </random>
           </extensionEmbedded>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_repeat</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
@@ -330,13 +327,12 @@
         <essenceTrackExtension>
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_first</xml>
             </random>
           </extensionEmbedded>
-          <!--TODO: Get the contents of repeated elements to be distinct.-->
           <extensionEmbedded>
             <random>
-              <xml>here!</xml>
+              <xml>extensionEmbedded_repeat</xml>
             </random>
           </extensionEmbedded>
         </essenceTrackExtension>
@@ -359,7 +355,7 @@
       <instantiationRights>
         <rightsEmbedded>
           <random>
-            <xml>here!</xml>
+            <xml>rightsEmbedded_only</xml>
           </random>
         </rightsEmbedded>
       </instantiationRights>
