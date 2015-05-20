@@ -1,6 +1,7 @@
 require 'nokogiri'
 require_relative '../lib/converter'
 require_relative '../lib/turtler'
+require_relative '../lib/pbcorer'
 
 describe 'converter' do
   PENDING_RE = /\/pending/
@@ -37,6 +38,19 @@ describe 'converter' do
         turtle_expected = File.read(turtle_path)
         # Remove indentation for the sake of the diff.
         expect(turtle_actual.gsub(/^\s+/, '')).to eq turtle_expected.gsub(/^\s+/, '')
+      end
+    end
+  end
+  
+  describe 'turtle -> pbcore' do
+    inputs = Dir[File.dirname(__FILE__) + '/fixtures/*.re-pbcore.xml'].reject{|path| path=~PENDING_RE}
+    inputs.each do |re_pbcore_path|
+      turtle_path = re_pbcore_path.sub('.re-pbcore.xml', '.ttl')
+      it "converts #{File.basename(turtle_path)} to #{File.basename(re_pbcore_path)}" do
+        re_pbcore_actual = Pbcorer.instance.pbcore(turtle_path)
+        re_pbcore_expected = File.read(re_pbcore_path)
+        # Remove indentation for the sake of the diff.
+        expect(re_pbcore_actual.gsub(/^\s+/, ' ')).to eq re_pbcore_expected.gsub(/^\s+/, ' ')
       end
     end
   end

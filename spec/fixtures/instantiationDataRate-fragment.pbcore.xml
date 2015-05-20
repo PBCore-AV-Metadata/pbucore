@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<pbcoreInstantiation 
-    xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+<?xml version="1.0"?>
+<pbcoreInstantiation xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
     <instantiationDataRate unitsOfMeasure="Kbps">192</instantiationDataRate>
 </pbcoreInstantiation>
