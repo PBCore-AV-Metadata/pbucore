@@ -115,29 +115,241 @@ On a case-by-case this might be feasible, but I don't think this is viable for s
 
 # pbcoreSubject
 
+TODO
+
 # pbcoreDescription
+
+TODO
 
 # pbcoreGenre
 
+TODO
+
 # pbcoreRelation
+
+TODO
 
 # pbcoreCoverage
 
+TODO
+
 # pbcoreAudienceLevel
+
+TODO
 
 # pbcoreAudienceRating
 
-# pbcoreCreator
+TODO
 
-# pbcoreContributor
+# pbcoreCreator / pbcoreContributor / pbcorePublisher
 
-# pbcorePublisher
+```xml
+<pbcoreCreator>
+  <creator 
+	  affiliation="anything" 
+	  ref="anything" 
+	  annotation="anything" 
+	  startTime="anything" 
+	  endTime="anything" 
+	  timeAnnotation="anything">
+    anything
+  </creator>
+  <creatorRole 
+	  source="anything" 
+	  ref="anything" 
+	  version="anything" 
+	  annotation="anything">
+    anything
+  </creatorRole>
+</pbcoreCreator>
+<pbcoreContributor>
+  <contributor 
+	  affiliation="anything" 
+	  ref="anything" 
+	  annotation="anything" 
+	  startTime="anything" 
+	  endTime="anything" 
+	  timeAnnotation="anything">
+    anything
+  </contributor>
+  <contributorRole 
+	  portrayal="anything" 
+	  source="anything" 
+	  ref="anything" 
+	  version="anything" 
+	  annotation="anything">
+    anything
+  </contributorRole>
+</pbcoreContributor>
+<pbcorePublisher>
+  <publisher 
+	  affiliation="anything" 
+	  ref="anything" 
+	  annotation="anything" 
+	  startTime="anything" 
+	  endTime="anything" 
+	  timeAnnotation="anything">
+    anything
+  </publisher>
+  <publisherRole 
+	  source="anything" 
+	  ref="anything" 
+	  version="anything" 
+	  annotation="anything">
+    anything
+  </publisherRole>
+</pbcorePublisher>
+```
+
+I have found a handful of uses of the affiliation attribute:
+
+```xml
+<creator affiliation="WGBH-TV">Morganthau, Henry</creator>
+<contributor affiliation="WGBH Educational Foundation">Davis, Al</contributor>
+<contributor affiliation="City University of New York. City College">Clark, Kenneth Bancroft, 1914-2005</contributor>
+```
+
+The ref attribute is actually used frequently on creatorRole:
+
+```xml
+<creatorRole ref="http://metadataregistry.org/concept/show/id/1425.html">Producer</creatorRole>
+```
+
+## status quo
+
+All attributes are dropped, as are the *Role elements.
+
+## proposals
+
+### A
+
+- Tighten schema by dropping all attributes and all *Role.
+- Use XSLT as-is.
+
+### B
+
+- Tighten schema, but...
+- Leave affiliation in schema; preserve human readable data by including in parenthesis after name
+
+### C
+
+- Tighten schema, but...
+- Leave role in schema; preserve by defining a small number of subproperties,
+- and tighten schema to define legitimate roles.
+
 
 # pbcoreRightsSummary
 
+```xml
+<pbcoreRightsSummary>
+  <rightsSummary 
+    source="anything" 
+    ref="anything" 
+    version="anything" 
+    annotation="anything">
+     anything
+  </rightsSummary>
+</pbcoreRightsSummary>
+<pbcoreRightsSummary>
+  <rightsLink
+    annotation="anything">
+      anything
+  </rightsLink>
+</pbcoreRightsSummary>
+<pbcoreRightsSummary>
+  <rightsEmbedded>
+    <random>
+      <xml>anything</xml>
+    </random>
+  </rightsEmbedded>
+</pbcoreRightsSummary>
+```
+
+In OV there are examples like this:
+
+```xml
+<pbcoreRightsSummary>
+  <rightsSummary annotation="rights summary" source="WGBH MARS">
+    RE-USE RIGHTS AND RESTRICTIONS NOT CONFIRMED - CONSULT THE PROGRAM'S LEGAL FILE(S)
+  </rightsSummary>
+</pbcoreRightsSummary>
+```
+
+```xml
+<pbcoreRightsSummary>
+  <rightsEmbedded>
+    <WGBH_RIGHTS 
+      RIGHTS_CREDIT="WGBH Educational Foundation"
+      RIGHTS_TYPE="All"
+      RIGHTS_HOLDER="WGBH Educational Foundation"/>
+  </rightsEmbedded>
+</pbcoreRightsSummary>
+```
+
+## status quo
+
+`rightsSummary` and `rightsLink` are mapped to the corresponding EBU terms, ignoring the attributess.
+
+## proposals
+
+In all cases, validate that `rightsLink` is a URI.
+
+### A
+
+- Tighten the pbcore schema accordingly: Drop all attributes as well as `rightsEmbedded`
+
+### B
+
+- Allow the attributes to remain, and concatenate then on to the EBU `hasRightsSummary`
+
+We accept more current PBCore documents, but we lose reversibility.
+
+### C
+
+- Extend that to the `rightsEmbedded`: Actually capturing the XML structure in XSL would be hard, but we could try to capture at least the names of elements and their values.
+
+Even less reversible, but more human readable information is preserved.
+
 # pbcoreInstantiation
 
+TODO
+
 # pbcoreAnnotation
+
+```xml
+<pbcoreAnnotation
+  annotationType="anything"
+  ref="anything">
+    anything
+</pbcoreAnnotation>
+```
+
+In OV there are a number of examples:
+
+```xml
+<pbcoreAnnotation annotationType="SOURCE">LOC Reproduction Number</pbcoreAnnotation>
+<pbcoreAnnotation annotationType="SOURCE">LOC Digital ID</pbcoreAnnotation>
+<pbcoreAnnotation annotationType="Audio Quality2">(Audio Track 4) compression format : in24 24-bit Integer </pbcoreAnnotation>
+<pbcoreAnnotation annotationType="Movie Quality">(Video Track 1) duration : 3619.052 seconds </pbcoreAnnotation>
+```
+
+## status quo
+
+Two values of annotationType are handled: "last_modified" and "organization": any others are lost.
+
+## proposals
+
+### A
+
+- Tighten PBCore schema to allow only those two values.
+
+### B
+
+- Tighten PBCore schema by simply removing `pbcoreAnnotation`. It seems to just be a bucket, and institutions would need to determine on a case-by-case basis whether the information here is worth preserving.
+
+### C
+
+- If it's just a human readable description, keep it, but use an existing description property, concatenating attribute values first.
 
 # pbcorePart
 
