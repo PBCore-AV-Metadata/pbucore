@@ -14,12 +14,18 @@ class Converter
     File.read(File.expand_path(path, File.dirname(__FILE__)))
   end
   
-  def convert(path)
+  def validate(path)
     doc = Nokogiri::XML(File.read(path), &:noblanks)
-    unless path =~ /fragment/
-      validation_errors = @xsd.validate(doc)
-      fail(validation_errors.join("\n")) unless validation_errors.empty?
-    end
+    validation_errors = @xsd.validate(doc)
+    fail(
+      "#{validation_errors.count} errors: \n#{validation_errors.join("\n").gsub('{http://www.pbcore.org/PBCore/PBCoreNamespace.html}', 'pbcore:')}"
+    ) unless validation_errors.empty?
+    doc
+  end
+  
+  def convert(path, should_validate = true)
+    validate(path) if should_validate
+    doc = Nokogiri::XML(File.read(path), &:noblanks)
     rdf_xml_doc = @xslt.transform(doc)
 
     RDF::RDFXML::Reader.new(rdf_xml_doc, validate: true)

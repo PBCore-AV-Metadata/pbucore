@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
+    
+    <!--
+      Generates a "kitchen-sink" document given the PBCore schema.
+    -->
+    
+    <xsl:output method="xml" encoding="UTF-8" indent="yes"/>
+    
+    <!--===============
+         Root template 
+        ===============-->
+    
+    <xsl:template match="/">
+        <pbcoreCollection>
+            <!-- 
+              pbcoreDescriptionDocument could repeat, 
+              but that would make the output too unwieldy.
+            -->
+            <pbcoreDescriptionDocument>
+                <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name='pbcoreDescriptionDocumentType']/xsd:sequence/*"/>
+            </pbcoreDescriptionDocument>
+        </pbcoreCollection>
+    </xsl:template>
+
+    <!--===============================
+         Elements containing sequences
+        ===============================-->
+
+    <!-- WARNING: adding instantiationPart to this list will cause infinite loop. -->
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='pbcoreInstantiation' or 
+                                        @name='instantiationEssenceTrack' or
+                                        @name='extensionWrap' or
+                                        @name='pbcorePublisher' or
+                                        @name='pbcoreContributor' or
+                                        @name='pbcoreCreator' or
+                                        @name='instantiationRelation' or
+                                        @name='pbcoreRelation' or
+                                        @name='pbcoreCoverage']">
+        <!-- TODO: Shouldn't need explicit list of possibilities? -->
+        <xsl:call-template name="sequence">
+            <xsl:with-param name="type" select="@type"/>
+        </xsl:call-template>
+        <xsl:if test="@maxOccurs='unbounded'">
+            <xsl:call-template name="sequence">
+                <xsl:with-param name="type" select="@type"/>
+            </xsl:call-template>
+        </xsl:if>
+    </xsl:template>
+    
+    <xsl:template name="sequence">
+        <xsl:param name="type"/>
+        <xsl:element name="{@name}">
+            <xsl:apply-templates select="(/xsd:schema/xsd:complexType[@name=$type] | ./xsd:complexType)/xsd:sequence/*"/>
+        </xsl:element>
+    </xsl:template>
+    
+    <!--=============================
+         Elements containing choices
+        =============================-->
+    
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='essenceTrackExtension' or
+                                        @name='pbcoreRightsSummary' or
+                                        @name='instantiationRights' or
+                                        @name='instantiationExtension' or
+                                        @name='pbcoreExtension']">
+        <xsl:variable name="type" select="@type"/>
+        <xsl:variable name="name" select="@name"/>
+        <xsl:for-each select="/xsd:schema/xsd:complexType[@name=$type]/xsd:choice/*">
+            <!-- 
+              Generate parent element for each choice;
+              Not necessarily valid if the parent is constrained to occur once.
+            -->
+            <xsl:element name="{$name}">
+                <xsl:apply-templates select="."/>
+            </xsl:element>
+        </xsl:for-each>
+    </xsl:template>
+    
+    <!--=======================
+         Element special cases
+        =======================-->
+    
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='pbcorePart']">
+        <pbcorePart>
+            <xsl:comment>pbcorePart can recurse</xsl:comment>
+            <pbcoreIdentifier source="pbcorePart_pbcoreIdentifier_@source">pbcorePart_pbcoreIdentifier</pbcoreIdentifier>
+            <pbcoreTitle>pbcorePart_pbcoreTitle</pbcoreTitle>
+            <pbcoreDescription>pbcorePart_pbcoreDescription</pbcoreDescription>
+            <pbcoreCoverage>
+                <coverage>pbcorePart_pbcoreCoverage_coverage</coverage>
+                <coverageType>Spatial</coverageType>
+            </pbcoreCoverage>
+        </pbcorePart>
+    </xsl:template>
+    
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='instantiationPart']">
+        <instantiationPart>
+            <xsl:comment>instantiationPart can recurse</xsl:comment>
+            <instantiationIdentifier source="instantiationPart_instantiationIdentifier_@source">instantiationPart_instantiationIdentifier</instantiationIdentifier>
+            <instantiationLocation>instantiationPart_instantiationLocation</instantiationLocation>
+        </instantiationPart>
+    </xsl:template>
+    
+    <xsl:template priority="1" match="xsd:element[
+                                        @name='coverageType']">
+        <coverageType>Spatial</coverageType>
+    </xsl:template>
+    
+    <xsl:template priority="0.9" match="xsd:element[xsd:complexType]">
+        ERROR: complexType element '<xsl:value-of select="@name"/>' without match.
+    </xsl:template>
+
+    <!--======================================
+         Elements with text content fall-back
+        ======================================-->
+    
+    <xsl:template match="xsd:element[@maxOccurs='unbounded']">
+        <xsl:call-template name="element">
+            <xsl:with-param name="suffix">first</xsl:with-param>
+        </xsl:call-template>
+        <xsl:call-template name="element">
+            <xsl:with-param name="suffix">repeat</xsl:with-param>
+        </xsl:call-template>
+    </xsl:template>
+            
+    <xsl:template match="xsd:element">
+        <!-- maxOccurs default is 1. -->
+        <xsl:call-template name="element">
+            <xsl:with-param name="suffix">only</xsl:with-param>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <!--=======================================
+         Named template to generate attributes
+        =======================================-->    
+    
+    <xsl:template name="element">
+        <xsl:param name="suffix"/>
+        <xsl:variable name="type" select="@type"/>
+        <xsl:variable name="label" select="concat(@name,'_',$suffix)"/>
+        <xsl:element name="{@name}">
+            <!-- Attributes: -->
+            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:simpleContent/xsd:extension/xsd:attribute">
+                <xsl:with-param name="label" select="$label"/>  
+            </xsl:apply-templates>
+            <xsl:apply-templates select="/xsd:schema/xsd:complexType[@name=$type]/xsd:simpleContent/xsd:extension/xsd:attributeGroup">
+                <xsl:with-param name="label" select="$label"/>  
+            </xsl:apply-templates>
+            <!-- Content: -->
+            <xsl:choose>
+                <xsl:when test="@type='threeLetterStringType'">tri;ple;let;ter</xsl:when>
+                <xsl:when test="@type='embeddedType'">
+                    <random><xml><xsl:value-of select="$label"/></xml></random>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="$label"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:element>
+    </xsl:template>
+    
+    <xsl:template match="xsd:attributeGroup[@ref]">
+        <xsl:param name="label"/>
+        <xsl:variable name="ref" select="@ref"/>
+        <xsl:apply-templates select="/xsd:schema/xsd:attributeGroup[@name=$ref]/xsd:attribute">
+            <xsl:with-param name="label" select="$label"/>
+        </xsl:apply-templates>
+    </xsl:template>
+    
+    <xsl:template match="xsd:attribute[@name]">
+        <xsl:param name="label"/>
+        <xsl:attribute name="{@name}">
+            <xsl:value-of select="$label"/>
+        </xsl:attribute>
+    </xsl:template>
+    
+</xsl:stylesheet>
