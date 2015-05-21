@@ -4,7 +4,38 @@ TODO
 
 # pbcoreDescriptionDocument
 
-TODO
+Has no attributes, but we do need to create URIs for the resulting RDF resources.
+
+## status quo
+
+Arbitrarily, the first pbcoreIdentifier is taken.
+
+## proposals
+
+There are really two problems here:
+- Where do we get the identifying information?
+- How do we construct a URI from it.
+
+### A
+
+- Take the first pbcoreIdentifier.
+- Put it under a NS we create.
+
+This is a non-starter: I don't think we ought to make the ordering the identifiers significant, and can't enforce the consistent use of a namespace scheme in IDs across institutions.
+
+### B
+
+Two parameters are supplied by the user when running the mapper:
+
+- A pbcoreIdentifier source which identifies the right ID to pull
+- A URI prefix, which prepended to the extracted ID to create full resource URI.
+
+### C
+
+- User supplies a single XPath expression which is responsible for building a URI from any information in the document.
+
+Probably overkill. Also, out-of-the-box XSLT does not support evaluating XPath in arbitary string: We would either need to get a library which does support this, or use an ERB template to inject the user-supplied XPath.
+
 
 # pbcoreAssetType
 
@@ -36,13 +67,69 @@ For all tighten the schema by removing attributes.
 
 - Tighten schema by specifying vocabulary, and make the range URIs instead of just strings.
 
-Unlikely, because this takes us farther away from the data we have in hand, and from EBUCore... but it is necessary if you want to have queries to find all X.
-
 
 # pbcoreIdentifier
 
-TODO
+```xml
+<pbcoreIdentifier 
+    source="anything">
+  anything
+</pbcoreIdentifier>
+```
 
+We might hope that the source values fall within a small set, but I don't believe that's the case:
+
+```xml
+<pbcoreIdentifier source="Asset ID">1018184</pbcoreIdentifier>
+<pbcoreIdentifier source="Episode Number">108</pbcoreIdentifier>
+<pbcoreIdentifier source="Filename">iptvtst_19821225_108_DV25</pbcoreIdentifier>
+<pbcoreIdentifier source="IPTV Barcode">IPTVUS-0006712</pbcoreIdentifier>
+<pbcoreIdentifier source="IPTV-AAPP">IPTV-002</pbcoreIdentifier>
+<pbcoreIdentifier source="Interlochen Center for the Arts">43825000002120</pbcoreIdentifier>
+<pbcoreIdentifier source="KUOW Puget Sound Public Radio">weekdayb</pbcoreIdentifier>
+<pbcoreIdentifier source="LPB">LSWI-3020</pbcoreIdentifier>
+<pbcoreIdentifier source="MAVIS Title Number">6875</pbcoreIdentifier>
+<pbcoreIdentifier source="Maryland Public Television">18037</pbcoreIdentifier>
+<pbcoreIdentifier source="NOLA Code">NONOLA001817 [SDBA]</pbcoreIdentifier>
+<pbcoreIdentifier source="NOLA">OOI</pbcoreIdentifier>
+<pbcoreIdentifier source="OPB American Archive Pilot Project:Assets">1711</pbcoreIdentifier>
+<pbcoreIdentifier source="WERU Prog List">WRF028</pbcoreIdentifier>
+<pbcoreIdentifier source="WPBS-TV">Four Decades of Dedication: The 40th Anniversary Special</pbcoreIdentifier>
+<pbcoreIdentifier source="WTVS DATABASE ID">WTVS000613</pbcoreIdentifier>
+<pbcoreIdentifier source="WXPN Barcode">Howard Kramer</pbcoreIdentifier>
+<pbcoreIdentifier source="WXPN">Larry Kane</pbcoreIdentifier>
+<pbcoreIdentifier source="http://www.americanmediaarchive.org">IPTV-2010012514124212630108429072317516514806564295896</pbcoreIdentifier>
+```
+
+## status quo
+
+Subproperties are defined for the sources which happened to be in a small subset.
+
+## proposals
+
+### A
+
+- Identify a much smaller set of sources that would actually be useful across institutions.
+- Tighten the schema to allow only these sources.
+- The XML owner can construct pbcoreIdentifiers without a source following any rules they want.
+- Define a correspondingly small set of subproperties.
+
+### B
+
+- No change to schema
+- XSLT concatenates source and value to make a single string.
+
+This process should not be considered to be reversible.
+
+### C
+
+- Tighten schema by removing source.
+- XML owner is responsible for cleaning up XML.
+
+### D
+
+- Define a new RDF class which can capture this source-value pair structure.
+   
 
 # pbcoreAssetDate
 
@@ -115,29 +202,114 @@ On a case-by-case this might be feasible, but I don't think this is viable for s
 
 # pbcoreSubject
 
+ <pbcoreSubject 
+		 subjectType="anything" 
+		 source="anything" 
+		 ref="anything" 
+		 version="anything" 
+		 annotation="anything" 
+		 startTime="anything" 
+		 endTime="anything" 
+		 timeAnnotation="anything">
+	anything
+ </pbcoreSubject>
 TODO
 
 # pbcoreDescription
+
+<pbcoreDescription 
+	annotation="anything" 
+	descriptionType="anything" 
+	descriptionTypeSource="anything" 
+	descriptionTypeRef="anything" 
+	descriptionTypeVersion="anything" 
+	descriptionTypeAnnotation="anything" 
+	segmentType="anything" 
+	segmentTypeSource="anything" 
+	segmentTypeRef="anything" 
+	segmentTypeVersion="anything" 
+	segmentTypeAnnotation="anything" 
+	startTime="anything" 
+	endTime="anything" 
+	timeAnnotation="anything">
+  anything
+</pbcoreDescription>
 
 TODO
 
 # pbcoreGenre
 
+```xml
+<pbcoreGenre 
+		source="anything" 
+		ref="anything" 
+		version="anything" 
+		annotation="anything" 
+		startTime="anything" 
+		endTime="anything" 
+		timeAnnotation="anything">
+	anything
+</pbcoreGenre>
+
 TODO
 
 # pbcoreRelation
+
+```xml
+<pbcoreRelation>
+  <pbcoreRelationType 
+	  source="anything" 
+	  ref="anything" 
+	  version="anything" 	
+	  annotation="anything">
+  anything</pbcoreRelationType>
+  <pbcoreRelationIdentifier 
+	source="anything"
+	ref="anything" 
+	version="anything" 
+	annotation="anything">
+  anything</pbcoreRelationIdentifier>
+</pbcoreRelation>
+```
 
 TODO
 
 # pbcoreCoverage
 
+```xml
+<pbcoreCoverage>
+	<coverage>anything</coverage>
+	<coverageType>Spatial</coverageType>
+</pbcoreCoverage>
+```
+
 TODO
 
 # pbcoreAudienceLevel
 
+```xml
+<pbcoreAudienceLevel
+  source="anything"
+  ref="anything" 
+  version="anything" 
+  annotation="anything">
+    anything
+</pbcoreAudienceLevel>
+```
+
 TODO
 
 # pbcoreAudienceRating
+
+```xml
+<pbcoreAudienceRating
+  source="anything"
+  ref="anything" 
+  version="anything" 
+  annotation="anything">
+    anything
+</pbcoreAudienceRating>
+```
 
 TODO
 
