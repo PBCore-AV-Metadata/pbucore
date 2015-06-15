@@ -12,7 +12,6 @@
 
 ### Creating a new ID _and_ keeping the existing `pbcoreIdentifier` value
 
-#### Without blank nodes
 
 If we don't use blank nodes, then we don't have a good way of keeping the value of `pbcoreIdentifier[@source]`.
 
@@ -23,16 +22,45 @@ ex:ox4ts a ebucore:EditorialObject
 ex:ox4ts ebucore:identifier 'xun1u'
 ```
 
-#### With blank nodes
 
-**EBUCore output in N3:**
 ```
-ex:ox4ts a ebucore:EditorialObject
-ex:ox4ts ebucore:identifier [
-  rdfs:label 'xun1u' ;
-  ??? "some legacy system"
-]
+# EBUCore output in N3
+# ex:ox4ts is a newly created 
+
+@prefix ex:  <http://example.org#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+
+ex:ox4ts a ebucore:EditorialObject ;
+  	ebucore:identifier 'xun1u' .
+
+ebucore:identifier rdfs:Label 'some legacy system' .
+
 ```
+
+
+
+
+```
+# EBUCore output in N3
+# ex:ox4ts is a newly created 
+
+@prefix ex:  <http://example.org#> .
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+
+ex:ox4ts a ebucore:EditorialObject ;
+  	ebucore:identifier 
+
+ <rdf:Description about="ex:identifier">
+
+ </rdf:Description>
+
+
+
+
+```
+
+
+
 
 **EBUCore RDF output:**
   1. Creating a new ID _and_ keeping the existing `pbcoreIdentifier` value

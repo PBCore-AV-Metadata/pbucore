@@ -11,7 +11,7 @@ pbcoreInstantiationDocument<br />
 pbcoreAssetType<br />
 pbcoreAssetDate<br />
 [pbcoreIdentifier](./examples/pbcoreIdentifier.md)<br />
-pbcoreTitle<br />
+[pbcoreTitle](./examples/pbcoreTitle.md)<br />
 pbcoreSubject<br />
 pbcoreDescription<br />
 pbcoreGenre<br />
