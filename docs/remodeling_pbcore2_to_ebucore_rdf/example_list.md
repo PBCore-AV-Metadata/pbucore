@@ -8,25 +8,25 @@ pbcoreInstantiationDocument<br />
 
 ### Intellectual Content
 
-** == handle with either subproperty strategy, or dynamic rdfs:Label strategy (e.g. pbcoreTitle)
+~~ == handle with either subproperty strategy, or dynamic rdfs:Label strategy (e.g. pbcoreTitle)
 ? - Units of measure -- how is EBU handling it?
 
-pbcoreAssetType **<br />
-pbcoreAssetDate **<br />
+pbcoreAssetType ~~<br />
+pbcoreAssetDate ~~<br />
 [pbcoreIdentifier](./examples/pbcoreIdentifier.md)<br />
 [pbcoreTitle](./examples/pbcoreTitle.md)<br />
-pbcoreSubject **<br />
+pbcoreSubject ~~<br />
 pbcoreDescription<br />
-pbcoreGenre **<br />
+pbcoreGenre ~~<br />
 pbcoreRelation<br />
 pbcoreRelationType<br />
 pbcoreRelationIdentifier<br />
 pbcoreCoverage<br />
 coverage<br />
 coverageType<br />
-pbcoreAudienceLevel **<br />
-pbcoreAudienceRating  **<br />
-pbcoreAnnotation **<br />
+pbcoreAudienceLevel ~~<br />
+pbcoreAudienceRating  ~~<br />
+pbcoreAnnotation ~~<br />
 
 ### Intellectual Property
 
@@ -58,30 +58,30 @@ pbcorePart<br />
  
 ### Instantiation
 
-pbcoreInstantiation **<br />
+pbcoreInstantiation ~~<br />
 instantiationIdentifier<br />
-instantiationDate **<br />
+instantiationDate ~~<br />
 instantiationDimensions (? how is EBU handling units of measure?)<br />
-instantiationPhysical **<br />
-instantiationDigital **<br />
-instantiationStandard **<br />
-instantiationLocation **<br />
-instantiationMediaType **<br />
-instantiationGenerations **<br />
-instantiationFileSize **<br />
-instantiationTimeStart **<br />
-instantiationDuration **<br />
+instantiationPhysical ~~<br />
+instantiationDigital ~~<br />
+instantiationStandard ~~<br />
+instantiationLocation ~~<br />
+instantiationMediaType ~~<br />
+instantiationGenerations ~~<br />
+instantiationFileSize ~~<br />
+instantiationTimeStart ~~<br />
+instantiationDuration ~~<br />
 instantiationDataRate (? Units of measure?)<br />
-instantiationColors **<br />
-instantiationTracks **<br />
-instantiationChannelConfiguration **<br />
-instantiationLanguage **<br />
-instantiationAlternativeModes **<br />
+instantiationColors ~~<br />
+instantiationTracks ~~<br />
+instantiationChannelConfiguration ~~<br />
+instantiationLanguage ~~<br />
+instantiationAlternativeModes ~~<br />
 instantiationEssenceTrack<br />
-essenceTrackType **<br />
-essenceTrackIdentifier **<br />
-essenceTrackStandard **<br />
-essenceTrackEncoding **<br />
+essenceTrackType ~~<br />
+essenceTrackIdentifier ~~<br />
+essenceTrackStandard ~~<br />
+essenceTrackEncoding ~~<br />
 essenceTrackDataRate (? Units of measure?)<br />
 essenceTrackFrameRate (? Units of measure?)<br />
 essenceTrackPlaybackSpeed (? Units of measure?)<br />
@@ -89,9 +89,9 @@ essenceTrackSamplingRate (? Units of measure?)<br />
 essenceTrackBitDepth (? Units of measure?)<br />
 essenceTrackFrameSize (? Units of measure?)<br />
 essenceTrackAspectRatio (? Units of measure?)<br />
-essenceTrackTimeStart **<br />
+essenceTrackTimeStart ~~<br />
 essenceTrackDuration (? Units of measure?)<br />
-essenceTrackLanguage **<br />
+essenceTrackLanguage ~~<br />
 essenceTrackAnnotation<br />
 essenceTrackExtension (OUT OF SCOPE)<br />
 
