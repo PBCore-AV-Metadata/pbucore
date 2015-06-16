@@ -20,7 +20,7 @@ RDF output
 @prefix my: <http://example.org/my-namespace#> .
 
 [] <about> my:00001 ;
-  ebucore:hasContrirbutor "Alice" .
+  ebucore:hasContributor "Alice" .
 ```
 
 ### Example: Contributor name is a literal, contributor affiliation is a literal, contributor role is a literal.
@@ -30,7 +30,7 @@ PBCore input:
 <pbcoreDescriptionDocument>
   <pbcoreContributor>
     <contributor affiliation="XYZ Productions">Alice</contributor>
-    <contributorRole>Directory</contributorRole>
+    <contributorRole>Director</contributorRole>
   </pbcoreContributor>
 </pbcoreDescriptionDocument>
 ```
@@ -41,7 +41,7 @@ RDF output:
 @prefix my: <http://example.org/my-namespace#> .
 
 [] <about> my:00001 ;
-  ebucore:hasContrirbutor my:00002 .
+  ebucore:hasContributor my:00002 .
 
 my:00002 a ebucore:Agent ;
   ebucore:agentName "Alice" ;
@@ -69,7 +69,7 @@ RDF output:
 @prefix external: <http://external.org/> .
 
 [] <about> my:00001 ;
-  ebucore:hasContrirbutor external:Alice .
+  ebucore:hasContributor external:Alice .
 ```
 
 ### Example: Contributor is a URI, and contributor name as literal
@@ -91,7 +91,7 @@ RDF output:
 @prefix dc-terms: <http://purl.org/dc/terms/> .
 
 [] <about> my:00001 ;
-  ebucore:hasContrirbutor my:00002 .
+  ebucore:hasContributor my:00002 .
 
 my:00002 a ebucore:Agent ;
   ebucore:agentName "Alice" ;
@@ -119,7 +119,7 @@ RDF output:
 @prefix my: <http://example.org/my-namespace#> .
 
 [] <about> my:00001 ;
-  ebucore:hasContrirbutor my:00002 .
+  ebucore:hasContributor my:00002 .
 
 my:00002 a ebucore:Agent ;
   ebucore:agentName "Alice" ;
