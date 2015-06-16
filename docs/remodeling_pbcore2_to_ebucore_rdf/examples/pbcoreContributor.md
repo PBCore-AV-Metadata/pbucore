@@ -88,7 +88,7 @@ RDF output:
 @prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
 @prefix my: <http://example.org/my-namespace#> .
 @prefix external: <http://external.org/> .
-@prefix dc-terms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 [] <about> my:00001 ;
   ebucore:hasContributor my:00002 .
@@ -98,7 +98,7 @@ my:00002 a ebucore:Agent ;
   dc-terms:references external:Alice .
 ```
 > **TODO:** Is this the right namespace for DublinCore terms?<br />
-> **TODO:** Is this an appropriate use for dc-terms:referenes? If not, what is an appropriate way to establish the relationship between our ebucore:Agent and an external URI?
+> **TODO:** Is this an appropriate use for dcterms:references? If not, what is an appropriate way to establish the relationship between our ebucore:Agent and an external URI?
 
 ### Example: Contributor name as literal, contributor role is a literal _and_ has a URI reference.
 
