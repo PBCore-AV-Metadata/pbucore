@@ -1,194 +1,129 @@
-# Handling `pbcoreTitle`
+# Handling `pbcoreContributor`, `contributor`, and `contributorRole`
 
-### Example 1: Contributor name as a literal.
+### Example: Contributor name as a literal.
 
-PBCore xml input:
+> **NOTE:** All PBCore input is using PBCore 2.0 XML unless otherwise specified.<br />
+> **NOTE:** All RDF output is in Turtle format unless otherwise specified.
+
+PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcoreIdentifier>12345</pbcoreIdentifier>
   <pbcoreContributor>
     <contributor>Alice</contributor>
   </pbcoreContributor>
 </pbcoreDescriptionDocument>
 ```
 
-RDF-XML output:
-```xml
-<rdf:Description rdf:about="http://example.org/12345">
-  <ebucore:hasContributor>Alice</ebucore:hasContributor>
-</rdf:Description>
+RDF output
+```
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix my: <http://example.org/my-namespace#> .
+
+[] <about> my:00001 ;
+  ebucore:hasContrirbutor "Alice" .
 ```
 
-### Example 2: Contributor name as a literal, with affiliation as a literal.
+### Example: Contributor name is a literal, contributor affiliation is a literal, contributor role is a literal.
 
-PBCore xml input:
+PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcoreIdentifier>12345</pbcoreIdentifier>
   <pbcoreContributor>
-    <contributor affiliation="Acme Co.">Alice</contributor>
+    <contributor affiliation="XYZ Productions">Alice</contributor>
+    <contributorRole>Directory</contributorRole>
   </pbcoreContributor>
 </pbcoreDescriptionDocument>
 ```
 
-RDF-XML output using blank node for contributor:
-```xml
-<rdf:Description rdf:about="http://example.org/12345">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject" />
-  <ebucore:hasContributor rdf:nodeID="001" />
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="001">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Contributor" />
-  <ebucore:agentName>Alice</ebucore:agentName>
-  <ebucore:hasAffiliation>Acme Co.</ebucore:hasAffiliation>
-</rdf:Description>
+RDF output:
 ```
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix my: <http://example.org/my-namespace#> .
 
-N3 output using blank nodes for contributor:
-```xml
-ex:12345 a ebucore:EditorialObject ;
-  ebucore:hasContributor _:001 .
+[] <about> my:00001 ;
+  ebucore:hasContrirbutor my:00002 .
 
-_:001 a ebucore:Contributor ;
+my:00002 a ebucore:Agent ;
   ebucore:agentName "Alice" ;
-  ebucore:hasAffiliation "WGBH" .
+  ebucore:hasRole "Director" ;
+  ebucore:hasAffiliation "XYZ Productions" .
 ```
+> **TODO:** Not sure if range of `ebucore:hasAffiliation` can be a literal; ask Jean-Pierre Evain.
 
-### Example 3: Contrbutor name as a literal, contributor role as a literal, portrayal as a literal
 
-PBCore XML input:
+### Example: Contributor with a URI
+
+PBCore input:
 ```xml
-<!-- taken from pbcore.org example -->
 <pbcoreDescriptionDocument>
-  <pbcoreIdentifier>12345</pbcoreIdentifier>
   <pbcoreContributor>
-     <contributor>Duvall, Robert</contributor
-     <contributorRole portrayal="Eulis Dewey">Actor<contributorRole>
+     <contributor ref="http://external.org/Alice" />
   </pbcoreContributor>
 </pbcoreDescriptionDocument>
 ```
 
-RDF-XML ouptut using blank nodes for contributor and portrayal:
-```xml
-<rdf:Description rdf:about="http://example.org/12345">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject" />
-  <ebucore:hasContributor rdf:nodeID="002" />
-  <ebucore:hasCharacter rdf:nodeID="003" />
-</rdf:Description>
+RDF output:
+```
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix my: <http://example.org/my-namespace#> .
+@prefix external: <http://external.org/> .
 
-<rdf:Description rdf:nodeID="002">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast" />
-  <ebucore:isCharacter rdf:nodeID="003" />
-  <ebucore:hasRole>Actor</ebucore:hasRole>
-  <ebucore:agentName>Robert Duvall</ebucore:agentName>
-</rdf:Description>
-
-<rdf:Description rdf:nodeID="003">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Character" />
-  <ebucore:agentName>Eulis Dewey</ebucore:agentName>
-</rdf:Description>
+[] <about> my:00001 ;
+  ebucore:hasContrirbutor external:Alice .
 ```
 
-N3 output using blank nodes for contributor and portrayal:
-```
-ex:12345 a ebucore:EditorialObject ;
-  ebucore:hasContributor _:002 ;
-  ebucore:hasCharacter _:003 .
+### Example: Contributor is a URI, and contributor name as literal
 
-_:002 a ebucore:Cast ;
-  ebucore:isCharacter _:003 ;
-  ebucore:hasRole "Actor" ;
-  ebucore:agentName "Robert Duvall" .
-
-_:003 a ebucore:Character ;
-  ebucore:agentName "Eulis Dewey" .
-```
-
-RDF-XML output using blank node for contributor, and a literal for portrayal:
-```xml
-<rdf:Description rdf:about="http:://example.org/12345">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject" />
-  <ebucore:hasContributor>
-    <rdf:Description rdf:nodeID="_:004">
-      <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast" />
-      <ebucore:isCharacter>Eulis Dewey</ebucore:isCharacter>
-      <ebucore:hasRole>Actor</ebucore:hasRole>
-      <ebucore:agentName>Robert Duvall</ebucore:agentName>
-    </rdf:Description>
-  </ebucore:hasContributor>
-</rdf:Description>
-```
-
-N3 output using blank node for contributor, and a literal for portrayal:
-```
-ex:1234 a ebucore:EditorialObject ;
-  ebucore:hasContributor _:004 .
-
-_:004 a ebucore:Cast ;
-  ebucore:isCharacter "Eulis Dewey"
-  ebucore:hasRole "Actor"
-  ebucore:agentName "Robert Duvall"
-```
-
-### Example 4: Contributor with a URI
-
-PBCore XML input:
+PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
   <pbcoreIdentifier>12345</pbcoreIdentifier>
   <pbcoreContributor>
-     <!-- not sure if it's valid in PBCore to not have a value for <contributor> -->
-     <contributor ref="http://dbpedia.org/page/Robert_Duvall" />
+     <contributor ref="http://external.org/Alice">Alice</contributor>
   </pbcoreContributor>
 </pbcoreDescriptionDocument>
 ```
 
-RDF-XML output:
-```xml
-<rdf:Description rdf:about="http://example.org/12345">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject" />
-  <ebucore:hasContrbutor rdf:about="http://dbpedia.org/page/Robert_Duvall" />
-</rdf:Description>
+RDF output:
 ```
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix my: <http://example.org/my-namespace#> .
+@prefix external: <http://external.org/> .
+@prefix dc-terms: <http://purl.org/dc/terms/> .
 
-N3 outpt:
+[] <about> my:00001 ;
+  ebucore:hasContrirbutor my:00002 .
+
+my:00002 a ebucore:Agent ;
+  ebucore:agentName "Alice" ;
+  dc-terms:references external:Alice .
 ```
-ex:12345 a ebucore:EditorialObject ;
-  ebucore:hasContributor <http://dbpedia.org/page/Robert_Duvall> .
+> **TODO:** Is this the right namespace for DublinCore terms?<br />
+> **TODO:** Is this an appropriate use for dc-terms:referenes? If not, what is an appropriate way to establish the relationship between our ebucore:Agent and an external URI?
 
-<http://dbpedia.org/page/Robert_Duvall> a ebucore:Cast ;
-```
+### Example: Contributor name as literal, contributor role is a literal _and_ has a URI reference.
 
-### Example 5: Contributor with a URI and contributor name as literal
-
+PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
   <pbcoreIdentifier>12345</pbcoreIdentifier>
   <pbcoreContributor>
-     <contributor ref="http://dbpedia.org/page/Robert_Duvall">Duvall, Robert</contributor>
+     <contributor>Alice</contributor>
+     <contributorRole ref="http://pbcore.org/vocabularies/contributorRole#director">Director<contributorRole/>
   </pbcoreContributor>
 </pbcoreDescriptionDocument>
 ```
 
-RDF-XML output
-```xml
-<rdf:Description rdf:about="http://example.org/12345">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#EditorialObject" />
-  <ebucore:hasContributor rdf:about="http://dbpedia.org/page/Robert_Duvall" />
-</rdf:Description>
 
-<rdf:Description rdf:about="http://dbpedia.org/page/Robert_Duvall">
-  <rdf:type rdf:resource="http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#Cast" />
-  <ebucore:agentName>Robert Duvall</ebucore:agentName>
-</rdf:Description>
+RDF output:
 ```
+@prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
+@prefix my: <http://example.org/my-namespace#> .
 
-N3 output:
-```
-ex:12345 a ebucore:EditorialObject ;
-  ebucore:hasContributor <http://dbpedia.org/page/Robert_Duvall> .
+[] <about> my:00001 ;
+  ebucore:hasContrirbutor my:00002 .
 
-<http://dbpedia.org/page/Robert_Duvall> a ebucore:Cast ;
-  ebucore:agentName "Robert Duvall"
+my:00002 a ebucore:Agent ;
+  ebucore:agentName "Alice" ;
+  ebucore:hasRole <http://pbcore.org/vocabularies/contributorRole#director>, "Director" .
 ```
