@@ -8,9 +8,9 @@
 PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcorecreator>
+  <pbcoreCreator>
     <creator>Alice</creator>
-  </pbcorecreator>
+  </pbcoreCreator>
 </pbcoreDescriptionDocument>
 ```
 
@@ -28,10 +28,10 @@ RDF output
 PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcorecreator>
+  <pbcoreCreator>
     <creator affiliation="XYZ Productions">Alice</creator>
     <creatorRole>Director</creatorRole>
-  </pbcorecreator>
+  </pbcoreCreator>
 </pbcoreDescriptionDocument>
 ```
 
@@ -56,9 +56,9 @@ my:00002 a ebucore:Agent ;
 PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcorecreator>
+  <pbcoreCreator>
      <creator ref="http://external.org/Alice" />
-  </pbcorecreator>
+  </pbcoreCreator>
 </pbcoreDescriptionDocument>
 ```
 
@@ -77,9 +77,9 @@ RDF output:
 PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcorecreator>
+  <pbcoreCreator>
      <creator ref="http://external.org/Alice">Alice</creator>
-  </pbcorecreator>
+  </pbcoreCreator>
 </pbcoreDescriptionDocument>
 ```
 
@@ -88,7 +88,7 @@ RDF output:
 @prefix ebucore: <http://www.ebu.ch/metadata/ontologies/ebucore/ebucore#> .
 @prefix my: <http://example.org/my-namespace#> .
 @prefix external: <http://external.org/> .
-@prefix dc-terms: <http://purl.org/dc/terms/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
 
 [] <about> my:00001 ;
   ebucore:hasCreator my:00002 .
@@ -97,18 +97,17 @@ my:00002 a ebucore:Agent ;
   ebucore:agentName "Alice" ;
   dc-terms:references external:Alice .
 ```
-> **TODO:** Is this the right namespace for DublinCore terms?<br />
-> **TODO:** Is this an appropriate use for dc-terms:referenes? If not, what is an appropriate way to establish the relationship between our ebucore:Agent and an external URI?
+> **TODO:** Is this an appropriate use for dcterms:references? If not, what is an appropriate way to establish the relationship between our ebucore:Agent and an external URI?
 
 ### Example: creator name is a literal, creator role is a literal _and_ has a URI reference.
 
 PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcorecreator>
+  <pbcoreCreator>
      <creator>Alice</creator>
      <creatorRole ref="http://pbcore.org/vocabularies/creatorRole#director">Director<creatorRole/>
-  </pbcorecreator>
+  </pbcoreCreator>
 </pbcoreDescriptionDocument>
 ```
 
