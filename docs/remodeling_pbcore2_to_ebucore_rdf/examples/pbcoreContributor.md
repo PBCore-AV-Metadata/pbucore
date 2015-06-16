@@ -97,7 +97,6 @@ my:00002 a ebucore:Agent ;
   ebucore:agentName "Alice" ;
   dc-terms:references external:Alice .
 ```
-> **TODO:** Is this the right namespace for DublinCore terms?<br />
 > **TODO:** Is this an appropriate use for dcterms:references? If not, what is an appropriate way to establish the relationship between our ebucore:Agent and an external URI?
 
 ### Example: Contributor name as literal, contributor role is a literal _and_ has a URI reference.
