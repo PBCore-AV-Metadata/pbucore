@@ -77,7 +77,6 @@ RDF output:
 PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcoreIdentifier>00001</pbcoreIdentifier>
   <pbcoreContributor>
      <contributor ref="http://external.org/Alice">Alice</contributor>
   </pbcoreContributor>
@@ -106,7 +105,6 @@ my:00002 a ebucore:Agent ;
 PBCore input:
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcoreIdentifier>00001</pbcoreIdentifier>
   <pbcoreContributor>
      <contributor>Alice</contributor>
      <contributorRole ref="http://pbcore.org/vocabularies/contributorRole#director">Director<contributorRole/>
