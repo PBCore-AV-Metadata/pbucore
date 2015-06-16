@@ -18,7 +18,7 @@ EBUCore RDF-XML
 ````
 # EBUCore output in N3
  
-http://example.com#1234 a ebucore:EditorialObject;
+http://example.com#1234 a ebucore:EditorialObject;<br/>
   ebucore:hasGenre "Documentary"
  
 ## With URIs
@@ -41,6 +41,6 @@ EBUCore RDF-XML
  
 # EBUCore output in N3
  
-http://example.com#1234 a ebucore:EditorialObject;
+http://example.com#1234 a ebucore:EditorialObject;<br/>
   ebucore:hasGenre http://www.loc.gov/rr/mopic/miggen.html#Documentary
 
