@@ -56,9 +56,10 @@
 
 After discussion at the Hackathon, it was determined that dynamically changing labels is not possible.  However, most use cases can be handled by existing properties and subproperties within EBUCore: title, mainTitle, alternativeTitle, abridgedTitle, subtitle, translationTitle, versionTitle, workingTitle.  
 
-Descriptive titleTypes such as episodeTitle or seriesTitle can be handled by defining the class of the editorial object as Series or Episode in relation to series, etc.  
+Descriptive titleTypes such as episodeTitle or seriesTitle can be handled by defining the class of the editorial object as Series or Episode in relation to series, etc.  EX: Object is a Program; object Title is “The Civil War"; implied in this is that “The Civil War” is a program title. 
 
-So for the example above:
+
+So, to redo the example above:   
 
 ```xml
 
@@ -85,7 +86,7 @@ So for the example above:
 </rdf:Description>
   
 <rdf:Description about="http://example.com#12346">
-  <rdf:type rdf:resource="ebucore:EditorialObject" />
+  <rdf:type rdf:resource="ebucore:Programme" />
   <ebucore:isEpisodeOf rdf:resource="http://example.com#12345" />
   <ebucore:Title>Judge Orders U Of I To Release Salaita Emails</ebucore:Title>
 </rdf:Description>
