@@ -60,6 +60,8 @@ Descriptive titleTypes such as episodeTitle or seriesTitle can be handled by def
 
 So for the example above:
 
+```xml
+
 # PBCore sample
 
 <pbcoreDescriptionDocument>
@@ -70,7 +72,9 @@ So for the example above:
     Judge Orders U Of I To Release Salaita Emails
   </pbcoreTitle>
 </pbcoreDescritionDocument>
+```
 
+```xml
 
 # EBUCore RDF-XML: linking editorial objects
 
@@ -85,7 +89,7 @@ So for the example above:
   <ebucore:isEpisodeOf rdf:resource="http://example.com#12345" />
   <ebucore:Title>Judge Orders U Of I To Release Salaita Emails</ebucore:Title>
 </rdf:Description>
-
+```
 
 
 
