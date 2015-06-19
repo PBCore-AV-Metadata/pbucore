@@ -11,7 +11,7 @@ pbcoreInstantiationDocument<br />
 ~~ == handle with either subproperty strategy, or dynamic rdfs:Label strategy (e.g. pbcoreTitle)
 ? - Units of measure -- how is EBU handling it?
 
-pbcoreAssetType ~~<br />
+[pbcoreAssetType](./examples/pbcoreAssetType.md)<br />
 pbcoreAssetDate ~~<br />
 [pbcoreIdentifier](./examples/pbcoreIdentifier.md)<br />
 [pbcoreTitle](./examples/pbcoreTitle.md)<br />
