@@ -63,7 +63,7 @@ derivedTo/isDerivedFrom
 
 dimensions
 
-    describes the physical dimensions of a media resource, with units of measure concatenated 
+    describes the physical dimensions of a media resource, with units of measure concatenated to become part of the value
 
 hasStandard
 
