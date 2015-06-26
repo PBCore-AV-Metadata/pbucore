@@ -14,7 +14,7 @@ endLicenceDate
 
 dateDistributed
 
-    the date when the resource was first made available to the public for purchase, download, or streaming access  
+    the date when the resource was first made available to the public for purchase, download, or online access  
 
 dateDeleted
 
