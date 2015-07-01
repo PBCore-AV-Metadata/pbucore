@@ -14,8 +14,9 @@ Example:
 ```xml
 <rdf:Description about="http://example.com#12345">
   <rdf:type rdf:resource="ebucore:EditorialObject" />
-  <ebucore:hasRating>TV-Y7-FV</ebucore:hasRating>
+  <ebucore:hasRating ebucore:AudienceRating="TV-Y7-FV">
 </rdf:Description>
+
 ```
 
 **Note: this example begs the question of what to do with source and ref where the ref is not an individual URI, which afaik is yet unanswered.**
