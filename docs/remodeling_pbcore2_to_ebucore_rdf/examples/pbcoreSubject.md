@@ -12,8 +12,8 @@ So, example for an asset with multiple different subjects and types:
 
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcoreSubject subjectType="Keyword">Rats</pbcoreSubject>
-  <pbcoreSubject subjectType="Topic">Rats as laboratory animals</pbcoreSubject>
+  <pbcoreSubject subjectType="Keyword" ref="info:lc/authorities/sh85111538">Rats</pbcoreSubject>
+  <pbcoreSubject subjectType="Topic" ref="info:lc/authorities/sh85111545">Rats as laboratory animals</pbcoreSubject>
   <pbcoreSubject subjectType="Folksonomy" annotation="Submitted by RobCOBrien through online portal">Rats of NIMH</pbcoreSubject>
 </pbcoreDescriptionDocument>
 ```
