@@ -6,6 +6,8 @@ DublinCore object properties: hasFormat, isFormatOf, isPartOf, isReferencedBy, i
 
 properties to add to EBUCore: clonedTo/isClonedFrom, dubbedTo/isDubbedFrom, derivedTo/IsDerivedFrom 
 
+These properties will map directly to relationType and relationIdentifier
+
 **NOTE: in our previous analysis, we thought followsInSequence was a dc property, but now that I'm looking for it I can't find it?  Does this also need to be added?**
 
 So, a couple different examples!
