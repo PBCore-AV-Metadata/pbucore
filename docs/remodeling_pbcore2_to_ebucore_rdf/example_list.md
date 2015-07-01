@@ -18,9 +18,9 @@ pbcoreInstantiationDocument<br />
 [pbcoreSubject] (./examples/pbcoreSubject.md)<br />
 [pbcoreDescription] (./examples/pbcoreDescription.md)<br />
 pbcoreGenre ~~<br />
-pbcoreRelation<br />
-pbcoreRelationType<br />
-pbcoreRelationIdentifier<br />
+[pbcoreRelation] (./examples/pbcoreRelation.md) <br />
+[pbcoreRelationType] (./examples/pbcoreRelation.md) <br />
+[pbcoreRelationIdentifier] (./examples/pbcoreRelation.md) <br />
 pbcoreCoverage<br />
 coverage<br />
 coverageType<br />
