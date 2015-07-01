@@ -12,7 +12,7 @@ pbcoreInstantiationDocument<br />
 ? - Units of measure -- how is EBU handling it?
 
 [pbcoreAssetType](./examples/pbcoreAssetType.md)<br />
-pbcoreAssetDate ~~<br />
+[pbcoreAssetDate] (./examples/pbcoreAssetDate.md) <br />
 [pbcoreIdentifier](./examples/pbcoreIdentifier.md)<br />
 [pbcoreTitle](./examples/pbcoreTitle.md)<br />
 pbcoreSubject ~~<br />
