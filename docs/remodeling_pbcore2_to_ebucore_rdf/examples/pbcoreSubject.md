@@ -4,9 +4,11 @@
 EBUCore has hasSubject as property
 SubjectClass is a free-text, also has Topic as a subclass of Subject
 
-We recommend discarding the "subjectType" sub-property, straight mapping to hasSubject or hasTopic, and then relying on a URI, except in cases of Folksonomies, which will be under a separate property Folksonomy)
+We recommend discarding the "subjectType" sub-property, straight mapping to hasSubject or hasTopic, and then ideally using a URI in the class of Subject or Topic.
 
-So, example for an asset with multiple associated dates:
+The exception here would be Folksonomies, which will be under a separate property (Folksonomy) until reviewed and incorporated as valid subject, topic, or descriptive data.
+
+So, example for an asset with multiple different subjects and types:
 
 ```xml
 <pbcoreDescriptionDocument>
