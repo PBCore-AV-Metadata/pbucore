@@ -23,6 +23,6 @@ Example:
 <rdf:Description about="http://example.com#12345">
   <rdf:type rdf:resource="ebucore:EditorialObject" />
   <ebucore:hasCoverage>1607-1631</coverage>
-  <ebucore:hasLocation ebucore:location="http://metadataregistry.org/concept/show/id/2522.html" />
+  <ebucore:hasLocation ebucore:location="http://en.wikipedia.org/wiki/Werowocomoco" />
 </rdf:Description>
 ```
