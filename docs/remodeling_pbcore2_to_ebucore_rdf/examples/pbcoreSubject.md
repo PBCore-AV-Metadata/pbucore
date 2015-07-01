@@ -10,7 +10,7 @@ So, example for an asset with multiple associated dates:
 
 ```xml
 <pbcoreDescriptionDocument>
-  <pbcoreSubject subjectType=Keyword">Rats</pbcoreSubject>
+  <pbcoreSubject subjectType="Keyword">Rats</pbcoreSubject>
   <pbcoreSubject subjectType="Topic">Rats as laboratory animals</pbcoreSubject>
   <pbcoreSubject subjectType="Folksonomy" annotation="Submitted by RobCOBrien through online portal">Rats of NIMH</pbcoreSubject>
 </pbcoreDescriptionDocument>
