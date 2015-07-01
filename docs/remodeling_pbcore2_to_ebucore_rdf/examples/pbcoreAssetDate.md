@@ -7,6 +7,7 @@ EBUCore has date created, date digitized, date issued; match to one of these bas
 Considers publication date as publication event 
 
 Let’s state: asset date = date created
+
 issued, podcast, webcast = date issued
 
 copyrightdate is in Bibframe, so we recommend that people use that
