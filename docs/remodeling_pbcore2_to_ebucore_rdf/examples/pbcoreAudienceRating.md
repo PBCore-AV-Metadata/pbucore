@@ -14,7 +14,7 @@ Example:
 ```xml
 <rdf:Description about="http://example.com#12345">
   <rdf:type rdf:resource="ebucore:EditorialObject" />
-  <ebucore:hasRating ebucore:AudienceRating="TV-Y7-FV">
+  <ebucore:hasRating ebucore:AudienceRating="TV-Y7-FV" />
 </rdf:Description>
 
 ```
