@@ -80,4 +80,4 @@ Use ebucore:identifier
 
 For institutions transforming PBCore XML data and using internal identifiers, recommend they set up a namespace (equivalent to @source), then provide guidelines for how to format a namespace
 
-Other legacy identifiers that don’t need to be nodes can be put in an annotation
+Other legacy identifiers that don't need to be URIs can be included as strings in annotations
