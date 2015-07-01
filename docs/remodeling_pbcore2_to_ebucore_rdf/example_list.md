@@ -17,7 +17,7 @@ pbcoreInstantiationDocument<br />
 [pbcoreTitle](./examples/pbcoreTitle.md)<br />
 [pbcoreSubject] (./examples/pbcoreSubject.md)<br />
 [pbcoreDescription] (./examples/pbcoreDescription.md)<br />
-pbcoreGenre ~~<br />
+[pbcoreGenre] (./examples/pbcoreGenre.md) <br />
 [pbcoreRelation] (./examples/pbcoreRelation.md) <br />
 [pbcoreRelationType] (./examples/pbcoreRelation.md) <br />
 [pbcoreRelationIdentifier] (./examples/pbcoreRelation.md) <br />
