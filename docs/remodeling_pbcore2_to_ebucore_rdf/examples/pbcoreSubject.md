@@ -4,7 +4,7 @@
 EBUCore has hasSubject as property
 SubjectClass is a free-text, also has Topic as a subclass of Subject
 
-We recommend discarding the "subjectType" sub-property, straight mapping to hasSubject or hasTopic, and then ideally using a URI in the class of Subject or Topic.
+We recommend discarding the "subjectType" sub-property for the purpose of mapping and instead mapping directly to hasSubject or hasTopic, and then ideally using a URI in the class of Subject or Topic.
 
 The exception here would be Folksonomies, which will be under a separate property (Folksonomy) until reviewed and incorporated as valid subject, topic, or descriptive data.
 
