@@ -21,9 +21,9 @@ pbcoreInstantiationDocument<br />
 [pbcoreRelation] (./examples/pbcoreRelation.md) <br />
 [pbcoreRelationType] (./examples/pbcoreRelation.md) <br />
 [pbcoreRelationIdentifier] (./examples/pbcoreRelation.md) <br />
-pbcoreCoverage<br />
-coverage<br />
-coverageType<br />
+[pbcoreCoverage] (./examples/pbcoreCoverage.md) <br />
+[coverage] (./examples/pbcoreCoverage.md) <br />
+[coverageType] (. /examples/pbcoreCoverage.md) <br />
 pbcoreAudienceLevel ~~<br />
 pbcoreAudienceRating  ~~<br />
 pbcoreAnnotation ~~<br />
