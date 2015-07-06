@@ -1,6 +1,7 @@
 # Handling 'pbcoreCoverage'
 
 spatial coverage: hasLocation [location]
+
 temporal coverage: hasCoverage [coverage] OR hasEvent [event]
 
 Example:
