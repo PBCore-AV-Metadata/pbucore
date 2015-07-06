@@ -26,7 +26,7 @@ pbcoreInstantiationDocument<br />
 [coverageType] (. /examples/pbcoreCoverage.md) <br />
 [pbcoreAudienceLevel] (./examples/pbcoreAudienceLevel.md) <br />
 [pbcoreAudienceRating] (./examples/pbcoreAudienceRating.md)  <br />
-pbcoreAnnotation ~~<br />
+pbcoreAnnotation (./examples/pbcoreAnnotation.md) <br />
 
 ### Intellectual Property
 
