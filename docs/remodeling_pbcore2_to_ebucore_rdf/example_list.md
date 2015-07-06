@@ -39,10 +39,10 @@ contributorRole<br />
 pbcorePublisher<br />
 publisher<br />
 publisherRole<br />
-pbcoreRightsSummary (? -- how is EBU handling rights?) <br />
-rightsSummary<br />
-rightsLink<br />
-rightsEmbedded<br />
+[pbcoreRightsSummary] (./examples/pbcoreRightsSummary.md)  <br />
+[rightsSummary] (./examples/pbcoreRightsSummary.md) <br />
+[rightsLink] (./examples/pbcoreRightsSummary.md) <br />
+rightsEmbedded - out of scope for this project!<br />
 
 ### Extensions
 
