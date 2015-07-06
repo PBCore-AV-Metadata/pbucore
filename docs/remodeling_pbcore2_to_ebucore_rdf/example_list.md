@@ -8,7 +8,7 @@ pbcoreInstantiationDocument<br />
 
 ### Intellectual Content
 
-~~ == handle with either subproperty strategy, or dynamic rdfs:Label strategy (e.g. pbcoreTitle)
+~~ == handling largely with specific subproperties & relationships where 'type' is an issue (e.g. pbcoreTitle)
 ? - Units of measure -- how is EBU handling it?
 
 [pbcoreAssetType](./examples/pbcoreAssetType.md)<br />
