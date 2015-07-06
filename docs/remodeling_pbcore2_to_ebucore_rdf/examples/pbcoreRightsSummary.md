@@ -5,7 +5,9 @@ Rights Associated has a Rights Statement/Summary <br />
 Rights Associated has a Start Time <br /> 
 Rights Associated has an End Time <br />
 
-ebuccdm seems to have some necessary properties that ebucore doesn't, specifically the ability to link a rights statement back to the editorial object or media resource that it's describing -- should we pull those in?  Ask Jean-Pierre
+Rights link translates easily with a rights link property, which can be used to define either a broader rights summary statement, or directly taken from the rights link element in PBCore
+
+ebuccdm seems to have some necessary properties that ebucore doesn't, specifically the ability to link a rights statement back to the editorial object or media resource that it's describing (ebuccdm property applyTo) -- should we pull those in?  Ask Jean-Pierre
 
 ebucore definitely does not have a rightsStartDate and rightsEndDate property, so we will need to ask Jean-Pierre to add those as well.  
 
