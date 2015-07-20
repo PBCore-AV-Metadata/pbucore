@@ -32,12 +32,12 @@ So, a couple different examples!
   <rdf:type rdf:resource="ebucore:EditorialObject" />
   <ebucore:title>Death Is A Poor Man's Doctor</ebucore:title>
   <ebucore:description>Interviews from Detroit musicians</a>
-  <dc:hasFormat>MCU_v0123_01</dc:hasFormat>
+  <dc:hasFormat rdf:resource="MCU_v0123_01"/>
 </rdf:Description>
 
 <rdf:Description about="MCU_v0123_01">
   <rdf:type rdf:resource="ebucore:MediaResource" />
-  <dc:isFormatOf>MCU_a0567</dc:hasFormat>
+  <dc:isFormatOf rdf:resource="MCU_a0567" />
   <ebucore:locator>McHale University</ebucore:locator>
 </rdf:Description>
 ```
@@ -74,20 +74,20 @@ So, a couple different examples!
   <rdf:type rdf:resource="ebucore:EditorialObject" />
   <ebucore:title>Death Is A Poor Man's Doctor</ebucore:title>
   <ebucore:description>Interviews from Detroit musicians</a>
-  <dc:hasFormat>MCU_v0123_01</dc:hasFormat>
+  <dc:hasFormat rdf:resource="MCU_v0123_01" />
 </rdf:Description>
 
 <rdf:Description about="MCU_v0123_01">
   <rdf:type rdf:resource="ebucore:MediaResource" />
-  <dc:isFormatOf>MCU_a0567</dc:hasFormat>
+  <dc:isFormatOf rdf:resource="MCU_a0567" />
   <ebucore:locator>McHale University</ebucore:locator>
-  <ebucore:dubbedTo>MCU_v0123_02</ebucore:dubbedTo>
+  <ebucore:dubbedTo rdf:resource="MCU_v0123_02" />
 </rdf:Description>
 
 <rdf:Description about="MCU_v0123_02">
   <rdf:type rdf:resource="ebucore:MediaResource" />
-  <dc:isFormatOf>MCU_a0567</dc:hasFormat>
+  <dc:isFormatOf rdf:resource="MCU_a0567" />
   <ebucore:locator>McHale University</ebucore:locator>
-  <ebucore:isDubbedFrom>MCU_v0123_01</ebucore:isDubbedFrom>
+  <ebucore:isDubbedFrom rdf:resource="MCU_v0123_01" />
 </rdf:Description>
 ```
