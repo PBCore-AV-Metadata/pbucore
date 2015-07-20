@@ -12,10 +12,10 @@ properties to add: dateDeleted, dateIngested, dateMigrated, dateNormalized, date
 So, example for an asset with multiple associated dates:
 
 ```xml
-<pbcoreDescriptionDocument>
+<pbcoreInstantiationDocument>
   <instantiationDate dateType="Created">2000-08-14</instantiationDate>
   <instantiationDate dateType="Ingested">2000-09-14</instantiationDate>
-</pbcoreDescriptionDocument>
+</pbcoreInstantiationDocument>
 ```
 
 
