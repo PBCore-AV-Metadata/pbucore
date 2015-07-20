@@ -3,9 +3,9 @@
 Proposal to add 'hasStandard' as an EBUCore property
 
 ```xml
-<pbcoreDescriptionDocument>
+<pbcoreInstantiationDocument>
   <instantiationStandard source="PBCore instantiationStandard/video" ref="http://metadataregistry.org/concept/show/id/3248.html">NTSC</instantiationStandard>
-</pbcoreDescriptionDocument>
+</pbcoreInstantiationDocument>
 ```
 
 
