@@ -68,7 +68,7 @@ instantiationIdentifier<br />
 [instantiationLocation] (./examples/instantiationLocation.md) <br />
 [instantiationMediaType] (./examples/instantiationMediaType.md) <br />
 [instantiationGenerations] (./instantiationGenerations.md) <br />
-[instantiationFileSize] (./examples/instantiationFileSize.md) ~~<br />
+[instantiationFileSize] (./examples/instantiationFileSize.md) <br />
 instantiationTimeStart ~~<br />
 instantiationDuration ~~<br />
 instantiationDataRate (? Units of measure?)<br />
