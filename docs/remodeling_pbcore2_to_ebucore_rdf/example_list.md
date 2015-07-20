@@ -62,8 +62,8 @@ pbcoreInstantiation ~~<br />
 instantiationIdentifier<br />
 [instantiationDate] (./examples/instantiationDate.md) <br />
 [instantiationDimensions] (./examples/instantiationDimensions.md) <br />
-instantiationPhysical ~~<br />
-instantiationDigital ~~<br />
+[instantiationPhysical] (./examples/instantiationPhysical.md) <br />
+[instantiationDigital] (./examples/instantiationPhysical.md) <br />
 instantiationStandard ~~<br />
 instantiationLocation ~~<br />
 instantiationMediaType ~~<br />
