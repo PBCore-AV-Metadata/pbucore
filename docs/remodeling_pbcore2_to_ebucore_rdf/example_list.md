@@ -61,7 +61,7 @@ pbcorePart<br />
 pbcoreInstantiation ~~<br />
 instantiationIdentifier<br />
 [instantiationDate] (./examples/instantiationDate.md) <br />
-instantiationDimensions (? how is EBU handling units of measure?)<br />
+[instantiationDimensions] (./examples/instantiationDimensions.md) <br />
 instantiationPhysical ~~<br />
 instantiationDigital ~~<br />
 instantiationStandard ~~<br />
