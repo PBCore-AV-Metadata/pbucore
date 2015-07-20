@@ -65,7 +65,7 @@ instantiationIdentifier<br />
 [instantiationPhysical] (./examples/instantiationPhysical.md) <br />
 [instantiationDigital] (./examples/instantiationPhysical.md) <br />
 [instantiationStandard] (./examples/instantiationStandard.md) <br />
-instantiationLocation ~~<br />
+[instantiationLocation] (./examples/instantiationLocation.md) <br />
 instantiationMediaType ~~<br />
 instantiationGenerations ~~<br />
 instantiationFileSize ~~<br />
