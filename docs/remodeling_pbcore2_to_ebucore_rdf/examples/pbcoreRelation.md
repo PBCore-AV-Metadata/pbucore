@@ -1,4 +1,4 @@
-# Handling 'pbcoreRelation'
+# Handling 'pbcoreRelation' and 'instantiationRelation'
 
 EBUCore: hasRelatedResource, hasRelatedBusinessObject, hasRelatedEvent, isRelatedTo, hasRelatedMediaFragment
 
