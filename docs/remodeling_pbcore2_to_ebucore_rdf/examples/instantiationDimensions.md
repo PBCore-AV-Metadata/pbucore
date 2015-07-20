@@ -10,9 +10,9 @@ Two ways we might do this:
 ## Concatenated units of measure
 
 ```xml
-<pbcoreDescriptionDocument>
+<pbcoreInstantiationDocument>
   <instantiationDimensions unitsofmeasure="inches">5x7</instantiationDimensions>
-</pbcoreDescriptionDocument>
+</pbcoreInstantiationDocument>
 ```
 
 
