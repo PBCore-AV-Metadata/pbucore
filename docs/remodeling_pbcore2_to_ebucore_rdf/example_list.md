@@ -75,7 +75,7 @@ instantiationIdentifier<br />
 [instantiationColors] (./examples/instantiationColors.md) <br />
 [instantiationTracks] (./examples/instantiationTracks.md) <br />
 [instantiationChannelConfiguration] (./examples/instantiationChannelConfiguration.md) <br />
-instantiationLanguage ~~<br />
+[instantiationLanguage] (./examples/instantiationLanguage.md) ~~<br />
 instantiationAlternativeModes ~~<br />
 instantiationEssenceTrack<br />
 essenceTrackType ~~<br />
