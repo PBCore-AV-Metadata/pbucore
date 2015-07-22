@@ -74,7 +74,7 @@ instantiationIdentifier<br />
 [instantiationDataRate] (./examples/instantiationDataRate.md) <br />
 [instantiationColors] (./examples/instantiationColors.md) <br />
 [instantiationTracks] (./examples/instantiationTracks.md) <br />
-instantiationChannelConfiguration ~~<br />
+[instantiationChannelConfiguration] (./examples/instantiationChannelConfiguration.md) <br />
 instantiationLanguage ~~<br />
 instantiationAlternativeModes ~~<br />
 instantiationEssenceTrack<br />
