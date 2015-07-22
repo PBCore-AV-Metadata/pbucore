@@ -72,7 +72,7 @@ instantiationIdentifier<br />
 [instantiationTimeStart] (./examples/instantiationTimeStart.md) <br />
 [instantiationDuration] (./examples/instantiationDuration.md) <br />
 [instantiationDataRate] (./examples/instantiationDataRate.md) <br />
-instantiationColors ~~<br />
+[instantiationColors] (./examples/instantiationColors.md) <br />
 instantiationTracks ~~<br />
 instantiationChannelConfiguration ~~<br />
 instantiationLanguage ~~<br />
