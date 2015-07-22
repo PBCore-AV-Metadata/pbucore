@@ -70,7 +70,7 @@ instantiationIdentifier<br />
 [instantiationGenerations] (./instantiationGenerations.md) <br />
 [instantiationFileSize] (./examples/instantiationFileSize.md) <br />
 [instantiationTimeStart] (./examples/instantiationTimeStart.md) <br />
-instantiationDuration ~~<br />
+[instantiationDuration] (./examples/instantiationDuration.md) <br />
 instantiationDataRate (? Units of measure?)<br />
 instantiationColors ~~<br />
 instantiationTracks ~~<br />
