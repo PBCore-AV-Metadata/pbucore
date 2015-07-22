@@ -71,7 +71,7 @@ instantiationIdentifier<br />
 [instantiationFileSize] (./examples/instantiationFileSize.md) <br />
 [instantiationTimeStart] (./examples/instantiationTimeStart.md) <br />
 [instantiationDuration] (./examples/instantiationDuration.md) <br />
-instantiationDataRate (? Units of measure?)<br />
+[instantiationDataRate] (./examples/instantiationDataRate.md) <br />
 instantiationColors ~~<br />
 instantiationTracks ~~<br />
 instantiationChannelConfiguration ~~<br />
