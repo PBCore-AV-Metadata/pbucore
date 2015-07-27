@@ -79,7 +79,7 @@ instantiationIdentifier<br />
 [instantiationAlternativeModes] (./examples/instantiationAlternativeModes.md) <br />
 [instantiationEssenceTrack] (./examples/instantiationEssenceTracks.md) <br />
 [essenceTrackType] (./examples/instantiationEssenceTracks.md) <br />
-essenceTrackIdentifier ~~<br />
+[essenceTrackIdentifier] (./examples/essenceTrackIdentifier.md) <br />
 [essenceTrackStandard] (./examples/essenceTrackStandard.md) <br />
 essenceTrackEncoding ~~<br />
 essenceTrackDataRate (? Units of measure?)<br />
