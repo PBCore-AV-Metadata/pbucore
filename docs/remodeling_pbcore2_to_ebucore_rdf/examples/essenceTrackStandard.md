@@ -1,4 +1,4 @@
-# Handling 'instantiationEssenceTracks' and 'essenceTrackType'
+# Handling 'essenceTrackStandard'
 
 Notes say 'same hasStandard property we’re asking for above' but in fact this is going to be more complicated because we're also asking people to use 'standard' to clarify encoding formats.  However, for basic NTSC/PAL info:
 
