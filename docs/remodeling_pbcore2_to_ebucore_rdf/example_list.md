@@ -83,7 +83,7 @@ instantiationIdentifier<br />
 [essenceTrackStandard] (./examples/essenceTrackStandard.md) <br />
 [essenceTrackEncoding] (./examples/essenceTrackEncoding.md) <br />
 [essenceTrackDataRate] (./examples/essenceTrackDataRate.md) <br />
-essenceTrackFrameRate (? Units of measure?)<br />
+[essenceTrackFrameRate] (./examples/essenceTrackFrameRate.md) <br />
 essenceTrackPlaybackSpeed (? Units of measure?)<br />
 essenceTrackSamplingRate (? Units of measure?)<br />
 essenceTrackBitDepth (? Units of measure?)<br />
