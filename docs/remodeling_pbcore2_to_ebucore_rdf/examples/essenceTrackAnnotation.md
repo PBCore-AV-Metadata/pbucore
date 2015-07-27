@@ -27,7 +27,7 @@ Example:
 
 <rdf:Description about="http://example.com#12347">
   <rdf:type rdf:resource="ebucore:Annotation" />
-  <ebucore:isAnnotationOf" rdf:resource="http://example.com#12346" />
-  <ebucore:textualAnnotation">transcode error at 1:11:14</ebucore:textualAnnotation>
+  <ebucore:isAnnotationOf rdf:resource="http://example.com#12346" />
+  <ebucore:textualAnnotation>transcode error at 1:11:14</ebucore:textualAnnotation>
 </rdf:Description>
 ```
