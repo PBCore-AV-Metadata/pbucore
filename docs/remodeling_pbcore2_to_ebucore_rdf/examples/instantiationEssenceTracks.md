@@ -1,6 +1,6 @@
-# Handling 'instantiationEssenceTracks'
+# Handling 'instantiationEssenceTracks' and 'essenceTrackType'
 
-Tracks become a new URI, associate those based on instantiation
+Tracks become a new URI, associate those based on instantiation; the track is either classed as a VideoTrack or an AudioTrack depending on essenceTrackType (if not specified, just go to Track) 
 
 
 ```xml
