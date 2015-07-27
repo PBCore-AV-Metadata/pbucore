@@ -1,6 +1,6 @@
 # Handling 'instantiationStandard'
 
-Proposal to add 'hasStandard' as an EBUCore property
+Proposal to add 'hasStandard' as an EBUCore property (though this will become complicated when/if people are using it as we suggest to express the cnotainer format of the digital file -- not sure how to handle that logistically.)  
 
 ```xml
 <pbcoreInstantiationDocument>
