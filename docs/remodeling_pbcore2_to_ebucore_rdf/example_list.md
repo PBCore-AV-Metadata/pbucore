@@ -91,7 +91,7 @@ instantiationIdentifier<br />
 [essenceTrackAspectRatio] (./examples/essenceTrackAspectRatio.md) <br />
 [essenceTrackTimeStart] (./examples/essenceTrackTimeStart.md) <br />
 [essenceTrackDuration] (./examples/essenceTrackDuration.md) <br />
-essenceTrackLanguage ~~<br />
+[essenceTrackLanguage] (./examples/essenceTrackLanguage.md) <br />
 essenceTrackAnnotation<br />
 essenceTrackExtension (OUT OF SCOPE)<br />
 
