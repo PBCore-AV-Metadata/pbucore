@@ -92,7 +92,7 @@ instantiationIdentifier<br />
 [essenceTrackTimeStart] (./examples/essenceTrackTimeStart.md) <br />
 [essenceTrackDuration] (./examples/essenceTrackDuration.md) <br />
 [essenceTrackLanguage] (./examples/essenceTrackLanguage.md) <br />
-essenceTrackAnnotation<br />
+[essenceTrackAnnotation] (./examples/essenceTrackAnnotation.md) <br />
 essenceTrackExtension (OUT OF SCOPE)<br />
 
 _REFER TO ASSET LEVEL_
