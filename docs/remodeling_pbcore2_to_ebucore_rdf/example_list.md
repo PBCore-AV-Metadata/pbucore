@@ -77,8 +77,8 @@ instantiationIdentifier<br />
 [instantiationChannelConfiguration] (./examples/instantiationChannelConfiguration.md) <br />
 [instantiationLanguage] (./examples/instantiationLanguage.md) <br />
 [instantiationAlternativeModes] (./examples/instantiationAlternativeModes.md) <br />
-instantiationEssenceTrack<br />
-essenceTrackType ~~<br />
+[instantiationEssenceTrack] (./examples/instantiationEssenceTracks.md) <br />
+[essenceTrackType] (./examples/instantiationEssenceTracks.md) <br />
 essenceTrackIdentifier ~~<br />
 essenceTrackStandard ~~<br />
 essenceTrackEncoding ~~<br />
