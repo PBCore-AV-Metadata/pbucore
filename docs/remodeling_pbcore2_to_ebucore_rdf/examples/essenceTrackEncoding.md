@@ -1,7 +1,7 @@
 # Handling 'essenceTrackEncoding'
 
 essenceTrackEncoding = hasEncodingFormat.
-f the track type is video or audio as specified, use hasAudioEncodingFormat or hasVideoEncodingFormat
+if the track type is video or audio as specified, use hasAudioEncodingFormat or hasVideoEncodingFormat
 
 
 
