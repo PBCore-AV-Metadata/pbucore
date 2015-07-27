@@ -7,7 +7,7 @@ Notes say 'same hasStandard property we’re asking for above' but in fact this 
 <pbcoreInstantiationDocument>
   <instantiationEssenceTrack>
     <essenceTrackType>Video</essenceTrackType>
-      <instantiationStandard source="PBCore instantiationStandard/video" ref="http://metadataregistry.org/concept/show/id/3248.html">NTSC</instantiationStandard>
+      <essenceTrackStandard source="PBCore instantiationStandard/video" ref="http://metadataregistry.org/concept/show/id/3248.html">NTSC</essenceTrackStandard>
   </instantiationEssenceTrack>
 </pbcoreInstantiationDocument>
 ```
