@@ -21,7 +21,7 @@ Example:
 
 <rdf:Description about="http://example.com#12346">
   <rdf:type rdf:resource="ebucore:Annotation" />
-  <ebucore:isAnnotationOf rdf:resource="http://example.com#12345">
+  <ebucore:isAnnotationOf rdf:resource="http://example.com#12345" />
   <ebucore:textualAnnotation>This is the edited version produced for the Digital Learning Library</ebucore:textualAnnotation>
 </rdf:Description>
 ```
