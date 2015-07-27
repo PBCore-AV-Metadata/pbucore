@@ -58,8 +58,8 @@ pbcorePart<br />
  
 ### Instantiation
 
-pbcoreInstantiation ~~<br />
-instantiationIdentifier<br />
+[pbcoreInstantiation] (./examples/pbcoreInstantiation.md) <br />
+[instantiationIdentifier] (./examples/pbcoreInstantiation.md) <br />
 [instantiationDate] (./examples/instantiationDate.md) <br />
 [instantiationDimensions] (./examples/instantiationDimensions.md) <br />
 [instantiationPhysical] (./examples/instantiationPhysical.md) <br />
