@@ -27,7 +27,7 @@ Can we search for 'file name' and sent that to EBUCore's filename property?
 <rdf:Description about="http://example.com#0000313536">
   <rdf:type rdf:resource="ebucore:MediaResource" />
   <dc:isFormatOf rdf:resource="http://example.com#12345" />
-  <ebucore:hasAnnotation rdf:resource=""http://example.com#12346" />
+  <ebucore:hasAnnotation rdf:resource="http://example.com#12346" />
   <ebucore:filename>news_20071211.mp3</ebucore:filename>
 </rdf:Description>
 
