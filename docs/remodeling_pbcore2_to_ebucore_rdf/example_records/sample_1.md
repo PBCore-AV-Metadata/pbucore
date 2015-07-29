@@ -1,4 +1,4 @@
-''
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <pbcoreDescriptionDocument xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://www.pbcore.org/xsd/pbcore-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
 <pbcoreAssetType>Program</pbcoreAssetDate>
@@ -39,9 +39,10 @@ The Commission’s report concludes with an examination of current conditions in
 <pbcoreAnnotation annotationType="organization">NET Collection</pbcoreAnnotation> -->
 
 </pbcoreDescriptionDocument>
-''
+```
 
-''<?xml version="1.0"?>
+```xml
+<?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
             xmlns:dc="http://purl.org/dc/elements/1.1/"
 			xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore#"           
@@ -134,4 +135,5 @@ The Commission’s report concludes with an examination of current conditions in
   <ebucore:rightsExpression">The special report on the findings of the Commission is a production for the New York State Special Commission on Attica.  It is made possible by the American Bar Association Commission on Correctional Facilities and Services under a grant from the Ford Foundation.</ebucore:rightsExpression>
 </rdf:Description>
 
-</rdf:RDF>''
+</rdf:RDF>
+```
