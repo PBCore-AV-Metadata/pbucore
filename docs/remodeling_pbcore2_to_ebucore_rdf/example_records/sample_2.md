@@ -1,4 +1,6 @@
-''
+## PBCore
+
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <pbcoreDescriptionDocument xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://www.pbcore.org/xsd/pbcore-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
 <pbcoreAssetType>Program</pbcoreAssetDate>
@@ -43,9 +45,12 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 <pbcoreAnnotation annotationType="organization">NET Collection</pbcoreAnnotation> -->
 
 </pbcoreDescriptionDocument>
-''
+```
 
-''<?xml version="1.0"?>
+## EBUCore RDF/XML
+
+```xml
+<?xml version="1.0"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
             xmlns:dc="http://purl.org/dc/elements/1.1/"
 			xmlns:ebucore="http://www.ebu.ch/metadata/ontologies/ebucore#" 
@@ -168,4 +173,4 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 </rdf:Description>
 
 </rdf:RDF>
-''
+```
