@@ -1,3 +1,5 @@
+## PBCore
+
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <pbcoreDescriptionDocument xsi:schemaLocation="http://www.pbcore.org/PBCore/PBCoreNamespace.html http://www.pbcore.org/xsd/pbcore-2.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.pbcore.org/PBCore/PBCoreNamespace.html">
@@ -40,6 +42,8 @@ The Commission’s report concludes with an examination of current conditions in
 
 </pbcoreDescriptionDocument>
 ```
+
+## EBUCore RDF/XML
 
 ```xml
 <?xml version="1.0"?>
