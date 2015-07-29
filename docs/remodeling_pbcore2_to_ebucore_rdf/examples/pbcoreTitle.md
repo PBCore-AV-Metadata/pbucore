@@ -12,7 +12,7 @@
 
 <rdf:Description about="http://example.com#12345">
   <rdf:type rdf:resource="ebucore:EditorialObject" />
-  <ebucore:Title>NOVA: Pocahontas Revealed</ebucore:Title>
+  <ebucore:title>NOVA: Pocahontas Revealed</ebucore:Title>
   <!-- titleType="Full" may be handled by dynamically changing rdf:Type -->
 </rdf:Description>
 ```
@@ -81,14 +81,14 @@ So, to redo the example above:
 
 <rdf:Description about="http://example.com#12345">
   <rdf:type rdf:resource="ebucore:Series" />
-  <ebucore:Title>News Local/State</ebucore:programTitle>
+  <ebucore:title>News Local/State</ebucore:programTitle>
   <ebucore:hasEpisode rdf:resource="http://example.com#12346">
 </rdf:Description>
   
 <rdf:Description about="http://example.com#12346">
   <rdf:type rdf:resource="ebucore:Programme" />
   <ebucore:isEpisodeOf rdf:resource="http://example.com#12345" />
-  <ebucore:Title>Judge Orders U Of I To Release Salaita Emails</ebucore:Title>
+  <ebucore:title>Judge Orders U Of I To Release Salaita Emails</ebucore:Title>
 </rdf:Description>
 ```
 
