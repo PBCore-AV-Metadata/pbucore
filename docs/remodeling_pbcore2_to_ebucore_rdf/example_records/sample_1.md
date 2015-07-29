@@ -136,7 +136,7 @@ The Commission’s report concludes with an examination of current conditions in
 <rdf:Description about="wgbh:exampleplaceholder6">
   <rdf:type rdf:resource="ebucore:Rights" />
   <ebucore:applyTo rdf:resource="wgbh:dslwerwevc23v" />
-  <ebucore:rightsExpression">The special report on the findings of the Commission is a production for the New York State Special Commission on Attica.  It is made possible by the American Bar Association Commission on Correctional Facilities and Services under a grant from the Ford Foundation.</ebucore:rightsExpression>
+  <ebucore:rightsExpression>The special report on the findings of the Commission is a production for the New York State Special Commission on Attica.  It is made possible by the American Bar Association Commission on Correctional Facilities and Services under a grant from the Ford Foundation.</ebucore:rightsExpression>
 </rdf:Description>
 
 </rdf:RDF>
