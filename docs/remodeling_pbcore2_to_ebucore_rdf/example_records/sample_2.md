@@ -74,7 +74,7 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
   
 <rdf:Description about="wgbh:exampleplaceholder1">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Producer</ebucore:role>
+  <ebucore:hasRole>Producer</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:META" />
 </rdf:Description>
@@ -82,12 +82,12 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 <rdf:Description about="wgbh:META">
   <ebucore:agentName>META</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Organization" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder1">
+  <dc:references rdf:resource="wgbh:exampleplaceholder1" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder1">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Producer</ebucore:role>
+  <ebucore:hasRole>Producer</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:META" />
 </rdf:Description>
@@ -95,12 +95,12 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 <rdf:Description about="wgbh:META">
   <ebucore:agentName>META</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Organization" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder1">
+  <dc:references rdf:resource="wgbh:exampleplaceholder1" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder2">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Panelist</ebucore:role>
+  <ebucore:hasRole>Panelist</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:JCarlettoWardJr" />
 </rdf:Description>
@@ -108,12 +108,12 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 <rdf:Description about="wgbh:JCarlettoWardJr">
   <ebucore:agentName>Ward, J. Carletto, Jr.</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Agent" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder2">
+  <dc:references rdf:resource="wgbh:exampleplaceholder2" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder3">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Panelist</ebucore:role>
+  <ebucore:hasRole>Panelist</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:HaroldSVance" />
 </rdf:Description>
@@ -121,12 +121,12 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 <rdf:Description about="wgbh:HaroldSVance">
   <ebucore:agentName>Vance, Harold S.</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Agent" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder3">
+  <dc:references rdf:resource="wgbh:exampleplaceholder3" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder4">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Panelist</ebucore:role>
+  <ebucore:hasRole>Panelist</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:HenryDSmyth" />
 </rdf:Description>
@@ -134,12 +134,12 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 <rdf:Description about="wgbh:HenryDSmyth">
   <ebucore:agentName>Smyth, Henry D.</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Agent" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder4">
+  <dc:references rdf:resource="wgbh:exampleplaceholder4" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder5">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Panelist</ebucore:role>
+  <ebucore:hasRole>Panelist</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:HenryMWriston" />
 </rdf:Description>
@@ -147,7 +147,7 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
 <rdf:Description about="wgbh:HenryMWriston">
   <ebucore:agentName>Wriston, Henry M.</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Agent" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder5">
+  <dc:references rdf:resource="wgbh:exampleplaceholder5" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder6">
@@ -163,7 +163,7 @@ The men discuss the economies of nuclear power, the US nuclear power program, fo
   <ebucore:locator>WNET: Room 2, Shelf 12</ebucore:locator>
   <ebucore:hasGenerations>Original</ebucore:hasGenerations>
   <ebucore:duration>00:30:00</ebucore:duration>
-  <ebucore:hasAnnotation rdf:resource="wgbh:exampleplaceholder7">
+  <ebucore:hasAnnotation rdf:resource="wgbh:exampleplaceholder7" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder8">
