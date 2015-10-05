@@ -83,7 +83,7 @@ The Commission’s report concludes with an examination of current conditions in
 
 <rdf:Description about="wgbh:exampleplaceholder2">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Executive Producer</ebucore:role>
+  <ebucore:hasRole>Executive Producer</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:DavidProwitt" />
 </rdf:Description>
@@ -96,7 +96,7 @@ The Commission’s report concludes with an examination of current conditions in
 
 <rdf:Description about="wgbh:exampleplaceholder3">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Producer</ebucore:role>
+  <ebucore:hasRole>Producer</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:RobertPotts" />
 </rdf:Description />
@@ -109,7 +109,7 @@ The Commission’s report concludes with an examination of current conditions in
 
 <rdf:Description about="wgbh:exampleplaceholder4">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Producer</ebucore:role>
+  <ebucore:hasRole>Producer</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:JohnWilkman" />
 </rdf:Description>
@@ -122,7 +122,7 @@ The Commission’s report concludes with an examination of current conditions in
 
 <rdf:Description about="wgbh:exampleplaceholder5">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Director</ebucore:role>
+  <ebucore:hasRole>Director</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:JackSameth" />
 </rdf:Description>
