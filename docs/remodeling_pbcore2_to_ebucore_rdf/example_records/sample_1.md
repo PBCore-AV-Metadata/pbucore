@@ -70,7 +70,7 @@ The Commission’s report concludes with an examination of current conditions in
 
 <rdf:Description about="wgbh:exampleplaceholder1">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Executive Producer</ebucore:role>
+  <ebucore:hasRole>Executive Producer</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:DonDixon" />
 </rdf:Description>
@@ -78,7 +78,7 @@ The Commission’s report concludes with an examination of current conditions in
 <rdf:Description about="wgbh:DonDixon">
   <ebucore:agentName>Dixon, Don</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Agent" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder1">
+  <dc:references rdf:resource="wgbh:exampleplaceholder1" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder2">
