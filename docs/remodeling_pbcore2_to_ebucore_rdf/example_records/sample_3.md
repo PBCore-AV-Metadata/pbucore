@@ -77,14 +77,14 @@
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder1">
-  <rdf:type rdf:resource="ebucore:Series">
+  <rdf:type rdf:resource="ebucore:Series" />
   <ebucore:title>About Ceramics</ebucore:title>
   <ebucore:hasEpisode rdf:resource="wgbh:35fsdf52sfsf" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder2">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Producer</ebucore:role>
+  <ebucore:hasRole>Producer</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:WGTV" />
 </rdf:Description>
@@ -92,12 +92,12 @@
 <rdf:Description about="wgbh:WGTV">
   <ebucore:agentName>WGTV</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Organization" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder2">
+  <dc:references rdf:resource="wgbh:exampleplaceholder2" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder3">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Director</ebucore:role>
+  <ebucore:hasRole>Director</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:GeneMichelson" />
 </rdf:Description>
@@ -105,12 +105,12 @@
 <rdf:Description about="wgbh:GeneMichelson">
   <ebucore:agentName>Michelson, Gene</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Organization" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder3">
+  <dc:references rdf:resource="wgbh:exampleplaceholder3" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder4">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Director</ebucore:role>
+  <ebucore:hasRole>Director</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:SamDress" />
 </rdf:Description>
@@ -118,12 +118,12 @@
 <rdf:Description about="wgbh:SamDress">
   <ebucore:agentName>Dress, Sam</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Organization" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder4">
+  <dc:references rdf:resource="wgbh:exampleplaceholder4" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder5">
   <rdf:type rdf:resource="ebucore:Agent" />
-  <ebucore:hasRole>Host</ebucore:role>
+  <ebucore:hasRole>Host</ebucore:hasRole>
   <dc:references rdf:resource="wgbh:dslwerwevc23v" />
   <dc:references rdf:resource="wgbh:EarlMcCutchen" />
 </rdf:Description>
@@ -131,7 +131,7 @@
 <rdf:Description about="wgbh:EarlMcCutchen">
   <ebucore:agentName>McCutchen, Earl</ebucore:agentName>
   <rdf:type rdf:resource="ebucore:Organization" />
-  <dc:references rdf:resource="wgbh:exampleplaceholder5">
+  <dc:references rdf:resource="wgbh:exampleplaceholder5" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder6">
@@ -142,7 +142,7 @@
   <ebucore:hasGenerations>Original</ebucore:hasGenerations>
   <ebucore:duration>00:30:00</ebucore:duration>
   <ebucore:hasColourCode>Color</ebucore:hasColourCode>
-  <ebucore:hasAnnotation rdf:resource="wgbh:exampleplaceholder9">
+  <ebucore:hasAnnotation rdf:resource="wgbh:exampleplaceholder9" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder7">
@@ -153,7 +153,7 @@
   <ebucore:hasGenerations>Master</ebucore:hasGenerations>
   <ebucore:duration>00:30:00</ebucore:duration>
   <ebucore:hasColourCode>00:28:58</ebucore:hasColourCode>
-  <ebucore:hasAnnotation rdf:resource="wgbh:exampleplaceholder10">
+  <ebucore:hasAnnotation rdf:resource="wgbh:exampleplaceholder10" />
 </rdf:Description>
 
 <rdf:Description about="wgbh:exampleplaceholder8">
