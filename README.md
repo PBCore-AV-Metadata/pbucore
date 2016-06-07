@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/WGBH/pbucore.svg?branch=master)](https://travis-ci.org/WGBH/pbucore)
+
 ### Assignments
 1. cpb-aacip-15-79v15vkq_pbcore.xml - Drew
 1. cpb-aacip-500-6m335r61_pbcore.xml -- Adam
